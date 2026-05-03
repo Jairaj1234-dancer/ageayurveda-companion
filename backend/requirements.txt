@@ -1,0 +1,51 @@
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Database
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.1
+greenlet==3.1.1
+
+# Settings & validation
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+# passlib 1.7.4 is incompatible with bcrypt >= 4.1 on Python 3.13 — pin bcrypt
+# below that. (Without this, the module-load `detect_wrap_bug` check in
+# passlib raises ValueError because bcrypt 4.1 enforces the 72-byte cap
+# strictly.)
+bcrypt>=4.0,<4.1
+
+# SQLite async (dev)
+aiosqlite==0.20.0
+
+# Utilities
+sse-starlette==2.2.1
+
+# Data processing
+orjson==3.10.13
+
+# Rate limiting
+slowapi==0.1.9
+
+# LLM grounding (added 2026-04-27 for classical-text RAG layer)
+anthropic==0.40.0
+sentence-transformers==3.3.1
+numpy==1.26.4
+PyYAML==6.0.2
+
+# Classical-text corpus ingestion (added 2026-05 for SARIT TEI pipeline)
+lxml==5.3.0
+vidyut==0.4.0
+requests==2.32.3
+
+# Testing (dev only)
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1

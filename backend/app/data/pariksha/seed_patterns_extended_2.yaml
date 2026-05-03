@@ -1,0 +1,583 @@
+# Extended diagnostic patterns — batch 3 (rules 59-100+).
+# Leverages new parīkṣā params (Kriyā-Kāla, Sthāna-saṃśraya, Doṣa-gati,
+# Roga-bala, Rogi-bala, Manas-prakṛti, Hetu-bheda, Pratyātma-lakṣaṇa,
+# Red-flag-parīkṣā, Vyādhi-mārga, Adhiṣṭhāna).
+#
+# Many use multi-required-condition rules for higher specificity than
+# single-finding patterns.
+#
+# Sources: Caraka Cikitsā 1-30, Mādhava Nidāna, Suśruta Cikitsā,
+# Bhaiṣajya Ratnāvali, AYUSH STG.
+
+diagnostic_patterns:
+
+# ─── High-specificity multi-required rules (8) ────────────────────
+
+  - name: "Sthaulya — full triadic confirmation"
+    description: "Sthaulya fully confirmed when ākṛti + nāḍī + agni + manda + sthāna-saṃśraya in meda all align."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Ākṛti", finding: "sthūla-snigdha-aṅga", required: true}
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: true}
+      - {param: "Agni", finding: "manda-agni", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Sthaulya", weight: 1.5,
+         rationale: "Triple confirmation — Ākṛti + kapha-nāḍī + manda-agni is highly specific for sthaulya."}
+    suggested_chikitsa: ["Udvartana", "Triphalā Guggulu", "Kāñcanāra Guggulu"]
+    classical_source: "Caraka Sūtra 21"
+
+  - name: "Madhumeha kapha-pradhāna full confirmation"
+    description: "Madhura-mūtra + kapha-nāḍī + manda-agni → kaphaja madhumeha, well-evidenced."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Mūtra", finding: "madhura-mūtra", required: true}
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: true}
+      - {param: "Agni", finding: "manda-agni", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Madhumeha", weight: 1.5}
+      - {target_kind: "vyadhi", name: "Prameha", weight: 0.5}
+    red_flags:
+      - "DKA pattern: polyuria + altered consciousness + abdominal pain → ED"
+    suggested_chikitsa: ["Vasanta-kusumākara Rasa", "Niruha Basti", "Madhumeha-Hara Cūrṇa", "Karavellaka", "Méthikā", "Madhunāśinī"]
+    classical_source: "Caraka Cikitsā 6 (Prameha)"
+    evidence_grade: "B"
+
+  - name: "Āmavāta multi-criteria active flare"
+    description: "Joint pain + manda-agni + āma-mala + sāma-jihvā ⇒ active āmavāta with confidence."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Agni", finding: "manda-agni", required: true}
+      - {param: "Mala", finding: "āma-yukta", required: true}
+      - {param: "Jihvā", finding: "sāma-jihvā", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Āmavāta", weight: 1.4}
+    suggested_chikitsa: ["Yogarāja Guggulu", "Saiṃhanāda Guggulu", "Mahā-yogarāja Guggulu", "Daśamūla Kvātha"]
+    classical_source: "Mādhava Nidāna 25"
+
+  - name: "Vāta-prakopa with spread (prasara stage)"
+    description: "Vāta findings + prasara kriyā-kāla = doṣa moving through srotas, requires immediate intervention."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Kriyā-Kāla", finding: "prasara", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "vāta-prasara", weight: 1.0,
+         rationale: "Prasara stage — therapeutic urgency is high; reverse before sthāna-saṃśraya."}
+    suggested_chikitsa: ["Anuvāsana Basti", "Sarvāṅga Abhyaṅga", "Daśamūla Kvātha"]
+    classical_source: "Suśruta Sūtra 21 (Kriyā-kāla)"
+
+  - name: "Asthi-saṃśraya vāta — joint disease lodgement"
+    description: "Vāta in asthi-dhatu — sandhi-vāta, classical asthi-vyādhi."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Sthāna-saṃśraya", finding: "asthi-saṃśraya", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Sandhivāta", weight: 1.2}
+      - {target_kind: "vyadhi", name: "Āmavāta", weight: 0.5}
+      - {target_kind: "vyadhi", name: "Gṛdhrasī", weight: 0.6}
+    suggested_chikitsa: ["Mahānārāyaṇa Taila", "Yogarāja Guggulu", "Lākṣādi Guggulu", "Jānu Basti"]
+    classical_source: "Caraka Cikitsā 28"
+
+  - name: "Pitta lodging in rakta — bleeding pattern"
+    description: "Pitta with rakta-saṃśraya + ūrdhva-gati = ūrdhva-ga raktapitta."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "pitta-nāḍī", required: true}
+      - {param: "Sthāna-saṃśraya", finding: "rakta-saṃśraya", required: true}
+      - {param: "Doṣa-gati", finding: "ūrdhva-gati", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Raktapitta", weight: 1.3}
+    suggested_chikitsa: ["Mahā-Yaṣṭyādi Ghṛta", "Mukta-piṣṭi", "Pravāla-pañcāmṛta Rasa", "Kūṣmāṇḍāvaleha"]
+    red_flags:
+      - "Active hemoptysis or hematemesis with hemodynamic instability — ED"
+    classical_source: "Caraka Cikitsā 4"
+
+  - name: "Bheda-stage — chronic morbid disease"
+    description: "Disease at bheda kriyā-kāla — chronic, complications established. Often asādhya."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Kriyā-Kāla", finding: "bheda", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "bheda-stage-disease", weight: 1.0,
+         rationale: "Bheda stage = chronic / morbid. Classical prognosis often asādhya."}
+    suggested_chikitsa: ["Symptomatic care", "Rasāyana for resilience", "Refer for modern adjuncts"]
+    red_flags:
+      - "Late-stage disease — manage with realistic expectations + palliation if appropriate"
+    classical_source: "Suśruta Sūtra 21"
+
+  - name: "Sannipāta-vṛddhi with tridoṣa-mārga"
+    description: "Sannipāta-nāḍī + trimārga affected = highest-grade systemic illness."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Nāḍī", finding: "sannipāta-nāḍī", required: true}
+      - {param: "Roga-mārga", finding: "trimārga (sannipāta)", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "sannipāta-vṛddhi-trimārga", weight: 1.5}
+    red_flags:
+      - "Trimārga-sannipāta = ICU-level emergency"
+    suggested_chikitsa: ["Hospital-grade therapy first", "Adjunct: Mahā-Jvarāṅkuśa Rasa post-stabilization"]
+    classical_source: "Caraka Sūtra 11; Mādhava Nidāna 1"
+
+# ─── Pratyātma-lakṣaṇa (pathognomonic) patterns (4) ───────────────
+
+  - name: "Sannipāta-nāḍī alone — sepsis pathognomonic"
+    description: "Sannipāta-nāḍī as the sole finding fires this rule — high-specificity emergency screen."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Pratyātma-lakṣaṇa", finding: "present", required: true}
+      - {param: "Nāḍī", finding: "sannipāta-nāḍī", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Sannipāta-jvara", weight: 1.5}
+    red_flags:
+      - "Any sannipāta = emergency referral. Don't delay for further parīkṣā."
+    classical_source: "Mādhava Nidāna 1"
+
+  - name: "Madhura-mūtra alone — diabetes pathognomonic"
+    description: "Madhura-mūtra is the cardinal sign of madhumeha (Caraka Cikitsā 6.4)."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Pratyātma-lakṣaṇa", finding: "present", required: true}
+      - {param: "Mūtra", finding: "madhura-mūtra", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Madhumeha", weight: 1.5}
+    classical_source: "Caraka Cikitsā 6"
+    evidence_grade: "A"
+
+  - name: "Krimi-yukta-mala — helminthiasis pathognomonic"
+    description: "Direct visualization of worms in stool is pathognomonic."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Pratyātma-lakṣaṇa", finding: "present", required: true}
+      - {param: "Mala", finding: "krimi-yukta", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Krimi-roga", weight: 1.5}
+    suggested_chikitsa: ["Vidaṅga", "Vidaṅga Cūrṇa", "Bilvādi Curṇa", "Modern: albendazole"]
+    classical_source: "Caraka Cikitsā 7"
+
+  - name: "Rakta-mūtra red-flag screen"
+    description: "Any rakta-mūtra needs immediate workup — don't delay for parīkṣā."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Mūtra", finding: "rakta-mūtra", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Raktapitta (mūtra-mārga)", weight: 1.0}
+      - {target_kind: "vyadhi", name: "Aśmari (renal)", weight: 0.7}
+      - {target_kind: "vyadhi", name: "Mūtra-Kṛcchra", weight: 0.5}
+    red_flags:
+      - "Any gross hematuria → urology workup"
+      - "Hematuria + weight loss → rule out malignancy"
+      - "Hematuria + flank pain → urolithiasis vs pyelonephritis"
+    classical_source: "Caraka Cikitsā 26"
+
+# ─── Mukha-roga / oral (3) ──────────────────────────────────────
+
+  - name: "Mukha-pāka pattern (oral ulcers)"
+    description: "Pitta-pradhāna oral lesions ⇒ mukha-pāka."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Jihvā", finding: "rakta-pīta-uṣṇa", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Mukha-pāka", weight: 0.8}
+    suggested_chikitsa: ["Yaṣṭimadhu Cūrṇa", "Triphalā Kavala", "Khadirādi Vaṭī", "Daśana-saṃskāra Curṇa"]
+    red_flags:
+      - "Non-healing ulcer >3 weeks or induration → biopsy (rule out OSCC)"
+    classical_source: "Suśruta Nidāna 16"
+
+  - name: "Danta-mūla-Śosa (periodontitis) pattern"
+    description: "Vāta-kapha periodontitis with gum recession + halitosis."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Sthāna-saṃśraya", finding: "asthi-saṃśraya", required: false}
+      - {param: "Adhiṣṭhāna", finding: "śiraḥ-gata", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Danta-mūla-Śosa", weight: 0.6}
+    suggested_chikitsa: ["Irimedādi Taila", "Daśana-saṃskāra Curṇa", "Khadirādi Vaṭī", "Kavala-Gaṇḍūṣa"]
+    classical_source: "Suśruta Nidāna 16; Aṣṭāṅga Hṛdaya Uttara 22"
+
+  - name: "Galaśuṇḍika (tonsillitis) acute kapha-pitta"
+    description: "Sore throat + fever + kapha-pitta findings ⇒ galaśuṇḍika."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Adhiṣṭhāna", finding: "śiraḥ-gata", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Galaśuṇḍika", weight: 0.6}
+    suggested_chikitsa: ["Vyoṣādi Vaṭī", "Khadirādi Vaṭī", "Eladi Vaṭī", "Yaṣṭimadhu kavala"]
+    red_flags:
+      - "Peritonsillar abscess (quinsy) — drooling/trismus → ED"
+      - "Airway compromise → emergency ENT"
+    classical_source: "Aṣṭāṅga Hṛdaya Uttara 22"
+
+# ─── Karṇa / Nāsa (3) ──────────────────────────────────────────
+
+  - name: "Karṇa-pāka acute pattern"
+    description: "Pitta-pradhāna ear inflammation ⇒ karṇa-pāka."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "pitta-nāḍī", required: false}
+      - {param: "Adhiṣṭhāna", finding: "śiraḥ-gata", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Karṇa-pāka", weight: 0.6}
+    suggested_chikitsa: ["Sahacarādi Taila (karṇa-pūraṇa)", "Triphalā Kvātha rinse"]
+    red_flags:
+      - "Spreading cellulitis or facial nerve involvement → ENT urgent"
+    classical_source: "Aṣṭāṅga Hṛdaya Uttara 17"
+
+  - name: "Bādhirya pattern (hearing loss)"
+    description: "Vāta-pradhāna hearing loss + adhiṣṭhāna at śiraḥ."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Adhiṣṭhāna", finding: "śiraḥ-gata", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Bādhirya", weight: 0.6}
+    suggested_chikitsa: ["Sahacarādi Taila (karṇa-pūraṇa)", "Bṛhat-vāta-cintāmaṇi Rasa", "Aśvagandhā"]
+    red_flags:
+      - "Sudden SNHL = otologic emergency, refer within 72h"
+    classical_source: "Suśruta Uttara 20"
+
+  - name: "Acute sinusitis kapha-pradhāna"
+    description: "Pīnasa with pratiśyāya + facial pain."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: true}
+      - {param: "Adhiṣṭhāna", finding: "śiraḥ-gata", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Pīnasa", weight: 0.7}
+      - {target_kind: "vyadhi", name: "Pratiśyāya", weight: 0.5}
+    suggested_chikitsa: ["Aṇu Taila", "Ṣaḍbindu Taila", "Lakṣmīvilāsa-Yukta Vaṭī"]
+    red_flags:
+      - "Orbital cellulitis or proptosis — ED for IV antibiotics"
+    classical_source: "Aṣṭāṅga Hṛdaya Uttara 19"
+
+# ─── Akṣi-roga additional (3) ──────────────────────────────────
+
+  - name: "Adhimantha emergency-ophth red-flag"
+    description: "Sudden severe eye pain + headache ⇒ acute angle-closure glaucoma red flag."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Dṛk", finding: "rakta-pīta", required: true}
+      - {param: "Red-flag-parīkṣā", finding: "red-flag-positive", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Adhimantha", weight: 1.5}
+    red_flags:
+      - "ANY adhimantha = emergency ophthalmology referral within hours"
+    suggested_chikitsa: ["EMERGENCY ophth FIRST"]
+    classical_source: "Sushruta Uttara 9 (Akṣi-roga)"
+
+  - name: "Kāca pattern (cataract)"
+    description: "Progressive painless vision loss + age + kapha."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Vaya", finding: "vṛddha", required: true}
+      - {param: "Dṛk", finding: "snigdha-śveta-bhāra", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Kāca", weight: 0.6}
+    suggested_chikitsa: ["Triphalā Ghṛta tarpaṇa", "Saptāmṛta Lauha", "Modern: surgical phaco when mature"]
+    classical_source: "Sushruta Uttara 17"
+
+  - name: "Asthenopia (timira early) pattern"
+    description: "Visual fatigue + computer use, vāta-rakta involvement."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Sparśa", finding: "śīta-rūkṣa-khara", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Timira (early)", weight: 0.5}
+    suggested_chikitsa: ["Triphalā Ghṛta tarpaṇa", "Mahā-Triphalā Ghṛta", "Akṣitarpaṇa procedure"]
+    classical_source: "Sushruta Uttara 17"
+
+# ─── Specialty stree-roga / bāla / vṛddha (4) ──────────────────
+
+  - name: "Sūtikā-jvara emergency"
+    description: "Post-partum fever ⇒ puerperal sepsis emergency."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "sannipāta-nāḍī", required: false}
+      - {param: "Garbha-parīkṣā", finding: "vyādhi-yukta-garbha", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Sūtikā-jvara", weight: 1.0}
+    red_flags:
+      - "Any post-partum fever = OB-GYN emergency referral"
+    suggested_chikitsa: ["EMERGENCY first; adjunct only after stabilization"]
+    classical_source: "Caraka Śārīra 8"
+
+  - name: "Phakka-roga (pediatric marasmus)"
+    description: "Severe pediatric wasting with delayed milestones."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Bāla-parīkṣā", finding: "kṣaya-bhāva", required: true}
+      - {param: "Sāra", finding: "avara-sāra", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Phakka-roga", weight: 1.0}
+    suggested_chikitsa: ["Bāla-cāturbhadra Cūrṇa", "Suvarṇa-prāśana", "Ārvindāsava", "Modern: WHO MAM/SAM protocol"]
+    red_flags:
+      - "MUAC <11.5cm or kwashiorkor edema → therapeutic feeding center"
+    classical_source: "Kāśyapa Saṃhitā Bāla-grahanīya"
+
+  - name: "Geriatric frailty syndrome"
+    description: "Vṛddha + frail features → comprehensive geriatric care."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Vaya", finding: "vṛddha", required: true}
+      - {param: "Vṛddha-parīkṣā", finding: "frail-vṛddha", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "geriatric-frailty", weight: 1.0}
+    suggested_chikitsa: ["Cyavanaprāśa", "Drākṣāriṣṭa", "Vātātapika Rasāyana", "Mātrā Basti"]
+    red_flags:
+      - "Falls + fracture risk → geriatrician referral"
+    classical_source: "Caraka Cikitsā 1.1 (Rasāyana — vṛddhi-prati-bandhaka)"
+
+  - name: "Vandhyatva (infertility) — comprehensive"
+    description: "Reproductive failure + dhātu-state assessment."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Sthāna-saṃśraya", finding: "śukra-saṃśraya", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Vandhyatva", weight: 0.7}
+    suggested_chikitsa: ["Phala Ghṛta", "Aśvagandhā Pāka", "Mūsalī Pāka", "Vṛhad Vāji-Vaha Pāka", "Saubhāgya Śuṇṭhī Pāka"]
+    classical_source: "Caraka Cikitsā 30 (Yoni-vyāpat); Cikitsā 2 (Vājīkaraṇa)"
+
+# ─── Hetu-bheda specific patterns (3) ──────────────────────────
+
+  - name: "Prajñāparādha-driven disease"
+    description: "Disease driven by knowing-misconduct (overeating, late-nights, intoxication) — lifestyle counseling primary."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Hetu-bheda", finding: "prajñāparādha", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "prajñāparādha-vyādhi", weight: 1.0,
+         rationale: "Wisdom-error etiology — first-line therapy is hetu-viparīta cikitsā (lifestyle reversal)."}
+    suggested_chikitsa: ["Lifestyle counseling first", "Daśana-saṃskāra Curṇa", "Triphalā Rasāyana"]
+    classical_source: "Caraka Sūtra 1; Sūtra 7 (Yajja-puruṣīya)"
+
+  - name: "Āhāra-hetu disease"
+    description: "Dietary cause — hetu-viparīta is dietary correction."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Hetu-bheda", finding: "āhāra-hetu", required: true}
+      - {param: "Agni", finding: "manda-agni", required: false}
+    targets:
+      - {target_kind: "dosha-state", name: "āhāra-vyādhi", weight: 1.0}
+    suggested_chikitsa: ["Diet correction (saṃsarjana-krama)", "Trikaṭu Curṇa", "Hingu-Triguṇa Cūrṇa"]
+    classical_source: "Caraka Sūtra 25 (Yajja-puruṣīya); Vimāna 1"
+
+  - name: "Āgantuja (trauma/poison) — distinct etiology"
+    description: "Acute trauma or poison — distinct from doṣa-jaḥ disease, requires viṣa-pratīkāra or vraṇa-cikitsā."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Hetu-bheda", finding: "āgantuja", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "āgantuja-vyādhi", weight: 1.0}
+    suggested_chikitsa: ["Vraṇa-cikitsā", "Viṣa-pratīkāra (Bilvādi Vaṭī if envenomation)", "Modern: ATLS / antivenom"]
+    red_flags:
+      - "Acute trauma → ED. Snake bite → antivenom + monitoring."
+    classical_source: "Caraka Cikitsā 23 (Viṣa)"
+
+# ─── Manas-prakṛti / mental (3) ────────────────────────────────
+
+  - name: "Tāmasika-pradhāna mental state"
+    description: "Lethargic, dull, fearful pattern — guides chikitsā tone."
+    pattern_type: "manas-state"
+    conditions:
+      - {param: "Manas-prakṛti", finding: "tāmasika-pradhāna", required: true}
+    targets:
+      - {target_kind: "manas-state", name: "tāmasika-pradhāna", weight: 1.0,
+         rationale: "Tāmasika prakṛti needs gentle Sattvāvajaya plus medhya-rasāyana."}
+    suggested_chikitsa: ["Brāhmī", "Vacā", "Saraswatariṣṭa", "Smṛti-Sāgara Rasa"]
+    classical_source: "Caraka Sūtra 1; Śārīra 4"
+
+  - name: "Rājasika-pradhāna mental state"
+    description: "Active, ambitious, irritable — different therapeutic emphasis."
+    pattern_type: "manas-state"
+    conditions:
+      - {param: "Manas-prakṛti", finding: "rājasika-pradhāna", required: true}
+    targets:
+      - {target_kind: "manas-state", name: "rājasika-pradhāna", weight: 1.0}
+    suggested_chikitsa: ["Sattvāvajaya counseling", "Brāhmī Ghṛta", "Aśvagandhāriṣṭa"]
+    classical_source: "Caraka Sūtra 1"
+
+  - name: "Generalized anxiety with low sattva + vāta"
+    description: "Strong anxiety pattern requiring multi-axis support."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Sattva", finding: "avara-sattva", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Cintā", weight: 1.2}
+      - {target_kind: "vyadhi", name: "Anidrā", weight: 0.6}
+    suggested_chikitsa: ["Manasamitra Vaṭakam", "Saraswatariṣṭa", "Brāhmī Ghṛta", "Śirodhārā", "Aśvagandhāriṣṭa"]
+    classical_source: "Caraka Cikitsā 9-10"
+
+# ─── More vyādhi patterns (8) ──────────────────────────────────
+
+  - name: "Vāta-rakta gout flare"
+    description: "Acute monoarticular pain (especially MTP) + pitta-pradhāna + uric-acid suspicion."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "pitta-nāḍī", required: true}
+      - {param: "Sthāna-saṃśraya", finding: "rakta-saṃśraya", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Vāta-rakta", weight: 0.9}
+    suggested_chikitsa: ["Kaiśora Guggulu", "Madhusnuhī Rasāyana", "Pañca-tikta Ghṛta"]
+    red_flags:
+      - "Septic arthritis exclusion (joint aspirate; acute mono-arthritis with fever)"
+    classical_source: "Mādhava Nidāna 23"
+
+  - name: "Sūta-Sundara pattern (acute jvara)"
+    description: "Acute febrile illness + kapha-pradhāna with rapid pulse."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: false}
+      - {param: "Sparśa", finding: "uṣṇa-snigdha-mṛdu", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Pittaja-jvara", weight: 0.6}
+    suggested_chikitsa: ["Sūta-Sundara Vaṭī", "Mahā-sudarśana Curṇa", "Tribhuvana-kīrti Rasa"]
+    red_flags:
+      - "High parasitemia, dengue/typhoid suspicion → modern lab + treat"
+    classical_source: "Bhaiṣajya Ratnāvali Jvara"
+
+  - name: "Pratiśyāya acute kapha"
+    description: "Acute clear nasal discharge + kapha findings."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Pratiśyāya", weight: 0.7}
+      - {target_kind: "vyadhi", name: "Nāsā-srāva", weight: 0.5}
+    suggested_chikitsa: ["Tribhuvana-kīrti Rasa", "Sitopalādi Curṇa", "Aṇu Taila nasya"]
+    classical_source: "Aṣṭāṅga Hṛdaya Uttara 19"
+
+  - name: "Tamaka Śvāsa with rapid breathing"
+    description: "Episodic dyspnea + kapha-vāta involvement + ūrdhva-ga gati."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: false}
+      - {param: "Doṣa-gati", finding: "ūrdhva-gati", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Tamaka Śvāsa", weight: 0.7}
+    suggested_chikitsa: ["Vāsāvaleha", "Tāḷīsādi Curṇa", "Kanakāsava (modern variant)", "Lakṣmīvilāsa Rasa"]
+    red_flags:
+      - "SpO2 <92%, accessory muscle use, altered mental status — ED"
+    classical_source: "Caraka Cikitsā 17"
+
+  - name: "Hikkā (intractable hiccups)"
+    description: "Persistent hiccups with vāta-prakopa."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Doṣa-gati", finding: "ūrdhva-gati", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Hikkā", weight: 0.7}
+    suggested_chikitsa: ["Vāsāvaleha", "Pippalī Khaṇḍa", "Eladi Vaṭī"]
+    red_flags:
+      - "Intractable >48h → workup (CT chest/abdomen, MRI brain, electrolytes)"
+    classical_source: "Caraka Cikitsā 17"
+
+  - name: "Mūtraghāta — anuria red-flag"
+    description: "Anuria/severe oliguria — vāta-pradhāna + emergency."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Red-flag-parīkṣā", finding: "red-flag-positive", required: true}
+    targets:
+      - {target_kind: "vyadhi", name: "Mūtraghāta", weight: 1.5}
+    red_flags:
+      - "Acute anuria = emergency catheterization + ED"
+    suggested_chikitsa: ["Hospital first; adjunct: Punarnavāṣṭaka Kvātha"]
+    classical_source: "Suśruta Uttara 58"
+
+  - name: "Aśmari with pain"
+    description: "Renal calculi + characteristic colic + kapha-pradhāna."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: false}
+      - {param: "Mūtra", finding: "rakta-mūtra", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Aśmari (renal)", weight: 0.7}
+    suggested_chikitsa: ["Pāṣāṇa-Bheda Cūrṇa", "Gokṣurādi Guggulu", "Cinchaḍi Cūrṇa", "Pāṣāṇa-bheda"]
+    red_flags:
+      - "Fever + obstructive uropathy = emergency"
+      - "Stone >7mm → ESWL/PCNL"
+    classical_source: "Caraka Cikitsā 26"
+
+  - name: "Atisāra — comprehensive screen"
+    description: "Diarrhea + key dehydration risk factors."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Mala", finding: "atisāra-pīta-uṣṇa", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Atisāra", weight: 0.6}
+      - {target_kind: "vyadhi", name: "Pittātisāra", weight: 0.5}
+    suggested_chikitsa: ["Bilvādi Curṇa", "Kuṭajāriṣṭa", "Mustāriṣṭa"]
+    red_flags:
+      - "Bloody diarrhea → emergency"
+      - "Severe dehydration → IV fluids"
+    classical_source: "Caraka Cikitsā 19"
+
+# ─── Avasthā / disease stage (3) ───────────────────────────────
+
+  - name: "Acute (tarūṇa) disease — favorable"
+    description: "Disease within ~7 days of onset — best therapeutic window."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Avasthā-bheda", finding: "tarūṇa", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "favorable-acute", weight: 1.0}
+    classical_source: "Caraka Sūtra 11"
+    suggested_chikitsa: ["Earlier-stage śodhana possible", "Gentle deepana-pacana first"]
+
+  - name: "Chronic (jīrṇa) disease — modified approach"
+    description: "Long-standing disease — emphasize rasāyana support + slower paradigm."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Avasthā-bheda", finding: "jīrṇa", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "chronic-disease", weight: 1.0}
+    suggested_chikitsa: ["Rasāyana base", "Slow śodhana cycles", "Continuous monitoring"]
+    classical_source: "Caraka Sūtra 11"
+
+  - name: "Worsening (vṛddhi) disease — treatment failure"
+    description: "Disease still progressing despite treatment — re-evaluate or escalate."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Sthiti-bheda", finding: "vṛddhi", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "treatment-failure", weight: 1.0}
+    red_flags:
+      - "Re-evaluate parīkṣā"
+      - "Refer for second opinion or modern adjunct"
+    classical_source: "Caraka Sūtra 9"
+
+# ─── Modern integration (3) ────────────────────────────────────
+
+  - name: "Lab confirms classical diagnosis"
+    description: "Modern test agrees with parīkṣā — high confidence."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Lab-parīkṣā (modern)", finding: "lab-confirms-classical", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "high-confidence-diagnosis", weight: 1.0}
+    classical_source: "Modern integrative practice"
+
+  - name: "Imaging suggests alternate"
+    description: "Modern imaging points to a different etiology — re-evaluate."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Imaging-parīkṣā (modern)", finding: "imaging-suggests-alternate", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "diagnosis-revision-needed", weight: 1.0}
+    red_flags:
+      - "Diagnostic uncertainty — clarify before progressing therapy"
+    classical_source: "Modern integrative practice"
+
+  - name: "Universal red-flag — emergency"
+    description: "Any red-flag-positive screen — defer to emergency referral, treat after stabilization."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Red-flag-parīkṣā", finding: "red-flag-positive", required: true}
+    targets:
+      - {target_kind: "dosha-state", name: "emergency-referral", weight: 2.0,
+         rationale: "Red flag screen positive — Ayurveda is adjunct only after stabilization."}
+    red_flags:
+      - "Emergency referral takes precedence over any other diagnosis or treatment"
+    classical_source: "Modern AYUSH STG"

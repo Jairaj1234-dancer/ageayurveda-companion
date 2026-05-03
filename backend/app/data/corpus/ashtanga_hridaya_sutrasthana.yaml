@@ -1,0 +1,170 @@
+# Aṣṭāṅga Hṛdaya — Sūtrasthāna seed corpus.
+#
+# Phase 1 seed for the classical-text grounding layer. Sanskrit (mūla pāṭha)
+# is in the public domain — the text is ~1500 years old. The English column
+# below is a CONCISE, ORIGINAL PARAPHRASE written for retrieval grounding,
+# not a reproduction of any copyrighted translation. For production deployment
+# replace `english` and `summary` fields with content licensed from a
+# properly-attributed source (e.g. Srikantha Murthy, K.R. Srikantha Murthy
+# translation, or commission a clean-room translation).
+#
+# Selection: a representative slice across foundational topics — definitions,
+# doshas, daily routine, diet rules — enough to demonstrate retrieval quality
+# across the questions a user will ask the chatbot.
+
+source: "Ashtanga Hridaya"
+section: "Sutrasthana"
+license: "Sanskrit: public domain. English: original paraphrase, internal use."
+
+verses:
+
+  # --- Chapter 1: Ayushkamiya (Desire for long life) ---
+
+  - chapter: "Ch.1 Ayushkamiya"
+    verse_start: "1.6"
+    verse_end: "1.7"
+    sanskrit: "वायुः पित्तं कफश्चेति त्रयो दोषाः समासतः। विकृताऽविकृता देहं घ्नन्ति ते वर्तयन्ति च॥"
+    transliteration: "vāyuḥ pittaṃ kaphaścēti trayō dōṣāḥ samāsataḥ | vikṛtā'vikṛtā dēhaṃ ghnanti tē vartayanti ca ||"
+    english: "Vata, Pitta and Kapha are, in brief, the three doshas. When disturbed they harm the body; when in equilibrium they sustain it."
+    summary: "Foundational definition of the three doshas. Doshas in balance maintain life; out of balance they cause disease."
+
+  - chapter: "Ch.1 Ayushkamiya"
+    verse_start: "1.8"
+    sanskrit: "ते व्यापिनोऽपि हृन्नाभ्योरधोमध्योर्ध्वसंश्रयाः।"
+    transliteration: "tē vyāpinō'pi hṛnnābhyōradhōmadhyōrdhvasaṃśrayāḥ |"
+    english: "Although the three doshas pervade the entire body, Vata predominates below the navel, Pitta between the navel and heart, and Kapha above the heart."
+    summary: "Anatomical seat of doshas: Vata below navel, Pitta middle, Kapha above heart. Used to localize disease."
+
+  - chapter: "Ch.1 Ayushkamiya"
+    verse_start: "1.10"
+    sanskrit: "रसासृङ्मांसमेदोऽस्थिमज्जशुक्राणि धातवः। सप्त दूष्या मलाः मूत्रशकृत्स्वेदादयोऽपि च॥"
+    transliteration: "rasāsṛṅmāṃsamēdō'sthimajjaśukrāṇi dhātavaḥ | sapta dūṣyā malāḥ mūtraśakṛtsvēdādayō'pi ca ||"
+    english: "The seven dhatus (tissues) susceptible to disturbance are: rasa (plasma), rakta (blood), mamsa (muscle), meda (fat), asthi (bone), majja (marrow/nerve), shukra (reproductive). The malas (wastes) are urine, faeces, sweat and others."
+    summary: "Sapta dhatu and mala framework. Disease is doshas vitiating dhatus and disrupting mala elimination."
+
+  - chapter: "Ch.1 Ayushkamiya"
+    verse_start: "1.13"
+    sanskrit: "मधुराम्ललवणतिक्तोषणकषायाः षड् रसाः।"
+    transliteration: "madhurāmlalavaṇatiktōṣaṇakaṣāyāḥ ṣaḍ rasāḥ |"
+    english: "The six tastes are: sweet (madhura), sour (amla), salty (lavana), bitter (tikta), pungent (ushana / katu), and astringent (kashaya)."
+    summary: "Six rasas — every food is classified by these. All six should appear in a balanced meal."
+
+  - chapter: "Ch.1 Ayushkamiya"
+    verse_start: "1.14"
+    sanskrit: "स्वाद्वम्ललवणा वातं घ्नन्ति, तिक्तोष्णकषायकाः कफम्। मधुरास्तिक्तकषायाः पित्तं घ्नन्ति॥"
+    transliteration: "svādvamlalavaṇā vātaṃ ghnanti, tiktōṣṇakaṣāyakāḥ kapham | madhurāstiktakaṣāyāḥ pittaṃ ghnanti ||"
+    english: "Sweet, sour and salty tastes pacify Vata. Bitter, pungent and astringent pacify Kapha. Sweet, bitter and astringent pacify Pitta."
+    summary: "Taste-to-dosha pacification rule. Core principle for prescribing diet by constitution."
+
+  - chapter: "Ch.1 Ayushkamiya"
+    verse_start: "1.20"
+    sanskrit: "हेतुलिङ्गौषधज्ञानं स्वस्थातुरपरायणम्। त्रिसूत्रं शाश्वतं पुण्यं बुबुधे यं पितामहः॥"
+    transliteration: "hētuliṅgauṣadhajñānaṃ svasthāturaparāyaṇam | trisūtraṃ śāśvataṃ puṇyaṃ bubudhē yaṃ pitāmahaḥ ||"
+    english: "Knowledge of cause (hetu), symptoms (linga) and remedy (aushadha) — devoted to both the healthy and the sick — this is the eternal three-fold system of Ayurveda which Brahma first comprehended."
+    summary: "The trisutra: cause, symptoms, treatment. Ayurveda is for both prevention (svastha) and cure (atura)."
+
+  # --- Chapter 2: Dinacharya (Daily routine) ---
+
+  - chapter: "Ch.2 Dinacharya"
+    verse_start: "2.1"
+    sanskrit: "ब्राह्मे मुहूर्ते उत्तिष्ठेत् स्वस्थो रक्षार्थमायुषः।"
+    transliteration: "brāhmē muhūrtē uttiṣṭhēt svasthō rakṣārthamāyuṣaḥ |"
+    english: "A healthy person should rise during the brahma muhurta (~96 minutes before sunrise) to protect their lifespan."
+    summary: "Daily routine begins with early rising before sunrise. Foundational dincharya practice."
+
+  - chapter: "Ch.2 Dinacharya"
+    verse_start: "2.7"
+    sanskrit: "अभ्यङ्गमाचरेन्नित्यं स जरा-श्रम-वातहा। दृष्टिप्रसादपुष्ट्यायुःस्वप्नसुत्वक्त्वदार्ढ्यकृत्॥"
+    transliteration: "abhyaṅgamācarēnnityaṃ sa jarā-śrama-vātahā | dṛṣṭiprasādapuṣṭyāyuḥsvapnasutvaktvadārḍhyakṛt ||"
+    english: "One should perform abhyanga (oil self-massage) daily. It pacifies aging, fatigue and Vata; it improves vision, nourishment, longevity, sleep, skin texture and bodily firmness."
+    summary: "Daily abhyanga (oil massage). Pacifies Vata, slows aging, improves sleep and skin. Cited for stress, insomnia, joint pain and aging concerns."
+
+  - chapter: "Ch.2 Dinacharya"
+    verse_start: "2.8"
+    sanskrit: "विशेषेण शिरश्श्रोत्रपादेषु तं समाचरेत्।"
+    transliteration: "viśēṣēṇa śiraśśrōtrapādēṣu taṃ samācarēt |"
+    english: "Oil application should be performed especially on the head, ears and feet."
+    summary: "Three priority sites for oil application: head (mental clarity), ears (Vata), feet (sleep, grounding)."
+
+  - chapter: "Ch.2 Dinacharya"
+    verse_start: "2.10"
+    sanskrit: "व्यायामात् लाघवं कर्मसामर्थ्यं दीप्तोऽनलः। मेदसः क्षपणं विभक्तघनगात्रत्वमुत्तमम्॥"
+    transliteration: "vyāyāmāt lāghavaṃ karmasāmarthyaṃ dīptō'nalaḥ | mēdasaḥ kṣapaṇaṃ vibhaktaghanagātratvamuttamam ||"
+    english: "From physical exercise (vyayama) one obtains lightness of body, capacity for work, kindled digestive fire, reduction of fat, and a well-defined firm physique."
+    summary: "Benefits of daily exercise: lightness, work capacity, strong agni, fat reduction, toned body. Especially for Kapha types."
+
+  - chapter: "Ch.2 Dinacharya"
+    verse_start: "2.11"
+    sanskrit: "बलस्यार्धेन कर्तव्यो व्यायामो हीतरः क्लमः।"
+    transliteration: "balasyārdhēna kartavyō vyāyāmō hītaraḥ klamaḥ |"
+    english: "Exercise should be done only to half of one's capacity (until perspiration appears on forehead, nose and joints). Exceeding this causes exhaustion."
+    summary: "Limit exercise to half-strength (ardha-bala). Over-exercise depletes ojas. Critical for Vata and Pitta types."
+
+  # --- Chapter 5: Dravadravya Vijnaniya (Liquids / drinks) ---
+
+  - chapter: "Ch.5 Dravadravya"
+    verse_start: "5.16"
+    sanskrit: "जलं पीतं तु तृष्णायां जीर्णेऽन्नेऽल्पं पिबेत् सुधीः।"
+    transliteration: "jalaṃ pītaṃ tu tṛṣṇāyāṃ jīrṇē'nnē'lpaṃ pibēt sudhīḥ |"
+    english: "The wise should drink water in small amounts only when thirsty and after the previous meal is digested."
+    summary: "Drink water only when thirsty, after digestion. Excess water dilutes agni."
+
+  - chapter: "Ch.5 Dravadravya"
+    verse_start: "5.22"
+    sanskrit: "तक्रं लघु कषायाम्लं दीपनं कफवातजित्।"
+    transliteration: "takraṃ laghu kaṣāyāmlaṃ dīpanaṃ kaphavātajit |"
+    english: "Buttermilk (takra) is light, astringent-sour, kindles digestive fire, and pacifies Kapha and Vata."
+    summary: "Takra (buttermilk) — digestive aid, pacifies Kapha and Vata. Used for indigestion, heaviness, irritable bowel."
+
+  # --- Chapter 8: Matrashitiya (Eating in proper measure) ---
+
+  - chapter: "Ch.8 Matrashitiya"
+    verse_start: "8.1"
+    sanskrit: "मात्राशी सर्वकालं स्यान्मात्रा त्वग्निं अपेक्षते।"
+    transliteration: "mātrāśī sarvakālaṃ syānmātrā tvagniṃ apēkṣatē |"
+    english: "One should always eat in proper measure (matra). The measure depends on the strength of one's digestive fire (agni)."
+    summary: "Eat according to your agni. The right amount varies by individual digestive capacity."
+
+  - chapter: "Ch.8 Matrashitiya"
+    verse_start: "8.2"
+    sanskrit: "उष्णं स्निग्धं मात्रावत् जीर्णे वीर्याविरुद्धं इष्टे देशे इष्टसर्वोपकरणं।"
+    transliteration: "uṣṇaṃ snigdhaṃ mātrāvat jīrṇē vīryāviruddhaṃ iṣṭē dēśē iṣṭasarvōpakaraṇaṃ |"
+    english: "Food should be: warm, unctuous (with healthy fats), in proper measure, eaten only after the previous meal is digested, not contrary in potency (no incompatible combinations), in a pleasant place, with all proper accompaniments."
+    summary: "Eight rules for healthy eating (ashta-ahara-vidhi-vishesha-ayatana). Foundational dietary guidelines."
+
+  - chapter: "Ch.8 Matrashitiya"
+    verse_start: "8.55"
+    sanskrit: "नातिक्षुधा नातिशीतं नातिकामो न कुण्ठितम्। नात्युष्णं न च निद्रालुर् भुञ्जीत स्वस्थो भयार्दितः॥"
+    transliteration: "nātikṣudhā nātiśītaṃ nātikāmō na kuṇṭhitam | nātyuṣṇaṃ na ca nidrālur bhuñjīta svasthō bhayārditaḥ ||"
+    english: "One should not eat when too hungry, when the food is too cold, when too desirous (greedy), when blunted (without appetite), when too hot, when sleepy, or when frightened."
+    summary: "Mental and physical conditions that disrupt digestion. Emotional state at meals matters."
+
+  # --- Chapter 11: Doshadi Vijnaniya (Diagnosing dosha vitiation) ---
+
+  - chapter: "Ch.11 Doshadi Vijnaniya"
+    verse_start: "11.1"
+    sanskrit: "सङ्ख्याविकल्पप्राधान्ययोगसाधर्म्यतोऽनिलात्। षण्ण्यायाद् द्वादशधा चलः साधारणादिवत्॥"
+    transliteration: "saṅkhyāvikalpaprādhānyayōgasādharmyatō'nilāt | ṣaṇṇyāyād dvādaśadhā calaḥ sādhāraṇādivat ||"
+    english: "Vata, due to its mobile nature, manifests in twelve different forms based on number, variation, dominance, combination and similarity."
+    summary: "Vata's twelve manifestations. Vata is the most variable dosha — pain, anxiety, dryness, irregular function all stem from it."
+
+  - chapter: "Ch.11 Doshadi Vijnaniya"
+    verse_start: "11.5"
+    sanskrit: "रौक्ष्यं कार्श्यं श्यावरुणावर्णता उष्णकामिता। कम्पोऽङ्गानां ध्वंसो वा वातस्य सञ्चयलक्षणम्॥"
+    transliteration: "raukṣyaṃ kārśyaṃ śyāvaruṇāvarṇatā uṣṇakāmitā | kampō'ṅgānāṃ dhvaṃsō vā vātasya sañcayalakṣaṇam ||"
+    english: "Signs of accumulated Vata: dryness, emaciation, dusky/brownish complexion, craving for warmth, tremors of the limbs, and bodily destruction/wasting."
+    summary: "Vata excess signs: dry skin, weight loss, cold sensitivity, tremor, anxiety. Use to diagnose Vata imbalance."
+
+  - chapter: "Ch.11 Doshadi Vijnaniya"
+    verse_start: "11.7"
+    sanskrit: "पीतावभासो दाहोऽग्निः उष्णोऽप्यन्नाभिकाङ्क्षा दौर्बल्यं इन्द्रियाणाम्। पित्तस्य सञ्चयलक्षणम्॥"
+    transliteration: "pītāvabhāsō dāhō'gniḥ uṣṇō'pyannābhikāṅkṣā daurbalyaṃ indriyāṇām | pittasya sañcayalakṣaṇam ||"
+    english: "Signs of accumulated Pitta: yellowish complexion, burning sensation, increased heat in the body despite reduced craving for food, weakness of the senses."
+    summary: "Pitta excess signs: yellow tinge, burning, body heat, sensory weakness. Used to diagnose acidity, inflammation."
+
+  - chapter: "Ch.11 Doshadi Vijnaniya"
+    verse_start: "11.9"
+    sanskrit: "गौरवं श्वैत्यं शैत्यं कण्डूस्तन्द्रा च लक्षणम्। कफस्य सञ्चयस्योक्तं॥"
+    transliteration: "gauravaṃ śvaityaṃ śaityaṃ kaṇḍūstandrā ca lakṣaṇam | kaphasya sañcayasyōktaṃ ||"
+    english: "Signs of accumulated Kapha: heaviness, paleness/whitishness, coldness, itching, and drowsiness/lethargy."
+    summary: "Kapha excess signs: heaviness, pale skin, cold body, itching, lethargy. Used to diagnose congestion, weight gain."

@@ -1,0 +1,510 @@
+# Extended Vyādhi seed — batch 3 (vyādhi 75-104).
+# Fills śālākya-tantra (head/face/throat) gaps and remaining classical sub-types:
+#   - Akṣi-roga (more), Karṇa-roga, Nāsa-roga, Mukha-roga
+#   - More kuṣṭha (mahā-kuṣṭha sub-types)
+#   - More udara-roga, hṛd-roga, pāṇḍu sub-types
+#   - More mūtra-roga
+#
+# Sources: Sushruta Uttara 2-26 (Śālākya), Aṣṭāṅga Hṛdaya Uttara 6-25,
+# Mādhava Nidāna 33-69, Bhaiṣajya Ratnāvali, AYUSH STG.
+# All marked review_tier=llm-only; Vaidya validation pending.
+
+vyadhi:
+
+# ─── Akṣi-roga (more) (3) ─────────────────────────────────────────
+
+  - nama_sanskrit: "Timira (early)"
+    english: "Early visual obscuration / early refractive errors"
+    hindi: "तिमिर"
+    chapter: "Akṣi-roga"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "raktaja", "tridoṣaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["dṛk"]
+    srotas: ["raktavaha"]
+    rupa: ["progressive blurring of vision", "difficulty in low light", "halos around lights"]
+    sadhya_asadhya: "sukha-sādhya (early), kṛcchra (advanced)"
+    chikitsa_summary: "Triphalā Ghṛta tarpaṇa, Saptāmṛta Lauha, Mahā-Triphalā Ghṛta."
+    common_formulations: ["Triphalā Ghṛta", "Mahā-Triphalā Ghṛta", "Saptāmṛta Lauha"]
+    common_dravyas: ["Triphalā", "Yaṣṭimadhu"]
+    modern_diagnostics: ["refraction", "fundus exam", "intraocular pressure"]
+    red_flags_for_referral: ["sudden vision loss", "field defects"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Liṅga-nāśa"
+    english: "Mature cataract / advanced visual obscuration"
+    hindi: "लिङ्गनाश"
+    chapter: "Akṣi-roga"
+    dosha_typology: ["kaphaja", "tridoṣaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["dṛk"]
+    srotas: ["raktavaha"]
+    rupa: ["near-complete vision loss with white pupil", "may be operable"]
+    sadhya_asadhya: "asādhya medically — surgical only (Sushruta's couching predates modern phaco)"
+    chikitsa_summary: "Surgical referral; pre-op rasāyana with Triphalā Ghṛta."
+    common_formulations: ["Triphalā Ghṛta", "Saptāmṛta Lauha"]
+    common_dravyas: ["Triphalā"]
+    modern_diagnostics: ["B-scan if dense cataract", "biometry pre-op"]
+    red_flags_for_referral: ["any mature cataract → surgical referral"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Anjana-nāmikā"
+    english: "Hordeolum / stye"
+    hindi: "अंजननामिका"
+    chapter: "Akṣi-roga"
+    dosha_typology: ["kaphaja", "kapha-pittaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    rupa: ["small painful red lump on eyelid margin", "focal tenderness"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Warm compresses, Triphalā kvātha eye-wash, Eladi Añjana; rule out chalazion."
+    common_formulations: ["Triphalā Kvātha", "Eladi Añjana"]
+    common_dravyas: ["Triphalā", "Elā"]
+    modern_diagnostics: ["clinical exam"]
+    red_flags_for_referral: ["preorbital cellulitis features"]
+    review_tier: "llm-only"
+
+# ─── Karṇa-roga (3) ────────────────────────────────────────────────
+
+  - nama_sanskrit: "Karṇa-pāka"
+    english: "Otitis externa / ear canal infection"
+    hindi: "कर्णपाक"
+    chapter: "Karṇa-roga"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    rupa: ["ear pain", "discharge", "redness of canal", "sometimes fever"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Karṇa-pūraṇa with Sahacarādi taila or Bilva-mūla taila; modern: topical antibiotics if bacterial."
+    common_formulations: ["Sahacarādi Taila (karṇa-pūraṇa)", "Triphalā kvātha rinse"]
+    common_dravyas: ["Bilva-mūla", "Yaṣṭimadhu"]
+    modern_diagnostics: ["otoscopy", "swab + culture if discharge"]
+    red_flags_for_referral: ["spreading cellulitis", "perforation"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Karṇa-srāva"
+    english: "Otorrhea / chronic ear discharge (CSOM)"
+    hindi: "कर्णस्राव"
+    chapter: "Karṇa-roga"
+    dosha_typology: ["pittaja", "kaphaja"]
+    primary_dosha: "pitta-kapha"
+    primary_dushya: ["rasa"]
+    srotas: ["rasavaha"]
+    rupa: ["chronic ear discharge >2 weeks", "hearing loss", "tympanic membrane perforation"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Modern ENT referral; Ayurvedic karṇa-pūraṇa with Pippalyādi-taila as adjunct."
+    common_formulations: ["Pippalyādi Cūrṇa (oral)", "Triphalā Guggulu"]
+    common_dravyas: ["Pippalī", "Yaṣṭimadhu"]
+    modern_diagnostics: ["otoscopy", "audiogram", "CT temporal bone if suspecting cholesteatoma"]
+    red_flags_for_referral: ["facial nerve weakness", "vertigo with discharge", "intracranial complication signs"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Bādhirya"
+    english: "Hearing loss"
+    hindi: "बाधिर्य"
+    chapter: "Karṇa-roga"
+    dosha_typology: ["vātaja", "kaphaja", "pittaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["śabda-vāhya śrotra"]
+    srotas: ["śabda-vahā"]
+    rupa: ["hearing loss (sensorineural or conductive)", "may be sudden or gradual"]
+    sadhya_asadhya: "kṛcchra/yāpya"
+    chikitsa_summary: "Karṇa-pūraṇa with Sahacarādi/Bilva-mūla, vāta-śāmaka rasāyana."
+    common_formulations: ["Sahacarādi Taila", "Bṛhat-vāta-cintāmaṇi Rasa"]
+    common_dravyas: ["Aśvagandhā", "Bala", "Sahacara"]
+    modern_diagnostics: ["audiometry", "tympanometry", "MRI if asymmetric SNHL"]
+    red_flags_for_referral: ["sudden SNHL (otologic emergency)"]
+    review_tier: "llm-only"
+
+# ─── Nāsa-roga (3) ────────────────────────────────────────────────
+
+  - nama_sanskrit: "Pīnasa"
+    english: "Chronic rhinitis / sinusitis"
+    hindi: "पीनस"
+    chapter: "Nāsa-roga"
+    dosha_typology: ["vātaja", "kaphaja", "vāta-kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["rasa"]
+    srotas: ["prāṇavaha"]
+    nidana: ["dust", "kapha-pradhāna diet", "season changes", "allergens"]
+    rupa: ["nasal congestion", "thick discharge", "loss of smell", "facial heaviness"]
+    sadhya_asadhya: "sukha-sādhya (acute), kṛcchra (chronic)"
+    chikitsa_summary: "Aṇu Taila or Ṣaḍbindu nasya, Lakṣmīvilāsa Rasa, dhūmapāna."
+    common_formulations: ["Aṇu Taila", "Ṣaḍbindu Taila", "Lakṣmīvilāsa Rasa", "Lakṣmīvilāsa-Yukta Vaṭī"]
+    common_dravyas: ["Tulasī", "Pippalī"]
+    modern_diagnostics: ["nasal endoscopy if persistent", "CT paranasal sinuses"]
+    red_flags_for_referral: ["facial pain with fever (acute bacterial sinusitis)", "orbital extension"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Nāsā-srāva"
+    english: "Acute rhinitis / common cold"
+    hindi: "नासास्राव"
+    chapter: "Nāsa-roga"
+    dosha_typology: ["kaphaja", "vāta-kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["rasa"]
+    srotas: ["prāṇavaha"]
+    rupa: ["clear nasal discharge", "sneezing", "nasal congestion", "mild fever sometimes"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Tribhuvana-kīrti Rasa, Pippalyādi Cūrṇa, dhūmapāna."
+    common_formulations: ["Tribhuvana-kīrti Rasa", "Sitopalādi Curṇa", "Pippalyādi Curṇa"]
+    common_dravyas: ["Tulasī", "Pippalī", "Marica"]
+    modern_diagnostics: ["clinical (rule out flu/COVID/RSV in season)"]
+    red_flags_for_referral: ["fever >3 days with worsening course"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Rakta-piṭṭa-Nāsā-paryaya"
+    english: "Epistaxis"
+    hindi: "नकसीर / रक्तपित्त-नासा"
+    chapter: "Nāsa-roga / Raktapitta"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    nidana: ["heat exposure", "trauma", "hypertension (modern)", "anticoagulants (modern)"]
+    rupa: ["nasal bleeding, anterior or posterior"]
+    sadhya_asadhya: "sukha-sādhya (anterior), kṛcchra (posterior)"
+    chikitsa_summary: "Cooling — Yaṣṭimadhu kvātha local + nasya, Pravāla, Mukta-piṣṭi."
+    common_formulations: ["Mukta-piṣṭi", "Pravāla-pañcāmṛta", "Mahā-Yaṣṭyādi Ghṛta"]
+    common_dravyas: ["Yaṣṭimadhu", "Drākṣā", "Candana"]
+    modern_diagnostics: ["BP check", "coagulation profile if recurrent", "ENT exam"]
+    red_flags_for_referral: ["posterior bleeding (often heavy)", "hemodynamic instability"]
+    review_tier: "llm-only"
+
+# ─── Mukha-roga (3) ───────────────────────────────────────────────
+
+  - nama_sanskrit: "Mukha-pāka"
+    english: "Stomatitis / oral ulcers"
+    hindi: "मुखपाक"
+    chapter: "Mukha-roga"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    rupa: ["painful oral ulcers", "burning on eating", "may have multiple sites"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Triphalā kavala, Yaṣṭimadhu local, Khadirādi Vaṭī."
+    common_formulations: ["Triphalā Kavala", "Khadirādi Vaṭī", "Daśana-saṃskāra Curṇa"]
+    common_dravyas: ["Yaṣṭimadhu", "Triphalā", "Khadira-sāra"]
+    modern_diagnostics: ["clinical", "rule out aphthous vs herpetic vs SCC"]
+    red_flags_for_referral: ["non-healing ulcer >3 weeks", "induration (rule out OSCC)"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Danta-mūla-Śosa"
+    english: "Periodontitis / gum disease"
+    hindi: "दन्तमूल शोष"
+    chapter: "Mukha-roga"
+    dosha_typology: ["vātaja", "kaphaja"]
+    primary_dosha: "vāta-kapha"
+    primary_dushya: ["asthi"]
+    srotas: ["asthivaha"]
+    rupa: ["gum recession", "tooth mobility", "halitosis", "bleeding gums"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Irimedādi Taila kavala, Daśana-saṃskāra Curṇa, dental cleaning."
+    common_formulations: ["Irimedādi Taila", "Daśana-saṃskāra Curṇa", "Khadirādi Vaṭī"]
+    common_dravyas: ["Khadira-sāra", "Triphalā", "Marica"]
+    modern_diagnostics: ["dental exam", "dental X-ray", "periodontal probing"]
+    red_flags_for_referral: ["systemic associations (DM)", "necrotizing periodontitis"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Galaśuṇḍika"
+    english: "Tonsillitis / throat infection"
+    hindi: "गलशुण्डिका"
+    chapter: "Galaroga / Mukha-roga"
+    dosha_typology: ["kaphaja", "pittaja"]
+    primary_dosha: "kapha-pitta"
+    primary_dushya: ["rasa", "rakta"]
+    srotas: ["rasavaha"]
+    rupa: ["sore throat", "fever", "swollen tonsils", "dysphagia"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Khadirādi Vaṭī, Eladi Vaṭī, Yaṣṭimadhu kvātha gargle, Sūta-Sundara Vaṭī if febrile."
+    common_formulations: ["Khadirādi Vaṭī", "Eladi Vaṭī", "Sūta-Sundara Vaṭī", "Vyoṣādi Vaṭī"]
+    common_dravyas: ["Yaṣṭimadhu", "Khadira-sāra"]
+    modern_diagnostics: ["throat swab if streptococcal suspected", "Centor criteria"]
+    red_flags_for_referral: ["peritonsillar abscess (quinsy)", "airway compromise"]
+    review_tier: "llm-only"
+
+# ─── More kuṣṭha (3) ─────────────────────────────────────────────
+
+  - nama_sanskrit: "Vipāḍikā"
+    english: "Cracked-skin / palmoplantar dermatitis"
+    hindi: "विपादिका"
+    chapter: "Kuṣṭha (kṣudra)"
+    dosha_typology: ["vātaja", "vāta-kaphaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["rakta", "tvak"]
+    srotas: ["raktavaha"]
+    rupa: ["painful fissures on palms/soles", "thickened dry skin", "may bleed"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Local snehana with Tila Taila, Triphalā Lepa, Mahā-Mañjiṣṭhādi Kvātha."
+    common_formulations: ["Triphalā Lepa", "Mahā-Mañjiṣṭhādi Kvātha", "Khadirāriṣṭa"]
+    common_dravyas: ["Tila Taila", "Yaṣṭimadhu", "Mañjiṣṭhā"]
+    modern_diagnostics: ["clinical; rule out psoriasis/eczema"]
+    red_flags_for_referral: ["secondary infection"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kacchu"
+    english: "Eczematous itchy dermatitis"
+    hindi: "कच्छू"
+    chapter: "Kuṣṭha (kṣudra)"
+    dosha_typology: ["kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["rakta", "tvak"]
+    srotas: ["raktavaha"]
+    rupa: ["itchy moist eruptions", "exudative", "erythema with lichenification when chronic"]
+    sadhya_asadhya: "kṛcchra-sādhya (chronic)"
+    chikitsa_summary: "Khadirāriṣṭa, Mahā-Mañjiṣṭhādi Kvātha, Bākucyādi Kvātha; modern: emollients + steroids."
+    common_formulations: ["Khadirāriṣṭa", "Mahā-Mañjiṣṭhādi Kvātha", "Bākucyādi Kvātha"]
+    common_dravyas: ["Khadira", "Bākucī", "Mañjiṣṭhā"]
+    modern_diagnostics: ["clinical; allergic patch testing if relevant"]
+    red_flags_for_referral: ["secondary infection", "widespread severe disease"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Carma-dāla"
+    english: "Severe widespread skin disease (mahā-kuṣṭha)"
+    hindi: "चर्मदल"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["rakta", "māṃsa", "meda"]
+    srotas: ["raktavaha"]
+    rupa: ["widespread chronic skin disease with thickening, scaling, fissures"]
+    sadhya_asadhya: "asādhya in advanced; refer to dermatology"
+    chikitsa_summary: "Refer to dermatology (rule out psoriasis vulgaris/leprosy); Ayurveda — Mahā-Mañjiṣṭhādi Ghṛta + rasāyana."
+    common_formulations: ["Mahā-Mañjiṣṭhādi Ghṛta", "Mahā-tikta Ghṛta", "Pañcatikta Ghṛta Guggulu"]
+    common_dravyas: ["Bākucī", "Mañjiṣṭhā", "Khadira"]
+    modern_diagnostics: ["skin biopsy", "leprosy slit-skin smear in endemic regions"]
+    red_flags_for_referral: ["any suspected leprosy → DOTS", "any malignant feature"]
+    review_tier: "llm-only"
+
+# ─── Udara-roga (3) ──────────────────────────────────────────────
+
+  - nama_sanskrit: "Vāta-Udara"
+    english: "Vata-pradhana abdominal distension / functional bowel disease"
+    hindi: "वातोदर"
+    chapter: "Udara-roga"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["annavaha"]
+    srotas: ["annavaha"]
+    rupa: ["distension worse evening", "audible borborygmi", "intermittent constipation/diarrhea", "stress-related"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Hingu-Triguṇa Cūrṇa, anuvāsana basti, vāta-anulomana, dietary review."
+    common_formulations: ["Hingu-Triguṇa Cūrṇa", "Hiṅgvāṣṭaka Curṇa", "Anuvāsana Basti"]
+    common_dravyas: ["Hingu", "Ajamodā", "Saindhava-lavaṇa"]
+    modern_diagnostics: ["rule out IBS triggers", "celiac screen"]
+    red_flags_for_referral: ["weight loss + altered bowel habit (colorectal cancer screen)"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Jalodara"
+    english: "Ascites"
+    hindi: "जलोदर"
+    chapter: "Udara-roga"
+    dosha_typology: ["sannipātaja", "kaphaja"]
+    primary_dosha: "kapha-pitta"
+    primary_dushya: ["udaka", "rasa"]
+    srotas: ["udakavaha", "rasavaha"]
+    rupa: ["progressive abdominal distension with fluid wave", "weight gain", "shortness of breath when severe"]
+    sadhya_asadhya: "asādhya in advanced cirrhosis"
+    chikitsa_summary: "Refer to hepatology; Punarnavāṣṭaka Kvātha, Punarnavādi Guggulu as adjunct."
+    common_formulations: ["Punarnavāṣṭaka Kvātha", "Punarnavādi Guggulu", "Ārogyavardhinī Vaṭī"]
+    common_dravyas: ["Punarnavā", "Gokṣura"]
+    modern_diagnostics: ["LFTs", "USG abdomen", "ascitic fluid analysis (SAAG)"]
+    red_flags_for_referral: ["any suspected cirrhosis → hepatology", "SBP signs"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Krimi-roga"
+    english: "Helminthiasis / intestinal worms"
+    hindi: "कृमि रोग"
+    chapter: "Krimi"
+    dosha_typology: ["kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["annavaha"]
+    srotas: ["annavaha", "purīṣavaha"]
+    rupa: ["abdominal pain", "worms in stool", "anal itching", "anemia (chronic)", "growth faltering in kids"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Vidaṅga Cūrṇa, Krimi-ghna formulations; modern: albendazole + sanitation."
+    common_formulations: ["Vidaṅga Cūrṇa", "Bilvādi Curṇa"]
+    common_dravyas: ["Vidaṅga", "Palāśa", "Apāmārga"]
+    modern_diagnostics: ["stool ova/cysts/parasites"]
+    red_flags_for_referral: ["heavy infestation with anemia", "obstruction"]
+    review_tier: "llm-only"
+
+# ─── Hṛd-roga sub-types (2) ──────────────────────────────────────
+
+  - nama_sanskrit: "Vātaja-Hṛd-roga"
+    english: "Vata-pradhana cardiac disease"
+    hindi: "वातज हृद्रोग"
+    chapter: "Hṛd-roga"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["rasa", "rakta"]
+    srotas: ["rasavaha"]
+    rupa: ["palpitations", "atypical chest pain", "anxiety", "irregular pulse"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Arjunāriṣṭa, Hṛdayārṇava Rasa, Aśvagandhāriṣṭa, vāta-śāmaka regimen."
+    common_formulations: ["Arjunāriṣṭa", "Aśvagandhāriṣṭa", "Hṛdayārṇava Rasa"]
+    common_dravyas: ["Arjuna", "Aśvagandhā", "Brāhmī"]
+    modern_diagnostics: ["ECG", "echocardiogram", "Holter monitor"]
+    red_flags_for_referral: ["any chest pain with risk factors → ED for ACS workup"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Hṛd-Daurbalya"
+    english: "Cardiac asthenia / heart failure pattern"
+    hindi: "हृदय दौर्बल्य"
+    chapter: "Hṛd-roga"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["ojas"]
+    srotas: ["rasavaha"]
+    rupa: ["dyspnea on exertion", "fatigue", "edema", "orthopnea in advanced"]
+    sadhya_asadhya: "yāpya"
+    chikitsa_summary: "Refer to cardiology; Arjunāriṣṭa, Pārthadyādi as adjunct only."
+    common_formulations: ["Arjunāriṣṭa", "Pārthadyādi Kvātha", "Drākṣārjun Kvātha", "Hṛdayārṇava Rasa"]
+    common_dravyas: ["Arjuna", "Drākṣā"]
+    modern_diagnostics: ["echocardiogram (EF)", "BNP", "renal function"]
+    red_flags_for_referral: ["acute decompensation", "EF <40%"]
+    review_tier: "llm-only"
+
+# ─── Pāṇḍu sub-types (2) ─────────────────────────────────────────
+
+  - nama_sanskrit: "Pāṇḍu (vātaja)"
+    english: "Vata-pradhana anemia"
+    hindi: "वातज पाण्डु"
+    chapter: "Pāṇḍu-roga"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["rakta", "rasa"]
+    srotas: ["rasavaha", "raktavaha"]
+    rupa: ["pallor with dryness", "weakness", "tremors", "cold extremities"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Lohāsava, Pippalyādi Lauha, Kalyāṇaka Avaleha; iron supplementation."
+    common_formulations: ["Lohāsava", "Pippalyādi Lauha", "Kalyāṇaka Avaleha"]
+    common_dravyas: ["Lauha-bhasma", "Aśvagandhā", "Drākṣā"]
+    modern_diagnostics: ["CBC + ferritin + B12 + folate", "stool occult blood"]
+    red_flags_for_referral: ["severe anemia (Hb <7)", "hemolytic features"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kāmalā (Kumbha-kāmalā)"
+    english: "Severe / chronic jaundice (cirrhotic-pattern)"
+    hindi: "कुम्भकामला"
+    chapter: "Pāṇḍu-roga / Yakṛd-vikāra"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rakta", "māṃsa"]
+    srotas: ["raktavaha"]
+    rupa: ["deep yellowing of sclera/skin", "ascites", "altered consciousness in late stage"]
+    sadhya_asadhya: "asādhya without referral"
+    chikitsa_summary: "Refer to hepatology immediately; Phaltrikādi Kvātha, Ārogyavardhinī as adjunct."
+    common_formulations: ["Phaltrikādi Kvātha", "Ārogyavardhinī Vaṭī", "Lohāsava"]
+    common_dravyas: ["Bhṛṅgarāja", "Kaṭukī", "Punarnavā"]
+    modern_diagnostics: ["LFTs", "USG abdomen", "viral hepatitis panel", "INR"]
+    red_flags_for_referral: ["altered consciousness (encephalopathy)", "INR elevated"]
+    review_tier: "llm-only"
+
+# ─── More mūtra-roga (2) ─────────────────────────────────────────
+
+  - nama_sanskrit: "Mūtraghāta"
+    english: "Anuria / oliguria — urine flow obstruction"
+    hindi: "मूत्राघात"
+    chapter: "Mūtra-roga"
+    dosha_typology: ["vātaja", "kaphaja", "pittaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["mūtra"]
+    srotas: ["mūtravaha"]
+    rupa: ["greatly reduced or absent urine output", "abdominal distension"]
+    sadhya_asadhya: "kṛcchra-sādhya — refer urgently"
+    chikitsa_summary: "Refer for renal/urological workup; Ayurveda support — Punarnavāṣṭaka, Gokṣurādi."
+    common_formulations: ["Punarnavāṣṭaka Kvātha", "Gokṣurādi Guggulu"]
+    common_dravyas: ["Punarnavā", "Gokṣura"]
+    modern_diagnostics: ["serum creatinine + eGFR", "USG KUB", "post-void residual"]
+    red_flags_for_referral: ["any anuria → emergency referral"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Aśmari (renal)"
+    english: "Renal calculi"
+    hindi: "अश्मरी"
+    chapter: "Mūtra-roga"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "śleṣmaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["mūtra"]
+    srotas: ["mūtravaha"]
+    rupa: ["renal colic", "hematuria", "flank pain radiating to groin"]
+    sadhya_asadhya: "sukha-sādhya (small), kṛcchra (>5mm), surgical for >7mm"
+    chikitsa_summary: "Pāṣāṇa-Bheda Cūrṇa, Gokṣurādi Guggulu, hydration; modern: ESWL/PCNL for large stones."
+    common_formulations: ["Pāṣāṇa-Bheda Cūrṇa", "Gokṣurādi Guggulu", "Cinchaḍi Cūrṇa"]
+    common_dravyas: ["Pāṣāṇa-bheda", "Varuṇa", "Gokṣura"]
+    modern_diagnostics: ["USG KUB", "CT KUB", "metabolic stone workup"]
+    red_flags_for_referral: ["fever + obstructive uropathy = emergency", "stone >7mm"]
+    review_tier: "llm-only"
+
+# ─── Specialty (4) ───────────────────────────────────────────────
+
+  - nama_sanskrit: "Hṛd-Roga (Tridoṣaja)"
+    english: "Tridoshic cardiac disease (Caraka 5 sub-types) — generic"
+    hindi: "त्रिदोषज हृद्रोग"
+    chapter: "Hṛd-roga"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "kṛmija", "tridoṣaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["rasa"]
+    srotas: ["rasavaha"]
+    rupa: ["chest discomfort with mixed features", "dyspnea", "irregular pulse"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Refer cardiology; Ayurveda — Arjuna formulations + lifestyle."
+    common_formulations: ["Arjunāriṣṭa", "Hṛdayārṇava Rasa", "Pārthadyādi Kvātha"]
+    common_dravyas: ["Arjuna", "Aśvagandhā"]
+    modern_diagnostics: ["ECG", "echocardiogram", "lipid profile"]
+    red_flags_for_referral: ["any acute chest pain → ED"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Apasmāra"
+    english: "Epilepsy / seizure disorder"
+    hindi: "अपस्मार"
+    chapter: "Mānasa-roga"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "sannipātaja"]
+    primary_dosha: "varies"
+    primary_dushya: ["majjā", "manas"]
+    srotas: ["majjāvaha", "manovaha"]
+    rupa: ["recurrent seizures", "loss of consciousness", "post-ictal confusion"]
+    sadhya_asadhya: "kṛcchra-sādhya, refer to neurology"
+    chikitsa_summary: "Modern AED is first-line; Brāhmī Ghṛta, Kalyāṇaka Ghṛta, Vacādi taila as adjunct."
+    common_formulations: ["Brāhmī Ghṛta", "Kalyāṇaka Ghṛta", "Smṛti-Sāgara Rasa"]
+    common_dravyas: ["Brāhmī", "Vacā", "Aśvagandhā"]
+    modern_diagnostics: ["EEG", "MRI brain", "metabolic workup"]
+    red_flags_for_referral: ["status epilepticus = ED", "first seizure → neurology"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Atattvābhiniveśa"
+    english: "Obsessive-compulsive disorder / fixed-belief disorders"
+    hindi: "अतत्त्वाभिनिवेश"
+    chapter: "Mānasa-roga"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["manas"]
+    srotas: ["manovaha"]
+    rupa: ["fixed beliefs out of touch with reality", "compulsive behaviors", "impaired insight"]
+    sadhya_asadhya: "yāpya"
+    chikitsa_summary: "Refer to psychiatry; Manasamitra Vaṭakam, Saraswatariṣṭa, Brāhmī adjunct."
+    common_formulations: ["Manasamitra Vaṭakam", "Saraswatariṣṭa", "Brāhmī Ghṛta"]
+    common_dravyas: ["Brāhmī", "Vacā", "Jaṭāmāṃsī"]
+    modern_diagnostics: ["psychiatric assessment", "Y-BOCS for OCD"]
+    red_flags_for_referral: ["self-harm risk", "psychotic features"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Trṣṇā"
+    english: "Pathological thirst / polydipsia"
+    hindi: "तृष्णा"
+    chapter: "Tṛṣṇā"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "sannipātaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["udaka", "rasa"]
+    srotas: ["udakavaha"]
+    rupa: ["excessive thirst", "dryness of mouth"]
+    sadhya_asadhya: "Symptom — work up underlying cause"
+    chikitsa_summary: "Drākṣādi Curṇa, cooling diet; rule out diabetes, hypercalcemia, DI."
+    common_formulations: ["Drākṣādi Curṇa", "Kāmadudhā Rasa"]
+    common_dravyas: ["Drākṣā", "Yaṣṭimadhu", "Candana"]
+    modern_diagnostics: ["fasting glucose", "serum calcium", "urine osmolality if persistent"]
+    red_flags_for_referral: ["associated polyuria → DM workup", "altered mental status"]
+    review_tier: "llm-only"

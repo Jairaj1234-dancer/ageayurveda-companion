@@ -1,0 +1,799 @@
+# Extended dravya seed — batch 3 (dravyas 80-120+).
+# Adds: rasa-tantra metals (8), animal-derived (3), toxic-classical
+# herbs requiring śuddha (3), more common herbs (10), foundational
+# anupāna/vehicle dravyas (5), legumes (3), classical compound
+# dravyas (5: Triphalā/Trikaṭu/Trijātaka/Pañcakola/Daśamūla).
+#
+# Sources: Rasa-tarangiṇī, Bhāvaprakāśa Nighaṇṭu, Sushruta Sūtra
+# 39, Caraka Sūtra 4 (Mahā-kaṣāya groups), AFI Vol I-III.
+# All marked review_tier=llm-only; Vaidya validation pending.
+
+dravyas:
+
+# ─── Rasa-tantra metals (8) ──────────────────────────────────────
+
+  - nama_sanskrit: "Tāmra"
+    latin_binomial: "Cuprum (copper element)"
+    family: "Mineral / metal"
+    english: "Copper"
+    hindi: "ताम्र / तांबा"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Mahā-rasa varga / Loha-vargada"
+    rasa: ["tikta", "kaṣāya"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["yakṛd-uttejaka", "lekhana", "raktaśodhaka"]
+    prayoga: ["pāṇḍu", "kāmalā", "plīhā-vṛddhi"]
+    matra_value: "60-125"
+    matra_unit: "mg (as bhasma after sodhana)"
+    contraindications: ["pregnancy (improperly prepared)"]
+    notes: "Used clinically as Tāmra-bhasma after detailed sodhana. Improper preparation is hepatotoxic — sourcing critical."
+    nighantu_refs: ["Rasa-tarangiṇī Tāmra-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Vaṅga"
+    latin_binomial: "Stannum (tin element)"
+    family: "Mineral / metal"
+    english: "Tin"
+    hindi: "वङ्ग / रांगा"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Loha-vargada"
+    rasa: ["tikta", "kaṣāya", "kaṭu"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "sama", kapha: "śāmaka"}
+    karma: ["prameha-ghna", "vājīkaraṇa", "rasāyana"]
+    prayoga: ["madhumeha", "śukra-meha", "kṣīṇa-śukra"]
+    matra_value: "60-125"
+    matra_unit: "mg (as bhasma)"
+    nighantu_refs: ["Rasa-tarangiṇī Vaṅga-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Abhraka"
+    latin_binomial: "Mica (mineral)"
+    family: "Phyllosilicate mineral"
+    english: "Mica"
+    hindi: "अभ्रक"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Mahā-rasa varga"
+    rasa: ["madhura"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["rasāyana", "balya", "śvāsa-hara"]
+    prayoga: ["rāja-yakṣmā", "kāsa", "śvāsa", "rasāyana"]
+    matra_value: "125-250"
+    matra_unit: "mg (sahasra-puṭi bhasma for rasāyana)"
+    notes: "Highest-grade is Sahasra-puṭi (1000-burn). Lower puṭi grades for routine clinical use."
+    nighantu_refs: ["Rasa-tarangiṇī Abhraka-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Svarṇa"
+    latin_binomial: "Aurum (gold element)"
+    family: "Mineral / metal"
+    english: "Gold"
+    hindi: "स्वर्ण / सोना"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Loha-vargada"
+    rasa: ["madhura", "tikta", "kaṣāya"]
+    virya: "uṣṇa (mild)"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["rasāyana", "medhya", "balya", "vājīkaraṇa"]
+    prayoga: ["smṛti-kṣaya", "rasāyana", "vāta-vyādhi"]
+    matra_value: "15-30"
+    matra_unit: "mg (as Svarṇa-bhasma)"
+    nighantu_refs: ["Rasa-tarangiṇī Svarṇa-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Rajata"
+    latin_binomial: "Argentum (silver element)"
+    family: "Mineral / metal"
+    english: "Silver"
+    hindi: "रजत / चांदी"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Loha-vargada"
+    rasa: ["amla", "kaṣāya"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["rasāyana", "medhya", "balya"]
+    prayoga: ["rasāyana", "smṛti-kṣaya", "amlapitta"]
+    matra_value: "30-60"
+    matra_unit: "mg (as Rajata-bhasma)"
+    nighantu_refs: ["Rasa-tarangiṇī Rajata-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Pārada"
+    latin_binomial: "Hydrargyrum (mercury element)"
+    family: "Mineral / metal"
+    english: "Mercury (purified)"
+    hindi: "पारद / पारा"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Mahā-rasa varga"
+    rasa: ["ṣaḍ-rasa (six-rasa)"]
+    virya: "uṣṇa"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["yogavāhi", "rasāyana"]
+    prayoga: ["rasa-yogas (only after detailed sodhana)"]
+    matra_value: "60-125"
+    matra_unit: "mg (as kajjalī or bhasma)"
+    contraindications: ["never used raw — sodhana mandatory", "pregnancy", "renal impairment"]
+    notes: "Aṣṭa-saṃskāra: 8-step purification mandatory. Modern: only certified pharmaceutical-grade. Improperly prepared is severely toxic."
+    nighantu_refs: ["Rasa-tarangiṇī Pārada-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Gandhaka"
+    latin_binomial: "Sulphur (element)"
+    family: "Mineral"
+    english: "Sulfur (purified)"
+    hindi: "गंधक"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Mahā-rasa varga (Upa-rasa)"
+    rasa: ["kaṭu", "tikta"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["kuṣṭha-ghna", "krimi-ghna", "rasāyana"]
+    prayoga: ["kuṣṭha", "kṛmi", "viṣa-pratīkāra"]
+    matra_value: "125-250"
+    matra_unit: "mg (śuddha)"
+    notes: "Always used after sodhana (typically with go-dugdha or eraṇḍa-taila)."
+    nighantu_refs: ["Rasa-tarangiṇī Gandhaka-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Tankaṇa"
+    latin_binomial: "Sodium tetraborate (borax)"
+    family: "Mineral salt"
+    english: "Borax"
+    hindi: "टंकण / सुहागा"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Karpūrādi (lavaṇa-varga)"
+    rasa: ["lavaṇa", "kaṭu"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "sama", kapha: "śāmaka"}
+    karma: ["kapha-śāmaka", "lekhana", "śūla-praśamana"]
+    prayoga: ["kāsa", "śvāsa", "stree-roga"]
+    matra_value: "125-500"
+    matra_unit: "mg (śuddha bhrṣṭa)"
+    contraindications: ["pregnancy"]
+    nighantu_refs: ["Rasa-tarangiṇī Tankaṇa-prakaraṇa"]
+    review_tier: "llm-only"
+
+# ─── Animal-derived (3) ──────────────────────────────────────────
+
+  - nama_sanskrit: "Pravāla"
+    latin_binomial: "Corallium rubrum (red coral)"
+    family: "Cnidaria / animal skeleton"
+    english: "Red coral"
+    hindi: "प्रवाल / मूंगा"
+    dravya_type: "jaṅgama"
+    varga_bhavaprakasha: "Ratna-varga"
+    rasa: ["madhura", "kaṣāya"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "sama", pitta: "śāmaka", kapha: "sama"}
+    karma: ["pitta-śāmaka", "asthi-poṣaka", "raktastambhaka"]
+    prayoga: ["raktapitta", "asthi-kṣaya", "amlapitta"]
+    matra_value: "125-250"
+    matra_unit: "mg (as Pravāla-bhasma or piṣṭi)"
+    nighantu_refs: ["Bhāvaprakāśa Ratna-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Śaṅkha"
+    latin_binomial: "Turbinella pyrum (sacred conch)"
+    family: "Mollusc shell (calcium carbonate)"
+    english: "Conch shell"
+    hindi: "शंख"
+    dravya_type: "jaṅgama"
+    varga_bhavaprakasha: "Sudhā-varga"
+    rasa: ["kaṣāya"]
+    virya: "śīta"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["pitta-śāmaka", "amlapitta-hara"]
+    prayoga: ["amlapitta", "raktapitta", "atisāra"]
+    matra_value: "125-250"
+    matra_unit: "mg (as Śaṅkha-bhasma)"
+    nighantu_refs: ["Bhāvaprakāśa", "Rasa-tarangiṇī"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kapardaka"
+    latin_binomial: "Cypraea moneta (cowrie shell)"
+    family: "Mollusc shell"
+    english: "Cowrie shell"
+    hindi: "कपर्दक / कौड़ी"
+    dravya_type: "jaṅgama"
+    varga_bhavaprakasha: "Sudhā-varga"
+    rasa: ["kaṭu", "tikta"]
+    virya: "uṣṇa (mild)"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "sama", kapha: "śāmaka"}
+    karma: ["dīpana", "pitta-pratisāraṇa"]
+    prayoga: ["amlapitta", "agnimāndya"]
+    matra_value: "125-250"
+    matra_unit: "mg (as Kapardaka-bhasma)"
+    nighantu_refs: ["Rasa-tarangiṇī"]
+    review_tier: "llm-only"
+
+# ─── Classical toxic herbs (śuddha-required) (3) ─────────────────
+
+  - nama_sanskrit: "Vatsanābha"
+    latin_binomial: "Aconitum ferox"
+    family: "Ranunculaceae"
+    english: "Indian aconite (purified)"
+    hindi: "वत्सनाभ / बच्छनाग"
+    varga_bhavaprakasha: "Visha-varga"
+    part_used: ["mūla (śuddha only)"]
+    rasa: ["madhura"]
+    guna: ["laghu", "tīkṣṇa", "uṣṇa", "vyavāyī", "vikāśī"]
+    virya: "uṣṇa"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["vāta-hara", "jvara-ghna", "rasāyana (śuddha)"]
+    prayoga: ["sannipāta-jvara", "vāta-vyādhi", "viṣūcikā (acute)"]
+    matra_value: "15-30"
+    matra_unit: "mg (śuddha — go-dugdha + cow urine sodhana)"
+    contraindications: ["pregnancy", "lactation", "pediatric (<14)", "elderly with arrhythmia"]
+    notes: "Without sodhana = lethal. Used clinically only after detailed śuddhi by certified pharmacy. Cardiotoxic if mishandled."
+    nighantu_refs: ["Rasa-tarangiṇī Visha-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Dhattūra"
+    latin_binomial: "Datura metel"
+    family: "Solanaceae"
+    english: "Thorn-apple (purified)"
+    hindi: "धत्तूरा"
+    varga_bhavaprakasha: "Visha-varga"
+    part_used: ["bīja (śuddha)", "patrā"]
+    rasa: ["tikta"]
+    guna: ["laghu", "rūkṣa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "vardhaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["śvāsa-hara", "antiparasitic", "viṣa-hara"]
+    prayoga: ["śvāsa", "kāsa-yukta yoga", "topical for joint pain"]
+    matra_value: "30-60"
+    matra_unit: "mg (śuddha)"
+    contraindications: ["pregnancy", "pediatric", "elderly", "anticholinergic-sensitive states"]
+    notes: "Anticholinergic — mishandling causes severe toxicity. Sodhana with go-dugdha mandatory."
+    nighantu_refs: ["Rasa-tarangiṇī Visha-prakaraṇa"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Ahiphena"
+    latin_binomial: "Papaver somniferum"
+    family: "Papaveraceae"
+    english: "Opium (purified)"
+    hindi: "अहिफेन / अफीम"
+    varga_bhavaprakasha: "Modern (post-Bhāvaprakāśa, Rasa-tarangiṇī)"
+    part_used: ["niryāsa"]
+    rasa: ["tikta", "kaṣāya"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["vāta-hara", "stambhana", "nidrā-janana"]
+    prayoga: ["intractable atisāra", "śvāsa (chronic)", "cancer pain (palliative)"]
+    matra_value: "15-30"
+    matra_unit: "mg (regulated — controlled drug in India)"
+    contraindications: ["respiratory depression", "pregnancy", "addiction history"]
+    notes: "Regulated — pharmacy must hold opium license. Modern: not for routine outpatient prescribing."
+    nighantu_refs: ["Rasa-tarangiṇī"]
+    review_tier: "llm-only"
+
+# ─── More common herbs (10) ──────────────────────────────────────
+
+  - nama_sanskrit: "Ativiṣā"
+    latin_binomial: "Aconitum heterophyllum"
+    family: "Ranunculaceae"
+    english: "Indian atees (non-toxic Aconitum)"
+    hindi: "अतीस"
+    varga_bhavaprakasha: "Harītakyādi"
+    part_used: ["mūla"]
+    rasa: ["tikta", "kaṭu"]
+    guna: ["laghu", "rūkṣa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["dīpana", "grāhī", "kṛmi-ghna", "jvara-ghna"]
+    prayoga: ["bāla-jvara", "atisāra", "agnimāndya", "kṛmi"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    notes: "Non-toxic Aconitum — distinct from Vatsanābha. Major pediatric herb."
+    nighantu_refs: ["Bhāvaprakāśa Harītakyādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kuṣṭha"
+    latin_binomial: "Saussurea costus"
+    family: "Asteraceae"
+    english: "Costus / kuth"
+    hindi: "कुष्ठ / कूट"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["mūla"]
+    rasa: ["tikta", "kaṭu"]
+    guna: ["laghu", "rūkṣa", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["vāta-hara", "kuṣṭha-ghna", "kṛmi-ghna"]
+    prayoga: ["kuṣṭha", "vāta-rakta", "kṛmi"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    notes: "CITES-listed — sourcing critical due to over-harvest."
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Tagara"
+    latin_binomial: "Valeriana wallichii"
+    family: "Caprifoliaceae"
+    english: "Indian valerian"
+    hindi: "तगर / सुगन्धवाला"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["mūla"]
+    rasa: ["tikta", "kaṭu", "kaṣāya"]
+    guna: ["laghu", "snigdha"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["medhya", "anidrā-hara", "vāta-hara"]
+    prayoga: ["anidrā", "cintā", "śiroroga"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Tejapatra"
+    latin_binomial: "Cinnamomum tamala"
+    family: "Lauraceae"
+    english: "Indian bay leaf"
+    hindi: "तेजपत्र / तेजपात"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["patrā"]
+    rasa: ["kaṭu", "tikta", "madhura"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["dīpana", "kāsa-hara"]
+    prayoga: ["agnimāndya", "kāsa", "trijātaka constituent"]
+    matra_value: "1-2"
+    matra_unit: "g"
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi", "Trijātaka constituent"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Karpūra"
+    latin_binomial: "Cinnamomum camphora"
+    family: "Lauraceae"
+    english: "Camphor"
+    hindi: "कर्पूर / कपूर"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["niryāsa (sublimate)"]
+    rasa: ["tikta", "kaṭu"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "śīta (paradoxically — by prabhāva)"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["medhya", "śopha-hara", "topical analgesic"]
+    prayoga: ["topical analgesic", "stimulant for revival", "perfumery"]
+    matra_value: "30-60"
+    matra_unit: "mg (oral, śuddha)"
+    contraindications: ["high oral doses cause neurotoxicity"]
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Pāṭhā"
+    latin_binomial: "Cissampelos pareira"
+    family: "Menispermaceae"
+    english: "Patha / velvet leaf"
+    hindi: "पाठा"
+    varga_bhavaprakasha: "Guḍūcyādi"
+    part_used: ["mūla"]
+    rasa: ["tikta", "kaṣāya"]
+    guna: ["laghu"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "sama", kapha: "śāmaka"}
+    karma: ["dīpana", "grāhī", "stree-roga-hara"]
+    prayoga: ["atisāra", "raktapradara", "viṣa"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    nighantu_refs: ["Bhāvaprakāśa Guḍūcyādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Puṣkaramūla"
+    latin_binomial: "Inula racemosa"
+    family: "Asteraceae"
+    english: "Pushkarmool"
+    hindi: "पुष्करमूल"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["mūla"]
+    rasa: ["tikta", "kaṭu"]
+    guna: ["laghu", "rūkṣa", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["śvāsa-hara", "kāsa-hara", "hṛdya"]
+    prayoga: ["śvāsa", "kāsa", "hṛd-roga"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kuṣmāṇḍa"
+    latin_binomial: "Benincasa hispida"
+    family: "Cucurbitaceae"
+    english: "White pumpkin / ash gourd"
+    hindi: "कूष्माण्ड / पेठा"
+    varga_bhavaprakasha: "Śāka"
+    part_used: ["phala"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "rasāyana", "raktastambhaka", "medhya"]
+    prayoga: ["raktapitta", "amlapitta", "kṣaya", "anidrā"]
+    matra_value: "10-30"
+    matra_unit: "ml (svarasa)"
+    nighantu_refs: ["Bhāvaprakāśa Śāka-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Bhaṅgā"
+    latin_binomial: "Cannabis sativa"
+    family: "Cannabaceae"
+    english: "Bhanga (purified, classical use only)"
+    hindi: "भांग"
+    varga_bhavaprakasha: "Visha-varga (śuddha required)"
+    part_used: ["patrā (śuddha)"]
+    rasa: ["tikta"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["nidrā-janana", "vāta-hara", "stambhana"]
+    prayoga: ["anidrā (chronic)", "atisāra (chronic)", "ārucy"]
+    matra_value: "30-60"
+    matra_unit: "mg (śuddha; regulated)"
+    contraindications: ["pregnancy", "psychiatric history", "dependency risk", "regulated under NDPS Act in India"]
+    notes: "Classical use restricted; modern requires regulatory clearance."
+    nighantu_refs: ["Rasa-tarangiṇī"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Pudina"
+    latin_binomial: "Mentha spicata"
+    family: "Lamiaceae"
+    english: "Spearmint / mint"
+    hindi: "पुदीना"
+    varga_bhavaprakasha: "Modern"
+    part_used: ["patrā"]
+    rasa: ["kaṭu", "tikta"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa (mild)"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "sama", kapha: "śāmaka"}
+    karma: ["dīpana", "kāsa-hara", "vāta-anulomana"]
+    prayoga: ["agnimāndya", "ārucy", "ānāha"]
+    matra_value: "5-15"
+    matra_unit: "ml (svarasa)"
+    nighantu_refs: ["Modern Ayurvedic pharmacopoeia"]
+    review_tier: "llm-only"
+
+# ─── Foundational vehicles (5) ──────────────────────────────────
+
+  - nama_sanskrit: "Madhu"
+    latin_binomial: "Honey (Apis spp.)"
+    family: "Animal-derived food"
+    english: "Honey"
+    hindi: "शहद / मधु"
+    dravya_type: "jaṅgama"
+    varga_bhavaprakasha: "Madhu-varga"
+    rasa: ["madhura", "kaṣāya"]
+    guna: ["laghu", "rūkṣa", "yogavāhi"]
+    virya: "śīta"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "vardhaka (mild)", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["yogavāhi", "vraṇa-ropaṇa", "kāsa-hara", "anupāna"]
+    prayoga: ["kāsa", "vraṇa", "amlapitta", "universal anupāna"]
+    matra_value: "5-30"
+    matra_unit: "g"
+    contraindications: ["should NOT be heated above body temp (Caraka — viṣa-vat)", "infants <1 year (botulism)"]
+    viruddha: ["with hot water/foods", "with ghṛta in equal parts"]
+    nighantu_refs: ["Caraka Sūtra 27", "Bhāvaprakāśa Madhu-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Ghṛta"
+    latin_binomial: "Clarified butter (cow)"
+    family: "Animal-derived food"
+    english: "Ghee (cow)"
+    hindi: "घी"
+    dravya_type: "jaṅgama"
+    varga_bhavaprakasha: "Go-rasādi"
+    rasa: ["madhura"]
+    guna: ["snigdha", "guru", "śīta", "mṛdu"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (in excess)"}
+    karma: ["snehana", "rasāyana", "medhya", "balya", "yogavāhi"]
+    prayoga: ["pre-pañcakarma snehapāna", "rasāyana base", "medhya base"]
+    matra_value: "5-20"
+    matra_unit: "g"
+    contraindications: ["sthaulya (relative)", "ati-kapha", "agnimāndya (acute)"]
+    notes: "Base for medicated ghṛtas. Aged ghṛta (purāṇa-ghṛta) has rasāyana superiority."
+    nighantu_refs: ["Caraka Sūtra 27", "Bhāvaprakāśa Go-rasādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Tila Taila"
+    latin_binomial: "Sesamum indicum (oil)"
+    family: "Pedaliaceae (oil)"
+    english: "Sesame oil"
+    hindi: "तिल तेल"
+    dravya_type: "sthāvara"
+    varga_bhavaprakasha: "Taila-varga"
+    rasa: ["madhura", "tikta", "kaṣāya"]
+    guna: ["snigdha", "uṣṇa", "tīkṣṇa", "vyavāyī"]
+    virya: "uṣṇa"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["snehana (external)", "vāta-hara", "balya", "vehicle for medicated tailas"]
+    prayoga: ["abhyaṅga base", "vāta-vyādhi", "medicated taila base"]
+    matra_value: "applied externally; oral 5-10 ml"
+    nighantu_refs: ["Bhāvaprakāśa Taila-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Sitā"
+    latin_binomial: "Saccharum officinarum (sugar)"
+    family: "Poaceae (refined product)"
+    english: "Sugar (refined cane)"
+    hindi: "शर्करा / चीनी"
+    varga_bhavaprakasha: "Ikṣu-varga"
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka"}
+    karma: ["balya", "tṛṣṇā-hara", "vehicle / sweetener"]
+    prayoga: ["raktapitta", "tṛṣṇā", "vehicle for avalehas"]
+    matra_value: "as needed (vehicle)"
+    contraindications: ["madhumeha", "sthaulya"]
+    nighantu_refs: ["Bhāvaprakāśa Ikṣu-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Go-kṣīra"
+    latin_binomial: "Bos indicus (cow milk)"
+    family: "Animal-derived food"
+    english: "Cow milk"
+    hindi: "गाय का दूध / गोदुग्ध"
+    dravya_type: "jaṅgama"
+    varga_bhavaprakasha: "Go-rasādi"
+    rasa: ["madhura"]
+    guna: ["snigdha", "śīta", "guru"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka"}
+    karma: ["balya", "rasāyana", "medhya", "anupāna"]
+    prayoga: ["rasāyana anupāna", "balya", "post-illness recovery"]
+    matra_value: "100-250"
+    matra_unit: "ml (warm, fresh)"
+    contraindications: ["ajīrṇa (temporary)", "sinusitis (acute)"]
+    notes: "Best at body temp; A2 desī cow milk preferred classically."
+    nighantu_refs: ["Caraka Sūtra 27", "Bhāvaprakāśa Go-rasādi"]
+    review_tier: "llm-only"
+
+# ─── Legumes (3) ────────────────────────────────────────────────
+
+  - nama_sanskrit: "Māṣa"
+    latin_binomial: "Vigna mungo"
+    family: "Fabaceae"
+    english: "Black gram / urad"
+    hindi: "उड़द / माष"
+    varga_bhavaprakasha: "Śimbidhānya"
+    part_used: ["bīja"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha", "picchila"]
+    virya: "uṣṇa"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "vardhaka"}
+    karma: ["balya", "vṛṣya", "vāta-hara"]
+    prayoga: ["kṛśatā", "vāta-vyādhi", "post-paralysis rehab"]
+    matra_value: "as food"
+    nighantu_refs: ["Bhāvaprakāśa Śimbidhānya"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Mudga"
+    latin_binomial: "Vigna radiata"
+    family: "Fabaceae"
+    english: "Green gram / mung bean"
+    hindi: "मूँग"
+    varga_bhavaprakasha: "Śimbidhānya"
+    part_used: ["bīja"]
+    rasa: ["madhura", "kaṣāya"]
+    guna: ["laghu", "rūkṣa"]
+    virya: "śīta"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "vardhaka (mild)", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["dīpana", "convalescent diet"]
+    prayoga: ["convalescent food (yavāgu)", "post-fever diet"]
+    matra_value: "as food"
+    nighantu_refs: ["Bhāvaprakāśa Śimbidhānya"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kulattha"
+    latin_binomial: "Macrotyloma uniflorum"
+    family: "Fabaceae"
+    english: "Horse gram"
+    hindi: "कुलथी"
+    varga_bhavaprakasha: "Śimbidhānya"
+    part_used: ["bīja"]
+    rasa: ["kaṣāya"]
+    guna: ["laghu", "rūkṣa", "uṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "vardhaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["aśmari-bhedana", "lekhana", "kapha-medohara"]
+    prayoga: ["aśmari", "sthaulya", "ślīpada"]
+    matra_value: "as food / decoction"
+    nighantu_refs: ["Bhāvaprakāśa Śimbidhānya"]
+    review_tier: "llm-only"
+
+# ─── Compound dravyas (5) — referenceable as ingredients ──────────
+
+  - nama_sanskrit: "Triphalā"
+    latin_binomial: "Compound: Terminalia chebula + T. bellirica + Phyllanthus emblica"
+    family: "Combretaceae + Phyllanthaceae"
+    english: "Triphala (three-fruits compound)"
+    hindi: "त्रिफला"
+    dravya_type: "kalpita"
+    varga_bhavaprakasha: "Harītakyādi"
+    rasa: ["pañca-rasa (lavaṇa-varjita)"]
+    guna: ["laghu", "rūkṣa"]
+    virya: "uṣṇa-śīta-mixed"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["rasāyana", "anulomana", "cakṣuṣya", "tridoṣa-śāmaka"]
+    prayoga: ["rasāyana", "vibandha (mild)", "akṣiroga", "kuṣṭha"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    notes: "Caraka prescribes 1:2:4 (Harītakī:Vibhītakī:Āmalakī) ratio."
+    nighantu_refs: ["Caraka Cikitsā 1.3 (Triphalā Rasāyana)"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Trikaṭu"
+    latin_binomial: "Compound: Piper longum + P. nigrum + Zingiber officinale"
+    family: "Piperaceae + Zingiberaceae"
+    english: "Trikatu (three-pungents)"
+    hindi: "त्रिकटु"
+    dravya_type: "kalpita"
+    varga_bhavaprakasha: "Harītakyādi"
+    rasa: ["kaṭu"]
+    guna: ["laghu", "rūkṣa", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["dīpana", "pācana", "yogavāhi"]
+    prayoga: ["agnimāndya", "ājīrṇa", "kapha-pradhāna conditions"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    contraindications: ["amlapitta", "raktapitta"]
+    nighantu_refs: ["Sharangadhara Madhyama Khaṇḍa 6"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Trijātaka"
+    latin_binomial: "Compound: Cinnamomum verum + Elettaria cardamomum + Cinnamomum tamala"
+    family: "Lauraceae + Zingiberaceae"
+    english: "Trijataka (three-aromatic-leaves)"
+    hindi: "त्रिजातक"
+    dravya_type: "kalpita"
+    varga_bhavaprakasha: "Karpūrādi"
+    rasa: ["kaṭu", "madhura"]
+    guna: ["laghu", "rūkṣa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["dīpana", "rocana", "kāsa-hara"]
+    prayoga: ["agnimāndya", "ārucy", "anupāna for many compounds"]
+    matra_value: "0.5-2"
+    matra_unit: "g"
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Pañcakola"
+    latin_binomial: "Compound: Pippalī + Pippalī-mūla + Cavya + Citraka + Śuṇṭhī"
+    family: "Mixed"
+    english: "Panchakola (five-pungents)"
+    hindi: "पञ्चकोल"
+    dravya_type: "kalpita"
+    varga_bhavaprakasha: "Harītakyādi"
+    rasa: ["kaṭu"]
+    guna: ["laghu", "rūkṣa", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["dīpana", "pācana"]
+    prayoga: ["agnimāndya", "ārucy"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    contraindications: ["amlapitta"]
+    nighantu_refs: ["Sharangadhara Madhyama Khaṇḍa 6"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Daśamūla"
+    latin_binomial: "Compound: 10 root drugs (laghu-pañcamūla + bṛhat-pañcamūla)"
+    family: "Mixed"
+    english: "Dashamula (ten-roots)"
+    hindi: "दशमूल"
+    dravya_type: "kalpita"
+    varga_bhavaprakasha: "Guḍūcyādi"
+    rasa: ["kaṣāya", "tikta", "madhura"]
+    guna: ["laghu"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["vāta-hara", "śopha-hara", "dīpana"]
+    prayoga: ["vāta-jvara", "śopha", "sūtikā-paricaryā"]
+    matra_value: "30-50"
+    matra_unit: "ml (kvātha)"
+    notes: "Constituents: Bilva, Agnimantha, Śyonāka, Kāśmarī, Pāṭalā (bṛhat-pañcamūla); Bṛhatī, Kaṇṭakārī, Śālaparṇī, Pṛśniparṇī, Gokṣura (laghu-pañcamūla)."
+    nighantu_refs: ["Caraka Sūtra 4 (Bṛhattrayī kaṣāya)", "Aṣṭāṅga Hṛdaya Sūtra 15"]
+    review_tier: "llm-only"
+
+# ─── Other (3) ───────────────────────────────────────────────────
+
+  - nama_sanskrit: "Dāḍima"
+    latin_binomial: "Punica granatum"
+    family: "Lythraceae"
+    english: "Pomegranate"
+    hindi: "अनार / दाडिम"
+    varga_bhavaprakasha: "Āmrādi"
+    part_used: ["phala", "tvak (rind)"]
+    rasa: ["madhura", "amla", "kaṣāya"]
+    guna: ["laghu", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["dīpana", "grāhī", "hṛdya"]
+    prayoga: ["atisāra", "tṛṣṇā", "raktapitta", "agnimāndya"]
+    matra_value: "as juice / 3-6 g cūrṇa"
+    nighantu_refs: ["Bhāvaprakāśa Āmrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Iśabgol"
+    latin_binomial: "Plantago ovata"
+    family: "Plantaginaceae"
+    english: "Psyllium"
+    hindi: "ईसबगोल"
+    varga_bhavaprakasha: "Modern (post-Bhāvaprakāśa)"
+    part_used: ["bīja-tvak (husk)"]
+    rasa: ["madhura"]
+    guna: ["picchila", "guru"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "sama", pitta: "śāmaka", kapha: "sama"}
+    karma: ["anulomana", "stambhana (paradoxical)"]
+    prayoga: ["vibandha", "atisāra (binding)", "ārśas"]
+    matra_value: "5-10"
+    matra_unit: "g (with ample water)"
+    contraindications: ["GI obstruction", "esophageal stricture"]
+    nighantu_refs: ["Modern Ayurvedic pharmacopoeia"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kola"
+    latin_binomial: "Ziziphus jujuba"
+    family: "Rhamnaceae"
+    english: "Indian jujube / ber"
+    hindi: "बेर / कोल"
+    varga_bhavaprakasha: "Āmrādi"
+    part_used: ["phala"]
+    rasa: ["madhura", "amla"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "vāta-hara", "tṛṣṇā-hara"]
+    prayoga: ["raktapitta", "kṣaya", "tṛṣṇā"]
+    matra_value: "5-15"
+    matra_unit: "g"
+    nighantu_refs: ["Bhāvaprakāśa Āmrādi"]
+    review_tier: "llm-only"

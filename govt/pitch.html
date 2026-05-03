@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Age Ayurveda Companion — Public-Research Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* =================================================================
+       Age Ayurveda Companion — Government / Research Brief
+       Aesthetic carries the investor pitch's classical Ayurvedic palette
+       but repositioned: public-mission framing, scheme-aligned, formal.
+       Audience: CCRAS · AYUSH · MeitY · UP StartinUP · IndiaAI Mission.
+       ================================================================= */
+
+    :root {
+      --paper:      #F4EFE5;
+      --paper-deep: #ECE4D2;
+      --ink:        #1B1814;
+      --ink-soft:   #4A413A;
+      --ink-faded:  #877C70;
+      --hair:       #D7CDB9;
+      --terracotta: #B84A1F;
+      --terracotta-deep: #8C2E0E;
+      --neem:       #2E5D3F;
+      --gold:       #A8895C;
+      --indigo:     #2C3E5C;
+      --highlight:  #F2E2BE;
+      --ashok:      #1F4A8B;   /* deeper, more institutional indigo for govt brief */
+
+      --serif: "Fraunces", "Iowan Old Style", "Hoefler Text", Georgia, serif;
+      --sans:  "DM Sans", "Helvetica Neue", system-ui, sans-serif;
+      --mono:  "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+      --deva:  "Noto Serif Devanagari", "Sanskrit Text", serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.55;
+      font-feature-settings: "ss01", "ss02";
+      background-image:
+        radial-gradient(at 50% 0%, rgba(168,137,92,0.07), transparent 70%),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.36  0 0 0 0 0.28  0 0 0 0.07 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+      background-attachment: fixed;
+    }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, h4 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; }
+
+    .slide {
+      min-height: 100vh;
+      width: 100%;
+      padding: 6vh 7vw;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      position: relative;
+      display: grid;
+      isolation: isolate;
+    }
+    .slide + .slide { border-top: 1px solid color-mix(in oklab, var(--hair), transparent 40%); }
+    .slide::before {
+      content: counter(slide, decimal-leading-zero) " / 09";
+      counter-increment: slide;
+      position: absolute;
+      top: 28px; right: 36px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: var(--ink-faded);
+      text-transform: uppercase;
+    }
+    body { counter-reset: slide; }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+    .eyebrow.gold     { color: var(--gold); }
+    .eyebrow.neem     { color: var(--neem); }
+    .eyebrow.indigo   { color: var(--ashok); }
+    .eyebrow.ink      { color: var(--ink-soft); }
+
+    .rule { width: 56px; height: 1px; background: var(--ink); margin: 22px 0; }
+    .rule.gold       { background: var(--gold); }
+    .rule.terracotta { background: var(--terracotta); }
+    .rule.long       { width: 100%; }
+
+    .display {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 144, "SOFT" 30;
+      font-weight: 400;
+      line-height: 0.96;
+      letter-spacing: -0.025em;
+    }
+    .display em {
+      font-style: italic;
+      font-variation-settings: "opsz" 144, "SOFT" 100;
+      color: var(--terracotta);
+    }
+    .lead {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 60;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      color: var(--ink-soft);
+    }
+    .deva { font-family: var(--deva); }
+    .mono { font-family: var(--mono); }
+
+    .num {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      font-feature-settings: "tnum", "lnum";
+      letter-spacing: -0.04em;
+      line-height: 0.85;
+    }
+
+    /* ========== Slide 1 — Cover ========== */
+    .s-cover { grid-template-rows: auto 1fr auto; gap: 48px; }
+    .s-cover__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .crest { display: inline-flex; flex-direction: column; gap: 4px; }
+    .crest__mark { font-family: var(--deva); font-size: 32px; color: var(--terracotta); line-height: 1; }
+    .crest__name {
+      font-family: var(--serif);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .crest__by {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: var(--ink-faded);
+      text-transform: uppercase;
+    }
+    .meta {
+      text-align: right;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      line-height: 1.8;
+    }
+    .meta b { color: var(--ink); font-weight: 500; }
+
+    .s-cover__main {
+      display: flex; flex-direction: column; justify-content: center;
+      gap: 22px; padding: 24px 0;
+    }
+    .s-cover__title { font-size: clamp(48px, 8vw, 132px); }
+    .s-cover__title .accent {
+      font-style: italic;
+      color: var(--terracotta);
+      font-variation-settings: "opsz" 144, "SOFT" 100;
+    }
+    .s-cover__sub {
+      max-width: 820px;
+      color: var(--ink-soft);
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 50;
+      font-size: clamp(20px, 1.6vw, 26px);
+      line-height: 1.4;
+    }
+    .s-cover__verse {
+      display: flex; gap: 56px; align-items: end; flex-wrap: wrap;
+      padding-top: 28px; border-top: 1px solid var(--hair);
+    }
+    .s-cover__verse .deva-line {
+      font-family: var(--deva);
+      font-size: clamp(20px, 2vw, 30px);
+      color: var(--ink); line-height: 1.5; max-width: 620px;
+    }
+    .s-cover__verse .gloss {
+      font-family: var(--serif);
+      font-style: italic; color: var(--ink-soft);
+      font-size: 14px; max-width: 320px; line-height: 1.5;
+      font-variation-settings: "opsz" 14, "SOFT" 100;
+    }
+    .s-cover__verse .gloss::before { content: "॥ "; color: var(--gold); }
+
+    /* ========== Slide 2 — Public premise ========== */
+    .s-premise { grid-template-rows: auto 1fr; gap: 56px; }
+    .s-premise__head { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+    .s-premise__head h2 { font-size: clamp(42px, 5.4vw, 84px); }
+    .s-premise__head em { font-style: italic; color: var(--terracotta); }
+    .s-premise__head p { color: var(--ink-soft); max-width: 540px; }
+
+    .premise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+    .premise {
+      padding: 32px 28px;
+      border-right: 1px solid var(--hair);
+      display: flex; flex-direction: column; gap: 16px;
+      min-height: 320px;
+    }
+    .premise:last-child { border-right: 0; }
+    .premise__tag {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--bar, var(--terracotta));
+    }
+    .premise__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 30;
+      font-size: 28px;
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+    }
+    .premise__b { color: var(--ink-soft); font-size: 14.5px; line-height: 1.55; }
+    .premise.a { --bar: var(--terracotta); }
+    .premise.b { --bar: var(--neem); }
+    .premise.c { --bar: var(--ashok); }
+
+    /* ========== Slide 3 — What we built ========== */
+    .s-built { grid-template-rows: auto auto 1fr; gap: 36px; }
+    .s-built__top { display: grid; grid-template-columns: 5fr 7fr; gap: 60px; align-items: end; }
+    .s-built h2 { font-size: clamp(38px, 5vw, 76px); }
+    .s-built__sub { color: var(--ink-soft); max-width: 620px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      padding: 24px 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 1px solid var(--hair);
+    }
+    .stat__n {
+      font-family: var(--serif);
+      font-size: clamp(38px, 4.4vw, 68px);
+      line-height: 0.9;
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      letter-spacing: -0.04em;
+    }
+    .stat__l {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-top: 6px;
+    }
+    .stat__d { color: var(--ink-soft); font-size: 13px; margin-top: 4px; line-height: 1.4; }
+
+    .demo-row {
+      display: grid;
+      grid-template-columns: 6fr 4fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+    .panel {
+      padding: 24px 26px;
+      background: #FBF7EE;
+      border: 1px solid var(--hair);
+      border-radius: 2px;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .panel__h {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      display: flex; justify-content: space-between;
+    }
+    .panel .q {
+      font-family: var(--serif);
+      font-style: italic;
+      font-variation-settings: "opsz" 24, "SOFT" 100;
+      font-size: 18px;
+      color: var(--ink-soft);
+    }
+    .panel .a {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 30;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .panel .a .cite {
+      background: var(--highlight);
+      color: var(--ink);
+      padding: 1px 6px;
+      border-radius: 2px;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .panel .deva-line {
+      font-family: var(--deva);
+      font-size: 18px;
+      color: var(--ink);
+      padding-top: 8px;
+      border-top: 1px dashed var(--hair);
+    }
+
+    /* ========== Slide 4 — Alignment with mandates ========== */
+    .s-align { grid-template-rows: auto 1fr; gap: 36px; }
+    .s-align h2 { font-size: clamp(38px, 5vw, 76px); }
+
+    .mandate-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+    .mandate {
+      padding: 28px 28px 28px 28px;
+      border-right: 1px solid var(--hair);
+      border-bottom: 1px solid var(--hair);
+    }
+    .mandate:nth-child(2n) { border-right: 0; }
+    .mandate:nth-last-child(-n+2) { border-bottom: 0; }
+    .mandate__src {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+    .mandate__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 30;
+      font-size: 21px;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin: 8px 0 12px;
+    }
+    .mandate__b {
+      color: var(--ink-soft);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .mandate__match {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--hair);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: var(--neem);
+    }
+
+    /* ========== Slide 5 — Heritage ========== */
+    .s-heritage { grid-template-rows: auto 1fr; gap: 56px; }
+    .s-heritage__top { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+    .s-heritage__top h2 { font-size: clamp(40px, 5vw, 80px); }
+    .s-heritage__top em { font-style: italic; color: var(--terracotta); }
+    .s-heritage__top p { color: var(--ink-soft); max-width: 520px; }
+
+    .heritage {
+      display: grid;
+      grid-template-columns: 1.2fr 0.9fr 1fr;
+      align-items: stretch;
+      border: 1.5px solid var(--ink);
+    }
+    .heritage > div { padding: 36px 32px; border-right: 1px solid var(--ink); }
+    .heritage > div:last-child { border-right: 0; }
+    .heritage .yr {
+      font-family: var(--serif);
+      font-size: 84px;
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      line-height: 0.85;
+      color: var(--terracotta);
+      letter-spacing: -0.04em;
+    }
+    .heritage .label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-top: 14px;
+    }
+    .heritage .name {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 40;
+      font-size: 28px;
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+      margin-top: 8px;
+    }
+    .heritage .desc {
+      color: var(--ink-soft);
+      margin-top: 12px;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .heritage .gen {
+      font-family: var(--serif);
+      font-style: italic;
+      font-variation-settings: "opsz" 36, "SOFT" 100;
+      color: var(--neem);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .heritage .gen-list { color: var(--ink-soft); font-size: 13.5px; line-height: 1.6; margin-top: 10px; }
+    .heritage .ours {
+      background: var(--ink);
+      color: var(--paper);
+      border-right: 0;
+    }
+    .heritage .ours .label { color: rgba(244,239,229,0.5); }
+    .heritage .ours .name { color: var(--paper); }
+    .heritage .ours .desc { color: rgba(244,239,229,0.78); }
+    .heritage .ours .yr { color: var(--gold); }
+
+    /* ========== Slide 6 — Deliverables ========== */
+    .s-delivers { grid-template-rows: auto 1fr; gap: 36px; }
+    .s-delivers h2 { font-size: clamp(40px, 5vw, 80px); }
+
+    .deliv-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .deliv {
+      display: grid;
+      grid-template-columns: 80px 6fr 4fr;
+      gap: 28px;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--hair);
+      align-items: start;
+    }
+    .deliv:first-child { border-top: 2px solid var(--ink); }
+    .deliv__num {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 60, "SOFT" 0;
+      font-size: 56px;
+      line-height: 0.85;
+      color: var(--gold);
+      letter-spacing: -0.04em;
+    }
+    .deliv__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 30;
+      font-size: 24px;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    .deliv__b { color: var(--ink-soft); font-size: 14.5px; line-height: 1.55; }
+    .deliv__form {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      padding: 6px 12px;
+      border: 1px solid var(--hair);
+      border-radius: 2px;
+      display: inline-block;
+      align-self: start;
+      background: white;
+    }
+    .deliv__form b { color: var(--terracotta); font-weight: 500; }
+
+    /* ========== Slide 7 — Funding stack ========== */
+    .s-stack { grid-template-rows: auto 1fr; gap: 36px; }
+    .s-stack h2 { font-size: clamp(38px, 5vw, 76px); }
+
+    .stack-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    .stack-table th, .stack-table td {
+      padding: 18px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--hair);
+      vertical-align: top;
+    }
+    .stack-table th {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--ink-faded);
+      border-bottom: 1.5px solid var(--ink);
+    }
+    .stack-table td.scheme {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 18, "SOFT" 30;
+      font-size: 18px;
+      letter-spacing: -0.005em;
+    }
+    .stack-table td.tier {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--ink-faded);
+      text-transform: uppercase;
+    }
+    .stack-table td.amt {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 0;
+      font-size: 20px;
+      color: var(--terracotta);
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .stack-table td.amt.green { color: var(--neem); }
+    .stack-table td.amt.indigo { color: var(--ashok); }
+    .stack-table td.lever {
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+    .stack-table tr.totals td {
+      border-top: 1.5px solid var(--ink);
+      border-bottom: 0;
+      padding-top: 22px;
+      font-weight: 500;
+    }
+    .stack-table tr.totals td.amt {
+      font-size: 28px;
+      color: var(--neem);
+    }
+
+    /* ========== Slide 8 — Roadmap ========== */
+    .s-road { grid-template-rows: auto 1fr; gap: 48px; }
+    .s-road h2 { font-size: clamp(40px, 5.4vw, 80px); }
+    .road {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      align-items: stretch;
+      position: relative;
+    }
+    .road::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      top: 0;
+      height: 4px;
+      background:
+        linear-gradient(to right,
+          var(--neem) 0%, var(--neem) 50%,
+          var(--gold) 50%, var(--gold) 75%,
+          var(--hair) 75%);
+    }
+    .phase {
+      padding: 28px 22px 22px;
+      border-right: 1px solid var(--hair);
+    }
+    .phase:last-child { border-right: 0; }
+    .phase__pip {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--hair);
+      margin-bottom: 18px;
+    }
+    .phase.done .phase__pip   { background: var(--neem); }
+    .phase.now  .phase__pip   { background: var(--gold); box-shadow: 0 0 0 4px color-mix(in oklab, var(--gold), transparent 70%); }
+    .phase__tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+    }
+    .phase.done .phase__tag { color: var(--neem); }
+    .phase.now  .phase__tag { color: var(--gold); }
+    .phase__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 30;
+      font-size: 22px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 6px 0 12px;
+    }
+    .phase__b { font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; }
+    .phase__b ul { padding: 0; margin: 6px 0 0; list-style: none; }
+    .phase__b li { padding: 5px 0; border-top: 1px dashed var(--hair); }
+    .phase__b li:first-child { border-top: 0; }
+
+    /* ========== Slide 9 — Ask + close ========== */
+    .s-close { grid-template-rows: auto 1fr auto; gap: 40px; }
+    .s-close__big {
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start;
+      gap: 28px;
+    }
+    .s-close__big h2 {
+      font-size: clamp(56px, 9vw, 144px);
+      max-width: 14ch;
+    }
+    .s-close__big h2 .accent { font-style: italic; color: var(--terracotta); }
+    .s-close__big .lead { max-width: 760px; font-size: clamp(20px, 1.6vw, 28px); }
+
+    .ask {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+    .ask > div { padding: 32px 28px; border-right: 1px solid var(--hair); }
+    .ask > div:last-child { border-right: 0; }
+    .ask__l {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-bottom: 14px;
+    }
+    .ask__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 30;
+      font-size: 28px;
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+    }
+    .ask__b { color: var(--ink-soft); margin-top: 12px; font-size: 14.5px; line-height: 1.55; }
+
+    .signoff {
+      display: flex; justify-content: space-between; align-items: end;
+      gap: 24px; padding-top: 16px; border-top: 1px solid var(--hair);
+    }
+    .signoff .verse { font-family: var(--deva); font-size: 22px; color: var(--ink); }
+    .signoff .gloss {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 14, "SOFT" 100;
+      font-style: italic;
+      color: var(--ink-soft);
+      font-size: 13px;
+      max-width: 360px;
+    }
+
+    /* ========== Nav ========== */
+    .nav {
+      position: fixed;
+      top: 20px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: flex; gap: 6px;
+      padding: 6px 8px;
+      background: rgba(244,239,229,0.85);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--hair);
+      border-radius: 99px;
+    }
+    .nav a {
+      width: 18px; height: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--ink-faded);
+      border-radius: 99px;
+      transition: all 0.18s ease;
+    }
+    .nav a:hover { background: var(--hair); color: var(--ink); }
+
+    /* ========== Print ========== */
+    @media print {
+      html, body { background: var(--paper) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .nav { display: none; }
+      .slide { page-break-after: always; min-height: 100vh; height: 100vh; padding: 4vh 5vw; }
+    }
+
+    /* ========== Reveal ========== */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .slide > * { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+    .slide > *:nth-child(2) { animation-delay: 0.06s; }
+    .slide > *:nth-child(3) { animation-delay: 0.12s; }
+    .slide > *:nth-child(4) { animation-delay: 0.18s; }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 980px) {
+      .slide { padding: 5vh 6vw; }
+      .premise-grid, .heritage, .road, .ask, .demo-row, .stats, .mandate-grid {
+        grid-template-columns: 1fr;
+      }
+      .premise, .heritage > div, .ask > div, .phase, .mandate {
+        border-right: 0;
+        border-bottom: 1px solid var(--hair);
+      }
+      .road::before, .mandate:nth-child(2n) { display: none; border-right: 0; }
+      .deliv { grid-template-columns: 60px 1fr; }
+      .deliv__form { grid-column: 1 / -1; }
+      .s-premise__head, .s-heritage__top, .s-built__top { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Slide navigator">
+    <a href="#s1" title="Cover">01</a>
+    <a href="#s2" title="The premise">02</a>
+    <a href="#s3" title="What's running">03</a>
+    <a href="#s4" title="Alignment">04</a>
+    <a href="#s5" title="Heritage">05</a>
+    <a href="#s6" title="Deliverables">06</a>
+    <a href="#s7" title="Funding stack">07</a>
+    <a href="#s8" title="Roadmap">08</a>
+    <a href="#s9" title="The ask">09</a>
+  </nav>
+
+  <!-- ============== 01 · COVER =================================== -->
+  <section class="slide s-cover" id="s1">
+    <div class="s-cover__top">
+      <div class="crest">
+        <div class="crest__mark">॥</div>
+        <div class="crest__name">Age Ayurveda Companion</div>
+        <div class="crest__by">A research arm of the Baidyanath group · Prayagraj</div>
+      </div>
+      <div class="meta">
+        Government / Research Brief<br />
+        <b>For CCRAS · AYUSH · MeitY · UP StartinUP</b><br />
+        2026 · Confidential
+      </div>
+    </div>
+
+    <div class="s-cover__main">
+      <div class="eyebrow">A digital instrument for the classical Ayurvedic corpus</div>
+      <h1 class="display s-cover__title">
+        A <span class="accent">provenance-traceable</span><br />
+        AI layer for<br />
+        Ayurveda.
+      </h1>
+      <p class="s-cover__sub">
+        A grounded retrieval system that returns answers only with verse-level citations from the classical Sanskrit
+        corpus — built for digital preservation, scientific rigour, and public benefit. We are seeking a research
+        partnership with CCRAS, an EMR grant under the AYUSH ministry, and the IndiaAI compute pathway to
+        scale this to the full Ayurvedic library.
+      </p>
+    </div>
+
+    <div class="s-cover__verse">
+      <div class="deva-line">
+        समदोषः समाग्निश्च समधातुमलक्रियः। प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते॥
+      </div>
+      <div class="gloss">
+        Charaka Saṃhitā 1.41 — the classical definition of health.
+        The exact verse the platform now retrieves and cites in production.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 02 · PREMISE ================================= -->
+  <section class="slide s-premise" id="s2">
+    <div class="s-premise__head">
+      <div>
+        <div class="eyebrow">The public-mission premise</div>
+        <div class="rule"></div>
+        <h2 class="display">
+          Ayurveda's classical knowledge needs<br />a <em>scientific</em> AI layer.<br />Generic models cannot provide it.
+        </h2>
+      </div>
+      <p class="lead">
+        Today, large language models routinely fabricate Ayurvedic citations, conflate sources, and recommend
+        formulations that the classical texts never sanctioned. The risk to public trust — and to a five-thousand-year
+        tradition — is real, and it is happening at scale.
+      </p>
+    </div>
+
+    <div class="premise-grid">
+      <div class="premise a">
+        <div class="premise__tag">I · The risk</div>
+        <div>
+          <div class="premise__t">Generic AI hallucinates Ayurveda.</div>
+          <p class="premise__b">
+            Ask a leading commercial chatbot what Charaka 5.7 says — it will confidently invent a verse. Brand
+            chatbots and storefront assistants routinely cite passages that don't exist. That risk is now in
+            millions of consumer interactions per day.
+          </p>
+        </div>
+      </div>
+      <div class="premise b">
+        <div class="premise__tag">II · The gap</div>
+        <div>
+          <div class="premise__t">No standardised, citable, machine-readable corpus.</div>
+          <p class="premise__b">
+            The Sanskrit mūla pāṭha is in the public domain, but no party has packaged it as a structured,
+            verse-tagged retrieval surface that any AI system can use as ground-truth. CCRAS's recent MoUs
+            with Berhampur University and Anuvadini AI are pointing in this direction.
+          </p>
+        </div>
+      </div>
+      <div class="premise c">
+        <div class="premise__tag">III · The moment</div>
+        <div>
+          <div class="premise__t">The technology is finally good enough.</div>
+          <p class="premise__b">
+            Multilingual large language models with citation discipline ship to production today. The IndiaAI
+            Mission has stood up the compute. The AYUSH Grid and NAMASTE portal are establishing the digital
+            scaffolding. The pieces have arrived simultaneously.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 03 · WHAT'S RUNNING ========================== -->
+  <section class="slide s-built" id="s3">
+    <div class="s-built__top">
+      <div>
+        <div class="eyebrow">What is operational today</div>
+        <div class="rule"></div>
+        <h2 class="display">A working instrument, not a proposal.</h2>
+      </div>
+      <p class="s-built__sub">
+        The platform is in production. Every assistant message records exactly which classical verses grounded it.
+        The system has been built end-to-end across backend, retrieval, citation discipline, and audit infrastructure
+        — verified by 55 automated tests and a documented architecture.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div>
+        <div class="stat__n num">34</div>
+        <div class="stat__l">Verses · live in corpus</div>
+        <div class="stat__d">Aṣṭāṅga Hṛdaya · Charaka Saṃhitā Sūtrasthāna</div>
+      </div>
+      <div>
+        <div class="stat__n num">2</div>
+        <div class="stat__l">Classical sources · expandable</div>
+        <div class="stat__d">Schema-locked YAML · ready to scale to 10+</div>
+      </div>
+      <div>
+        <div class="stat__n num">55</div>
+        <div class="stat__l">Tests · all passing</div>
+        <div class="stat__d">BM25 · retrieval · tool loop · tenant auth</div>
+      </div>
+      <div>
+        <div class="stat__n num">100<span style="font-size:0.45em;color:var(--ink-faded);">%</span></div>
+        <div class="stat__l">Cite-or-decline</div>
+        <div class="stat__d">No claim asserted without a verse-level reference</div>
+      </div>
+    </div>
+
+    <div class="demo-row">
+      <div class="panel">
+        <div class="panel__h"><span>Live grounded answer · streaming</span><span>Sūtrasthāna</span></div>
+        <p class="q">"I cannot sleep at night — what does Ayurveda recommend?"</p>
+        <p class="a">
+          Daily abhyaṅga (warm-oil self-massage) is the canonical first response — it pacifies Vāta, the dosha
+          most associated with restless sleep <span class="cite">Aṣṭāṅga Hṛdaya, Sūtra. 2.7</span>. Pair with
+          consistent bedtime before 10&nbsp;PM <span class="cite">Aṣṭāṅga Hṛdaya, Sūtra. 2.1</span> for the strongest effect.
+        </p>
+        <div class="deva-line">
+          अभ्यङ्गमाचरेन्नित्यं स जरा-श्रम-वातहा।
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel__h"><span>Audit trail · administrator view</span><span>per message</span></div>
+        <div class="a" style="font-size:14px; color:var(--ink-soft); line-height:1.6;">
+          Every assistant message recorded with:
+          <br>· conversation id, language, timestamp
+          <br>· retrieved verse ids and similarity scores
+          <br>· input/output token counts, model id
+          <br>· extracted citations for client-side rendering
+        </div>
+        <div class="deva-line" style="font-family:var(--mono); font-size:11px; line-height:1.6; color:var(--ink-faded);">
+          GET /admin/grounded/messages<br>/{message_id}/retrievals
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 04 · ALIGNMENT =============================== -->
+  <section class="slide s-align" id="s4">
+    <div>
+      <div class="eyebrow neem">Alignment with stated public mandates</div>
+      <div class="rule"></div>
+      <h2 class="display">This work sits inside missions the Government has already announced.</h2>
+    </div>
+
+    <div class="mandate-grid">
+      <div class="mandate">
+        <div class="mandate__src">CCRAS · MoU · Berhampur U · 2025</div>
+        <div class="mandate__t">Digital preservation of palm-leaf Ayurvedic manuscripts.</div>
+        <div class="mandate__b">
+          The Council has explicitly opened collaborative pathways to preserve and digitise rare classical
+          manuscripts. The Companion platform is, by construction, a digitisation surface for the same corpus.
+        </div>
+        <div class="mandate__match">→ Direct fit · proposed MoU pathway</div>
+      </div>
+      <div class="mandate">
+        <div class="mandate__src">CCRAS · MoU · Anuvadini AI · 2025</div>
+        <div class="mandate__t">Multilingual AI translation of Ayurvedic texts.</div>
+        <div class="mandate__b">
+          A precedent for partnership between CCRAS and an AI organisation working on classical-text
+          translation. Companion's retrieval is multilingual — English, Hindi, Devanagari Sanskrit — by default.
+        </div>
+        <div class="mandate__match">→ Adjacent precedent · partnership shape established</div>
+      </div>
+      <div class="mandate">
+        <div class="mandate__src">AYUSH Ministry · ANUDAN · EMR Scheme</div>
+        <div class="mandate__t">Extra-Mural Research grants for Ayurveda R&amp;D.</div>
+        <div class="mandate__b">
+          Up to ~₹30 L per project, non-dilutive, for Ayurveda research programmes. We are preparing a proposal
+          with an academic co-investigator on classical-text retrieval validation.
+        </div>
+        <div class="mandate__match">→ Application pathway · Q3</div>
+      </div>
+      <div class="mandate">
+        <div class="mandate__src">MeitY · IndiaAI Mission · Compute Capacity</div>
+        <div class="mandate__t">Subsidised GPU infrastructure for Indian AI startups.</div>
+        <div class="mandate__b">
+          The 40% subsidy track, accessible to DPIIT-recognised Indian-majority-owned startups, supports the
+          embedding generation and corpus indexing workloads required to scale to the full library.
+        </div>
+        <div class="mandate__match">→ Application pathway · Q3</div>
+      </div>
+      <div class="mandate">
+        <div class="mandate__src">NHA + IIT-Kanpur · BODH · launched Mar 2026</div>
+        <div class="mandate__t">Open benchmarking platform for health AI.</div>
+        <div class="mandate__b">
+          A national instrument to evaluate health-AI systems against standardised benchmarks. Companion's
+          citation-traceable architecture is designed to be benchmarked, not hidden.
+        </div>
+        <div class="mandate__match">→ Tracking onboarding mechanics</div>
+      </div>
+      <div class="mandate">
+        <div class="mandate__src">UP StartinUP · Purvanchal track · 2022</div>
+        <div class="mandate__t">Seed support and capital subsidy for Purvanchal-based startups.</div>
+        <div class="mandate__b">
+          The platform is incorporated and will operate from Prayagraj — within the Purvanchal multiplier zone
+          — making it eligible for state-level seed and operational support layered on the central stack.
+        </div>
+        <div class="mandate__match">→ Application pathway · Q2</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 05 · HERITAGE ================================ -->
+  <section class="slide s-heritage" id="s5">
+    <div class="s-heritage__top">
+      <div>
+        <div class="eyebrow">The institutional anchor</div>
+        <div class="rule"></div>
+        <h2 class="display">A research arm of an institution<br />older than the <em>Republic</em>.</h2>
+      </div>
+      <p>
+        Age Ayurveda Companion is being incorporated as an independent research and product company; its
+        institutional anchor is one of the oldest established Ayurvedic enterprises in the country — founded in
+        1917, three generations active today, GMP-certified manufacturing, and an unbroken pandit lineage.
+        That anchor matters because the work proposed here requires both technical capability and classical
+        scholarly authority, and few entities in the country can supply both.
+      </p>
+    </div>
+
+    <div class="heritage">
+      <div>
+        <div class="yr num">1917</div>
+        <div class="label">Founded</div>
+        <div class="name">A heritage Ayurvedic enterprise.</div>
+        <div class="desc">
+          Established by a founding pandit in Calcutta — among the first major Ayurvedic enterprises of the
+          modern era. Today: a GMP-certified, FDA-21-CFR-compliant manufacturing operation in Prayagraj
+          serving European exports and domestic D2C brands.
+        </div>
+      </div>
+      <div>
+        <div class="label">Three generations</div>
+        <div class="gen">An unbroken pandit lineage.</div>
+        <div class="gen-list">
+          ↓ Gen 1 — the founding pandit, 1917.<br />
+          ↓ Gen 2 — the operating bench today.<br />
+          ↓ Gen 3 — including the founders of this platform.<br /><br />
+          Twenty-one shareholders. Ten board seats. One classical formulary.
+        </div>
+      </div>
+      <div class="ours">
+        <div class="yr num">2026</div>
+        <div class="label">This research arm</div>
+        <div class="name">Age Ayurveda Companion Pvt Ltd.</div>
+        <div class="desc">
+          A newly-incorporated independent Pvt Ltd, founder-held, separate cap table — DPIIT-recognised, MSME-
+          registered, eligible for the central startup stack. Built specifically to host this digital-research mandate
+          while the heritage entity continues its manufacturing role.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 06 · DELIVERABLES ============================ -->
+  <section class="slide s-delivers" id="s6">
+    <div>
+      <div class="eyebrow gold">What we will deliver to the public</div>
+      <div class="rule gold"></div>
+      <h2 class="display">Four artefacts. Open-licensed. Useful to the country.</h2>
+    </div>
+
+    <div class="deliv-list">
+      <div class="deliv">
+        <div class="deliv__num num">01</div>
+        <div>
+          <div class="deliv__t">Structured-XML digital corpus, open-licensed.</div>
+          <div class="deliv__b">
+            Selected sthānas of <em>Aṣṭāṅga Hṛdaya</em>, <em>Charaka Saṃhitā</em>, <em>Suśruta Saṃhitā</em>,
+            and <em>Bhāvaprakāśa</em> — each verse tagged with chapter, verse-range, semantic concept, and
+            CCRAS-validated provenance. A national research artefact independent of any commercial product.
+          </div>
+        </div>
+        <div class="deliv__form">Form · <b>Open-licensed dataset</b></div>
+      </div>
+      <div class="deliv">
+        <div class="deliv__num num">02</div>
+        <div>
+          <div class="deliv__t">Benchmark dataset for classical-text question-answering.</div>
+          <div class="deliv__b">
+            500 reference questions paired with verse-level ground-truth answers, validated by CCRAS-
+            nominated scholars. A reference standard against which any future Ayurvedic AI system can be
+            measured — comparable in spirit to the BODH initiative recently launched by NHA and IIT-Kanpur.
+          </div>
+        </div>
+        <div class="deliv__form">Form · <b>Public benchmark</b></div>
+      </div>
+      <div class="deliv">
+        <div class="deliv__num num">03</div>
+        <div>
+          <div class="deliv__t">Provenance-validation toolkit, open-source.</div>
+          <div class="deliv__b">
+            A library that any researcher, brand, or clinic can use to independently verify whether an Ayurvedic
+            claim is grounded in classical text. Strips the asymmetry between authoritative sources and
+            commercial AI systems that too often invent them.
+          </div>
+        </div>
+        <div class="deliv__form">Form · <b>Apache 2.0 software</b></div>
+      </div>
+      <div class="deliv">
+        <div class="deliv__num num">04</div>
+        <div>
+          <div class="deliv__t">Joint scholarly outputs.</div>
+          <div class="deliv__b">
+            Two co-authored publications in the partnership year — one technical (retrieval methodology and
+            multilingual evaluation), one Ayurvedic-scholarly (verse-selection methodology and provenance
+            convention). Joint authorship on every consequential dataset or tool release.
+          </div>
+        </div>
+        <div class="deliv__form">Form · <b>Peer-reviewed papers</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 07 · FUNDING STACK =========================== -->
+  <section class="slide s-stack" id="s7">
+    <div>
+      <div class="eyebrow indigo">The funding stack we are pursuing</div>
+      <div class="rule"></div>
+      <h2 class="display">No single ask. A coherent stack.</h2>
+    </div>
+
+    <table class="stack-table">
+      <thead>
+        <tr>
+          <th>Lever</th>
+          <th>Tier</th>
+          <th>Form</th>
+          <th>Conservative Y1 value</th>
+          <th>What it unlocks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="scheme">CCRAS Research MoU</td>
+          <td class="tier">Tier I · Q2</td>
+          <td class="lever">Non-monetary partnership</td>
+          <td class="amt">Credentialing</td>
+          <td class="lever">Scientific authority. Co-validation by CCRAS-nominated scholars. The institutional foundation for everything below.</td>
+        </tr>
+        <tr>
+          <td class="scheme">AYUSH EMR Grant (ANUDAN portal)</td>
+          <td class="tier">Tier I · Q3</td>
+          <td class="lever">Non-dilutive grant, with academic co-PI</td>
+          <td class="amt">~₹25 L</td>
+          <td class="lever">Funds the corpus expansion + benchmark dataset construction. Routed through the standard EMR review channel.</td>
+        </tr>
+        <tr>
+          <td class="scheme">MeitY SAMRIDH (digital-health cohort)</td>
+          <td class="tier">Tier I · Q3</td>
+          <td class="lever">1:1 matching grant + accelerator</td>
+          <td class="amt">~₹30 L</td>
+          <td class="lever">Operational scale-up: corpus engineering team, partnership development, B2B SaaS infrastructure.</td>
+        </tr>
+        <tr>
+          <td class="scheme">UP StartinUP — Purvanchal track</td>
+          <td class="tier">Tier I · Q2</td>
+          <td class="lever">Seed grant + sustenance</td>
+          <td class="amt indigo">~₹13 L</td>
+          <td class="lever">State-level support layered on central stack. Purvanchal multiplier applies to the Prayagraj base.</td>
+        </tr>
+        <tr>
+          <td class="scheme">IndiaAI Compute (40% subsidy)</td>
+          <td class="tier">Tier I · Q3</td>
+          <td class="lever">In-kind GPU credit</td>
+          <td class="amt green">~₹20–40 L equiv.</td>
+          <td class="lever">Embedding generation at scale, batch indexing, fine-tuning a small classical-text model. Empanelled providers: E2E, Yotta, Jio.</td>
+        </tr>
+        <tr>
+          <td class="scheme">Sec 80-IAC Tax Holiday</td>
+          <td class="tier">Tier II · Q3</td>
+          <td class="lever">Future tax shield · 3 of first 10 yrs</td>
+          <td class="amt">Deferred</td>
+          <td class="lever">Window extended to entities incorporated before 1 April 2030 by Budget 2025. Filed concurrently with DPIIT.</td>
+        </tr>
+        <tr class="totals">
+          <td class="scheme">Conservative Year-1 stack</td>
+          <td></td>
+          <td></td>
+          <td class="amt">~₹70–80 L cash + in-kind</td>
+          <td class="lever">Excludes 80-IAC future shield and the unmeasured value of CCRAS credentialing.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ============== 08 · ROADMAP ================================= -->
+  <section class="slide s-road" id="s8">
+    <div>
+      <div class="eyebrow">From operational platform to national instrument</div>
+      <div class="rule"></div>
+      <h2 class="display">Four phases. The first two are already complete.</h2>
+    </div>
+
+    <div class="road">
+      <div class="phase done">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 1 · Done</div>
+        <div class="phase__t">Platform foundation</div>
+        <div class="phase__b">
+          <ul>
+            <li>Grounded retrieval pipeline</li>
+            <li>Hybrid BM25 + dense fusion</li>
+            <li>Citation-strict generation</li>
+            <li>Streaming chat surface</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase done">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 2 · Done</div>
+        <div class="phase__t">Production hardening</div>
+        <div class="phase__b">
+          <ul>
+            <li>Tool-aware tenant model</li>
+            <li>Per-tenant rate &amp; cost</li>
+            <li>Source allowlists</li>
+            <li>55-test automated suite</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase now">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 3 · Now</div>
+        <div class="phase__t">Government partnership</div>
+        <div class="phase__b">
+          <ul>
+            <li>CCRAS MoU outreach</li>
+            <li>AYUSH EMR proposal</li>
+            <li>SAMRIDH application</li>
+            <li>IndiaAI compute onboarding</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 4 · 2027</div>
+        <div class="phase__t">Corpus expansion + dissemination</div>
+        <div class="phase__b">
+          <ul>
+            <li>Suśruta · full Sūtrasthāna</li>
+            <li>Bhāvaprakāśa · Madhya khaṇḍa</li>
+            <li>Open benchmark released</li>
+            <li>First peer-reviewed paper</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 09 · ASK + CLOSE ============================= -->
+  <section class="slide s-close" id="s9">
+    <div>
+      <div class="eyebrow gold">The ask, in three columns</div>
+      <div class="rule gold"></div>
+    </div>
+
+    <div class="s-close__big">
+      <h2 class="display">
+        India's classical knowledge<br />
+        deserves a <span class="accent">scientific</span> AI layer.
+      </h2>
+      <p class="lead">
+        Built carefully, validated rigorously, anchored in a heritage that vouches for it. We have the technical
+        platform operational and the institutional foundation in place. What we are now seeking — from CCRAS,
+        the AYUSH ministry, MeitY, and the State of Uttar Pradesh — is the partnership that turns this from a
+        company project into a national research instrument.
+      </p>
+    </div>
+
+    <div class="ask">
+      <div>
+        <div class="ask__l">From CCRAS</div>
+        <div class="ask__t">A research MoU.</div>
+        <div class="ask__b">
+          Twelve-month partnership. Open-licensed corpus, public benchmark, open-source toolkit, two
+          co-authored papers. Council scholars provide validation; we provide the engineering. No financial ask
+          in this MoU.
+        </div>
+      </div>
+      <div>
+        <div class="ask__l">From AYUSH · MeitY · UP</div>
+        <div class="ask__t">A coherent funding stack.</div>
+        <div class="ask__b">
+          AYUSH EMR grant for the public-research deliverables. MeitY SAMRIDH for operational scale-up.
+          IndiaAI compute for embedding/indexing infrastructure. UP StartinUP Purvanchal seed for state-level
+          alignment. Each application stands on its own merits.
+        </div>
+      </div>
+      <div>
+        <div class="ask__l">From the public</div>
+        <div class="ask__t">Trust we will earn, not assume.</div>
+        <div class="ask__b">
+          Every assistant message records the verses that grounded it. Every claim resolves to a citable source.
+          Every dataset and tool we publish will be open-licensed. The standard we apply to ourselves is
+          higher than the one currently applied to commercial Ayurveda AI.
+        </div>
+      </div>
+    </div>
+
+    <div class="signoff">
+      <div>
+        <div class="verse">हेतुलिङ्गौषधज्ञानं स्वस्थातुरपरायणम्।</div>
+        <div class="gloss">"Cause, symptom, remedy — devoted to both the healthy and the sick." Aṣṭāṅga Hṛdaya 1.20.</div>
+      </div>
+      <div class="meta">
+        Founder &amp; CEO<br />
+        <b>Age Ayurveda Companion Pvt Ltd</b><br />
+        Prayagraj · ageayurveda.com
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    function nearestSlideIndex() {
+      const y = window.scrollY + window.innerHeight / 2;
+      let best = 0, dist = Infinity;
+      for (let i = 0; i < slides.length; i++) {
+        const r = slides[i].getBoundingClientRect();
+        const center = window.scrollY + r.top + r.height / 2;
+        const d = Math.abs(center - y);
+        if (d < dist) { dist = d; best = i; }
+      }
+      return best;
+    }
+    function go(delta) {
+      const next = Math.max(0, Math.min(slides.length - 1, nearestSlideIndex() + delta));
+      slides[next].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    document.addEventListener('keydown', (e) => {
+      if (['ArrowDown', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); go(1); }
+      if (['ArrowUp', 'PageUp'].includes(e.key))            { e.preventDefault(); go(-1); }
+      if (e.key === 'Home')                                  { e.preventDefault(); slides[0].scrollIntoView({ behavior: 'smooth' }); }
+      if (e.key === 'End')                                   { e.preventDefault(); slides[slides.length-1].scrollIntoView({ behavior: 'smooth' }); }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1804 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AGE Ayurveda Companion — Pitch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* =================================================================
+       AGE Ayurveda — Pitch Deck
+       Aesthetic: classical Ayurveda meets modern AI infrastructure.
+       Cream parchment ground · ink-on-paper feel · gold/terracotta accents.
+       ================================================================= */
+
+    :root {
+      /* Palette — Ayurvedic ink, earth, leaf, gold leaf */
+      --paper:      #F4EFE5;        /* warm cream, like aged manuscript */
+      --paper-deep: #ECE4D2;
+      --ink:        #1B1814;        /* deep ink, not pure black */
+      --ink-soft:   #4A413A;
+      --ink-faded:  #877C70;
+      --hair:       #D7CDB9;
+      --terracotta: #B84A1F;        /* haldi/amla pigment */
+      --terracotta-deep: #8C2E0E;
+      --neem:       #2E5D3F;        /* deep leaf green */
+      --gold:       #A8895C;        /* gold leaf in old manuscripts */
+      --indigo:     #2C3E5C;        /* dyed cloth indigo */
+      --highlight:  #F2E2BE;        /* turmeric stain */
+
+      /* Type stack */
+      --serif: "Fraunces", "Iowan Old Style", "Hoefler Text", Georgia, serif;
+      --sans:  "DM Sans", "Helvetica Neue", system-ui, sans-serif;
+      --mono:  "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+      --deva:  "Noto Serif Devanagari", "Sanskrit Text", serif;
+    }
+
+    /* ----- Reset & ground ------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.55;
+      font-feature-settings: "ss01", "ss02";
+      /* Fine grain — subtle paper texture so the cream isn't flat */
+      background-image:
+        radial-gradient(at 50% 0%, rgba(168,137,92,0.07), transparent 70%),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.36  0 0 0 0 0.28  0 0 0 0.07 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+      background-attachment: fixed;
+    }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, h4 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; }
+
+    /* ----- Layout primitives ---------------------------------------- */
+    .slide {
+      min-height: 100vh;
+      width: 100%;
+      padding: 6vh 7vw;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      position: relative;
+      display: grid;
+      isolation: isolate;
+    }
+    .slide + .slide {
+      border-top: 1px solid color-mix(in oklab, var(--hair), transparent 40%);
+    }
+    .slide::before {
+      /* Slide number — top-right corner mark */
+      content: counter(slide, decimal-leading-zero) " / 11";
+      counter-increment: slide;
+      position: absolute;
+      top: 28px; right: 36px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: var(--ink-faded);
+      text-transform: uppercase;
+    }
+    body { counter-reset: slide; }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+    .eyebrow.gold     { color: var(--gold); }
+    .eyebrow.neem     { color: var(--neem); }
+    .eyebrow.indigo   { color: var(--indigo); }
+    .eyebrow.ink      { color: var(--ink-soft); }
+
+    .rule {
+      width: 56px; height: 1px; background: var(--ink); margin: 22px 0;
+    }
+    .rule.gold       { background: var(--gold); }
+    .rule.terracotta { background: var(--terracotta); }
+    .rule.long       { width: 100%; }
+
+    .ornament {
+      font-family: var(--deva);
+      color: var(--gold);
+      letter-spacing: 0.4em;
+      user-select: none;
+    }
+
+    /* ----- Typography utilities ------------------------------------- */
+    .display {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 144, "SOFT" 30;
+      font-weight: 400;
+      line-height: 0.96;
+      letter-spacing: -0.025em;
+    }
+    .display.tight { letter-spacing: -0.04em; }
+    .display em {
+      font-style: italic;
+      font-variation-settings: "opsz" 144, "SOFT" 100;
+      color: var(--terracotta);
+    }
+    .lead {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 60;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      color: var(--ink-soft);
+    }
+    .small-caps {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 14;
+      font-feature-settings: "smcp", "c2sc";
+      letter-spacing: 0.12em;
+      text-transform: lowercase;
+    }
+    .mono { font-family: var(--mono); }
+    .deva { font-family: var(--deva); }
+
+    .num {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      font-feature-settings: "tnum", "lnum";
+      letter-spacing: -0.04em;
+      line-height: 0.85;
+    }
+
+    /* ----- Slide 1 — Cover ------------------------------------------ */
+    .s-cover {
+      grid-template-rows: auto 1fr auto;
+      gap: 48px;
+    }
+    .s-cover__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .crest {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .crest__mark {
+      font-family: var(--deva);
+      font-size: 32px;
+      color: var(--terracotta);
+      line-height: 1;
+    }
+    .crest__name {
+      font-family: var(--serif);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .crest__by {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: var(--ink-faded);
+      text-transform: uppercase;
+    }
+    .meta {
+      text-align: right;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      line-height: 1.8;
+    }
+    .meta b { color: var(--ink); font-weight: 500; }
+
+    .s-cover__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      padding: 24px 0;
+    }
+    .s-cover__title {
+      font-size: clamp(56px, 9vw, 152px);
+    }
+    .s-cover__title .accent {
+      font-style: italic;
+      color: var(--terracotta);
+      font-variation-settings: "opsz" 144, "SOFT" 100;
+    }
+    .s-cover__sub {
+      max-width: 760px;
+      color: var(--ink-soft);
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 50;
+      font-size: clamp(20px, 1.6vw, 26px);
+      line-height: 1.4;
+    }
+    .s-cover__verse {
+      display: flex;
+      gap: 56px;
+      align-items: end;
+      flex-wrap: wrap;
+      padding-top: 28px;
+      border-top: 1px solid var(--hair);
+    }
+    .s-cover__verse .deva-line {
+      font-family: var(--deva);
+      font-size: clamp(20px, 2vw, 30px);
+      color: var(--ink);
+      line-height: 1.5;
+      max-width: 620px;
+    }
+    .s-cover__verse .gloss {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink-soft);
+      font-size: 14px;
+      max-width: 320px;
+      line-height: 1.5;
+      font-variation-settings: "opsz" 14, "SOFT" 100;
+    }
+    .s-cover__verse .gloss::before { content: "॥ "; color: var(--gold); }
+
+    /* ----- Slide 2 — Thesis (three forces) -------------------------- */
+    .s-thesis { grid-template-rows: auto 1fr; gap: 60px; }
+    .s-thesis__head { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+    .s-thesis__head h2 { font-size: clamp(40px, 5.4vw, 84px); }
+    .s-thesis__pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-self: center;
+    }
+    .pillar {
+      padding: 28px;
+      background: rgba(255,255,255,0.4);
+      border: 1px solid var(--hair);
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .pillar::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--bar, var(--gold));
+    }
+    .pillar.terracotta { --bar: var(--terracotta); }
+    .pillar.neem       { --bar: var(--neem); }
+    .pillar.indigo     { --bar: var(--indigo); }
+
+    .pillar__num {
+      font-family: var(--serif);
+      font-size: 96px;
+      line-height: 0.85;
+      color: var(--bar, var(--gold));
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+    }
+    .pillar__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 30;
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .pillar__b { color: var(--ink-soft); font-size: 14.5px; line-height: 1.55; }
+    .pillar__tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--bar, var(--gold));
+    }
+
+    /* ----- Slide 3 — Problem ---------------------------------------- */
+    .s-problem { grid-template-rows: auto 1fr; gap: 48px; }
+    .s-problem__bicol {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .s-problem__statement {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 60, "SOFT" 30;
+      font-size: clamp(32px, 3.2vw, 56px);
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+    }
+    .s-problem__statement em { color: var(--terracotta); font-style: italic; }
+    .s-problem__list { display: flex; flex-direction: column; gap: 22px; }
+    .friction {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 22px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--hair);
+    }
+    .friction__num {
+      font-family: var(--serif);
+      font-size: 36px;
+      color: var(--gold);
+      line-height: 1;
+      font-variation-settings: "opsz" 60, "SOFT" 0;
+    }
+    .friction__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24";
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+    }
+    .friction__b { color: var(--ink-soft); font-size: 14.5px; }
+
+    /* ----- Slide 4 — What we built (live) --------------------------- */
+    .s-built { grid-template-rows: auto auto 1fr; gap: 36px; }
+    .s-built__top { display: grid; grid-template-columns: 4fr 6fr; gap: 60px; align-items: end; }
+    .s-built h2 { font-size: clamp(38px, 5vw, 80px); }
+    .s-built__sub { color: var(--ink-soft); max-width: 540px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding: 28px 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 1px solid var(--hair);
+    }
+    .stat__n {
+      font-family: var(--serif);
+      font-size: clamp(40px, 4.6vw, 72px);
+      line-height: 0.9;
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      letter-spacing: -0.04em;
+    }
+    .stat__l {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-top: 6px;
+    }
+    .stat__d { color: var(--ink-soft); font-size: 13px; margin-top: 4px; line-height: 1.4; }
+
+    .demo {
+      display: grid;
+      grid-template-columns: 5fr 4fr 3fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 8px;
+    }
+    .panel {
+      padding: 24px;
+      background: #FBF7EE;
+      border: 1px solid var(--hair);
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 280px;
+    }
+    .panel__h {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      display: flex;
+      justify-content: space-between;
+    }
+    .panel .q {
+      font-family: var(--serif);
+      font-style: italic;
+      font-variation-settings: "opsz" 24, "SOFT" 100;
+      font-size: 18px;
+      color: var(--ink-soft);
+    }
+    .panel .a {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 30;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .panel .a .cite {
+      background: var(--highlight);
+      color: var(--ink);
+      padding: 1px 6px;
+      border-radius: 2px;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .chips {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      margin-top: auto;
+    }
+    .chip {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      padding: 4px 10px;
+      border: 1px solid var(--hair);
+      border-radius: 99px;
+      background: white;
+      color: var(--ink-soft);
+    }
+    .chip::before { content: "📜 "; opacity: 0.55; }
+
+    .product-card {
+      padding: 14px;
+      background: white;
+      border: 1px solid var(--hair);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .product-card__thumb {
+      width: 52px; height: 52px;
+      background: var(--paper-deep);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--neem);
+      font-family: var(--deva);
+      font-size: 22px;
+    }
+    .product-card__name {
+      font-family: var(--serif);
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+    .product-card__why {
+      font-size: 11.5px;
+      color: var(--ink-faded);
+      line-height: 1.4;
+    }
+    .product-card__price {
+      font-family: var(--mono);
+      font-size: 12.5px;
+      color: var(--terracotta);
+    }
+
+    .stack {
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .corpus-row {
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--hair);
+    }
+    .corpus-row__src {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 18";
+      font-size: 16px;
+    }
+    .corpus-row__n {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--ink);
+    }
+
+    /* ----- Slide 5 — Architecture ----------------------------------- */
+    .s-arch { grid-template-rows: auto 1fr; gap: 36px; }
+    .s-arch__head { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 24px; }
+    .s-arch__head h2 { font-size: clamp(40px, 5.4vw, 80px); }
+
+    .arch-flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+    .node {
+      padding: 22px 18px;
+      border: 1.5px solid var(--ink);
+      background: white;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 180px;
+      position: relative;
+    }
+    .node + .node::before {
+      content: "→";
+      position: absolute;
+      top: 50%;
+      left: -22px;
+      transform: translateY(-50%);
+      font-family: var(--serif);
+      color: var(--terracotta);
+      font-size: 22px;
+    }
+    .node__step {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--terracotta);
+      text-transform: uppercase;
+    }
+    .node__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 30, "SOFT" 30;
+      font-size: 22px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-top: 12px;
+    }
+    .node__b {
+      color: var(--ink-soft);
+      font-size: 13px;
+      margin-top: 8px;
+      line-height: 1.45;
+    }
+    .node__code {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      color: var(--gold);
+      margin-top: 10px;
+      letter-spacing: 0.02em;
+    }
+
+    .moat-grid {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 60px;
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid var(--hair);
+    }
+    .moat-grid h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      font-variation-settings: "opsz" 36, "SOFT" 30;
+    }
+    .moat-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; }
+    .moat-list li {
+      list-style: none;
+      padding: 14px 0;
+      border-top: 1px solid var(--hair);
+      font-size: 14.5px;
+      line-height: 1.45;
+    }
+    .moat-list li::first-line { font-family: var(--serif); font-size: 17px; color: var(--ink); }
+
+    /* ----- Slide 6 — Moat ------------------------------------------- */
+    .s-moat { grid-template-rows: auto 1fr; gap: 56px; }
+    .s-moat__top { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+    .s-moat__top h2 { font-size: clamp(40px, 5vw, 80px); }
+    .s-moat__top em { font-style: italic; color: var(--terracotta); }
+    .s-moat__top p { color: var(--ink-soft); max-width: 520px; }
+
+    .heritage {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 0;
+      align-items: stretch;
+      border: 1.5px solid var(--ink);
+    }
+    .heritage > div {
+      padding: 36px 32px;
+      border-right: 1px solid var(--ink);
+    }
+    .heritage > div:last-child { border-right: 0; }
+    .heritage .yr {
+      font-family: var(--serif);
+      font-size: 84px;
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      line-height: 0.85;
+      color: var(--terracotta);
+      letter-spacing: -0.04em;
+    }
+    .heritage .label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-top: 14px;
+    }
+    .heritage .name {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 40;
+      font-size: 30px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-top: 8px;
+    }
+    .heritage .desc {
+      color: var(--ink-soft);
+      margin-top: 12px;
+      font-size: 14.5px;
+      line-height: 1.5;
+    }
+    .heritage .gen {
+      font-family: var(--serif);
+      font-style: italic;
+      font-variation-settings: "opsz" 36, "SOFT" 100;
+      color: var(--neem);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .heritage .gen-list { color: var(--ink-soft); font-size: 13.5px; line-height: 1.55; margin-top: 10px; }
+    .heritage .ours {
+      background: var(--ink);
+      color: var(--paper);
+      border-right: 0;
+    }
+    .heritage .ours .label { color: rgba(244,239,229,0.5); }
+    .heritage .ours .name { color: var(--paper); }
+    .heritage .ours .desc { color: rgba(244,239,229,0.75); }
+    .heritage .ours .yr { color: var(--gold); }
+
+    /* ----- Slide 7 — Three surfaces --------------------------------- */
+    .s-surfaces { grid-template-rows: auto 1fr; gap: 48px; }
+    .s-surfaces h2 { font-size: clamp(40px, 5.4vw, 80px); }
+    .surfaces-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+    .surface {
+      padding: 36px 32px;
+      border-right: 1px solid var(--hair);
+      display: flex; flex-direction: column; gap: 20px;
+      min-height: 480px;
+      position: relative;
+    }
+    .surface:last-child { border-right: 0; }
+    .surface__tag {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      display: flex; justify-content: space-between;
+    }
+    .surface__num {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      font-size: 96px;
+      line-height: 0.8;
+      color: var(--bar, var(--terracotta));
+      letter-spacing: -0.04em;
+      margin: -8px 0;
+    }
+    .surface__name {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 30;
+      font-size: 28px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .surface__price {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--bar, var(--terracotta));
+      letter-spacing: 0.04em;
+    }
+    .surface__desc { color: var(--ink-soft); font-size: 14.5px; line-height: 1.55; }
+    .surface__buyers {
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px dashed var(--hair);
+      font-size: 12.5px;
+      color: var(--ink-faded);
+      font-family: var(--mono);
+      letter-spacing: 0.04em;
+    }
+    .surface.b2b      { --bar: var(--terracotta); }
+    .surface.consumer { --bar: var(--neem); }
+    .surface.clinical { --bar: var(--indigo); }
+
+    /* ----- Slide 8 — Nitya stack context ---------------------------- */
+    .s-nitya { grid-template-rows: auto 1fr; gap: 36px; }
+    .s-nitya__top { display: grid; grid-template-columns: 6fr 6fr; gap: 60px; align-items: end; }
+    .s-nitya__top h2 { font-size: clamp(40px, 5vw, 80px); }
+    .s-nitya__top p { color: var(--ink-soft); max-width: 540px; font-size: 16px; }
+
+    .nitya-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .proj {
+      padding: 18px 16px;
+      border: 1px solid var(--hair);
+      background: rgba(255,255,255,0.4);
+      min-height: 180px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      position: relative;
+    }
+    .proj.hero {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+    }
+    .proj.hero .proj__t { color: var(--paper); }
+    .proj.hero .proj__b { color: rgba(244,239,229,0.7); }
+    .proj.hero .proj__num { color: var(--gold); }
+    .proj.hero::after {
+      content: "← THIS DECK";
+      position: absolute;
+      bottom: -22px; left: 0;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--terracotta);
+    }
+    .proj__num {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 60, "SOFT" 0;
+      font-size: 28px;
+      line-height: 1;
+      color: var(--ink-faded);
+    }
+    .proj__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 18, "SOFT" 30;
+      font-size: 15px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .proj__b {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-faded);
+      letter-spacing: 0.06em;
+      margin-top: 8px;
+    }
+
+    .nitya-rev {
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid var(--hair);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      align-items: end;
+    }
+    .nitya-rev__item .num {
+      font-size: 44px;
+      line-height: 0.9;
+    }
+    .nitya-rev__item .l {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-top: 6px;
+    }
+
+    /* ----- Slide 9 — Unit economics --------------------------------- */
+    .s-unit { grid-template-rows: auto 1fr; gap: 40px; }
+    .s-unit__top { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+    .s-unit__top h2 { font-size: clamp(40px, 5.4vw, 80px); }
+
+    .ledger {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .ledger-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--mono);
+      font-size: 13.5px;
+    }
+    .ledger-table th, .ledger-table td {
+      padding: 14px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--hair);
+    }
+    .ledger-table th {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      font-weight: 500;
+      border-bottom: 1.5px solid var(--ink);
+    }
+    .ledger-table td.q { font-family: var(--serif); font-variation-settings: "opsz" 18; font-size: 16px; }
+    .ledger-table tr.totals td {
+      border-top: 1.5px solid var(--ink);
+      border-bottom: none;
+      padding-top: 18px;
+      font-weight: 600;
+    }
+    .ledger-table .num-cell { color: var(--terracotta); }
+    .ledger-table .green { color: var(--neem); }
+
+    .margin-card {
+      padding: 36px;
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: 2px;
+      display: flex; flex-direction: column; gap: 18px;
+    }
+    .margin-card .pct {
+      font-family: var(--serif);
+      font-size: 132px;
+      line-height: 0.85;
+      color: var(--gold);
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      letter-spacing: -0.05em;
+    }
+    .margin-card .l {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(244,239,229,0.55);
+    }
+    .margin-card .desc {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 60;
+      font-size: 17px;
+      color: rgba(244,239,229,0.85);
+      line-height: 1.5;
+    }
+
+    /* ----- Slide 10 — Roadmap --------------------------------------- */
+    .s-road { grid-template-rows: auto 1fr; gap: 48px; }
+    .s-road h2 { font-size: clamp(40px, 5.4vw, 80px); }
+    .road {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      align-items: stretch;
+      position: relative;
+    }
+    .road::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      top: 0;
+      height: 4px;
+      background:
+        linear-gradient(to right,
+          var(--neem) 0%, var(--neem) 40%,
+          var(--gold) 40%, var(--gold) 60%,
+          var(--hair) 60%);
+    }
+    .phase {
+      padding: 28px 22px 22px;
+      border-right: 1px solid var(--hair);
+      position: relative;
+    }
+    .phase:last-child { border-right: 0; }
+    .phase__pip {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--hair);
+      margin-bottom: 18px;
+    }
+    .phase.done .phase__pip   { background: var(--neem); }
+    .phase.now  .phase__pip   { background: var(--gold); box-shadow: 0 0 0 4px color-mix(in oklab, var(--gold), transparent 70%); }
+    .phase__tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+    }
+    .phase.done .phase__tag { color: var(--neem); }
+    .phase.now  .phase__tag { color: var(--gold); }
+    .phase__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 24, "SOFT" 30;
+      font-size: 22px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 6px 0 12px;
+    }
+    .phase__b {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+    .phase__b ul { padding: 0; margin: 6px 0 0; list-style: none; }
+    .phase__b li { padding: 4px 0; border-top: 1px dashed var(--hair); }
+    .phase__b li:first-child { border-top: 0; }
+
+    /* ----- Slide 11 — Closing --------------------------------------- */
+    .s-close {
+      grid-template-rows: auto 1fr auto;
+      gap: 40px;
+    }
+    .s-close__big {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 28px;
+    }
+    .s-close__big h2 {
+      font-size: clamp(56px, 9vw, 148px);
+      max-width: 13ch;
+    }
+    .s-close__big h2 .accent {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+    .s-close__big .lead { max-width: 720px; font-size: clamp(20px, 1.6vw, 28px); }
+
+    .ask {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+    .ask > div {
+      padding: 32px 28px;
+      border-right: 1px solid var(--hair);
+    }
+    .ask > div:last-child { border-right: 0; }
+    .ask__l {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-bottom: 14px;
+    }
+    .ask__t {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 36, "SOFT" 30;
+      font-size: 30px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .ask__b { color: var(--ink-soft); margin-top: 12px; font-size: 14.5px; line-height: 1.55; }
+
+    .signoff {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--hair);
+    }
+    .signoff .verse {
+      font-family: var(--deva);
+      font-size: 22px;
+      color: var(--ink);
+    }
+    .signoff .gloss {
+      font-family: var(--serif);
+      font-variation-settings: "opsz" 14, "SOFT" 100;
+      font-style: italic;
+      color: var(--ink-soft);
+      font-size: 13px;
+      max-width: 320px;
+    }
+
+    /* ----- Navigator (top-right floating) --------------------------- */
+    .nav {
+      position: fixed;
+      top: 20px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: flex; gap: 6px;
+      padding: 6px 8px;
+      background: rgba(244,239,229,0.85);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--hair);
+      border-radius: 99px;
+    }
+    .nav a {
+      width: 18px; height: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--ink-faded);
+      border-radius: 99px;
+      transition: all 0.18s ease;
+    }
+    .nav a:hover { background: var(--hair); color: var(--ink); }
+
+    /* ----- Print ---------------------------------------------------- */
+    @media print {
+      html, body { background: var(--paper) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .nav { display: none; }
+      .slide { page-break-after: always; min-height: 100vh; height: 100vh; padding: 4vh 5vw; }
+    }
+
+    /* ----- Reveal on entry ------------------------------------------ */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .slide > * {
+      animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+    .slide > *:nth-child(2) { animation-delay: 0.06s; }
+    .slide > *:nth-child(3) { animation-delay: 0.12s; }
+    .slide > *:nth-child(4) { animation-delay: 0.18s; }
+
+    /* ----- Responsive (tablet & narrower) --------------------------- */
+    @media (max-width: 980px) {
+      .slide { padding: 5vh 6vw; }
+      .arch-flow, .nitya-grid { grid-template-columns: repeat(2, 1fr); }
+      .arch-flow .node + .node::before { display: none; }
+      .stats, .nitya-rev { grid-template-columns: repeat(2, 1fr); }
+      .demo, .moat-list, .ledger, .surfaces-grid, .ask, .road,
+      .s-thesis__pillars, .heritage, .s-thesis__head, .s-built__top,
+      .s-arch__head, .s-moat__top, .s-nitya__top, .s-unit__top, .s-problem__bicol {
+        grid-template-columns: 1fr;
+      }
+      .surfaces-grid > *, .heritage > *, .ask > *, .road > * {
+        border-right: 0;
+        border-bottom: 1px solid var(--hair);
+      }
+      .road::before { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigator -->
+  <nav class="nav" aria-label="Slide navigator">
+    <a href="#s1" title="Cover">01</a>
+    <a href="#s2" title="Thesis">02</a>
+    <a href="#s3" title="Problem">03</a>
+    <a href="#s4" title="What we built">04</a>
+    <a href="#s5" title="Architecture">05</a>
+    <a href="#s6" title="Moat">06</a>
+    <a href="#s7" title="Three surfaces">07</a>
+    <a href="#s8" title="Nitya stack">08</a>
+    <a href="#s9" title="Unit economics">09</a>
+    <a href="#s10" title="Roadmap">10</a>
+    <a href="#s11" title="Close">11</a>
+  </nav>
+
+  <!-- ============== 01 · COVER =================================== -->
+  <section class="slide s-cover" id="s1">
+    <div class="s-cover__top">
+      <div class="crest">
+        <div class="crest__mark">॥</div>
+        <div class="crest__name">Age Ayurveda Companion</div>
+        <div class="crest__by">A Nitya Naturals platform · of the Baidyanath family</div>
+      </div>
+      <div class="meta">
+        Pitch deck · v0<br />
+        <b>Prayagraj · 2026</b><br />
+        Confidential
+      </div>
+    </div>
+
+    <div class="s-cover__main">
+      <div class="eyebrow">A platform thesis</div>
+      <h1 class="display s-cover__title">
+        The <span class="accent">oracle</span><br />
+        for Ayurveda<br />
+        commerce.
+      </h1>
+      <p class="s-cover__sub">
+        A grounded chat layer that cites classical Sanskrit verses, recommends real products, and runs as
+        infrastructure under any wellness brand. Built on a heritage no one else can buy.
+      </p>
+    </div>
+
+    <div class="s-cover__verse">
+      <div class="deva-line">
+        समदोषः समाग्निश्च समधातुमलक्रियः। प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते॥
+      </div>
+      <div class="gloss">
+        Charaka Saṃhitā 1.41 — the classical definition of health. The same passage the API now cites in production.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 02 · THESIS ================================== -->
+  <section class="slide s-thesis" id="s2">
+    <div class="s-thesis__head">
+      <div>
+        <div class="eyebrow">Three forces, one moment</div>
+        <div class="rule"></div>
+        <h2 class="display">
+          A <em>2,500-year</em> corpus<br />meets a <em>2026</em> AI<br />and a <em>1917</em> heritage.
+        </h2>
+      </div>
+      <p class="lead">
+        Each force on its own is interesting. The collision is the company. Nobody else owns all three at once —
+        and we already do.
+      </p>
+    </div>
+
+    <div class="s-thesis__pillars">
+      <div class="pillar terracotta">
+        <div>
+          <div class="pillar__tag">I · The Texts</div>
+          <div class="pillar__num">2,500</div>
+        </div>
+        <div>
+          <div class="pillar__t">Years of classical Ayurvedic medicine, fully digitisable</div>
+          <p class="pillar__b">
+            Charaka Saṃhitā, Suśruta Saṃhitā, Aṣṭāṅga Hṛdaya, Bhāvaprakāśa — the original Sanskrit is
+            firmly in the public domain. No one has packaged them as a grounded retrieval surface.
+          </p>
+        </div>
+      </div>
+      <div class="pillar neem">
+        <div>
+          <div class="pillar__tag">II · The Model</div>
+          <div class="pillar__num">2026</div>
+        </div>
+        <div>
+          <div class="pillar__t">LLMs are finally good at multilingual classical-text reasoning with citations</div>
+          <p class="pillar__b">
+            Twelve months ago this was a research project. Today it ships against
+            production grade APIs with adaptive thinking and prompt caching.
+          </p>
+        </div>
+      </div>
+      <div class="pillar indigo">
+        <div>
+          <div class="pillar__tag">III · The House</div>
+          <div class="pillar__num">1917</div>
+        </div>
+        <div>
+          <div class="pillar__t">Baidyanath. Three generations. Trust no Series-A can buy.</div>
+          <p class="pillar__b">
+            India's most credible Ayurveda lineage. That credibility is the one input every other AI
+            wellness startup will be missing — for a decade or more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 03 · PROBLEM ================================= -->
+  <section class="slide s-problem" id="s3">
+    <div>
+      <div class="eyebrow neem">The shape of the problem</div>
+      <div class="rule"></div>
+    </div>
+
+    <div class="s-problem__bicol">
+      <h2 class="s-problem__statement">
+        Wellness consumers want <em>guidance</em>.<br />
+        Brands offer <em>catalogs</em>.<br />
+        The gap is widening.
+      </h2>
+      <div class="s-problem__list">
+        <div class="friction">
+          <div class="friction__num">01</div>
+          <div>
+            <div class="friction__t">A Shopify search bar can't tell you what your dosha is.</div>
+            <div class="friction__b">Every wellness brand has the same generic chatbot or none at all. Conversion stalls because nobody's answering the actual question.</div>
+          </div>
+        </div>
+        <div class="friction">
+          <div class="friction__num">02</div>
+          <div>
+            <div class="friction__t">Generic LLMs hallucinate Ayurvedic claims.</div>
+            <div class="friction__b">Ask GPT-4 what Charaka 5.7 says — it will confidently invent a citation. That's a brand risk no D2C is willing to ship.</div>
+          </div>
+        </div>
+        <div class="friction">
+          <div class="friction__num">03</div>
+          <div>
+            <div class="friction__t">There is no Ayurvedic infrastructure layer.</div>
+            <div class="friction__b">Every brand is rebuilding the same RAG pipeline badly. Nobody is selling them a grounded, cited, multilingual oracle as a service.</div>
+          </div>
+        </div>
+        <div class="friction">
+          <div class="friction__num">04</div>
+          <div>
+            <div class="friction__t">The customers most likely to buy can't be guided.</div>
+            <div class="friction__b">Premium Ayurveda buyers want a practitioner. They get a "Sort by Price" filter. The funnel leaks at the curiosity stage.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 04 · WHAT WE BUILT =========================== -->
+  <section class="slide s-built" id="s4">
+    <div class="s-built__top">
+      <div>
+        <div class="eyebrow">What's running today</div>
+        <div class="rule"></div>
+        <h2 class="display">Not a slide. A system.</h2>
+      </div>
+      <p class="s-built__sub">
+        Everything below is in the repo. Backend, frontend, retrieval, citations, product tool, multi-tenant auth,
+        rate limits, billing telemetry, 55 passing tests. Live numbers, not promises.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div>
+        <div class="stat__n num">34</div>
+        <div class="stat__l">Verses · grounded</div>
+        <div class="stat__d">Aṣṭāṅga Hṛdaya · Charaka Saṃhitā Sūtrasthāna</div>
+      </div>
+      <div>
+        <div class="stat__n num">2</div>
+        <div class="stat__l">Classical sources</div>
+        <div class="stat__d">Schema-locked YAML, ready to scale to 10+</div>
+      </div>
+      <div>
+        <div class="stat__n num">55</div>
+        <div class="stat__l">Tests · passing</div>
+        <div class="stat__d">BM25 · retrieval · tool loop · tenant auth</div>
+      </div>
+      <div>
+        <div class="stat__n num">2,576<span style="font-size:0.45em;color:var(--ink-faded);">px</span></div>
+        <div class="stat__l">Vision input</div>
+        <div class="stat__d">Opus 4.7 hi-res for prescription/label OCR</div>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="panel">
+        <div class="panel__h"><span>Live grounded answer</span><span>SSE · Opus 4.7</span></div>
+        <p class="q">"I cannot sleep — what does Ayurveda recommend?"</p>
+        <p class="a">
+          Daily abhyaṅga (warm-oil self-massage) is the canonical first response — it pacifies Vāta, the dosha
+          most associated with restless sleep <span class="cite">Aṣṭāṅga Hṛdaya, Sūtra. 2.7</span>. Pair with
+          consistent bedtime before 10 PM <span class="cite">Aṣṭāṅga Hṛdaya, Sūtra. 2.1</span> for the strongest effect.
+        </p>
+        <div class="chips">
+          <span class="chip">Aṣṭāṅga Hṛdaya, Sūtra. 2.7</span>
+          <span class="chip">Aṣṭāṅga Hṛdaya, Sūtra. 2.1</span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel__h"><span>Mid-stream tool · products</span><span>3 ranked</span></div>
+        <div class="product-card">
+          <div class="product-card__thumb">अ</div>
+          <div>
+            <div class="product-card__name">Natural Sleep Aid</div>
+            <div class="product-card__why">Calms aggravated Vāta — primary cause of insomnia.</div>
+            <div class="product-card__price">₹ 899</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__thumb">अ</div>
+          <div>
+            <div class="product-card__name">Ashwagandha</div>
+            <div class="product-card__why">Adaptogen · cortisol reduction · classical Vāta support.</div>
+            <div class="product-card__price">₹ 479</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__thumb">क</div>
+          <div>
+            <div class="product-card__name">Bowel Kare</div>
+            <div class="product-card__why">Triphala blend — eases Vāta-type bowel irregularity.</div>
+            <div class="product-card__price">₹ 467</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel__h"><span>Corpus state</span><span>by source</span></div>
+        <div class="stack">
+          <div class="corpus-row">
+            <div class="corpus-row__src">Aṣṭāṅga Hṛdaya</div>
+            <div class="corpus-row__n">20 verses</div>
+          </div>
+          <div class="corpus-row">
+            <div class="corpus-row__src">Charaka Saṃhitā</div>
+            <div class="corpus-row__n">14 verses</div>
+          </div>
+          <div class="corpus-row" style="border-bottom: 0;">
+            <div class="corpus-row__src">Suśruta Saṃhitā</div>
+            <div class="corpus-row__n">queued</div>
+          </div>
+          <div class="corpus-row" style="border-bottom: 0;">
+            <div class="corpus-row__src">Bhāvaprakāśa</div>
+            <div class="corpus-row__n">queued</div>
+          </div>
+        </div>
+        <div class="panel__h" style="margin-top:14px;">
+          <span>Retrieval</span><span>BM25 + dense · RRF</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 05 · ARCHITECTURE ============================ -->
+  <section class="slide s-arch" id="s5">
+    <div class="s-arch__head">
+      <div>
+        <div class="eyebrow indigo">How it actually works</div>
+        <div class="rule"></div>
+        <h2 class="display">A grounding pipeline, not a chat wrapper.</h2>
+      </div>
+      <p class="lead">
+        Every claim the model makes resolves to a citable verse. Tools fire only when wellness intent is detected.
+        Tenants bring their own Anthropic key — we don't carry inference cost.
+      </p>
+    </div>
+
+    <div class="arch-flow">
+      <div class="node">
+        <div>
+          <div class="node__step">01 · Ingest</div>
+          <div class="node__t">YAML corpus → embeddings</div>
+        </div>
+        <div>
+          <div class="node__b">Sanskrit + transliteration + paraphrase, all multilingual.</div>
+          <div class="node__code">paraphrase-multilingual-MiniLM</div>
+        </div>
+      </div>
+      <div class="node">
+        <div>
+          <div class="node__step">02 · Retrieve</div>
+          <div class="node__t">Hybrid BM25 + dense, fused via RRF</div>
+        </div>
+        <div>
+          <div class="node__b">Stop-word-filtered, Devanagari-aware tokenizer.</div>
+          <div class="node__code">retrieval_top_k=6</div>
+        </div>
+      </div>
+      <div class="node">
+        <div>
+          <div class="node__step">03 · Ground</div>
+          <div class="node__t">Frozen system prompt + tool schema</div>
+        </div>
+        <div>
+          <div class="node__b">Strict citation format, no marketing tone, safety boundaries.</div>
+          <div class="node__code">claude-opus-4-7</div>
+        </div>
+      </div>
+      <div class="node">
+        <div>
+          <div class="node__step">04 · Tool loop</div>
+          <div class="node__t">Recommend products only on intent</div>
+        </div>
+        <div>
+          <div class="node__b">Server-executed concern × dosha matcher over the live catalog.</div>
+          <div class="node__code">recommend_age_ayurveda_products</div>
+        </div>
+      </div>
+      <div class="node">
+        <div>
+          <div class="node__step">05 · Stream</div>
+          <div class="node__t">SSE tokens + mid-stream product cards</div>
+        </div>
+        <div>
+          <div class="node__b">Citations rendered as chips at completion. Abortable mid-flight.</div>
+          <div class="node__code">/chat/grounded/stream</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="moat-grid">
+      <div>
+        <div class="eyebrow gold">Why the architecture matters</div>
+        <h3 class="display">Each layer locks in switching cost.</h3>
+        <p class="lead" style="font-size:1rem;">
+          The corpus is owned. The retrieval is tuned. The tool defines commerce. The system prompt defines tone.
+          A competitor would need to reproduce all four — without the heritage that vouches for any of it.
+        </p>
+      </div>
+      <ul class="moat-list">
+        <li><b>Corpus moat.</b> A Sanskrit scholar at Baidyanath can produce 100 verses in a week. A YC startup cannot, at any price.</li>
+        <li><b>Tenant model.</b> BYO Anthropic key — clients pay their own inference. We sell the layer above it.</li>
+        <li><b>Source allowlists.</b> A Patanjali tenant can pin to Charaka. A Himalaya tenant to Aṣṭāṅga Hṛdaya. Same engine, different surface.</li>
+        <li><b>Audit endpoint.</b> Every assistant message records exactly which verses grounded it. Nothing else has that.</li>
+        <li><b>Per-tenant rate &amp; cost.</b> Each tenant has its own per-minute cap and a daily-aggregate spend dashboard.</li>
+        <li><b>Multilingual by default.</b> A user typing in Devanagari gets the same retrieval quality as English.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============== 06 · MOAT ==================================== -->
+  <section class="slide s-moat" id="s6">
+    <div class="s-moat__top">
+      <div>
+        <div class="eyebrow">The unfair advantage</div>
+        <div class="rule"></div>
+        <h2 class="display">Money can buy AI.<br />It cannot buy <em>1917</em>.</h2>
+      </div>
+      <p>
+        Three generations of Ayurvedic credibility. The classical-text scholars are already on staff. The
+        formulary is already approved. The factories are already GMP-certified. We are not entering the market —
+        we are extending an institution that has been here for a century.
+      </p>
+    </div>
+
+    <div class="heritage">
+      <div>
+        <div class="yr num">1917</div>
+        <div class="label">Founded</div>
+        <div class="name">Shri Baidyanath Ayurved Bhawan</div>
+        <div class="desc">
+          Established in Calcutta by the first generation of an unbroken pandit lineage. The first major Ayurvedic enterprise of the modern
+          era. Today: India's most trusted Ayurvedic name.
+        </div>
+      </div>
+      <div>
+        <div class="label">Three generations</div>
+        <div class="gen">An unbroken Ayurvedic lineage.</div>
+        <div class="gen-list">
+          ↓ Gen 1 — the founding pandit, 1917.<br />
+          ↓ Gen 2 — ten cousins, the operating bench today.<br />
+          ↓ Gen 3 — including the founders of this platform.<br /><br />
+          Twenty-one shareholders.<br />Ten board seats.<br />One classical formulary.
+        </div>
+      </div>
+      <div class="ours">
+        <div class="yr num">2026</div>
+        <div class="label">This platform</div>
+        <div class="name">Age Ayurveda Companion</div>
+        <div class="desc">
+          A grounded AI chat layer built on the family's classical-text expertise, contract-manufacturing scale,
+          and consumer-brand trust. The infrastructure is generational. The software is now.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 07 · THREE SURFACES ========================== -->
+  <section class="slide s-surfaces" id="s7">
+    <div>
+      <div class="eyebrow neem">One engine, three revenue surfaces</div>
+      <div class="rule"></div>
+      <h2 class="display">Same grounding layer.<br />Three markets it sells into.</h2>
+    </div>
+
+    <div class="surfaces-grid">
+      <div class="surface b2b">
+        <div class="surface__tag"><span>Surface I</span><span>B2B API</span></div>
+        <div class="surface__num num">01</div>
+        <div>
+          <div class="surface__name">License the layer to every wellness brand.</div>
+          <div class="surface__price">₹ 50K – 2L · monthly · per brand</div>
+        </div>
+        <p class="surface__desc">
+          Tenant API key + their Anthropic key + their product catalog → a grounded, cited recommendation engine
+          on their store. We don't compete with them. We power them.
+        </p>
+        <div class="surface__buyers">
+          Buyers · Kapiva · Forest Essentials · Wow Skin · Khadi · Mamaearth Ayurveda · Patanjali D2C · ~3,000 SMB Ayurvedic brands globally.
+        </div>
+      </div>
+
+      <div class="surface consumer">
+        <div class="surface__tag"><span>Surface II</span><span>Consumer App</span></div>
+        <div class="surface__num num">02</div>
+        <div>
+          <div class="surface__name">A pocket Ayurvedic guide. Daily.</div>
+          <div class="surface__price">₹ 199 – 499 · monthly · subscription</div>
+        </div>
+        <p class="surface__desc">
+          Prakṛti assessment, dincharya tracking, classical-text Q&amp;A, telemedicine handoff. The
+          "Ayurveda Copilot" — branded as Age Ayurveda, distributed wherever Indians and the diaspora are.
+        </p>
+        <div class="surface__buyers">
+          Market · 350M middle-class Indian wellness consumers + global Ayurveda diaspora (US, UK, ME, AU).
+        </div>
+      </div>
+
+      <div class="surface clinical">
+        <div class="surface__tag"><span>Surface III</span><span>Clinical White-Label</span></div>
+        <div class="surface__num num">03</div>
+        <div>
+          <div class="surface__name">For practitioners and AYUSH clinics.</div>
+          <div class="surface__price">₹ 2L – 10L · annual · per institution</div>
+        </div>
+        <p class="surface__desc">
+          A clinic-branded interface for intake, history, and citation-grounded patient education. With
+          source allowlists scoped to the texts the practitioner cites.
+        </p>
+        <div class="surface__buyers">
+          Buyers · AYUSH-affiliated hospitals · Patanjali clinics · Kerala Ayurveda chains · Western integrative-medicine practices.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 08 · NITYA STACK ============================= -->
+  <section class="slide s-nitya" id="s8">
+    <div class="s-nitya__top">
+      <div>
+        <div class="eyebrow">Where this fits</div>
+        <div class="rule"></div>
+        <h2 class="display">One software bet.<br />Inside the larger Nitya stack.</h2>
+      </div>
+      <p>
+        Nitya Naturals is the contract-manufacturing arm of Baidyanath. ~₹1Cr today, ₹5Cr target. Seven internal
+        software projects. Companion is the only one with platform shape — the one that can outgrow the parent.
+      </p>
+    </div>
+
+    <div class="nitya-grid">
+      <div class="proj"><div><div class="proj__num">01</div><div class="proj__t">Client Portal</div></div><div class="proj__b">Internal</div></div>
+      <div class="proj"><div><div class="proj__num">02</div><div class="proj__t">Production Planning</div></div><div class="proj__b">Internal</div></div>
+      <div class="proj"><div><div class="proj__num">03</div><div class="proj__t">Lead CRM</div></div><div class="proj__b">Internal</div></div>
+      <div class="proj hero"><div><div class="proj__num">04</div><div class="proj__t">Age Ayurveda Companion</div></div><div class="proj__b">Platform</div></div>
+      <div class="proj"><div><div class="proj__num">05</div><div class="proj__t">Website Revamp</div></div><div class="proj__b">Brand</div></div>
+      <div class="proj"><div><div class="proj__num">06</div><div class="proj__t">Shipping Calc</div></div><div class="proj__b">Utility</div></div>
+      <div class="proj"><div><div class="proj__num">07</div><div class="proj__t">Reorder Predict</div></div><div class="proj__b">Internal</div></div>
+    </div>
+
+    <div class="nitya-rev">
+      <div class="nitya-rev__item">
+        <div class="num" style="color:var(--ink-faded);">₹1 Cr</div>
+        <div class="l">Today · Nitya revenue</div>
+      </div>
+      <div class="nitya-rev__item">
+        <div class="num" style="color:var(--neem);">₹5 Cr</div>
+        <div class="l">Target · Nitya by 2027</div>
+      </div>
+      <div class="nitya-rev__item">
+        <div class="num" style="color:var(--terracotta);">₹50 Cr</div>
+        <div class="l">Companion · 250 brands × ₹1.5L/mo</div>
+      </div>
+      <div class="nitya-rev__item">
+        <div class="num" style="color:var(--gold);">$1B</div>
+        <div class="l">Platform · category-leader exit</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 09 · UNIT ECONOMICS ========================== -->
+  <section class="slide s-unit" id="s9">
+    <div class="s-unit__top">
+      <div>
+        <div class="eyebrow gold">Per-conversation economics</div>
+        <div class="rule gold"></div>
+        <h2 class="display">A grounded answer.<br />Five cents of inference.</h2>
+      </div>
+      <p class="lead">
+        Tenants bring their own Anthropic key — so the variable cost on the platform side is effectively zero. We
+        sell the moat (corpus, retrieval, tool, audit) at a fixed monthly fee. The margin shape is enviable.
+      </p>
+    </div>
+
+    <div class="ledger">
+      <table class="ledger-table">
+        <thead>
+          <tr>
+            <th>Line item</th>
+            <th>Per turn</th>
+            <th>Per month · 1,000 conv.</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="q">Inference · Opus 4.7</td>
+            <td class="num-cell">~ $0.04</td>
+            <td class="num-cell">~ $40</td>
+            <td>Tenant pays Anthropic directly</td>
+          </tr>
+          <tr>
+            <td class="q">Embedding · multilingual</td>
+            <td class="num-cell">$0.000</td>
+            <td class="num-cell">$0.00</td>
+            <td>Local sentence-transformers</td>
+          </tr>
+          <tr>
+            <td class="q">Storage · Postgres + pgvector</td>
+            <td class="num-cell">$0.000</td>
+            <td class="num-cell">~ $7</td>
+            <td>Render hosting, single instance</td>
+          </tr>
+          <tr>
+            <td class="q">Compute · uvicorn / asyncpg</td>
+            <td class="num-cell">$0.001</td>
+            <td class="num-cell">~ $14</td>
+            <td>Two-worker container, ample headroom</td>
+          </tr>
+          <tr class="totals">
+            <td class="q">Platform cost · 1k conv.</td>
+            <td>—</td>
+            <td class="num-cell">~ $21</td>
+            <td>Excludes tenant-paid inference</td>
+          </tr>
+          <tr class="totals">
+            <td class="q green">License revenue · per tenant</td>
+            <td>—</td>
+            <td class="green num-cell">$1,800 · ₹1.5L</td>
+            <td>Mid-tier B2B price point</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="margin-card">
+        <div class="l">Implied gross margin</div>
+        <div class="pct">98<span style="font-size:0.5em;">%</span></div>
+        <p class="desc">
+          The classical model of B2B AI infrastructure: software margins on top of someone else's compute. Every
+          new tenant compounds without burdening the platform — the margin doesn't degrade with scale, it improves.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 10 · ROADMAP ================================= -->
+  <section class="slide s-road" id="s10">
+    <div>
+      <div class="eyebrow">From v0 to category leader</div>
+      <div class="rule"></div>
+      <h2 class="display">The path is sequenced. Each phase unlocks the next.</h2>
+    </div>
+
+    <div class="road">
+      <div class="phase done">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 1 · Done</div>
+        <div class="phase__t">Architectural pivot</div>
+        <div class="phase__b">
+          <ul>
+            <li>LLM grounding</li>
+            <li>Hybrid retrieval</li>
+            <li>Citation discipline</li>
+            <li>Streaming widget</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase done">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 2 · Done</div>
+        <div class="phase__t">Commerce loop</div>
+        <div class="phase__b">
+          <ul>
+            <li>Product tool</li>
+            <li>Mid-stream cards</li>
+            <li>Free-text input</li>
+            <li>Stop &amp; reset</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase now">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 3 · Now</div>
+        <div class="phase__t">Multi-tenant platform</div>
+        <div class="phase__b">
+          <ul>
+            <li>Tenant model + auth</li>
+            <li>Per-tenant rate &amp; cost</li>
+            <li>Source allowlists</li>
+            <li>55-test suite</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 4 · Q3</div>
+        <div class="phase__t">Corpus expansion</div>
+        <div class="phase__b">
+          <ul>
+            <li>Suśruta · full Sūtrasthāna</li>
+            <li>Bhāvaprakāśa · Madhya khaṇḍa</li>
+            <li>Licensed translations</li>
+            <li>Sanskrit-scholar pipeline</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase__pip"></div>
+        <div class="phase__tag">Phase 5 · 2027</div>
+        <div class="phase__t">First 10 paying tenants</div>
+        <div class="phase__b">
+          <ul>
+            <li>Onboarding self-serve</li>
+            <li>Cost dashboards</li>
+            <li>Consumer app v1</li>
+            <li>Clinical pilot · 3 sites</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 11 · CLOSING ================================= -->
+  <section class="slide s-close" id="s11">
+    <div>
+      <div class="eyebrow gold">The thesis, in one breath</div>
+      <div class="rule gold"></div>
+    </div>
+
+    <div class="s-close__big">
+      <h2 class="display">
+        Build the <span class="accent">infrastructure</span> layer<br />
+        for the world's oldest medicine.
+      </h2>
+      <p class="lead">
+        We have the texts. We have the heritage. The model is finally good enough. The market is fragmented and
+        ready. This is the moment when one company defines the category — and it should be ours.
+      </p>
+    </div>
+
+    <div class="ask">
+      <div>
+        <div class="ask__l">What we're doing next</div>
+        <div class="ask__t">Commission corpus.</div>
+        <div class="ask__b">
+          Sanskrit scholars at Baidyanath transcribe + paraphrase the next four sthānas under a clean license.
+          Three months. Owned forever.
+        </div>
+      </div>
+      <div>
+        <div class="ask__l">What we want partners for</div>
+        <div class="ask__t">First three tenants.</div>
+        <div class="ask__b">
+          Paid pilots with Ayurvedic D2C brands inside the Baidyanath group's distribution network. Real revenue, real telemetry,
+          real testimonials by Q3.
+        </div>
+      </div>
+      <div>
+        <div class="ask__l">What we'd like to discuss</div>
+        <div class="ask__t">Capital · or none.</div>
+        <div class="ask__b">
+          Nitya cashflow funds the moonshot today. External capital becomes useful at the point of consumer-app
+          GTM — late 2027, not before.
+        </div>
+      </div>
+    </div>
+
+    <div class="signoff">
+      <div>
+        <div class="verse">हेतुलिङ्गौषधज्ञानं स्वस्थातुरपरायणम्।</div>
+        <div class="gloss">"Cause, symptom, remedy — devoted to both the healthy and the sick." Aṣṭāṅga Hṛdaya 1.20.</div>
+      </div>
+      <div class="meta">
+        Founder &amp; CEO<br />
+        <b>Age Ayurveda Companion</b><br />
+        ageayurveda.com · nityanaturals.com
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Keyboard navigation — arrow keys + space move between slides.
+    const slides = Array.from(document.querySelectorAll('.slide'));
+
+    function nearestSlideIndex() {
+      const y = window.scrollY + window.innerHeight / 2;
+      let best = 0, dist = Infinity;
+      for (let i = 0; i < slides.length; i++) {
+        const r = slides[i].getBoundingClientRect();
+        const center = window.scrollY + r.top + r.height / 2;
+        const d = Math.abs(center - y);
+        if (d < dist) { dist = d; best = i; }
+      }
+      return best;
+    }
+
+    function go(delta) {
+      const next = Math.max(0, Math.min(slides.length - 1, nearestSlideIndex() + delta));
+      slides[next].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (['ArrowDown', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); go(1); }
+      if (['ArrowUp', 'PageUp'].includes(e.key))            { e.preventDefault(); go(-1); }
+      if (e.key === 'Home')                                  { e.preventDefault(); slides[0].scrollIntoView({ behavior: 'smooth' }); }
+      if (e.key === 'End')                                   { e.preventDefault(); slides[slides.length-1].scrollIntoView({ behavior: 'smooth' }); }
+    });
+  </script>
+</body>
+</html>

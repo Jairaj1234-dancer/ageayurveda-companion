@@ -1,0 +1,46 @@
+const translations: Record<string, Record<string, string>> = {
+  en: {
+    welcome: "Namaste! How can I help you with Ayurveda today?",
+    placeholder: "Ask about Ayurveda...",
+    send: "Send",
+    emailTitle: "Stay Connected",
+    emailSubtitle: "Enter your email for personalized Ayurvedic guidance",
+    emailPlaceholder: "your@email.com",
+    emailSubmit: "Continue",
+    emailSkip: "Skip for now",
+    prakritiTitle: "Discover Your Prakriti",
+    prakritiStart: "Start Quiz",
+    prakritiNext: "Next",
+    prakritiSubmit: "See Results",
+    viewProduct: "View on Age Ayurveda",
+    disclaimer: "Disclaimer",
+    poweredBy: "Powered by Age Ayurveda",
+    typingIndicator: "Thinking...",
+    languageToggle: "हिंदी",
+    close: "Close",
+  },
+  hi: {
+    welcome: "नमस्ते! आज मैं आयुर्वेद में आपकी कैसे मदद कर सकता हूं?",
+    placeholder: "आयुर्वेद के बारे में पूछें...",
+    send: "भेजें",
+    emailTitle: "जुड़े रहें",
+    emailSubtitle: "व्यक्तिगत आयुर्वेदिक मार्गदर्शन के लिए अपना ईमेल दर्ज करें",
+    emailPlaceholder: "your@email.com",
+    emailSubmit: "जारी रखें",
+    emailSkip: "अभी छोड़ें",
+    prakritiTitle: "अपनी प्रकृति जानें",
+    prakritiStart: "क्विज़ शुरू करें",
+    prakritiNext: "अगला",
+    prakritiSubmit: "परिणाम देखें",
+    viewProduct: "Age Ayurveda पर देखें",
+    disclaimer: "अस्वीकरण",
+    poweredBy: "Age Ayurveda द्वारा संचालित",
+    typingIndicator: "सोच रहा हूं...",
+    languageToggle: "English",
+    close: "बंद करें",
+  },
+};
+
+export function t(key: string, lang: string = "en"): string {
+  return translations[lang]?.[key] || translations.en[key] || key;
+}

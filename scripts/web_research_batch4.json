@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "research_date": "2026-03-18",
+    "scope": "Clinical trials, safety, mechanisms, WHO/pharmacopeia status for 5 Ayurvedic herbs (2020-2026)",
+    "sources_note": "Data synthesized from PubMed, PMC, ScienceDirect, EMA, WHO monographs, Ayurvedic Pharmacopoeia of India, and peer-reviewed journals"
+  },
+  "Bhringraj (Eclipta alba)": {
+    "latest_research": [
+      {
+        "title": "Molecular insights into the hair growth-promoting mechanisms of Eclipta alba",
+        "year": 2025,
+        "finding": "Wedelolactone activates the Wnt/beta-catenin signaling pathway and binds VEGF receptor. Cell-based assays showed a 45% increase in human dermal papilla cell proliferation with over 95% viability."
+      },
+      {
+        "title": "Discovery of petroleum ether extract of Eclipta targeting p53/Fas pathway for chemotherapy-induced alopecia",
+        "year": 2024,
+        "finding": "Network pharmacology and experimental validation confirmed Eclipta extract modulates the p53/Fas pathway, promoting hair matrix cell proliferation by inhibiting TGF-beta1 expression."
+      },
+      {
+        "title": "Eclipta prostrata ethnomedicinal uses, chemical constituents, and biological activities (comprehensive review)",
+        "year": 2021,
+        "finding": "Systematic review of over 100 studies confirmed hepatoprotective, anti-inflammatory, antimicrobial, antioxidant, and hair-growth-promoting activities. Identified wedelolactone, eclalbasaponins, ursolic acid, and luteolin as key bioactives."
+      },
+      {
+        "title": "Clinical observation of Eclipta leaf powder in mild hypertensive subjects",
+        "year": 2022,
+        "finding": "Supplementation with Eclipta leaf powder resulted in a 15% reduction in mean arterial pressure, 17% reduction in total cholesterol, and increased urine volume and antioxidant markers in mild hypertensive subjects."
+      },
+      {
+        "title": "Exploring the potential of Eclipta alba: a promising approach (5-alpha-reductase inhibition)",
+        "year": 2023,
+        "finding": "Lab study demonstrated Eclipta alba extract has a similar inhibitory effect on 5-alpha-reductase as finasteride, relevant to male pattern baldness treatment."
+      }
+    ],
+    "safety_updates": [
+      "Generally considered safe for most healthy adults at moderate doses; low risk of serious side effects when used appropriately.",
+      "Biphasic hepatic effect demonstrated: small-to-moderate doses are hepatoprotective, but large doses are hepatotoxic in animal studies.",
+      "Drug interaction: Eclipta significantly increases 11-beta-HSD enzyme activity, increasing plasma prednisolone concentration when coadministered with glucocorticoids.",
+      "Drug interaction: Reduces multidrug resistance to chemotherapy agents in human cancer cell lines via effects on P-glycoprotein systems.",
+      "Avoid during pregnancy and lactation due to insufficient safety data and potential liver toxicity at high doses.",
+      "A case report of fixed drug eruption was documented after an Ayurvedic supplement containing Eclipta alba and Withania somnifera.",
+      "No well-controlled human safety trials; most toxicity data derived from animal models."
+    ],
+    "mechanisms": [
+      "Hair growth: Wedelolactone activates Wnt/beta-catenin signaling pathway, increases dermal papilla cell proliferation, and binds VEGF receptor.",
+      "Hair growth: Inhibits 5-alpha-reductase activity (similar to finasteride); inhibits TGF-beta1 expression, promoting hair matrix cell proliferation.",
+      "Hair growth: Promotes anagen phase induction and sustenance through regulation of FGF-7 (upregulation) and FGF-5 (downregulation).",
+      "Hepatoprotection: Wedelolactone and demethylwedelolactone display hepatocyto-protective action, enabling liver cell regeneration and ameliorating hepatic injury from oxidative stress.",
+      "Hepatoprotection: Reduces fat deposition, mononuclear infiltration, and necrotic foci while stimulating hepatocyte regeneration.",
+      "Anti-inflammatory: Flavonoid constituents (luteolin, apigenin) provide antioxidant and anti-inflammatory effects on scalp tissue.",
+      "Antihypertensive: Increases urine volume and modulates lipid metabolism markers."
+    ],
+    "who_status": "Listed in the Ayurvedic Pharmacopoeia of India (API) Part I as a hepatoprotective herb (monograph name: Bhringaraja). Recognized in Ayurveda, Unani (as Bhangraa), and Siddha (as Karissalaankanni) traditional medicine systems. No standalone WHO monograph identified, but referenced in WHO traditional medicine databases. Important Ayurvedic formulations include Bhringaraja Taila, Niuli Bhringaradi Taila, and Bhringarajasava."
+  },
+  "Shankhpushpi (Convolvulus pluricaulis)": {
+    "latest_research": [
+      {
+        "title": "Role of Shankhpushpi in neurological disorders: An umbrella review covering evidence from ethnopharmacology to clinical studies",
+        "year": 2022,
+        "finding": "Comprehensive umbrella review validated ethnomedicinal uses (antispasmodic, analgesic, anti-inflammatory, anti-anxiety, memory-boosting) through neuropharmacological studies. Highlighted need for multicentric clinical trials across diverse populations."
+      },
+      {
+        "title": "Protective Mechanisms of Nootropic Herb Shankhpushpi against Dementia: Network Pharmacology and Computational Approach",
+        "year": 2022,
+        "finding": "Network pharmacology identified scopoletin as having highest binding affinity with PTGS1, NOS3, PPARG, ACHE, MAOA, MAOB, and TRKB molecular targets. Quercetin showed highest affinity with PTGS2. These compounds ameliorate cognitive deficits through PPARgamma signaling activation."
+      },
+      {
+        "title": "Novel insights on acetylcholinesterase inhibition by Convolvulus pluricaulis in zebrafish",
+        "year": 2022,
+        "finding": "Zebrafish model demonstrated that C. pluricaulis treatment inhibits AChE activity comparable to standard AChE inhibitors. CP was superior as evidenced by retention of avoidance response behavior in adult zebrafish."
+      },
+      {
+        "title": "Therapeutic mechanism of Convolvulus pluricaulis against Alzheimer's disease: Network pharmacology and molecular dynamics approach",
+        "year": 2024,
+        "finding": "Molecular dynamics simulations identified key active compounds (scopoletin, 4-hydroxycinnamic acid, ayapanin) that interact with Alzheimer's-associated molecular targets, providing mechanistic basis for traditional nootropic use."
+      },
+      {
+        "title": "Shankhpushpi: Exploring its Cognitive Enhancing Mechanisms and Therapeutic Potential in Neurodegenerative Disorders",
+        "year": 2023,
+        "finding": "Demonstrated that C. pluricaulis modulates synaptic plasticity in rat brain hippocampus and ameliorates human microtubule-associated protein tau (hMAPtau) induced neurotoxicity in Alzheimer's Drosophila model, extending lifespan."
+      }
+    ],
+    "safety_updates": [
+      "LD50 determined at 1250 mg/kg (range 1000-1500 mg/kg) for whole extract, indicating a relatively high safety margin at therapeutic doses.",
+      "Critical drug interaction: Reduces antiepileptic activity of phenytoin and lowers plasma phenytoin levels. Multiple-dose administration significantly impairs phenytoin efficacy.",
+      "May interact with antidepressants, antipsychotics, and other neurotransmitter-affecting medications.",
+      "Potential interaction with blood pressure medications due to mild hypotensive effect.",
+      "Possible interaction with sedatives and CNS depressants due to sedative-hypnotic properties.",
+      "Side effects uncommon; mild nausea possible due to bitter taste.",
+      "Cross-allergenicity possible in individuals allergic to Convolvulaceae family plants (e.g., sweet potato).",
+      "People with low blood pressure should use with caution; consult physician before use during pregnancy."
+    ],
+    "mechanisms": [
+      "AChE inhibition: Significantly inhibits acetylcholinesterase activity in cortex and hippocampus, increasing acetylcholine retention in synapses.",
+      "Multi-target neuroprotection: Active compounds interact with PTGS1/2, NOS3, INSR, HMOX1, ACHE, PPARG, MAOA, and MAOB molecular targets.",
+      "PPARgamma activation: 4-hydroxycinnamic acid and scopoletin activate PPARgamma signaling to ameliorate cognitive deficits.",
+      "Tau protein modulation: Ameliorates hMAPtau-induced neurotoxicity, extending lifespan in Alzheimer's Drosophila models.",
+      "Antioxidant activity: Enhances antioxidant enzyme activities, reducing oxidative stress in neural tissue.",
+      "Synaptic plasticity modulation: Modulates synaptic plasticity in hippocampal neurons.",
+      "Dual mechanism: Exerts nootropic effects through combined anti-AChE and antioxidant action.",
+      "Key active constituents: Scopoletin, quercetin, 4-hydroxycinnamic acid, ayapanin, convolamine, and kaempferol."
+    ],
+    "who_status": "Monographed in the Ayurvedic Pharmacopoeia of India (API) as Shankhpushpi (whole plant). API recommends the plant for epilepsy. Documented in Indian Pharmacopoeia since the 1996 edition with quality control standards. First referenced in Charaka Samhita (c. 1st-2nd century CE) as a brain tonic for intellect and nervous system. No standalone WHO monograph identified."
+  },
+  "Manjistha (Rubia cordifolia)": {
+    "latest_research": [
+      {
+        "title": "A comprehensive review of Rubia cordifolia L.: Traditional uses, phytochemistry, pharmacological activities, and clinical applications",
+        "year": 2022,
+        "finding": "Identified over 100 compounds including anthraquinones, naphthoquinones, bicyclic hexapeptides, triterpenoids, and polysaccharides. Established multiple pharmacological activities: neuroprotective, anti-tumor, antibacterial, anti-inflammatory, antioxidant, and immunosuppressive."
+      },
+      {
+        "title": "Modulatory effects of Triphala and Manjistha dietary supplementation on human gut microbiota: A double-blind, randomized, placebo-controlled pilot study",
+        "year": 2020,
+        "finding": "4-week RCT with 2000 mg/day Manjistha showed modulatory effects on gut microbiota composition evaluated through 16S rRNA profiling, suggesting prebiotic-like activity."
+      },
+      {
+        "title": "Crosstalk of Cancer Signaling Pathways by Cyclic Hexapeptides and Anthraquinones from Rubia cordifolia",
+        "year": 2021,
+        "finding": "Cyclic hexapeptides (RA-V, RA-VII) showed potent anticancer activity through inhibition of multiple cancer signaling pathways. Anthraquinones play a supporting but lesser role compared to cyclic hexapeptides in anticancer potential."
+      },
+      {
+        "title": "Randomized comparative clinical study of Manjistha Ghrita in management of Striae Gravidarum",
+        "year": 2022,
+        "finding": "Clinical study showed Manjistha Ghrita (topical formulation) was effective in managing striae gravidarum (stretch marks) in pregnant women compared to plain ghee control."
+      },
+      {
+        "title": "Dynamic analysis of growth characteristics and anthraquinones biosynthesis in Rubia cordifolia",
+        "year": 2024,
+        "finding": "Elucidated the biosynthetic pathway of anthraquinones in R. cordifolia, identifying 28 distinct anthraquinones including alizarin, munjistin, rubiadin, purpurin, and xanthopurpurin, with structure-activity relationships for hydroxyl substitutions."
+      },
+      {
+        "title": "Therapeutic potential of purpurin, a natural anthraquinone dye, in neuroprotection",
+        "year": 2025,
+        "finding": "Purpurin from Rubia cordifolia demonstrated neuroprotective potential for neurological disorders through antioxidant and anti-inflammatory mechanisms."
+      }
+    ],
+    "safety_updates": [
+      "Limited clinical safety data; few pharmacokinetic and toxicity studies in humans available.",
+      "Ethanol extract toxicity study: harmful effects on liver observed at doses of 100-1000 mg/kg body weight in rats. LD50 higher than 1000 mg/kg.",
+      "Contraindicated in pregnancy and lactation unless prescribed by healthcare professional.",
+      "May interact with anticoagulant medications, increasing bleeding risk.",
+      "May discolor urine, perspiration, tears, and breast milk (harmless but notable).",
+      "Use with caution in individuals with kidney disorders.",
+      "Common side effects: mild gastrointestinal upset, allergic reactions (rash/itching), nausea in some cases.",
+      "Hypersensitivity to Rubia cordifolia or its components is a contraindication.",
+      "Human toxic dose not yet established from animal studies; clinical trials needed."
+    ],
+    "mechanisms": [
+      "Anticancer (hexapeptides): Cyclic hexapeptides RA-V and RA-VII inhibit multiple cancer signaling pathways. Mollugin inhibits cell proliferation via suppression of HER2/Akt/SREBP-1c/FAS pathway in breast and ovarian cancer cells.",
+      "Anticancer (NF-kB): Mollugin suppresses NF-kB activation, thereby inhibiting HER2 expression in cancer cells.",
+      "Anti-inflammatory: Mollugin suppresses pro-inflammatory mediators including iNOS, COX-2, TNF-alpha, and IL-1beta in LPS-stimulated BV2 cells in a concentration-dependent manner.",
+      "Antioxidant: Anthraquinones with hydroxyl substitutions modulate antioxidant activity through radical stabilization and metal chelation.",
+      "Neuroprotective: Purpurin exhibits neuroprotection through antioxidant mechanisms and DNA intercalation properties.",
+      "Antimicrobial: Structure-activity relationships of anthraquinones reveal antibacterial properties linked to hydroxyl group positioning.",
+      "Gut microbiota modulation: Prebiotic-like effects demonstrated in human clinical trial via 16S rRNA profiling.",
+      "Key active constituents: Alizarin, munjistin, rubiadin, purpurin, mollugin, cyclic hexapeptides (RA-V, RA-VII), and xanthopurpurin."
+    ],
+    "who_status": "Monographed in the Ayurvedic Pharmacopoeia of India (API) for stem; root monograph not yet in API. Classified in Charaka Samhita as varnya (complexion enhancer), jvarahara (antipyretic), visaghna (detoxifier), and rasayana (rejuvenator). European Medicines Agency (EMA) issued a Community Herbal Monograph on Rubia cordifolia L., radix (2022). No standalone WHO monograph identified. Listed in multiple traditional pharmacopeias across Ayurveda, TCM, and Unani systems."
+  },
+  "Punarnava (Boerhavia diffusa)": {
+    "latest_research": [
+      {
+        "title": "Hepatoprotective Potential of Boerhavia diffusa Against Alcohol-Induced Toxicity in HepG2 Cells: In Vitro and In Silico Study",
+        "year": 2026,
+        "finding": "Rotenoid-enriched fraction from B. diffusa roots (major constituents Boeravinone A and B) showed hepatoprotective potential against ethanol-induced toxicity in HepG2 cells confirmed by in vitro assays and in silico molecular docking."
+      },
+      {
+        "title": "Anti-Obesity Action of Boerhavia diffusa in Rats by Blocking Cannabinoid Receptors",
+        "year": 2022,
+        "finding": "Molecular docking revealed B. diffusa phytoconstituents bind to cannabinoid receptors. In vivo study in HFD-induced obese rats showed significant reduction in body weight, organ fat pad weight, and improved lipid profile and liver biomarkers."
+      },
+      {
+        "title": "Ethnomedicinal values of Boerhaavia diffusa L. as a panacea against multiple human ailments: a state of art review",
+        "year": 2023,
+        "finding": "Comprehensive review confirmed activities including immunomodulation, hepatoprotection, antifibrinolysis, anticancer, antidiabetic, anti-inflammatory, and diuretic effects. Highlighted need for additional clinical trials."
+      },
+      {
+        "title": "Boerhavia diffusa plant extract as therapeutics against mutant nephrin protein in Type 1 nephrotic syndrome: molecular docking and dynamics",
+        "year": 2022,
+        "finding": "Virtual screening of 66 bioactive compounds from B. diffusa against wild type and mutant nephrin protein models showed potential therapeutic application for nephrotic syndrome."
+      },
+      {
+        "title": "Pilot clinical trial of Punarnava in hypertension management",
+        "year": 2021,
+        "finding": "Randomized pilot trial with 10 hypertensive outpatients over 4 weeks demonstrated Punarnava was effective in reducing blood pressure, supporting traditional use as an antihypertensive."
+      }
+    ],
+    "safety_updates": [
+      "Generally considered safe for short-term use in most healthy adults based on traditional use history, but comprehensive human safety data are lacking.",
+      "Diuretic effect may disrupt electrolyte balance, especially potassium levels, potentially affecting cardiac and muscular function.",
+      "May interact with diuretic medications (additive effect on fluid and electrolyte loss).",
+      "May interact with blood thinners (anticoagulants) -- caution advised.",
+      "May interact with diabetes medications (potential additive hypoglycemic effect).",
+      "May interact with blood pressure medications (additive hypotensive effect).",
+      "Use with caution in patients with kidney disorders due to diuretic properties.",
+      "Gastrointestinal side effects possible: upset stomach, nausea, loose stools.",
+      "Avoid or use with medical supervision during pregnancy, breastfeeding, or concurrent use with allopathic medications.",
+      "Allergic reactions reported but uncommon."
+    ],
+    "mechanisms": [
+      "Anti-inflammatory: Punarnavine inhibits pro-inflammatory cytokines IL-1alpha, IL-6, TNF-alpha, and GM-CSF while increasing IL-2 and IFN-gamma production.",
+      "Anti-inflammatory: Extract inhibits Src/Syk/TRAF6 signaling pathway, suppressing NO and TNF-alpha production with decreased iNOS and TNF-alpha mRNA expression.",
+      "Diuretic: Saponins stimulate mild diuresis via increased glomerular filtration rate. Boeravinones enhance urine output without significant sodium loss.",
+      "Renal protection: Punarnavine and flavonoids curb inflammatory cascades in renal glomeruli, working synergistically with boeravinones.",
+      "Anti-obesity: Phytoconstituents block cannabinoid receptors (CB1), reducing HFD-induced weight gain and improving lipid profile.",
+      "Hepatoprotective: Boeravinones A and B protect hepatocytes against ethanol-induced toxicity via antioxidant mechanisms.",
+      "Immunomodulatory: Syringaresinol mono-beta-D-glucoside, punarnavine, and quercetin exhibit immunostimulant activity.",
+      "Anti-angiogenic: Punarnavine downregulates VEGF expression both in vitro and in vivo.",
+      "Key active constituents: Boeravinones A-G, punarnavine, rotenoids, flavonoids, quercetin, and syringaresinol mono-beta-D-glucoside."
+    ],
+    "who_status": "Listed in the Ayurvedic Pharmacopoeia of India (API) as a rasayana (rejuvenative) category herb. Over 35 Ayurvedic formulations contain Punarnava as a major ingredient. Used across Ayurveda, traditional African, and South American medicine systems. Recognized in Indian Homoeopathic Pharmacopoeia as well. No standalone WHO monograph identified, but referenced in WHO traditional medicine literature for hepatoprotective and diuretic uses."
+  },
+  "Yashtimadhu (Glycyrrhiza glabra)": {
+    "latest_research": [
+      {
+        "title": "Efficacy of Glycyrrhiza glabra on peptic ulcer disease: A systematic review and meta-analysis",
+        "year": 2025,
+        "finding": "Meta-analysis of 9 studies (618 participants, searched through August 2024) confirmed licorice is effective for gastric ulcers. Combination therapy with clarithromycin improved H. pylori eradication to 83.3% vs 62.5% in control group."
+      },
+      {
+        "title": "Pharmacological mechanisms of Glycyrrhiza glabra in peptic ulcer: a systems biology and experimental approach",
+        "year": 2025,
+        "finding": "Network pharmacology analysis identified 29 phytochemicals and 157 common target genes involved in anti-ulcer mechanisms. Confirmed multi-target therapeutic approach for peptic ulcer management."
+      },
+      {
+        "title": "Neuroprotective Effects of Glycyrrhiza glabra Total Extract and Isolated Compounds (Parkinson's model)",
+        "year": 2024,
+        "finding": "First report of neuroprotective activities of novel compounds isolated from licorice species in an in vitro Parkinson's disease model. Active triterpenes and flavonoids inhibited cytotoxic pathways in neural tissues."
+      },
+      {
+        "title": "Metabolomics analysis highlights Yashtimadhu-mediated neuroprotection in rotenone-induced Parkinson's model via mTORC1-AMPK1 axis",
+        "year": 2022,
+        "finding": "Yashtimadhu confers neuroprotection by restoring the mTORC1-AMPK1 axis in autophagic regulation, preventing mitochondrial oxidative stress and apoptosis in a Parkinson's disease cellular model."
+      },
+      {
+        "title": "A comprehensive review of Glycyrrhiza glabra in rheumatoid arthritis management",
+        "year": 2025,
+        "finding": "Comprehensive review established that licorice modulates NF-kB, MAPK, COX/LOX, and JAK/STAT pathways, reducing synovial hyperplasia, protecting cartilage, and restoring immune balance in rheumatoid arthritis."
+      },
+      {
+        "title": "Glycyrrhizin mitigates acute lung injury by inhibiting NLRP3 inflammasome",
+        "year": 2022,
+        "finding": "Glycyrrhizin attenuates inflammation and inhibits NLRP3 inflammasome initiation and NF-kB signalling pathway activation, alleviating acute lung injury both in vitro and in vivo."
+      },
+      {
+        "title": "Lipid-based Ayurvedic formulations of Yashtimadhu: Pharmaceutical standardization and shelf-life estimation",
+        "year": 2023,
+        "finding": "Standardization study of Yashtimadhu Ghrita and Yashtimadhu Taila providing pharmaceutical quality parameters and shelf-life data for traditional licorice formulations."
+      }
+    ],
+    "safety_updates": [
+      "CRITICAL: Chronic use or large doses (>30g/day for several weeks) of licorice can cause pseudoaldosteronism syndrome: hypertension, hypokalemia, sodium/water retention, suppressed renin and aldosterone.",
+      "Glycyrrhizin threshold for mineralocorticoid side effects: 0.7-1.4g glycyrrhizin (equivalent to 10-14g crude herb) in normal subjects.",
+      "Contraindicated in congestive heart failure, hypertension, renal disease, and hypokalemia.",
+      "Drug interaction: Potassium depletion increases risk of cardiotoxicity with cardiac glycosides (digitalis).",
+      "Drug interaction: May potentiate effects of corticosteroids and mineralocorticoids.",
+      "Drug interaction: May reduce efficacy of antihypertensive medications by causing sodium/water retention.",
+      "Drug interaction: May interact with diuretics, increasing risk of hypokalemia.",
+      "Drug interaction: May interact with anticoagulants (warfarin) -- altered drug metabolism reported.",
+      "NCCIH (US NIH) warns that licorice root supplements can cause serious side effects when consumed in large amounts or for extended periods.",
+      "Deglycyrrhizinated licorice (DGL) formulations have a significantly improved safety profile for GI applications.",
+      "Avoid during pregnancy due to potential effects on cortisol metabolism and premature birth risk."
+    ],
+    "mechanisms": [
+      "NF-kB pathway inhibition: Glycyrrhizin blocks HMGB1-TLR4-NF-kB signaling, reducing pro-inflammatory cytokines (IL-6, TNF-alpha) in macrophages.",
+      "NLRP3 inflammasome: Inhibits NLRP3 inflammasome initiation and activation, attenuating IL-18, IL-1beta, TNF-alpha, IL-6, and PGE2 levels.",
+      "MAPK pathway: Attenuates activation of JNK, p38, and ERK mitogen-activated protein kinases.",
+      "Multi-pathway anti-inflammatory: Modulates NF-kB, MAPK, COX/LOX, and JAK/STAT pathways simultaneously.",
+      "Neuroprotection: Restores mTORC1-AMPK1 axis in autophagic regulation, preventing mitochondrial oxidative stress and apoptosis in Parkinson's models.",
+      "Anti-ulcer: Prevents adhesion of Helicobacter pylori to gastric mucosa. Network of 29 phytochemicals acting on 157 target genes.",
+      "Antiviral: Glycyrrhizin inhibits viral replication and entry through multiple mechanisms including interference with viral surface glycoproteins.",
+      "Immunomodulatory: Modulates both innate and adaptive immune responses via regulation of cytokine networks.",
+      "Pseudoaldosteronism mechanism: Glycyrrhizic acid inhibits 11-beta-hydroxysteroid dehydrogenase type 2, preventing cortisol-to-cortisone conversion, leading to mineralocorticoid excess.",
+      "Key active constituents: Glycyrrhizin (glycyrrhizic acid, ~10% dry weight), glabridin, liquiritigenin, isoliquiritigenin, licochalcone A, and 18-beta-glycyrrhetinic acid."
+    ],
+    "who_status": "WHO Monograph on Radix Glycyrrhizae published in WHO Monographs on Selected Medicinal Plants (Volume 1, 1999). European Medicines Agency (EMA) issued a Community Herbal Monograph for Glycyrrhiza glabra/inflata/uralensis radix with well-established and traditional use designations. Listed in European Pharmacopoeia (minimum 4% glycyrrhizic acid), British Pharmacopoeia, and Ayurvedic Pharmacopoeia of India. ESCOP monograph available. NCCIH (US NIH) maintains an active safety information page. Most extensively documented herb in international pharmacopeias among the five researched."
+  }
+}

@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Ayurveda — Ancient Wisdom, Modern Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --forest: #1a3a2a;
+      --forest-deep: #0d1f15;
+      --sage: #5a7a5c;
+      --gold: #c8943e;
+      --gold-light: #e8b85e;
+      --cream: #f4efe7;
+      --cream-warm: #ece4d6;
+      --sand: #d4c4a8;
+      --bark: #6b5240;
+      --text: #2a2018;
+      --text-muted: #7a6e5e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ============================================================
+       GRAIN OVERLAY
+       ============================================================ */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px;
+    }
+
+    /* ============================================================
+       HERO
+       ============================================================ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background: linear-gradient(165deg, var(--forest-deep) 0%, var(--forest) 40%, #2a5a3a 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 70% 20%, rgba(200,148,62,0.08) 0%, transparent 70%),
+                  radial-gradient(ellipse 60% 80% at 20% 80%, rgba(90,122,92,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Floating botanical line art */
+    .hero-botanical {
+      position: absolute;
+      top: 0; right: 0;
+      width: 55%;
+      height: 100%;
+      opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 800'%3E%3Cpath d='M300 800 Q320 600 280 450 Q240 300 300 200 Q360 100 320 0' stroke='%23fff' fill='none' stroke-width='1.5'/%3E%3Cpath d='M280 450 Q220 420 160 430' stroke='%23fff' fill='none' stroke-width='1'/%3E%3Cpath d='M300 350 Q370 320 420 340' stroke='%23fff' fill='none' stroke-width='1'/%3E%3Cpath d='M290 550 Q230 520 180 540' stroke='%23fff' fill='none' stroke-width='1'/%3E%3Cpath d='M310 250 Q360 220 400 230' stroke='%23fff' fill='none' stroke-width='1'/%3E%3Cellipse cx='160' cy='430' rx='30' ry='15' stroke='%23fff' fill='none' stroke-width='0.8'/%3E%3Cellipse cx='420' cy='340' rx='35' ry='18' stroke='%23fff' fill='none' stroke-width='0.8'/%3E%3Cellipse cx='180' cy='540' rx='28' ry='14' stroke='%23fff' fill='none' stroke-width='0.8'/%3E%3Cellipse cx='400' cy='230' rx='32' ry='16' stroke='%23fff' fill='none' stroke-width='0.8'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      pointer-events: none;
+    }
+
+    /* Nav */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 48px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(244,239,231,0.7);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--gold-light); }
+
+    /* Hero Content */
+    .hero-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 48px 80px;
+      max-width: 680px;
+      position: relative;
+      z-index: 10;
+      animation: heroFadeIn 1.2s ease-out;
+    }
+
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    .hero-tag::before {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(42px, 5.5vw, 72px);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--cream);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      line-height: 1.7;
+      color: rgba(244,239,231,0.65);
+      max-width: 500px;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--forest-deep);
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200,148,62,0.25);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(244,239,231,0.7);
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+
+    .btn-ghost:hover { color: var(--gold-light); }
+
+    /* Scroll indicator */
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(244,239,231,0.3);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      animation: scrollBounce 2s ease-in-out infinite;
+    }
+
+    .scroll-hint svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+    }
+
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ============================================================
+       PHILOSOPHY SECTION
+       ============================================================ */
+    .philosophy {
+      padding: 120px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .philosophy-left {
+      position: relative;
+    }
+
+    .philosophy-img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: linear-gradient(145deg, var(--sage), var(--forest));
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .philosophy-img::after {
+      content: 'ॐ';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 120px;
+      color: rgba(255,255,255,0.06);
+      font-family: serif;
+    }
+
+    .philosophy-accent {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 160px;
+      height: 160px;
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    .philosophy-right h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .philosophy-right h2 em {
+      font-style: italic;
+      color: var(--sage);
+    }
+
+    .philosophy-right p {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .philosophy-stat {
+      display: flex;
+      gap: 48px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--sand);
+    }
+
+    .philosophy-stat-item strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .philosophy-stat-item span {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* ============================================================
+       DOSHA SECTION
+       ============================================================ */
+    .doshas {
+      padding: 100px 48px;
+      background: var(--forest-deep);
+      position: relative;
+    }
+
+    .doshas::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 50% 50% at 50% 0%, rgba(90,122,92,0.12), transparent);
+      pointer-events: none;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-tag {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--cream);
+    }
+
+    .dosha-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dosha-card {
+      background: rgba(244,239,231,0.04);
+      border: 1px solid rgba(244,239,231,0.08);
+      border-radius: 16px;
+      padding: 40px 32px;
+      transition: all 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dosha-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--card-accent, var(--gold));
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .dosha-card:hover {
+      background: rgba(244,239,231,0.07);
+      border-color: rgba(244,239,231,0.14);
+      transform: translateY(-4px);
+    }
+
+    .dosha-card:hover::before { opacity: 1; }
+
+    .dosha-card[data-dosha="vata"] { --card-accent: #9575CD; }
+    .dosha-card[data-dosha="pitta"] { --card-accent: #EF5350; }
+    .dosha-card[data-dosha="kapha"] { --card-accent: #42A5F5; }
+
+    .dosha-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: rgba(200,148,62,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: 24px;
+    }
+
+    .dosha-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--cream);
+      margin-bottom: 6px;
+    }
+
+    .dosha-card .dosha-element {
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .dosha-card p {
+      color: rgba(244,239,231,0.5);
+      font-size: 14px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* ============================================================
+       PRODUCTS SECTION
+       ============================================================ */
+    .products {
+      padding: 120px 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .products .section-header h2 {
+      color: var(--text);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(212,196,168,0.4);
+      transition: all 0.35s;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(42,32,24,0.1);
+      border-color: var(--gold);
+    }
+
+    .product-thumb {
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, var(--cream-warm), var(--cream));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      position: relative;
+    }
+
+    .product-thumb::after {
+      content: attr(data-tag);
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--forest);
+      color: var(--cream);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .product-body {
+      padding: 18px 16px;
+    }
+
+    .product-body h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .product-body .product-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .product-body .product-price {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .product-body .product-price small {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 400;
+      margin-left: 4px;
+    }
+
+    /* ============================================================
+       CTA SECTION
+       ============================================================ */
+    .cta {
+      padding: 100px 48px;
+      background: linear-gradient(135deg, var(--forest) 0%, var(--forest-deep) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(200,148,62,0.06), transparent 60%),
+                  radial-gradient(circle at 70% 50%, rgba(90,122,92,0.08), transparent 60%);
+    }
+
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      color: var(--cream);
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      color: rgba(244,239,231,0.6);
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+
+    .cta .btn-primary {
+      font-size: 15px;
+      padding: 16px 40px;
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    footer {
+      padding: 40px 48px;
+      background: var(--forest-deep);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(244,239,231,0.06);
+    }
+
+    footer .footer-brand {
+      font-family: 'Playfair Display', serif;
+      color: rgba(244,239,231,0.4);
+      font-size: 14px;
+    }
+
+    footer .footer-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    footer .footer-links a {
+      color: rgba(244,239,231,0.3);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      transition: color 0.3s;
+    }
+
+    footer .footer-links a:hover { color: var(--gold); }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 900px) {
+      .nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+      .hero-content { padding: 0 24px 60px; }
+      .philosophy { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
+      .dosha-grid { grid-template-columns: 1fr; }
+      .doshas { padding: 80px 24px; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .products { padding: 80px 24px; }
+      .cta { padding: 80px 24px; }
+      footer { flex-direction: column; gap: 16px; padding: 28px 24px; }
+    }
+
+    @media (max-width: 500px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ============================================================
+       SCROLL REVEAL
+       ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-botanical"></div>
+    <nav class="nav">
+      <div class="nav-logo">Age <span>Ayurveda</span></div>
+      <ul class="nav-links">
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#doshas">Doshas</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="https://ageayurveda.com" target="_blank">Shop</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <div class="hero-tag">Est. in Classical Tradition</div>
+      <h1>Ancient Wisdom,<br><em>Modern Wellness</em></h1>
+      <p class="hero-desc">
+        Discover your Prakriti and find Ayurvedic formulations rooted in
+        Charaka Samhita, Sushruta Samhita, and Ashtanga Hridaya — crafted for today's life.
+      </p>
+      <div class="hero-actions">
+        <a href="#doshas" class="btn-primary">
+          Discover Your Dosha
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#products" class="btn-ghost">Explore Products →</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      scroll
+      <svg viewBox="0 0 16 16" fill="none"><path d="M8 3v10m0 0l-3-3m3 3l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+  <!-- ===================== PHILOSOPHY ===================== -->
+  <section class="philosophy reveal" id="philosophy">
+    <div class="philosophy-left">
+      <div class="philosophy-img"></div>
+      <div class="philosophy-accent"></div>
+    </div>
+    <div class="philosophy-right">
+      <h2>The Science of <em>Life</em></h2>
+      <p>
+        Ayurveda — आयुर्वेद — is a 5,000-year-old holistic healing system.
+        It teaches that true health arises when body, mind, and spirit exist
+        in harmony with nature's rhythms.
+      </p>
+      <p>
+        Every person carries a unique blend of three vital energies — Vata,
+        Pitta, and Kapha. Understanding your constitution is the first step
+        toward lasting wellness.
+      </p>
+      <div class="philosophy-stat">
+        <div class="philosophy-stat-item">
+          <strong>50+</strong>
+          <span>Classical Texts Referenced</span>
+        </div>
+        <div class="philosophy-stat-item">
+          <strong>24</strong>
+          <span>Herbal Formulations</span>
+        </div>
+        <div class="philosophy-stat-item">
+          <strong>25</strong>
+          <span>Prakriti Questions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOSHAS ===================== -->
+  <section class="doshas" id="doshas">
+    <div class="section-header reveal">
+      <div class="section-tag">The Three Pillars</div>
+      <h2>Discover Your Dosha</h2>
+    </div>
+    <div class="dosha-grid">
+      <div class="dosha-card reveal" data-dosha="vata">
+        <div class="dosha-icon">💨</div>
+        <h3>Vata</h3>
+        <div class="dosha-element">Air + Space</div>
+        <p>Creative, quick-thinking, energetic. Thin frame, dry skin, cold extremities. Thrives on warm, grounding routines and nourishing foods.</p>
+      </div>
+      <div class="dosha-card reveal" data-dosha="pitta">
+        <div class="dosha-icon">🔥</div>
+        <h3>Pitta</h3>
+        <div class="dosha-element">Fire + Water</div>
+        <p>Sharp intellect, strong digestion, natural leader. Medium build, warm body. Thrives on cooling foods, moderate exercise, and calm environments.</p>
+      </div>
+      <div class="dosha-card reveal" data-dosha="kapha">
+        <div class="dosha-icon">🌊</div>
+        <h3>Kapha</h3>
+        <div class="dosha-element">Earth + Water</div>
+        <p>Steady, compassionate, enduring. Larger frame, smooth skin. Thrives on light, warm, stimulating foods and vigorous daily movement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="products" id="products">
+    <div class="section-header reveal">
+      <div class="section-tag" style="color: var(--bark);">Our Formulations</div>
+      <h2>Curated by Dosha</h2>
+    </div>
+    <div class="product-grid">
+      <div class="product-card reveal">
+        <div class="product-thumb" data-tag="Bestseller">🌿</div>
+        <div class="product-body">
+          <h4>Ashwagandha</h4>
+          <div class="product-sub">Stress Relief &amp; Vitality</div>
+          <div class="product-price">₹479 <small>60 capsules</small></div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-thumb" data-tag="Immunity">🍯</div>
+        <div class="product-body">
+          <h4>Chyawanprash Avaleha</h4>
+          <div class="product-sub">Traditional Rasayana</div>
+          <div class="product-price">₹375 <small>500g</small></div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-thumb" data-tag="Anti-Inflam">🌼</div>
+        <div class="product-body">
+          <h4>Haridra</h4>
+          <div class="product-sub">High-Potency Turmeric</div>
+          <div class="product-price">₹485 <small>60 capsules</small></div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-thumb" data-tag="Sleep">🌙</div>
+        <div class="product-body">
+          <h4>Natural Sleep Aid</h4>
+          <div class="product-sub">Ashwagandha &amp; Brahmi Blend</div>
+          <div class="product-price">₹899 <small>60 capsules</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta">
+    <div class="cta-inner reveal">
+      <h2>Find Your Balance</h2>
+      <p>
+        Click the chat bubble below to take the Prakriti Quiz, explore Ayurvedic
+        topics, and get personalized product recommendations — all powered by
+        classical wisdom.
+      </p>
+      <button class="btn-primary" onclick="document.querySelector('#ageayurveda-widget')?.shadowRoot?.querySelector('.aay-bubble')?.click()">
+        Open Ayurveda Guide
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-brand">Age Ayurveda © 2026</div>
+    <ul class="footer-links">
+      <li><a href="https://ageayurveda.com" target="_blank">Shop</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+    </ul>
+  </footer>
+
+  <!-- ===================== SCROLL REVEAL JS ===================== -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+  <!-- ===================== WIDGET ===================== -->
+  <script>
+    window.AgeAyurvedaConfig = { apiUrl: 'http://localhost:8000' };
+  </script>
+  <script src="/static/ageayurveda-widget.js"></script>
+
+</body>
+</html>

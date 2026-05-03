@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "batch": 6,
+    "research_date": "2026-03-18",
+    "herbs_count": 5,
+    "scope": "Clinical trials (2020-2026), WHO/pharmacopeia status, safety updates, mechanisms of action"
+  },
+  "Jatamansi (Nardostachys jatamansi)": {
+    "latest_research": [
+      {
+        "title": "Efficacy of Nardostachys jatamansi (D.Don) DC in post stroke depression: A randomized, double blind, controlled trial",
+        "year": 2023,
+        "finding": "N. jatamansi was effective in managing post-stroke depression without adverse effects. After 6 weeks, statistically significant reductions in HDRS17 score and SF-36 (p < 0.001) were observed, while control group showed no significant difference (P = 0.108 and 0.29)."
+      },
+      {
+        "title": "Efficacy of Nardostachys Jatamansi DC as an Adjuvant to Escitalopram in the Treatment of Major Depressive Disorder - A randomized double-blind placebo-controlled study",
+        "year": 2025,
+        "finding": "Randomized double-blind placebo-controlled study demonstrated that N. jatamansi DC is effective as an adjuvant to escitalopram in treating major depressive disorder, suggesting compatibility with conventional antidepressant medications."
+      },
+      {
+        "title": "Comparative Study of Efficacy of Jatamansi and Imipramine in Generalized Anxiety Disorder (G.A.D.): A Randomized Controlled Double Blind Clinical Trial",
+        "year": 2022,
+        "finding": "Preclinical and clinical studies demonstrated anxiolytic activity of Jatamansi comparable to imipramine in generalized anxiety disorder, supporting its traditional use in neuropsychiatric conditions."
+      },
+      {
+        "title": "Computational-experimental integration identifies potent carbohydrate-hydrolyzing enzyme inhibitors from Nardostachys jatamansi",
+        "year": 2025,
+        "finding": "Methanolic extract exhibited superior dual enzyme inhibitory activity against both alpha-glucosidase and alpha-amylase, surpassing clinical standard acarbose, with preferential alpha-glucosidase selectivity and distinctive sigmoidal dose-response kinetics."
+      },
+      {
+        "title": "Multifaceted Computational Approach to Explore Nardostachys Jatamansi Neuroprotective Phytochemicals as Potential MAO-B Inhibitors for Parkinson's Disease",
+        "year": 2024,
+        "finding": "Phytochemicals jatamansinone, eselin, and jatamansinol exhibited strong binding affinities with MAO-B comparable to reference inhibitor safinamide, effectively occupying the active site and interacting with key residues such as Tyr326."
+      },
+      {
+        "title": "Antidepressant activities and regulative effects on serotonin transporter of Nardostachys jatamansi DC",
+        "year": 2021,
+        "finding": "N. jatamansi extract regulates serotonin transporter function, contributing to its antidepressant mechanism. Acute administration significantly increased serotonin (5-HT) and 5-HIAA levels; 15-day treatment increased serotonin and other monoamines."
+      }
+    ],
+    "safety_updates": [
+      "Generally well-tolerated in clinical trials; no serious adverse effects reported in post-stroke depression RCT after 6 weeks of treatment.",
+      "Safe and effective when used as adjuvant to escitalopram (SSRI) in major depressive disorder, suggesting acceptable safety with concurrent psychiatric medications.",
+      "Demonstrated safety in management of premenstrual syndrome symptoms in clinical studies.",
+      "Limitations noted: absence of comprehensive toxicology studies using animal models and long-term clinical trials in human subjects.",
+      "Listed as Critically Endangered on IUCN Red List (A2cd ver 3.1) and CITES Appendix II since 1997 -- sustainability of supply is a concern for commercial use.",
+      "Recommended dose per Ayurvedic Pharmacopoeia of India: 2-3 g/day of powder; exceeding this may carry unknown risks due to limited toxicology data."
+    ],
+    "mechanisms": [
+      "MAO-A and MAO-B inhibition: Decreases whole brain MAO-A and MAO-B activities, increasing levels of monoamines (serotonin, norepinephrine, dopamine).",
+      "Serotonin transporter regulation: Modulates serotonin reuptake, increasing synaptic 5-HT and 5-HIAA levels.",
+      "GABAergic modulation: Influences GABA pathways contributing to anxiolytic and sedative effects.",
+      "Anti-oxidative stress: Counters oxidative stress and excitotoxic damage in neuronal tissue.",
+      "Alpha-glucosidase and alpha-amylase inhibition: Dual enzyme inhibition with preferential alpha-glucosidase selectivity for potential antidiabetic action.",
+      "Neuroprotective phytochemicals (jatamansinone, eselin, jatamansinol) bind MAO-B active site similarly to safinamide, suggesting potential in Parkinson's disease management."
+    ],
+    "who_status": "Listed in the Ayurvedic Pharmacopoeia of India (API) with official monograph for rhizomes; recommended for skin diseases, cellulitis, disturbed mental state, and insomnia. Referenced in Chinese Pharmacopoeia with nardosinone as quality indicator. Listed under CITES Appendix II (1997) due to critically endangered status. No dedicated WHO monograph identified, but recognized across Ayurvedic, Unani, Tibetan, and Chinese traditional medicine systems."
+  },
+  "Vacha / Calamus (Acorus calamus)": {
+    "latest_research": [
+      {
+        "title": "Reporting negative Ames test results for Indian Acorus calamus L., rhizome, extracts, and beta-asarone",
+        "year": 2025,
+        "finding": "Indian A. calamus rhizome extracts and beta-asarone tested negative in Ames mutagenicity assay, challenging earlier assumptions about genotoxicity, though carcinogenicity concerns from chronic feeding studies remain."
+      },
+      {
+        "title": "Screening for Active Compounds of Acorus calamus against SARS-CoV-2 Viral Protease and Mechanism Prediction",
+        "year": 2024,
+        "finding": "Identified 8 active components from 24 isolated compounds that exhibited significant inhibitory effects on SARS-CoV-2 PLpro, suggesting antiviral potential."
+      },
+      {
+        "title": "Comprehensive In Vitro Safety Assessment of Acorus calamus Rhizome Oil Using OECD-Compliant New Approach Methods",
+        "year": 2025,
+        "finding": "Classified as GHS Category 1B sensitiser and Category 2 irritant using OECD-compliant new approach methods, providing standardized safety classification for the rhizome oil."
+      },
+      {
+        "title": "Acorus calamus as a promising source of new antibacterial agent against Pseudomonas aeruginosa and Staphylococcus aureus",
+        "year": 2025,
+        "finding": "Volatile compounds from A. calamus demonstrated significant antibacterial activity against both P. aeruginosa and S. aureus, with mode of action deciphered."
+      },
+      {
+        "title": "Alpha-asarone, beta-asarone, and gamma-asarone: Current status of toxicological evaluation",
+        "year": 2021,
+        "finding": "Comprehensive toxicological review found cardiotoxicity, hepatotoxicity, reproductive toxicity, mutagenicity, and carcinogenicity described for propenylic asarone isomers with varying reliability levels. Toxicological data remain rare and not critically evaluated in the 21st century."
+      },
+      {
+        "title": "The Neuroprotective Role of Acorus calamus in Developmental and Histopathological Changes in Autism-Induced Wistar Rats",
+        "year": 2022,
+        "finding": "Demonstrated neuroprotective effects in autism-induced animal models, showing developmental and histopathological improvements in brain tissue."
+      }
+    ],
+    "safety_updates": [
+      "FDA BANNED (1968): Calamus and its products are prohibited from direct addition or use as human food in the United States (21 CFR 189.110) due to beta-asarone carcinogenicity in chronic rat feeding studies.",
+      "Beta-asarone produced dose-dependent increase in leiomyosarcomas in the intestine of male rats at doses causing severe toxicity and increased mortality.",
+      "European Council limits: beta-asarone content restricted to 0.1 mg/kg in non-alcoholic drinks and 1 mg/kg in alcoholic drinks.",
+      "Classified as GHS Category 1B sensitiser and Category 2 irritant for rhizome oil (2025 OECD assessment).",
+      "Indian variety (diploid) contains highest beta-asarone content; North American variety (diploid) contains primarily alpha-asarone with much lower beta-asarone.",
+      "2025 Ames test found negative mutagenicity results for Indian extracts and beta-asarone, but this does not negate chronic carcinogenicity concerns.",
+      "Reported adverse events in humans: prolonged vomiting in 7 consumers exposed to asarones from A. calamus.",
+      "No human long-term safety or carcinogenicity studies exist."
+    ],
+    "mechanisms": [
+      "Acetylcholinesterase (AChE) inhibition: Beta-asarone is the major constituent showing maximum AChE inhibitory potential, protecting cognitive function in Alzheimer's disease models.",
+      "Anti-neuroinflammatory: Beta-asarone suppresses TNF-alpha and IL-1beta secretion, reducing neuroinflammation.",
+      "Blood-brain barrier penetration: Both alpha- and beta-asarone cross the blood-brain barrier, enabling direct CNS activity.",
+      "Antioxidant neuroprotection: Alpha-asarone normalizes increased superoxide dismutase and lipid peroxidation, restores catalase, glutathione peroxidase, reduced glutathione, and vitamins C and E in brain regions.",
+      "GABAergic and NMDA modulation: Alpha-asarone shows anticonvulsant activity via GABA antagonist and NMDA receptor agonist properties.",
+      "Sedative/tranquilizing: Asarones potentiate hypnosis in vivo through CNS depressant activity.",
+      "Antimicrobial: Volatile compounds demonstrate activity against P. aeruginosa and S. aureus through membrane disruption."
+    ],
+    "who_status": "WHO/JECFA evaluated beta-asarone in Food Additives Series No. 16 (1981), determining carcinogenic risk from chronic exposure. FDA banned calamus as human food additive in 1968 (21 CFR 189.110). Not approved as a drug. Despite bans in Western regulatory frameworks, Acorus calamus (Vacha) remains in the Ayurvedic Pharmacopoeia of India and is widely used in traditional Indian, Chinese, and Unani medicine systems. The regulatory divergence between traditional use and modern safety assessments remains unresolved."
+  },
+  "Bilva / Bael (Aegle marmelos)": {
+    "latest_research": [
+      {
+        "title": "Ethnopharmacological Profile, Phytochemistry and Therapeutic Potential of Aegle marmelos L. for the Treatment of Neurological Disorders",
+        "year": 2025,
+        "finding": "Comprehensive review highlighting neuroprotective potential of A. marmelos bioactive compounds including marmelosin, aegeline, and imperatorin, while emphasizing the need for more clinical trials to validate potency and safety in neurological applications."
+      },
+      {
+        "title": "Phytochemical and pharmacological profile of Aegle marmelos (L.) Correa: A comprehensive review of therapeutic potential, mechanisms of action, and translational relevance",
+        "year": 2026,
+        "finding": "Comprehensive synthesis of in vitro, in vivo, and clinical evidence on pharmacological potential. Translation to clinical practice is challenged by limited high-quality clinical trials, variability in bioactive content across extracts, and lack of standardized dosing."
+      },
+      {
+        "title": "Aegle marmelos leaf juice as a complementary therapy to control type 2 diabetes - Randomised controlled trial",
+        "year": 2021,
+        "finding": "Randomized controlled trial showed glycated hemoglobin (HbA1c) reduced by MD -1.6% (95% CI -3 to -0.3) compared to control, supporting antidiabetic efficacy of bael leaf juice."
+      },
+      {
+        "title": "Unraveling the neuroprotective potential of Aegle marmelos in Alzheimer's disease: a network pharmacology and molecular docking approach",
+        "year": 2026,
+        "finding": "Network pharmacology and molecular docking study identified multiple targets for neuroprotection in Alzheimer's disease, suggesting multi-target therapeutic potential."
+      },
+      {
+        "title": "ADMET Profiling and Molecular Docking Studies of Bael Fruit Constituents against Proteins Responsible for Life-Threatening Diseases",
+        "year": 2025,
+        "finding": "ADMET profiling of bael fruit constituents revealed favorable drug-likeness and pharmacokinetic properties for multiple bioactive compounds targeting proteins involved in life-threatening diseases."
+      },
+      {
+        "title": "Quality control assessment of Aegle marmelos: combined HPTLC, heavy metal, pesticide and aflatoxin analysis",
+        "year": 2022,
+        "finding": "Established quality control standards using HPTLC alongside heavy metal, pesticide, and aflatoxin analysis, addressing contamination risks in commercial bael products."
+      }
+    ],
+    "safety_updates": [
+      "Insufficient reliable evidence to confirm safety when used as oral medicine; most safety data derive from traditional use rather than controlled trials.",
+      "Large amounts may cause stomach upset, constipation, dehydration, dryness of mouth, stomach cramps, or nausea.",
+      "Consuming large amounts of unripe fruit may irritate the intestines.",
+      "Pregnancy contraindication: Traditionally used to stimulate uterine contractions; excessive use may pose risk of preterm labor. Avoid use during pregnancy and breastfeeding.",
+      "May lower blood sugar -- caution with concurrent diabetes medications due to additive hypoglycemic risk.",
+      "Surgical precaution: Discontinue use at least 2 weeks before scheduled surgery due to blood sugar interference.",
+      "Aegeline (alkaloid in bael) is monitored as a negative marker (toxic compound) in pharmacopoeia monographs.",
+      "Bael fruits are prone to aflatoxin contamination; aflatoxin analysis is recommended before consumption as food or medicine."
+    ],
+    "mechanisms": [
+      "Antidiarrheal bidirectional motility modulation: Slows intestinal motility during diarrhea and eases it in constipation, attributed to balance of tannins and mucilage -- a rare bidirectional property.",
+      "Anti-inflammatory: Marmelosin (imperatorin) inhibits TNF-alpha mediated inflammatory markers and possesses antioxidant properties.",
+      "Antidiabetic: Aegeline and marmelosin improve insulin signaling and reduce fasting glucose; oral extract increases body weight, pancreas weight, and insulin levels with improved beta-cell functional state.",
+      "Coumarins (marmelosin, imperatorin, psoralen) are the most frequently reported bioactive class linked to antidiabetic, antioxidant, and antimicrobial activities.",
+      "Neuroprotective: Network pharmacology identifies multi-target mechanisms against Alzheimer's disease-related proteins.",
+      "Antimicrobial and anti-biofilm: Fruit extract demonstrates activity against multi-drug-resistant Staphylococcus aureus biofilms."
+    ],
+    "who_status": "Monographed in the Ayurvedic Pharmacopoeia of India (API), Indian Pharmacopoeia (IP, 2021), and United States Pharmacopoeia-Herbal Medicines Compendium (USP, 2021). Indian Pharmacopoeia Commission developed a PPI monograph quantifying five phytocompounds: marmelosin, marmesin, psoralen, scopoletin, and umbelliferone, with limits on negative marker aegeline. No dedicated WHO monograph identified. Recognized in Ayurvedic, Siddha, and Unani traditional medicine systems."
+  },
+  "Karela / Bitter Gourd (Momordica charantia)": {
+    "latest_research": [
+      {
+        "title": "Effects of Momordica charantia L. supplementation on glycemic control and lipid profile in type 2 diabetes mellitus patients: A systematic review and meta-analysis of randomized controlled trials",
+        "year": 2024,
+        "finding": "Meta-analysis of RCTs found M. charantia supplementation reduced FPG, PPG, and HbA1c in T2DM patients, though evidence quality was low to very low for primary outcomes."
+      },
+      {
+        "title": "Efficacy of Momordica charantia in glycaemic control and insulin resistance among patients with prediabetes and type 2 diabetes: A GRADE-adherent meta-analysis of randomised controlled trials",
+        "year": 2025,
+        "finding": "GRADE-adherent meta-analysis assessed glycemic control and insulin resistance in prediabetes and T2DM, providing the most rigorous evidence assessment to date using GRADE methodology."
+      },
+      {
+        "title": "The metabolic effect of Momordica charantia cannot be determined based on the available clinical evidence: systematic review and meta-analysis of RCTs",
+        "year": 2024,
+        "finding": "Contradictory findings: concluded that the metabolic effect cannot be definitively determined from available clinical evidence. Low to very low quality evidence for primary outcomes, with sparse safety data warranting further research."
+      },
+      {
+        "title": "Bitter gourd supplementation for twelve weeks improves biomarkers of glucose homeostasis in a prediabetic population",
+        "year": 2025,
+        "finding": "Twelve-week supplementation improved glucose homeostasis biomarkers in prediabetic subjects, supporting preventive use in at-risk populations."
+      },
+      {
+        "title": "Momordica charantia (bitter melon) efficacy and safety on glucose metabolism in Korean prediabetes participants: a 12-week, randomized clinical study",
+        "year": 2023,
+        "finding": "12-week RCT in Korean prediabetic participants demonstrated that bitter melon extract reduced average fasting glucose levels with a generally safe profile and no serious adverse events."
+      },
+      {
+        "title": "Molecular Docking and In Silico Predictive Analysis of Potential Herb-Drug Interactions Between Momordica charantia and Miglitol",
+        "year": 2025,
+        "finding": "In silico analysis showed charantin may enhance effects of alpha-glucosidase inhibitor miglitol, potentially resulting in postprandial hypoglycemia, necessitating careful monitoring."
+      }
+    ],
+    "safety_updates": [
+      "Generally safe in clinical trials: No serious adverse events reported during 12-week treatment periods in multiple RCTs.",
+      "HYPOGLYCEMIA RISK: Major safety concern when combined with antidiabetic drugs. Extract combined with half doses of metformin or glibenclamide caused hypoglycemia greater than full doses alone.",
+      "Drug interaction with miglitol: Charantin enhances alpha-glucosidase inhibitor effects, increasing postprandial hypoglycemia risk.",
+      "Twice-daily dosing with metformin may induce hypoglycemia and death (observed in mice); once-daily is safer combination.",
+      "Reported adverse effects: hypoglycemic coma and convulsions in children, reduced fertility in mice, favism-like syndrome, elevated gamma-GT and alkaline phosphatase in animals, headaches.",
+      "Contraindicated in G6PD deficiency: May trigger favism-like hemolytic syndrome.",
+      "Pregnancy caution: Abortifacient properties reported; avoid during pregnancy.",
+      "Not an approved drug in any major regulatory jurisdiction."
+    ],
+    "mechanisms": [
+      "Insulin receptor binding: Novel insulin receptor-binding protein enhances glucose uptake and clearance by triggering insulin receptor signaling pathway.",
+      "Polypeptide-P: Insulin-mimetic protein (resembling bovine insulin) increases insulin secretion, tissue glucose uptake, liver/muscle glycogen synthesis, and glucose oxidation while decreasing hepatic gluconeogenesis.",
+      "Charantin: Steroidal saponin (9.7 kDa) suppresses hepatic gluconeogenic enzymes glucose-6-phosphatase and fructose-1,6-bisphosphatase; accelerates glucose metabolism via pentose phosphate pathway.",
+      "AMPK activation: Cucurbitane glycosides and momordicosides activate AMPK pathway, stimulating GLUT4 translocation to cell membrane in muscle and adipocyte cell lines.",
+      "PPAR modulation: Increases mRNA expression of PPARgamma in adipose tissue, improving insulin resistance. Compound K16 upregulates AMPKalpha1, GLUT4, SIRT1, and PPARalpha.",
+      "PI3K/IRS-1 signaling: Activates insulin receptor substrate 1 and upregulates PI3K pathway, promoting GLUT-4 translocation in muscle and adipose tissue.",
+      "Beta-cell repair: Repairs damaged pancreatic beta-cells, increases insulin levels, and enhances insulin sensitivity.",
+      "Intestinal absorption reduction: Inhibits glucosidase and suppresses disaccharidase activity, reducing glucose absorption."
+    ],
+    "who_status": "WHO has included M. charantia in medicinal plant monograph documentation. Referenced in multiple national pharmacopeias across Asia (Philippines, India, China, Vietnam). DrugBank classifies it as a plant/plant extract used in OTC products but not an approved drug. Extensive documentation exists in Alternative Medicine Review monograph (2007). WHO Eastern Mediterranean Regional Office has published pharmacological documentation. Widely recognized across Ayurvedic, Traditional Chinese Medicine, and Southeast Asian traditional medicine systems."
+  },
+  "Methi / Fenugreek (Trigonella foenum-graecum)": {
+    "latest_research": [
+      {
+        "title": "Effects of fenugreek supplementation on the components of metabolic syndrome: A systematic review and dose-response meta-analysis of randomized clinical trials",
+        "year": 2022,
+        "finding": "Dose-response meta-analysis demonstrated beneficial effects of fenugreek supplementation on multiple metabolic syndrome components including glycemic and lipid parameters in randomized clinical trials."
+      },
+      {
+        "title": "The Effect of Fenugreek in Type 2 Diabetes and Prediabetes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        "year": 2023,
+        "finding": "Systematic review and meta-analysis confirmed beneficial effects on glycemic control parameters and lipid profiles in T2DM, supporting fenugreek as complementary diabetes therapy."
+      },
+      {
+        "title": "Fenugreek (Trigonella foenum-graecum) as a Natural Therapeutic Agent in Type 2 Diabetes, PCOS, and Testosterone Deficiency: A Consolidated Clinical Review",
+        "year": 2025,
+        "finding": "Consolidated clinical review assessed fenugreek's efficacy in modulating glucose metabolism, lipid profiles, and hormonal balance across T2DM, PCOS, and age-related testosterone deficiency."
+      },
+      {
+        "title": "Exploring the Adverse Effects of Fenugreek in Humans: A Scoping Review",
+        "year": 2025,
+        "finding": "Scoping review of 60 articles (Jan 1990-Sep 2024): 14 clinical trials reported adverse effects, 23 reported none, 13 did not report. Most common adverse effect was mild gastrointestinal discomfort. No fatalities attributed to fenugreek use."
+      },
+      {
+        "title": "Therapeutic effect of fenugreek supplementation on type 2 diabetes mellitus: A systematic review and meta-analysis of clinical trials",
+        "year": 2024,
+        "finding": "Meta-analysis confirmed therapeutic benefit of fenugreek supplementation for T2DM management, with significant improvements in glycemic markers."
+      },
+      {
+        "title": "Randomized double blind placebo controlled trial to assess the safety and efficacy of a patented fenugreek seed extract in Type 2 diabetics",
+        "year": 2023,
+        "finding": "Patented fenugreek seed extract demonstrated both safety and efficacy in T2DM patients in a rigorous randomized double-blind placebo-controlled design."
+      }
+    ],
+    "safety_updates": [
+      "Most common adverse effect: mild gastrointestinal discomfort (stomach upset, diarrhea, bloating) following oral consumption.",
+      "Hypoglycemia risk: Due to possible hypoglycaemic effect, close monitoring of glycaemic control recommended in diabetic patients (EMA monograph warning).",
+      "Allergic reactions: 10 case reports/series documented allergic reactions or hypersensitivity (cross-reactivity possible with chickpeas and other legumes).",
+      "Maple syrup odor: Characteristic odor in sweat, urine, or skin of mothers and breastfed infants -- can mimic maple syrup urine disease in neonatal screening.",
+      "Suspected hypokalemia reported in some cases.",
+      "Pregnancy contraindicated: Not recommended during pregnancy due to potential uterotonic effects. Unknown if it passes into breast milk.",
+      "No known severe, serious, or moderate drug interactions documented, but caution with diabetes, asthma, and potassium-lowering medications.",
+      "Hepatotoxicity: No clinically apparent liver injury cases despite widespread use; prospective studies show no effect on serum enzyme levels at therapeutic doses.",
+      "Case report (2025): Ribociclib-induced hepatotoxicity potentially exacerbated by concurrent fenugreek supplement use, suggesting possible CYP-mediated interactions with oncology drugs.",
+      "No fatalities attributed to fenugreek use in the literature."
+    ],
+    "mechanisms": [
+      "4-Hydroxyisoleucine (4-OHIle): Non-protein amino acid that increases glucose-induced insulin release in a glucose-concentration-dependent manner; stimulates glucose uptake by increasing surface GLUT4 via PI3K-dependent pathway in skeletal muscle.",
+      "4-OHIle anti-inflammatory: Ameliorates fatty acid-induced insulin resistance and inflammatory response in skeletal muscle cells.",
+      "Diosgenin: Steroidal saponin serving as pharmaceutical precursor; inhibits aberrant crypt foci formation and induces apoptosis in colon cancer cells; anti-hypercholesterolemic and anti-inflammatory effects.",
+      "Trigonelline: Alkaloid contributing to antidiabetic properties through multiple pathways.",
+      "Soluble fiber (galactomannan): High fiber content slows gastric emptying and glucose absorption, contributing to glycemic control.",
+      "Multi-tissue targeting: Pancreas (insulin secretion), skeletal muscle (glucose uptake via GLUT4), liver (gluconeogenesis reduction), adipose tissue (lipid metabolism), and gut (glucose absorption) are all modulated.",
+      "Hormonal modulation: Influences testosterone levels and reproductive hormones, relevant to PCOS and testosterone deficiency applications."
+    ],
+    "who_status": "WHO published monograph on fenugreek seeds (Semen Trigonellae Foenugraeci) in WHO Monographs on Selected Medicinal Plants, Volume 3 (2007). European Medicines Agency (EMA) published European Union herbal monograph with Revision 1 for traditional use. Authorized as single active substance in France, Poland, and Spain. ESCOP monograph recommends 25 g powdered seeds daily for diabetes/hypercholesterolaemia adjuvant therapy, and 1-6 g for appetite stimulation. Listed in NCCIH (US National Center for Complementary and Integrative Health) database. Included in Indian Pharmacopoeia and Ayurvedic Pharmacopoeia of India. One of the most comprehensively documented Ayurvedic herbs in Western regulatory frameworks."
+  }
+}

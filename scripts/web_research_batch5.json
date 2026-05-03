@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "batch": 5,
+    "research_date": "2026-03-18",
+    "herbs_count": 5,
+    "sources": [
+      "PubMed/NCBI",
+      "Nature (International Journal of Impotence Research)",
+      "Wiley Online Library (Andrologia)",
+      "MDPI (Nutrients, Molecules, Plants, Foods, JCM)",
+      "Frontiers in Pharmacology",
+      "Frontiers in Nutrition",
+      "Frontiers in Immunology",
+      "ScienceDirect (Heliyon, Maturitas)",
+      "DrugBank Online",
+      "LiverTox (NCBI Bookshelf)",
+      "European Medicines Agency (EMA)",
+      "WHO Monographs on Selected Medicinal Plants",
+      "Ayurvedic Pharmacopoeia of India",
+      "Indian Pharmacopoeia",
+      "Japanese Pharmacopoeia",
+      "British Pharmacopoeia",
+      "ClinicalTrials.gov",
+      "WebMD",
+      "Drugs.com"
+    ]
+  },
+  "gokshura_tribulus": {
+    "botanical_name": "Tribulus terrestris L.",
+    "common_names": ["Gokshura", "Tribulus", "Puncture Vine", "Gokharu"],
+    "latest_research": [
+      {
+        "title": "Systematic review and meta-analysis of Tribulus terrestris for erectile dysfunction management",
+        "year": 2025,
+        "finding": "Meta-analysis of 8 RCTs showed Tribulus terrestris significantly elevated IIEF-5 and IIEF-15 scores compared to pre-supplementation and outperformed placebo. However, no significant difference in total testosterone levels was found between groups. No difference in adverse events versus placebo."
+      },
+      {
+        "title": "Effects of Tribulus Supplementation on Erectile Dysfunction and Testosterone Levels in Men - Systematic Review",
+        "year": 2025,
+        "finding": "Systematic review of 10 eligible studies (9 clinical trials + 1 quasi-experimental) from 162 screened articles. Jadad score revealed low methodological quality for 50% of studies, highlighting need for higher-quality trials."
+      },
+      {
+        "title": "Profertility and Aphrodisiac Activities of Tribulus terrestris: Evidence from Meta-Analyses",
+        "year": 2023,
+        "finding": "Meta-analysis of 30 studies with pooled analysis on 133 human subjects demonstrated significant improvements in sperm concentration and sperm motility, supporting profertility claims."
+      },
+      {
+        "title": "Effect of Tribulus terrestris on testicular morphology and sperm production in rat model",
+        "year": 2024,
+        "finding": "Experimental study in rat models investigating effects on testicular morphology and spermatogenesis, contributing to understanding of reproductive mechanisms."
+      }
+    ],
+    "safety_updates": [
+      "Moderate CYP3A4 inhibitor: significant role in metabolism of statins and other commonly prescribed medications. Documented case of rhabdomyolysis from atorvastatin-Tribulus interaction.",
+      "Risk of nephrotoxicity: cases of acute tubular necrosis reported following Tribulus terrestris consumption. Steroidal sapogenins form crystals in renal tubules.",
+      "Gastrointestinal disturbances may occur in sensitive individuals due to saponin content.",
+      "Other reported side effects include gynecomastia, excitation, menorrhagia, and insomnia.",
+      "In grazing animals, linked to bile duct injury via steroidal sapogenins forming crystals in bile ducts, though clinically apparent liver injury in humans not convincingly shown.",
+      "Contraindicated during pregnancy and breastfeeding due to insufficient safety data."
+    ],
+    "mechanisms": [
+      "Nitric oxide/NOS pathway: enhances relaxation of corpus cavernosum via increased NO release from endothelium and nitrergic nerve endings.",
+      "Protodioscin (dominant steroidal saponin) binds to androgen receptors and/or enzymes that metabolize androgens.",
+      "Increases cyclic adenosine monophosphate (cAMP) levels, leading to augmented secretion of dehydroepiandrosterone (DHEA).",
+      "Saponins suppress angiotensin II-induced vascular smooth muscle cell proliferation via inhibition of intracellular ROS production (antihyperlipidemic/antiatherosclerotic effect).",
+      "Saponins exhibit cytotoxic effects on cancer cell lines through multiple pathways."
+    ],
+    "who_status": "No dedicated WHO monograph. Fruits have monograph in Japanese Pharmacopoeia (16th Edition). Referenced in Ayurvedic Pharmacopoeia of India. DrugBank listing (DB14358) documents pharmacological interactions."
+  },
+  "gudmar_gymnema": {
+    "botanical_name": "Gymnema sylvestre (Retz.) R.Br. ex Sm.",
+    "common_names": ["Gudmar", "Gymnema", "Gurmar", "Sugar Destroyer", "Meshashringi"],
+    "latest_research": [
+      {
+        "title": "Systematic review and meta-analysis of Gymnema sylvestre supplementation on glycemic control in type 2 diabetes",
+        "year": 2021,
+        "finding": "Meta-analysis of 10 studies (419 participants) showed Gymnema sylvestre supplementation significantly reduces fasting blood glucose (FBG), postprandial blood glucose (PPBG), and glycated hemoglobin (HbA1c) compared to baseline."
+      },
+      {
+        "title": "Efficacy of food supplement based on Gymnema sylvestre, Zea mays, Zinc and Chromium for carbohydrate metabolism",
+        "year": 2024,
+        "finding": "Monocentric RCT on 81 individuals with impaired fasting glucose (98-125 mg/dL) showed daily supplementation over 3 months led to highly significant reduction (p < 0.001) in FBG and HbA1c levels compared to placebo."
+      },
+      {
+        "title": "14-day Gymnema sylvestre intervention to reduce sugar cravings in adults",
+        "year": 2022,
+        "finding": "Intervention with 4 mg Gymnema sylvestre containing 75% gymnemic acids plus fiber/vitamin supplement reduced sweet food intake and discretionary sugar consumption in free-living adults."
+      },
+      {
+        "title": "Gymnema sylvestre as anti-inflammatory and anti-biofilm agent against anaerobic infections",
+        "year": 2025,
+        "finding": "First study to evaluate antimicrobial activity of Gymnema sylvestre extract against planktonic culture and biofilms of anaerobic bacteria, expanding applications beyond traditional diabetes use."
+      },
+      {
+        "title": "Gymnema sylvestre extract protects pancreatic beta-cells from cytokine-induced apoptosis",
+        "year": 2020,
+        "finding": "Novel extract demonstrated protective effects on pancreatic beta-cells against cytokine-induced programmed cell death, supporting regenerative potential for diabetes management."
+      }
+    ],
+    "safety_updates": [
+      "May enhance glucose-lowering effects of antidiabetic drugs, risking hypoglycemia if not monitored.",
+      "Inhibits CYP1A2 and induces CYP2C9 metabolic activity: potential interactions with medications metabolized through these pathways.",
+      "Possibly safe when taken appropriately for up to 20 months at standard doses.",
+      "Doses of 100 mg/kg body weight or below recommended; higher doses (300-600 mg/kg) associated with significant alterations in biochemical and hematological parameters and potential liver/kidney effects.",
+      "European Food Safety Authority (EFSA) risk assessment warns that Gymnema-based food supplements combined with antidiabetic drugs may pose risks due to herb-drug interactions.",
+      "Not recommended during pregnancy or breastfeeding due to insufficient safety data."
+    ],
+    "mechanisms": [
+      "Gymnemic acids increase insulin secretion by stimulating Ca2+ influx through voltage-gated calcium channels and protein kinase activation, raising intracellular calcium.",
+      "Alternative mechanism: increases membrane porosity (disruption) and permeability of beta-cells, promoting insulin release independently of classical Ca2+ channel cascade.",
+      "Promotes regeneration of islet cells and increases number of pancreatic beta-cells and islets of Langerhans.",
+      "Increases utilization of glucose by enhancing activities of enzymes responsible for insulin-dependent glucose utilization pathways.",
+      "Inhibits glucose absorption from intestine via gymnemic acid binding to intestinal receptors.",
+      "Gymnemic acids structurally mimic glucose molecules and compete for sweet taste receptors on the tongue, blocking sweet taste perception."
+    ],
+    "who_status": "No dedicated WHO monograph. Listed in Indian Pharmacopoeia. EFSA has published a risk assessment report for Gymnema sylvestre in food supplements (2020). Recognized in Ayurvedic Pharmacopoeia of India for traditional antidiabetic use."
+  },
+  "haritaki": {
+    "botanical_name": "Terminalia chebula Retz.",
+    "common_names": ["Haritaki", "Harad", "Chebulic Myrobalan", "King of Medicine"],
+    "latest_research": [
+      {
+        "title": "Randomized double-blind placebo-controlled trial of standardized Terminalia chebula fruit extracts for skin health",
+        "year": 2023,
+        "finding": "8-week RCT (NCT04597502) on healthy females aged 25-65 supplemented with 250 mg Synastol TC twice daily showed that oral T. chebula extract significantly reduced facial sebum excretion, erythema, and wrinkle severity."
+      },
+      {
+        "title": "Potential of Terminalia chebula in alleviating mild cognitive impairment: a review",
+        "year": 2024,
+        "finding": "Comprehensive review identified 171 chemical constituents and 11 active constituents targeting MCI. Flavonoids alleviate cognitive impairment primarily through antioxidative, anti-inflammatory, and neuroprotective properties."
+      },
+      {
+        "title": "Hepatoprotective Activity of Haritaki (Terminalia chebula Retz): A Systematic Review",
+        "year": 2024,
+        "finding": "Systematic review confirmed hepatoprotective effects of Terminalia chebula, supporting traditional Ayurvedic claims for liver protection."
+      },
+      {
+        "title": "Comprehensive review on diverse pharmacological perspectives of Terminalia chebula Retz",
+        "year": 2022,
+        "finding": "Documented antioxidative, antiproliferative, antimicrobial, proapoptotic, antidiabetic, anti-aging, hepatoprotective, anti-inflammatory, antimutagenic, and antiepileptic properties through multiple laboratory approaches."
+      },
+      {
+        "title": "Comprehensive metabolome profiling of Triphala components including Terminalia chebula",
+        "year": 2024,
+        "finding": "Advanced metabolome profiling revealed detailed phytochemical composition of Terminalia chebula as part of Triphala formulation, identifying bioactive metabolites responsible for therapeutic effects."
+      }
+    ],
+    "safety_updates": [
+      "Possibly safe when used orally for up to 8 weeks and when applied topically for up to 40 days.",
+      "Possibly unsafe during pregnancy; avoid use. Insufficient safety data for breastfeeding.",
+      "May lower blood sugar: potential interaction with diabetes medications requiring dose adjustment.",
+      "Stop use at least 2 weeks before scheduled surgery due to potential blood sugar interference.",
+      "Side effects to monitor: diarrhea, stomatitis, dehydration, fever, fatigue.",
+      "High-dose Terminalia (arjuna species) associated with hepatotoxicity and hypothyroidism in rat studies; caution with high doses of related species."
+    ],
+    "mechanisms": [
+      "Rich in phenolcarboxylic and tannic antioxidants (chebulagic acid, chebulinic acid, gallic acid, ellagic acid) that prevent oxidative stress and inhibit peroxide-induced reactions.",
+      "Chebulagic acid and chebulinic acid exert antioxidant effects via ROS scavenging and iron chelation.",
+      "Neuroprotective: ellagic acid-containing extracts protect against H2O2-induced and amyloid-beta (Abeta25-35) toxicity in PC12 cells.",
+      "Anti-inflammatory effects attributed to chebulagic and gallic acid inhibition of inflammatory pathways.",
+      "Gallic acid and ellagic acid inhibit cytochrome P450 enzymes and protect against mitochondrial dysfunction by increasing Cytochrome C oxidase levels.",
+      "Antimicrobial activity through tannin-mediated disruption of microbial cell membranes and enzyme inhibition."
+    ],
+    "who_status": "No dedicated WHO monograph. Listed in Ayurvedic Pharmacopoeia of India (Part-I, Volume-I) with detailed therapeutic use descriptions. Also documented in Siddha Pharmacopoeia of India, Unani Pharmacopoeia of India, and Indian Herbal Pharmacopoeia. Called 'King of Medicine' in Tibetan medicine tradition."
+  },
+  "aloe_vera": {
+    "botanical_name": "Aloe barbadensis Mill. (syn. Aloe vera (L.) Burm.f.)",
+    "common_names": ["Aloe Vera", "Kumari", "Ghritkumari", "Barbados Aloe"],
+    "latest_research": [
+      {
+        "title": "Aloe vera and health outcomes: umbrella review of systematic reviews and meta-analyses",
+        "year": 2020,
+        "finding": "Of 71 unique outcomes reviewed, 47 (67%) were nominally statistically significant, but only 3 outcomes supported by highly suggestive evidence (prevention of second-degree infusion phlebitis, chemotherapy-induced mucositis), while 42 outcomes had weak evidence."
+      },
+      {
+        "title": "Aloe Barbadensis Miller: Pharmacological activities and clinical evidence for disease prevention",
+        "year": 2024,
+        "finding": "Comprehensive review establishing evidence for Aloe vera in disease prevention, covering pharmacological activities across multiple body systems with clinical validation."
+      },
+      {
+        "title": "Aloe vera extensive review focused on recent studies",
+        "year": 2024,
+        "finding": "Updated review documenting broad spectrum of pharmacological activities with focus on recent clinical and preclinical evidence for therapeutic applications."
+      },
+      {
+        "title": "Meta-analysis of Aloe vera in glycemic control for non-insulin dependent diabetics",
+        "year": 2021,
+        "finding": "Meta-analysis of 9 studies showed significant decrease in fasting blood glucose by 46.6 mg/dL and HbA1c by 1.05% following oral Aloe vera use in non-insulin dependent diabetics."
+      },
+      {
+        "title": "Aloe vera gel syrup for GERD treatment",
+        "year": 2022,
+        "finding": "Five clinical studies showed 10 mL Aloe vera gel syrup twice daily significantly eliminated GERD symptoms without adverse effects, comparable to omeprazole or ranitidine."
+      },
+      {
+        "title": "Aloe vera sterols for anti-aging skin effects",
+        "year": 2021,
+        "finding": "RCT on women (n=28, aged 40+) showed daily consumption of Aloe vera gel powder (40 mcg aloe sterols) improved facial wrinkles, skin hydration, and stimulated collagen and hyaluronic acid production."
+      }
+    ],
+    "safety_updates": [
+      "48 known moderate drug interactions documented (Drugs.com interaction checker).",
+      "Hepatotoxicity concern: 22 reported cases of liver injury attributed to Aloe vera preparations (17 women, 5 men, mean age 50). Hepatocellular injury most common manifestation (86.3%). Latency 3-24 weeks.",
+      "Alkaloids in aloe vera enhance hepatic enzymes and alcohol dehydrogenase activity, potentially interfering with detoxification mechanisms.",
+      "Oral ingestion associated with diarrhea, hypokalemia, pseudomelanosis coli, and kidney failure.",
+      "Topical use may cause phototoxicity and hypersensitive reactions in susceptible individuals.",
+      "Anthraquinone-containing latex (aloin) is a potent laxative; chronic use may cause electrolyte imbalance and dependency.",
+      "Herbal/dietary supplements implicated in 19% of drug-induced acute liver failure cases; Aloe vera is among recognized causes.",
+      "Avoid during pregnancy (potential uterine stimulant effects) and breastfeeding."
+    ],
+    "mechanisms": [
+      "Acemannan (primary bioactive polysaccharide) activates innate immune cells (macrophages, dendritic cells) producing IL-1, IL-6, IL-12, TNF-alpha, colony-stimulating factors, and stem cell factors.",
+      "Acemannan induces IL-12 release, triggering natural killer cell activation and T cell proliferation/activation (adaptive immune response).",
+      "Breakage of acemannan chains into smaller fragments enhances biological effects; fragments boost vaccine efficacy via mannose receptor agonism of macrophages/dendritic cells.",
+      "Wound healing: activated macrophage cytokines (IL-1, IL-6, TNF-alpha) promote robust fibroblast proliferation and collagen synthesis.",
+      "Acemannan/chitosan combinations accelerate wound closure by promoting granular tissue formation.",
+      "Aloe-emodin and other anthraquinones exhibit antiproliferative and proapoptotic effects on cancer cell lines.",
+      "Barbaloin acts as a stimulant laxative by increasing colonic motility and water/electrolyte secretion."
+    ],
+    "who_status": "WHO Monograph exists in WHO Monographs on Selected Medicinal Plants, Volume 1 (Aloe Vera Gel). European Medicines Agency (EMA) has published assessment reports and herbal monographs on Aloe barbadensis Mill. addressing both gel and latex preparations. Listed in multiple national pharmacopoeias including USP, BP, and Indian Pharmacopoeia."
+  },
+  "ginger_shunthi": {
+    "botanical_name": "Zingiber officinale Roscoe",
+    "common_names": ["Ginger", "Shunthi", "Saunth", "Adrak", "Sonth"],
+    "latest_research": [
+      {
+        "title": "Pharmacological properties of ginger: what do meta-analyses say? A systematic review",
+        "year": 2025,
+        "finding": "Comprehensive systematic review synthesizing evidence from all meta-analyses published 2010-2025. Confirms pharmacological effects across anti-inflammatory, antiemetic, antidiabetic, and analgesic domains, though high heterogeneity and potential bias highlight need for larger RCTs."
+      },
+      {
+        "title": "Effect of ginger on inflammatory markers: systematic review and meta-analysis of 16 RCTs",
+        "year": 2020,
+        "finding": "Meta-analysis of 16 RCTs (1010 participants) investigated efficacy of ginger supplementation on inflammatory markers CRP, hs-CRP, TNF-alpha, sICAM, and IL-6. Confirmed significant anti-inflammatory effects."
+      },
+      {
+        "title": "Clinical research on ginger: insights from ClinicalTrials.gov analysis",
+        "year": 2024,
+        "finding": "Analysis of 89 registered clinical trials: treatment objectives predominant (47.2%), covering antiemetic activity, analgesic function, quality of life, blood pressure, energy expenditure, and xerostomia reduction. Identified low reporting rate of final results."
+      },
+      {
+        "title": "Anti-colitis efficacy comparison of gingerols and shogaols in DSS-induced colitis mouse model",
+        "year": 2023,
+        "finding": "10-shogaol identified as most potent compound in blocking iNOS and COX-2 expression and NF-kB activity. 8- and 10-shogaols showed greatest efficacy in decreasing DSS-induced serum TNF levels among all ginger compounds tested."
+      },
+      {
+        "title": "Ginger constituent 6-shogaol inhibits inflammation and angiogenesis in primary human endothelial cells",
+        "year": 2022,
+        "finding": "6-shogaol demonstrated anti-inflammatory and anti-angiogenic effects in primary human endothelial cells, suggesting dual mechanisms relevant to chronic inflammatory diseases and tumor angiogenesis."
+      },
+      {
+        "title": "Critical review of ginger antioxidant, anti-inflammatory, and immunomodulatory activities",
+        "year": 2024,
+        "finding": "Comprehensive review confirmed ginger's triple action as antioxidant, anti-inflammatory, and immunomodulatory agent, with doses of 1-3 g daily commonly used for therapeutic effects and 500-1500 mg daily in divided doses for pregnancy-associated nausea."
+      }
+    ],
+    "safety_updates": [
+      "FDA advises caution for patients on warfarin who also use ginger supplements: excessive use can impair platelet aggregation and increase bleeding risk.",
+      "Combining ginger supplements with anticoagulants (warfarin, aspirin, clopidogrel) may increase bleeding risk; concentrated supplements carry higher interaction risk than culinary amounts.",
+      "May enhance effects of antidiabetic medications, risking hypoglycemia.",
+      "May potentiate effects of antihypertensive drugs.",
+      "Concentrated ginger supplements carry much higher drug interaction risk than small amounts used in cooking.",
+      "Generally Recognized as Safe (GRAS) by FDA for food use; supplement doses above 5 g/day may cause heartburn, diarrhea, and mouth irritation.",
+      "Gallstone patients should use with caution as ginger may increase bile secretion."
+    ],
+    "mechanisms": [
+      "6-Gingerol and 6-shogaol inhibit COX-1 and COX-2 enzymes, reducing prostaglandin E2 synthesis (anti-inflammatory).",
+      "Suppresses NF-kB transcription factor activation and MAPK signaling pathways, reducing inflammatory cytokine production (TNF-alpha, IL-1beta).",
+      "6-Shogaol (formed from 6-gingerol by dehydration) contains alpha,beta-unsaturated carbonyl moiety (Michael acceptor) conferring superior anticancer, antioxidant, and anti-inflammatory effects compared to gingerol.",
+      "10-Shogaol identified as most potent compound for blocking iNOS and COX-2 expression and NF-kB activity in colitis models.",
+      "Increases cytoprotective heme oxygenase-1 (HO-1) levels, providing cellular antioxidant defense.",
+      "Inhibits iNOS expression, reducing nitric oxide production in inflammatory conditions.",
+      "Antiemetic effect via serotonin receptor (5-HT3) antagonism in the gastrointestinal tract."
+    ],
+    "who_status": "WHO Monograph exists in WHO Monographs on Selected Medicinal Plants (Rhizoma Zingiberis). Listed in British Pharmacopoeia, European Pharmacopoeia, USP, Indian Pharmacopoeia, and Ayurvedic Pharmacopoeia of India. FDA GRAS status for food use. EMA monograph available for traditional herbal medicinal use."
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "generated_date": "2026-03-18",
+    "research_scope": "Clinical trials, safety profiles, mechanisms of action, pharmacopeia status (2020-2026)",
+    "sources_note": "Data compiled from PubMed, PMC, WHO resources, WebMD, Drugs.com, Frontiers, ScienceDirect, and other peer-reviewed databases"
+  },
+  "giloy_guduchi_tinospora_cordifolia": {
+    "latest_research": [
+      {
+        "title": "Tinospora Cordifolia (Giloy)-Induced Liver Injury During the COVID-19 Pandemic - Multicenter Nationwide Study From India",
+        "year": 2022,
+        "finding": "Retrospective study across 13 Indian centers identified 43 patients with herb-induced liver injury (HILI) temporally associated with Giloy use. Median time from initial consumption to symptom onset was 46 days. Presentations included acute hepatitis, acute worsening of chronic liver disease, and acute liver failure."
+      },
+      {
+        "title": "Tinospora cordifolia (Giloy): An insight on the multifarious pharmacological paradigms of a most promising medicinal ayurvedic herb",
+        "year": 2024,
+        "finding": "Comprehensive review in Heliyon documenting diverse pharmacological activities including anti-diabetic, antipyretic, anti-inflammatory, antioxidant, hepatoprotective, and immunomodulatory properties attributed to alkaloids, diterpenoid lactones, glycosides, steroids, sesquiterpenoids, and phenolics."
+      },
+      {
+        "title": "Genome sequencing and functional analysis of a multipurpose medicinal herb Tinospora cordifolia (Giloy)",
+        "year": 2024,
+        "finding": "First draft genome assembly of T. cordifolia produced using advanced sequencing technologies, comprising 1.01 Gbp. Functional analysis identified key biosynthetic gene clusters responsible for production of pharmacologically active metabolites."
+      },
+      {
+        "title": "Integrated omics analysis of Tinospora cordifolia intervention in hypertriglyceridemia patients - pilot clinical trial",
+        "year": 2022,
+        "finding": "Pilot clinical trial demonstrated that T. cordifolia intervention modulated multiple signaling pathways in hypertriglyceridemia patients, providing multi-omics evidence for its lipid-lowering mechanisms."
+      },
+      {
+        "title": "Giloy Ghanvati (Tinospora cordifolia) Reversed SARS-CoV-2 Viral Spike-Protein Induced Disease Phenotype in Humanized Zebrafish",
+        "year": 2021,
+        "finding": "Xenotransplant model study showed Giloy Ghanvati formulation reversed SARS-CoV-2 spike-protein induced disease phenotype, suggesting potential antiviral immunomodulatory activity."
+      },
+      {
+        "title": "Exploring the Medicinal and Nutraceutical Frontiers of Tinospora cordifolia in Stress and Cancer Management",
+        "year": 2025,
+        "finding": "Review of T. cordifolia's ability to enhance antioxidant defenses and induce apoptosis in cancerous cells, with potential as adjunct therapy to improve quality of life for cancer patients."
+      }
+    ],
+    "safety_updates": [
+      "Over 50 cases of clinically apparent acute liver injury reported since 2017, with increased incidence during the COVID-19 pandemic due to widespread self-medication",
+      "Multicenter Indian study (13 centers, 43 patients) confirmed association between Giloy use and herb-induced liver injury with autoimmune-like features",
+      "Major concern identified: botanical misidentification of Tinospora crispa (known hepatotoxin) being sold as T. cordifolia (Guduchi/Giloy) in Indian markets",
+      "LiverTox (NCBI) resource updated June 2025 with comprehensive hepatotoxicity data",
+      "Pharmacokinetic interactions reported with hypoglycemic drugs - aqueous extract may potentiate blood sugar lowering effects",
+      "Safe at concentrations up to 2000 mg/kg in short-term studies when authentic species is confirmed",
+      "Debate continues: some researchers argue hepatotoxicity reports are due to species adulteration rather than authentic T. cordifolia"
+    ],
+    "mechanisms": [
+      "Immunomodulation via activation of tumor-associated macrophages and increased IFN-gamma production",
+      "NF-kB pathway modulation and interleukin regulation for anti-inflammatory effects",
+      "Berberine (isoquinoline alkaloid) inhibits TNF-alpha-mediated proinflammatory pathways and suppresses iNOS activity to reduce nitrosative stress",
+      "Berberine targets multiple cell signaling pathways including proliferation, differentiation, and epithelial-mesenchymal transition (anticancer)",
+      "Cordifolioside A enhances phagocytic activity of neutrophils through synergistic action with other phytocompounds",
+      "Magnoflorine compounds contribute anti-inflammatory and immunomodulatory activities",
+      "Arabinogalactan polysaccharides activate macrophages via TLR6 signaling"
+    ],
+    "who_status": "Listed in Ayurvedic Pharmacopoeia of India (API), Volume I, Part I, Monograph No. 34. Recognized by Indian Pharmacopoeia and Indian System of Medicine (ISM). No dedicated WHO monograph identified, though acknowledged in WHO traditional medicine frameworks."
+  },
+  "shatavari_asparagus_racemosus": {
+    "latest_research": [
+      {
+        "title": "Efficacy and Safety of Shatavari Root Extract for the Management of Menopausal Symptoms: A Double-Blind, Multicenter, Randomized Controlled Trial",
+        "year": 2024,
+        "finding": "Multicenter RCT demonstrated Shatavari root extract was effective and safe for managing menopausal symptoms including hot flashes, night sweats, and mood disturbances."
+      },
+      {
+        "title": "Efficacy and Safety of Shatavari (Asparagus racemosus) Root Extract for Perimenopause: Randomized, Double-Blind, Placebo-Controlled Study",
+        "year": 2025,
+        "finding": "80 participants randomized to Shatavari 300 mg daily or placebo for 8 weeks. Shatavari root extract demonstrated effective and safe natural intervention for perimenopausal symptoms."
+      },
+      {
+        "title": "Efficacy and safety of Shatavari root extract (Asparagus racemosus) for menopausal symptoms: a randomized, double-blind, three-arm, placebo-controlled study",
+        "year": 2025,
+        "finding": "135 women aged 45-65 across three arms (Shatavari alone, Shatavari + Ashwagandha, placebo). Both Shatavari alone and the combination were effective; combination showed additive benefits for managing menopausal symptoms and overall health."
+      },
+      {
+        "title": "Effects of Shatavari Root Extract on Sexual Wellness in Women: Prospective, Randomized, Double-Blind, Three-Arm, Parallel-Group, Placebo-Controlled Study",
+        "year": 2025,
+        "finding": "Standardized Shatavari root extract demonstrated safe and effective improvement in women's sexual health outcomes, with additive effects when combined with Ashwagandha."
+      },
+      {
+        "title": "Shatavari (Asparagus racemosus): A Promising Ally for Fertility",
+        "year": 2025,
+        "finding": "Review consolidating evidence that Shatavari enhances fertility rates and improves breast milk quality and quantity, supporting its traditional use in postpartum care."
+      }
+    ],
+    "safety_updates": [
+      "Clinical trials report favorable safety profile at doses of 300-500 mg daily for up to 8 weeks",
+      "Mild gastrointestinal complaints (loose stools, nausea) are the most common adverse effects, typically transient and dose-dependent",
+      "Phytoestrogenic properties can interfere with estrogen-based medications and hormone replacement therapy (HRT)",
+      "Contraindicated in hormone-sensitive conditions: certain cancers (breast, ovarian, uterine), endometriosis, uterine fibroids",
+      "May reduce effectiveness of hormonal birth control pills by altering hormone levels or drug absorption",
+      "Animal reproductive toxicity studies show no teratogenic effects at therapeutic doses, but rigorous human data still lacking",
+      "Mild adverse events in clinical trials: loose stools, dizziness, nausea, headache - all resolving on discontinuation"
+    ],
+    "mechanisms": [
+      "Phytoestrogenic activity via steroidal saponins (Shatavarins I-IV) binding estrogen receptor alpha (ERalpha), modulating gonadotropin levels",
+      "Immunomodulation: Shatavarins stimulate immune cell proliferation and IgG secretion in dose-dependent manner",
+      "Th1/Th2 cytokine balance modulation: stimulates IL-12 production while inhibiting IL-6",
+      "Shatavarin I blocks oxytocin-induced uterine contractions (in vitro and in vivo) via glycoside-mediated competitive antagonism",
+      "Antioxidant activity through polyphenol and flavonoid content scavenging reactive oxygen species",
+      "Galactogogue effect attributed to increased prolactin levels mediated by steroidal saponins"
+    ],
+    "who_status": "Acknowledged by WHO in medicinal plant monographs, with encouragement for further phytochemical and pharmacological investigation. Listed in Ayurvedic Pharmacopoeia of India. Referenced in British Herbal Pharmacopoeia."
+  },
+  "neem_azadirachta_indica": {
+    "latest_research": [
+      {
+        "title": "Neem (Azadirachta indica): A Miracle Herb; Panacea for All Ailments",
+        "year": 2025,
+        "finding": "Comprehensive review covering neem's applications across pharmaceuticals, agriculture, cosmetics, and fuel production, with focus on broad-spectrum antimicrobial, anticancer, and anti-diabetic properties."
+      },
+      {
+        "title": "Predictive modelling and ranking: Azadirachta indica compounds through indices and multi-criteria decision-making techniques",
+        "year": 2025,
+        "finding": "Computational study using molecular descriptor indices to rank neem bioactive compounds for drug discovery prioritization, identifying azadirachtin, nimbin, and gedunin as top candidates."
+      },
+      {
+        "title": "A systematic review of neem flower (Azadirachta indica)",
+        "year": 2025,
+        "finding": "Systematic review demonstrating neem flower extracts improve insulin sensitivity and lower blood sugar levels, with potential as complementary anti-diabetic agents."
+      },
+      {
+        "title": "The Antimicrobial Potential of the Neem Tree Azadirachta indica",
+        "year": 2022,
+        "finding": "Comprehensive review of antimicrobial activities across dentistry, food safety, bacteriology, mycology, virology, and parasitology. Nimbins demonstrated activity against four dengue virus strains."
+      },
+      {
+        "title": "Traditional to modern perspectives on Neem: A gateway to bioactive compounds, sustainable agrochemicals and industrial applications",
+        "year": 2025,
+        "finding": "Azadirachta indica leaf extract significantly reduced histological changes and prevented increases in liver enzyme markers in antitubercular drug-induced hepatotoxicity models."
+      },
+      {
+        "title": "Phytochemical Profiling, Pharmacokinetics, and Antimicrobial Activity of Azadirachta indica Leaf Extracts: In Silico and In Vitro Evaluations",
+        "year": 2024,
+        "finding": "Beta-d-Mannofuranoside identified as a promising antibacterial agent from neem through combined in-silico and in-vitro approaches."
+      }
+    ],
+    "safety_updates": [
+      "Non-aqueous extracts are most toxic neem products (ESD: 0.002-12.5 mcg/kg bw/day); aqueous extracts safer (ESD: 0.3 mg/kg bw/day)",
+      "Prolonged use may cause renal dysfunction, decreased arterial blood pressure, and hypoglycemic responses",
+      "Reversible anti-fertility effects on both male and female mammals documented upon sub-acute or chronic exposure",
+      "Drug interaction (MODERATE): potentiates hypoglycemic agents - may cause dangerously low blood sugar",
+      "Drug interaction (MODERATE): may alter lithium levels requiring dose adjustment",
+      "Drug interaction (MODERATE): may interfere with immunosuppressant medications - contraindicated for organ transplant recipients",
+      "Insufficient long-term safety data in humans - need for more funded toxicology research emphasized in 2025 bibliometric analysis",
+      "Neem oil ingestion in children has been associated with serious adverse events including toxic encephalopathy"
+    ],
+    "mechanisms": [
+      "Azadirachtin blocks TNF-induced NF-kB activation by binding to TNFR1 at the TNF binding site, preventing TNF binding and downstream signaling",
+      "Inhibits IkBalpha phosphorylation and degradation, blocking RelA (p65) nuclear translocation",
+      "Reduces pro-inflammatory cytokines TNF-alpha, IL-6, IL-1beta, TLR4, and NF-kB in dose-dependent manner",
+      "Nimbolide and azadirachtin show concentration-dependent free radical scavenging and reductive potential",
+      "Prevents procarcinogen activation and oxidative DNA damage; upregulates antioxidant and carcinogen detoxification enzymes",
+      "Synergistic activity with existing antibiotics against multidrug-resistant bacterial species",
+      "Gedunin acts as HSP90 inhibitor, disrupting protein folding in cancer cells"
+    ],
+    "who_status": "Recognized in WHO's monographs on selected medicinal plants. Neem-derived pesticide (azadirachtin) evaluated by WHO/FAO Joint Meeting on Pesticide Residues. Listed in Indian Pharmacopoeia and Ayurvedic Pharmacopoeia of India."
+  },
+  "arjuna_terminalia_arjuna": {
+    "latest_research": [
+      {
+        "title": "Terminalia arjuna, a Cardioprotective Herbal Medicine - Relevancy in the Modern Era of Pharmaceuticals and Green Nanomedicine",
+        "year": 2023,
+        "finding": "Review examining T. arjuna's pleiotropic cardiovascular effects including anti-atherogenic, hypotensive, inotropic, anti-inflammatory, anti-thrombotic and antioxidant actions, with exploration of nano-formulation approaches for improved bioavailability."
+      },
+      {
+        "title": "Terminalia arjuna: An overview of its magical properties",
+        "year": 2025,
+        "finding": "Comprehensive overview documenting cardiovascular properties attributed to flavonoids, polyphenols, triterpenoids, tannins, glycosides, and minerals. Highlighted need for more rigorous clinical trials."
+      },
+      {
+        "title": "Cardioprotective effects of arjunolic acid in LPS-stimulated H9C2 and C2C12 myotubes via the MyD88-dependent TLR4 signaling pathway",
+        "year": 2023,
+        "finding": "Demonstrated arjunolic acid exerts cardioprotection by inhibiting MyD88-dependent TLR4 signaling, reducing LPS-induced cardiac inflammation and oxidative stress in cellular models."
+      },
+      {
+        "title": "Nutritional Composition, Phytochemical Profile, Extraction Methods of Bioactive Components, and Health Benefits of Terminalia Arjuna Bark",
+        "year": 2025,
+        "finding": "Detailed phytochemical profiling of T. arjuna bark identifying optimal extraction methods for maximizing yield of cardioprotective triterpenoids and polyphenols."
+      },
+      {
+        "title": "Clinical efficacy of water extract of stem bark of T. arjuna in patients of chronic heart failure: double-blind RCT",
+        "year": 2016,
+        "finding": "When added to standard pharmacotherapy in chronic heart failure for 12 weeks, Arjuna extract showed no significant change in LVEF but improved functional capacity, antioxidant reserves, and symptom-related quality of life. (Most recent large RCT available)"
+      }
+    ],
+    "safety_updates": [
+      "No serious side effects reported with arjuna therapy in clinical studies; long-term safety data still limited",
+      "Adverse reactions similar to placebo: constipation, headache, abdominal discomfort, body ache",
+      "Drug interaction WARNING: may potentiate anticoagulant effects of warfarin due to inherent antiplatelet and anticoagulant properties similar to aspirin",
+      "Inhibits CYP3A4, CYP2D6, and CYP2C9 enzymes in human liver microsomes in vitro - caution with drugs metabolized by these enzymes",
+      "In vivo pharmacokinetic study showed aqueous extract did not significantly alter pharmacokinetic parameters of probe substrates, suggesting in vitro findings may not fully translate",
+      "High doses in animal studies associated with hepatotoxicity and hypothyroidism in rats",
+      "Co-administration with statins, calcium channel blockers, and other CYP3A4 substrates requires medical supervision"
+    ],
+    "mechanisms": [
+      "Arjunolic acid (pentacyclic triterpenoid saponin) is the primary cardioprotective compound, inhibiting thrombin-induced platelet aggregation (IC50: 0.048 mM, more potent than aspirin at 0.088 mM)",
+      "Prevents doxorubicin-induced cardiac apoptosis by blocking JNK-p38 and p53 signaling pathways",
+      "Reverses cardiac fibrosis by inhibiting non-canonical TGF-beta signaling via TAK1 phosphorylation blockade, reducing p38 MAPK and NF-kB p65 activation",
+      "Boosts endogenous antioxidant defense: increases catalase, superoxide dismutase, and glutathione S-transferase activity",
+      "Anti-inflammatory cytokine rebalancing: decreases pro-inflammatory and increases anti-inflammatory cytokines in cardiac tissue",
+      "Cardioprotection via MyD88-dependent TLR4 signaling pathway inhibition (2023 discovery)",
+      "Positive inotropic effect enhancing myocardial contractility without increasing heart rate"
+    ],
+    "who_status": "No dedicated WHO monograph identified. Listed in Ayurvedic Pharmacopoeia of India. Recognized in Indian traditional medicine systems (Ayurveda, Siddha, Unani). Included in Indian Pharmacopoeia for cardiovascular indications."
+  },
+  "shilajit_mineral_pitch": {
+    "latest_research": [
+      {
+        "title": "Systematic Review of Shilajit: Clinical Efficacy and Safety",
+        "year": 2024,
+        "finding": "PRISMA-guided systematic review of 15 clinical studies (1,254 participants) across chronic fatigue syndrome, high-altitude sickness, cognitive decline, and infertility. Generally mild adverse events (GI discomfort, headache); no serious adverse events reported."
+      },
+      {
+        "title": "Shilajit extract preserves bone mineral density in postmenopausal women with osteopenia",
+        "year": 2022,
+        "finding": "Randomized, double-blind, placebo-controlled trial demonstrated Shilajit extract reduced oxidative stress, inflammation, and bone loss in a dose-dependent manner to preserve BMD in postmenopausal women with osteopenia."
+      },
+      {
+        "title": "Pre-clinical Evaluation of Shilajit in Cancer: A Systematic Review",
+        "year": 2025,
+        "finding": "Systematic review found promising preclinical anticancer evidence but no randomized controlled clinical trials or human studies evaluating Shilajit as a primary anticancer therapy."
+      },
+      {
+        "title": "Unlocking the potential of Shilajit in Vascular Dementia - pathology and management",
+        "year": 2025,
+        "finding": "Review exploring Shilajit's neuroprotective potential in vascular dementia via cAMP/NO signaling and anti-inflammatory pathways, with fulvic acid blocking tau self-aggregation relevant to Alzheimer's research."
+      },
+      {
+        "title": "Shilajit as a Neuroprotective Agent Against Amyloid Beta-induced Cytotoxicity and Inflammation",
+        "year": 2024,
+        "finding": "Demonstrated Shilajit's protective effects against amyloid-beta induced neurotoxicity and neuroinflammation in cellular models, supporting potential for neurodegenerative disease applications."
+      },
+      {
+        "title": "Effects of oral Shilajit tablets on sexual function and sexual quality of life in reproductive-aged women",
+        "year": 2023,
+        "finding": "Triple-blind randomized clinical trial showed significant improvement in sexual function and sexual quality of life in reproductive-aged women following Shilajit supplementation."
+      },
+      {
+        "title": "Chemical Analysis of Native Himalayan Shilajit: An Evaluation of an Ayurvedic Formulation",
+        "year": 2025,
+        "finding": "ACS Omega publication providing detailed chemical characterization of Himalayan Shilajit identifying dibenzo-alpha-pyrones, fulvic acids, humic acids, trace minerals, and heavy metal profiles."
+      }
+    ],
+    "safety_updates": [
+      "Processed Shilajit possibly safe at 500 mg daily for up to 48 weeks or 2 g daily for 45 days based on clinical evidence",
+      "Adverse events generally mild and transient: gastrointestinal discomfort, headache - no serious adverse events in systematic review of 15 studies",
+      "CRITICAL: Raw, unpurified Shilajit may contain arsenic, lead, mercury, and other toxic heavy metals (~65 heavy metals identified including Cu, Al, Pb, As, Cd, Hg)",
+      "Thallium contamination identified in some Shilajit supplements (2025 PMC study) - potential risk from unregulated products",
+      "Drug interaction: may potentiate hypoglycemic agents causing dangerously low blood sugar",
+      "Drug interaction: may interfere with anticoagulants (warfarin) increasing bleeding risk",
+      "Drug interaction: may potentiate blood pressure medications causing excessive hypotension",
+      "Drug interaction: may affect thyroid medication efficacy",
+      "Fulvic acid can bind metals and influence iron uptake - separate dosing from iron supplements by 2-3 hours",
+      "Contraindicated in hemochromatosis and individuals prone to kidney stones due to mineral content",
+      "Not monitored by FDA for quality or purity - third-party testing (USP, NSF) recommended"
+    ],
+    "mechanisms": [
+      "Fulvic acid and dibenzo-alpha-pyrones (DBPs) act as electron shuttles in mitochondria, accelerating electron transport at Complex I and Complex III for enhanced ATP production",
+      "DBPs function as mitochondria-targeted antioxidants, working in tandem with CoQ10 in the electron transport chain",
+      "Fulvic acid chelates minerals enhancing bioavailability and facilitating transport across cell membranes",
+      "Fulvic acid blocks tau protein self-aggregation, relevant to Alzheimer's disease pathology",
+      "Modulates hypothalamic-pituitary-adrenal (HPA) axis to attenuate chronic fatigue syndrome symptoms",
+      "Preserves mitochondrial membrane potential (MMP) and stabilizes complex enzyme activities preventing mitochondrial dysfunction",
+      "Reverses mitochondrial oxidative stress: normalizes NO concentration, lipid peroxidation, SOD, and catalase activities",
+      "Neuroprotection via cAMP/NO signaling pathway modulation and anti-neuroinflammatory activity"
+    ],
+    "who_status": "No dedicated WHO monograph. Referenced in Ayurvedic Pharmacopoeia of India as Shilajatu. USP (United States Pharmacopeia) standards referenced for quality testing. Classified as Rasayana (rejuvenative) in classical Ayurvedic texts including Charaka Samhita and Sushruta Samhita."
+  }
+}

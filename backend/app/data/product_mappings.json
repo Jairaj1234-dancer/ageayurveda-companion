@@ -1,0 +1,128 @@
+{
+  "ashwagandha": {
+    "concepts": ["stress", "energy", "vitality", "strength", "stamina", "adaptogen", "sleep", "anxiety", "nerve tonic"],
+    "conditions": ["stress", "fatigue", "insomnia", "anxiety", "weakness", "low energy", "hair fall"],
+    "herbs": ["ashwagandha", "withania"],
+    "doshas": ["vata", "kapha"],
+    "blacklist": ["cancer", "tumor", "thyroid"]
+  },
+  "immuno-plus": {
+    "concepts": ["immunity", "respiratory", "antioxidant", "energy", "detox", "fever"],
+    "conditions": ["low immunity", "frequent cold", "cough", "weakness", "respiratory infection"],
+    "herbs": ["giloy", "tulsi", "amla", "ashwagandha", "haldi", "kalmegh", "mulethi"],
+    "doshas": ["vata", "pitta", "kapha"],
+    "blacklist": ["cancer", "autoimmune"]
+  },
+  "acid-relief": {
+    "concepts": ["acidity", "heartburn", "pitta", "stomach", "gastric", "digestion"],
+    "conditions": ["acidity", "heartburn", "gastritis", "hyperacidity", "acid reflux", "indigestion"],
+    "herbs": ["avipattikar", "amla", "haritaki"],
+    "doshas": ["pitta"],
+    "blacklist": ["cancer", "ulcer bleeding"]
+  },
+  "haridra": {
+    "concepts": ["inflammation", "joint", "anti-inflammatory", "antioxidant", "pain", "skin", "turmeric"],
+    "conditions": ["joint pain", "arthritis", "inflammation", "skin allergy", "wounds", "skin problems"],
+    "herbs": ["turmeric", "haridra", "curcumin", "haldi"],
+    "doshas": ["vata", "kapha"],
+    "blacklist": ["cancer", "tumor"]
+  },
+  "bowel-kare": {
+    "concepts": ["digestion", "detox", "constipation", "cleansing", "bowel", "gut health"],
+    "conditions": ["constipation", "indigestion", "bloating", "gas", "irregular bowel"],
+    "herbs": ["triphala", "senna", "isabgol", "haritaki"],
+    "doshas": ["vata", "pitta", "kapha"],
+    "blacklist": ["cancer", "tumor"]
+  },
+  "chyawanprash": {
+    "concepts": ["immunity", "rejuvenation", "rasayana", "energy", "respiratory", "longevity"],
+    "conditions": ["low immunity", "frequent cold", "cough", "weakness", "aging"],
+    "herbs": ["amla", "ashwagandha", "pippali", "guduchi", "shatavari", "chyawanprash"],
+    "doshas": ["vata", "pitta", "kapha"],
+    "blacklist": ["diabetes"]
+  },
+  "chyawan-cap": {
+    "concepts": ["immunity", "energy", "rejuvenation", "rasayana", "convenience"],
+    "conditions": ["low immunity", "fatigue", "weakness", "frequent cold"],
+    "herbs": ["chyawanprash", "amla"],
+    "doshas": ["vata", "pitta", "kapha"],
+    "blacklist": ["diabetes"]
+  },
+  "natural-sleep-aid": {
+    "concepts": ["sleep", "calm", "anxiety", "relaxation", "insomnia", "stress"],
+    "conditions": ["insomnia", "anxiety", "restlessness", "poor sleep", "stress", "racing mind"],
+    "herbs": ["ashwagandha", "brahmi", "jatamansi", "tagara"],
+    "doshas": ["vata", "pitta"],
+    "blacklist": ["cancer"]
+  },
+  "adhd-ease": {
+    "concepts": ["brain", "memory", "focus", "concentration", "cognitive", "mental", "intellect", "medhya", "adhd", "attention"],
+    "conditions": ["poor memory", "lack of focus", "brain fog", "anxiety", "adhd", "attention deficit"],
+    "herbs": ["brahmi", "tagar", "jyotishmati", "shankhpushpi", "vacha", "ashwagandha"],
+    "doshas": ["vata", "pitta"],
+    "blacklist": ["cancer", "tumor"]
+  },
+  "sugar-formula": {
+    "concepts": ["blood sugar", "metabolism", "diabetes", "pancreatic", "weight"],
+    "conditions": ["high blood sugar", "diabetes support", "metabolic syndrome", "insulin resistance"],
+    "herbs": ["karela", "jamun", "gudmar", "neem", "methi", "vijaysar"],
+    "doshas": ["kapha", "pitta"],
+    "blacklist": ["cancer", "type 1 diabetes"]
+  },
+  "yastimadhu": {
+    "concepts": ["throat", "stomach", "cough", "voice", "respiratory", "pitta balance"],
+    "conditions": ["sore throat", "stomach irritation", "cough", "hoarseness", "voice strain"],
+    "herbs": ["yashtimadhu", "licorice", "mulethi"],
+    "doshas": ["vata", "pitta"],
+    "blacklist": ["high blood pressure", "pregnancy"]
+  },
+  "grow-and-glow-hair-oil": {
+    "concepts": ["hair", "scalp", "hair growth", "greying", "hair fall", "lustre"],
+    "conditions": ["hair fall", "premature greying", "dandruff", "dry scalp", "weak hair"],
+    "herbs": ["bhringraj", "amla", "brahmi", "coconut oil"],
+    "doshas": ["pitta", "vata"],
+    "blacklist": ["cancer"]
+  },
+  "nasja-oil": {
+    "concepts": ["sinus", "nasal", "respiratory", "breathing", "mental clarity", "nasya"],
+    "conditions": ["sinus congestion", "nasal dryness", "breathing difficulty", "mental fog", "headache"],
+    "herbs": ["sesame oil", "brahmi", "eucalyptus"],
+    "doshas": ["vata", "kapha"],
+    "blacklist": ["cancer"]
+  },
+  "nitya-naturals-balm": {
+    "concepts": ["pain", "muscle", "joint", "headache", "topical", "massage"],
+    "conditions": ["muscle pain", "joint pain", "headache", "stiffness", "body pain"],
+    "herbs": ["eucalyptus", "camphor", "menthol"],
+    "doshas": ["vata", "kapha"],
+    "blacklist": ["open wounds"]
+  },
+  "winerid": {
+    "concepts": ["de-addiction", "liver", "mental clarity", "balance", "alcohol"],
+    "conditions": ["alcohol dependency", "addiction support", "liver stress", "substance dependence"],
+    "herbs": ["ayurvedic herbs"],
+    "doshas": ["pitta", "kapha"],
+    "blacklist": ["cancer", "liver failure"]
+  },
+  "nutrijam": {
+    "concepts": ["immunity", "nutrition", "energy", "taste", "rasayana", "chyawanprash"],
+    "conditions": ["low immunity", "malnutrition", "fatigue", "low energy"],
+    "herbs": ["amla", "chyawanprash herbs"],
+    "doshas": ["vata", "pitta", "kapha"],
+    "blacklist": ["diabetes"]
+  },
+  "immunity-kit": {
+    "concepts": ["immunity", "complete wellness", "respiratory", "energy", "bundle"],
+    "conditions": ["low immunity", "frequent illness", "weakness", "respiratory problems"],
+    "herbs": ["multiple herbs"],
+    "doshas": ["vata", "pitta", "kapha"],
+    "blacklist": ["cancer"]
+  },
+  "nava-tongue-cleaner": {
+    "concepts": ["oral health", "tongue", "hygiene", "ama removal", "fresh breath", "detox"],
+    "conditions": ["bad breath", "oral hygiene", "tongue coating", "ama buildup"],
+    "herbs": [],
+    "doshas": ["vata", "pitta", "kapha"],
+    "blacklist": []
+  }
+}

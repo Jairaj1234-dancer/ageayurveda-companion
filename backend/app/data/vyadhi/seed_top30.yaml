@@ -1,0 +1,427 @@
+# Seed vyādhi codebook — top 30 high-prevalence Ayurvedic disease entities.
+# Hand-curated from Mādhava Nidāna + Caraka Cikitsāsthāna + AYUSH STGs.
+# All marked review_tier=llm-only; Vaidya validation pending.
+#
+# NAMASTE codes are placeholders ("AAA-N.NN format suggested by NAMASTE
+# portal hierarchy") — to be replaced with the official codebook once
+# NAMASTE portal access is negotiated. ICD-11 TM2 codes are best-effort
+# from the WHO browser; verify against the live API before committing
+# to clinical use.
+
+name: vyadhi_top30
+vyadhi:
+
+  # ─── Metabolic / endocrine ────────────────────────────────────────
+
+  - nama_sanskrit: "Madhumeha"
+    english: "Madhumeha (a vāta-type Prameha; clinical correlate ≈ Type 2 Diabetes Mellitus)"
+    hindi: "मधुमेह"
+    synonyms: ["Vātaja-prameha", "Kṣaudra-meha"]
+    chapter: "Prameha"
+    namaste_code: null  # to be filled from NAMASTE portal
+    icd11_tm2_code: "SK04.0"
+    icd11_main_code: "5A11"  # Type 2 diabetes mellitus (ICD-11)
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "sannipātaja", "asādhya-stage"]
+    primary_dosha: "vāta (terminal stage of prameha cascade)"
+    primary_dushya: ["meda", "māṃsa", "kleda", "rasa"]
+    srotas: ["mūtravaha", "medovaha"]
+    nidana:
+      - "Excess kapha-vardhaka āhāra (sweet, oily, heavy, cold)"
+      - "Sedentary lifestyle (āsyasukha)"
+      - "Excess sleep, especially daytime (svapnasukha)"
+      - "Genetic / hereditary (kulaja)"
+    purva_rupa:
+      - "Excessive thirst (atitṛṣṇā), excessive urination (prabhūta-mūtra)"
+      - "Sweet-tasting urine (mūtra-mādhurya)"
+      - "Burning of palms and soles (kara-pāda-dāha)"
+      - "Numbness in extremities"
+    rupa:
+      - "Polyuria with pale/turbid urine"
+      - "Increased thirst, dryness of mouth"
+      - "Weight loss (in vātaja terminal stage)"
+      - "Fatigue, sweet body odour"
+    upashaya:
+      - "Bitter and astringent dravyas relieve"
+      - "Light, dry, warm food relieves"
+    samprapti_summary: "Kapha-vardhaka āhāra-vihāra accumulates kapha + meda; over time all three doṣas vitiate; mūtravaha-srotas dushti → 20 prameha varieties with madhumeha as the chronic vāta-stage."
+    sadhya_asadhya: "kṛcchra-sādhya (manageable but not cured); asādhya in late stages with complications"
+    chikitsa_summary: "śodhana when āma present; primarily śamana with bitter dravyas; śilājatu, haridrā, methikā, Triphalā guggulu, Madhumeha-han vati. Pathya: kapha-medo-hara āhāra; vyāyāma daily."
+    common_formulations:
+      - "Triphalā guggulu"
+      - "Sugar-control formulations (kuṭakī + haridrā + methikā)"
+    common_dravyas: ["Haridrā", "Āmalakī", "Guḍūcī"]
+    modern_diagnostics: ["Fasting glucose", "PPBS", "HbA1c", "urine ketones", "lipid profile", "renal function"]
+    red_flags_for_referral:
+      - "Diabetic ketoacidosis signs"
+      - "Sudden vision loss"
+      - "Foot ulceration / non-healing wound"
+      - "Pregnancy with prediabetes"
+    classical_refs:
+      - {text: "Charaka Saṃhitā", chapter: "Cikitsāsthāna 6", verse: "—"}
+      - {text: "Mādhava Nidāna", chapter: "33", verse: "—"}
+    ayush_stg_url: "https://main.ayush.gov.in/standard-treatment-guidelines/"
+
+  - nama_sanskrit: "Sthaulya"
+    english: "Sthaulya (Obesity)"
+    hindi: "स्थौल्य / मेदोरोग"
+    synonyms: ["Atisthūla", "Medoroga"]
+    chapter: "Medoroga"
+    icd11_main_code: "5B81"
+    dosha_typology: ["kaphaja-pradhāna", "kapha-meda-medoroga"]
+    primary_dosha: "kapha"
+    primary_dushya: ["meda", "māṃsa", "kleda"]
+    srotas: ["medovaha"]
+    nidana:
+      - "Excessive intake of madhura, snigdha, gurū āhāra"
+      - "Sedentary lifestyle, daytime sleep"
+      - "Lack of physical activity (avyāyāma)"
+    rupa: ["Excess body bulk", "Breathlessness on exertion", "Excessive sweating + body odour", "Dispnea, fatigue"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "lekhana cikitsā; vyāyāma; rūkṣa-uṣṇa-tīkṣṇa diet; honey + warm water on empty stomach; udvartana (dry powder massage) externally."
+    common_formulations: ["Triphalā guggulu", "Medohara vatī", "Punarnavāsava"]
+    common_dravyas: ["Guggulu", "Haridrā", "Triphalā", "Punarnavā"]
+    modern_diagnostics: ["BMI, waist-hip ratio", "lipid profile", "fasting glucose", "TFT (rule out hypothyroid)"]
+
+  - nama_sanskrit: "Hṛdroga"
+    english: "Hṛdroga (Cardiac disorders)"
+    hindi: "हृद्रोग"
+    chapter: "Hṛdroga"
+    icd11_main_code: "BA00–BD9Z (varies)"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "tridoṣaja", "kṛmija"]
+    primary_dushya: ["rasa", "rakta", "māṃsa"]
+    srotas: ["rasavaha", "raktavaha", "prāṇavaha"]
+    nidana: ["abhighāta (trauma)", "ati-cintā (excess worry)", "rūkṣa āhāra", "gurū-bhojana", "vega-vidhāraṇa"]
+    rupa: ["chest pain", "palpitation", "dyspnoea", "syncope", "oedema"]
+    sadhya_asadhya: "kṛcchra-sādhya to asādhya by type"
+    chikitsa_summary: "Arjuna kṣīra-pāka or arjuna-tvak kvātha; classical hṛdya formulations; modern co-management essential."
+    common_formulations: ["Arjuna kṣīra-pāka", "Hṛdayārṇava rasa", "Pravāḷa-pañcāmṛta", "Mahā-yogarāja guggulu"]
+    common_dravyas: ["Arjuna", "Lavaṅga", "Pippalī"]
+    modern_diagnostics: ["ECG", "2D-echo", "lipid profile", "troponin (acute)", "BNP/NT-proBNP"]
+    red_flags_for_referral:
+      - "Acute chest pain — refer immediately for ACS rule-out"
+      - "Sudden severe dyspnoea"
+      - "Syncope with palpitations"
+
+  # ─── Musculoskeletal / pain ───────────────────────────────────────
+
+  - nama_sanskrit: "Āmavāta"
+    english: "Āmavāta (clinical correlate ≈ Rheumatoid Arthritis)"
+    hindi: "आमवात"
+    chapter: "Vāta-vyādhi"
+    icd11_main_code: "FA20"  # Rheumatoid arthritis
+    dosha_typology: ["āma + vāta saṃyoga"]
+    primary_dosha: "vāta"
+    primary_dushya: ["śleṣma", "rasa", "māṃsa", "asthi"]
+    srotas: ["rasavaha", "māṃsavaha"]
+    nidana:
+      - "Mandāgni → āma formation"
+      - "Excess viruddha-āhāra (incompatible food)"
+      - "Vyāyāma immediately after heavy meal"
+      - "Vega-vidhāraṇa, ati-jāgara"
+    rupa:
+      - "Migratory joint pain (sandhi-śūla)"
+      - "Joint swelling + stiffness (especially morning)"
+      - "Fatigue, malaise (alasya)"
+      - "Loss of appetite"
+    sadhya_asadhya: "kṛcchra-sādhya in early stage; yāpya in chronic stage"
+    chikitsa_summary: "First āma-pācana (no oleation while āma is present); then vāta-hara cikitsā; basti once āma cleared. Yogarāja guggulu is the canonical formulation."
+    common_formulations: ["Yogarāja guggulu", "Mahā-yogarāja guggulu", "Sañjīvanī vatī", "Eraṇḍa-taila", "Daśamūla kvātha"]
+    common_dravyas: ["Guggulu", "Eraṇḍa", "Pippalī", "Śuṇṭhī"]
+    modern_diagnostics: ["RA factor", "anti-CCP", "CRP", "ESR", "X-ray hands"]
+    classical_refs:
+      - {text: "Mādhava Nidāna", chapter: "25 — Āmavāta-nidāna", verse: "—"}
+      - {text: "Bhaiṣajya Ratnāvali", chapter: "Āmavāta-cikitsā", verse: "—"}
+
+  - nama_sanskrit: "Sandhivāta"
+    english: "Sandhivāta (Osteoarthritis)"
+    hindi: "संधिवात"
+    chapter: "Vāta-vyādhi"
+    icd11_main_code: "FA00"
+    dosha_typology: ["vātaja-pradhāna"]
+    primary_dosha: "vāta"
+    primary_dushya: ["asthi", "majjā", "sandhi-śleṣaka kapha"]
+    srotas: ["asthivaha", "majjāvaha"]
+    rupa: ["sandhi-śūla (joint pain)", "sandhi-stambha (stiffness)", "sandhi-śopha (swelling)", "vāta-pūrṇa-driti-sparsha (joint feels like wind-filled bag)"]
+    sadhya_asadhya: "kṛcchra-sādhya / yāpya"
+    chikitsa_summary: "External: jānu-basti, kaṭi-basti with Mahānārāyaṇa or Bala-aśvagandha taila. Internal: Yogarāja guggulu, Aśvagandhā, Bala kṣīra-pāka."
+    common_formulations: ["Mahānārāyaṇa taila", "Yogarāja guggulu", "Aśvagandhā curṇa", "Trayodaśāṅga guggulu"]
+    common_dravyas: ["Aśvagandhā", "Śallakī", "Haridrā", "Eraṇḍa"]
+    modern_diagnostics: ["X-ray (Kellgren-Lawrence grading)", "MRI for severe cases"]
+
+  - nama_sanskrit: "Gṛdhrasī"
+    english: "Gṛdhrasī (Sciatica)"
+    hindi: "गृध्रसी"
+    chapter: "Vāta-vyādhi"
+    icd11_main_code: "8B93.4"
+    dosha_typology: ["vātaja-pradhāna", "vāta-kaphaja"]
+    primary_dosha: "vāta"
+    rupa: ["pain radiating from hip/buttock down the leg, calf, foot", "stambha (stiffness)", "spandana (twitching)"]
+    chikitsa_summary: "Trayodaśāṅga guggulu; Daśamūla kvātha; basti karma; Mahānārāyaṇa or Sahacharādi taila local."
+    common_formulations: ["Trayodaśāṅga guggulu", "Daśamūlāriṣṭa", "Sahacharādi taila", "Eraṇḍa-bhṛṣṭa Harītakī"]
+    modern_diagnostics: ["MRI lumbar spine", "neuro exam", "SLR test"]
+
+  # ─── GI ────────────────────────────────────────────────────────
+
+  - nama_sanskrit: "Amlapitta"
+    english: "Amlapitta (Hyperacidity / GERD)"
+    hindi: "अम्लपित्त"
+    chapter: "Pitta-vyādhi"
+    icd11_main_code: "DA22"
+    dosha_typology: ["ūrdhva-amlapitta", "adho-amlapitta"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rasa", "rakta", "māṃsa"]
+    srotas: ["annavaha"]
+    rupa: ["amla-udgāra (sour belching)", "hṛd-dāha (heartburn)", "udara-śūla", "chardhi (vomiting)"]
+    chikitsa_summary: "Avipattikara curṇa; Yaṣṭimadhu kṣīra-pāka; Pitta-hara āhāra (sweet, bitter, astringent, cold)."
+    common_formulations: ["Avipattikara curṇa", "Sūtaśekhara rasa", "Kāmadudhā rasa"]
+    common_dravyas: ["Yaṣṭimadhu", "Āmalakī", "Pravāḷa bhasma"]
+    modern_diagnostics: ["H. pylori test", "endoscopy if alarm features"]
+    red_flags_for_referral: ["Haematemesis", "melena", "weight loss + dysphagia"]
+
+  - nama_sanskrit: "Vibandha"
+    english: "Vibandha (Constipation)"
+    hindi: "विबन्ध / कब्ज"
+    chapter: "Vāta-vyādhi"
+    icd11_main_code: "ME05.0"
+    primary_dosha: "vāta"
+    rupa: ["malabaddhatā", "udara-ādhmāna", "śūla", "ānāha"]
+    chikitsa_summary: "Triphalā curṇa HS; eraṇḍa-taila; vāta-anulomaka regimen; warm water + fibre."
+    common_formulations: ["Triphalā curṇa", "Eraṇḍa-taila", "Sukumāra ghṛta"]
+    common_dravyas: ["Harītakī", "Eraṇḍa", "Triphalā"]
+
+  - nama_sanskrit: "Atisāra"
+    english: "Atisāra (Diarrhoea)"
+    hindi: "अतिसार"
+    chapter: "Atisāra"
+    icd11_main_code: "1A40"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "sannipātaja", "śokaja", "āmaja"]
+    rupa: ["frequent loose stools", "abdominal cramps", "thirst", "weakness"]
+    chikitsa_summary: "Initial: do NOT stop the flow if āma present (āma must be expelled); use kuṭaja + bilva for stambhana once āma cleared."
+    common_formulations: ["Kuṭaja-ghana vatī", "Bilva curṇa", "Pañcāmṛta-parpaṭī"]
+    common_dravyas: ["Kuṭaja", "Bilva", "Mustā", "Indrayava"]
+    red_flags_for_referral: ["Bloody stool", "high fever", "severe dehydration", "duration >7 days"]
+
+  - nama_sanskrit: "Grahaṇī"
+    english: "Grahaṇī (Sprue / IBS-like syndrome)"
+    hindi: "ग्रहणी"
+    chapter: "Grahaṇī"
+    primary_dosha: "agnimāndya + tridoṣa"
+    primary_dushya: ["agni", "annavaha-srotas"]
+    rupa: ["alternating constipation/diarrhoea", "muhur baddha muhur dravam (now hard now loose)", "weight loss", "alasya"]
+    chikitsa_summary: "Agni-deepana primary; Cyavanaprāśa or Indukānta ghṛta as rasāyana."
+    common_formulations: ["Indukānta ghṛta", "Bhaiṣajya-ratnāvali Grahaṇī formulations", "Citrakādi vatī", "Daśamūlāriṣṭa"]
+
+  # ─── Skin ───────────────────────────────────────────────────────
+
+  - nama_sanskrit: "Kuṣṭha"
+    english: "Kuṣṭha (umbrella term for skin disorders, including psoriasis, eczema, leprosy)"
+    hindi: "कुष्ठ"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["7 mahā-kuṣṭha + 11 kṣudra-kuṣṭha (18 types per Caraka)"]
+    primary_dushya: ["tvak", "rakta", "māṃsa", "lasīkā"]
+    chikitsa_summary: "Raktaśodhana; Mahātikta ghṛta; external Mañjiṣṭhādi taila; pathya: avoid viruddha-āhāra, dairy + fish combinations, suppressed urges."
+    common_formulations: ["Mahātikta ghṛta", "Khadirāriṣṭa", "Kaiśora guggulu", "Mahā-mañjiṣṭhādi kvātha"]
+    common_dravyas: ["Khadira", "Mañjiṣṭhā", "Bākucī (Psoralea)", "Haridrā"]
+
+  - nama_sanskrit: "Vicarcikā"
+    english: "Vicarcikā (Eczema)"
+    hindi: "विचर्चिका"
+    chapter: "Kuṣṭha (kṣudra)"
+    icd11_main_code: "EA80"
+    primary_dosha: "kapha-pitta"
+    rupa: ["śyāva varṇa (dusky discolouration)", "kaṇḍū (itching)", "sasrāva (oozing)", "pidakā (papules)"]
+    chikitsa_summary: "Local Yaṣṭimadhu + Candana paste; raktaśodhana internally."
+    common_formulations: ["Yaṣṭimadhu taila local", "Mahā-mañjiṣṭhādi kvātha", "Kaiśora guggulu"]
+
+  # ─── Respiratory ────────────────────────────────────────────────
+
+  - nama_sanskrit: "Tamaka Śvāsa"
+    english: "Tamaka Śvāsa (Asthma)"
+    hindi: "तमक श्वास"
+    chapter: "Śvāsa"
+    icd11_main_code: "CA23"
+    dosha_typology: ["kapha-vātaja"]
+    primary_dosha: "kapha-vāta"
+    srotas: ["prāṇavaha"]
+    rupa: ["paroxysmal dyspnoea", "wheezing", "cough with viscid sputum", "worse at night/cold"]
+    chikitsa_summary: "Vāta-anulomana + kapha-niḥsāraṇa; Vāsāvaleha; Sitopalādi + madhu; bhāspa-sveda for acute."
+    common_formulations: ["Vāsāvaleha", "Sitopalādi curṇa", "Tāḷīsādi curṇa", "Cyavanaprāśa for prevention"]
+    common_dravyas: ["Vāsaka", "Pippalī", "Tulasī", "Yaṣṭimadhu"]
+    modern_diagnostics: ["spirometry / PEFR", "chest X-ray", "allergy screen"]
+
+  - nama_sanskrit: "Kāsa"
+    english: "Kāsa (Cough)"
+    hindi: "कास / खांसी"
+    chapter: "Kāsa"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "kṣataja", "kṣayaja"]
+    chikitsa_summary: "Type-specific: vātaja → snigdha; kaphaja → rūkṣa-uṣṇa; kṣayaja → rasāyana + brmhaṇa."
+    common_formulations: ["Sitopalādi curṇa + madhu", "Tāḷīsādi curṇa", "Vāsāvaleha", "Khadirādi vatī"]
+    common_dravyas: ["Vāsaka", "Tulasī", "Pippalī", "Yaṣṭimadhu", "Tālīsapatra"]
+
+  - nama_sanskrit: "Pratiśyāya"
+    english: "Pratiśyāya (Coryza / common cold)"
+    hindi: "प्रतिश्याय"
+    chapter: "Nāsika-roga"
+    icd11_main_code: "CA00"
+    chikitsa_summary: "Pratimarśa nasya with Aṇu taila; warm fluids; Trikatu + honey."
+    common_formulations: ["Aṇu taila (nasya)", "Sudarśana curṇa (with fever)", "Sitopalādi curṇa"]
+
+  # ─── Neurological / mental ──────────────────────────────────────
+
+  - nama_sanskrit: "Pakṣaghāta"
+    english: "Pakṣaghāta (Hemiplegia / stroke sequela)"
+    hindi: "पक्षाघात"
+    chapter: "Vāta-vyādhi"
+    icd11_main_code: "8B20"
+    primary_dosha: "vāta"
+    rupa: ["hemiparesis", "facial droop", "speech impairment"]
+    chikitsa_summary: "Acute: refer to allopathy immediately (CT brain). Stable: panchakarma — abhyaṅga, svedana, basti karma; Mahānārāyaṇa taila; Aśvagandhā balya."
+    red_flags_for_referral: ["Acute onset — emergency referral for stroke evaluation"]
+    common_formulations: ["Mahānārāyaṇa taila (post-acute)", "Aśvagandhā", "Eraṇḍa-bhṛṣṭa Harītakī"]
+
+  - nama_sanskrit: "Apasmāra"
+    english: "Apasmāra (Epilepsy)"
+    hindi: "अपस्मार"
+    chapter: "Manas-roga"
+    icd11_main_code: "8A60"
+    primary_dosha: "manas (sattva-rajas-tamas)"
+    chikitsa_summary: "Brāhmī ghṛta + medhya rasāyana; pathya for tridoṣa balance. Co-manage with neurology."
+    common_formulations: ["Brāhmī ghṛta", "Sarasvata curṇa", "Vacā curṇa"]
+    red_flags_for_referral: ["First-time seizure — neurology referral"]
+
+  - nama_sanskrit: "Anidrā"
+    english: "Anidrā (Insomnia)"
+    hindi: "अनिद्रा"
+    chapter: "Manas / Vāta"
+    icd11_main_code: "7A00"
+    primary_dosha: "vāta (mostly), pitta in some"
+    chikitsa_summary: "Pāda-abhyaṅga before bed (sesame oil to feet); warm milk with nutmeg; Aśvagandhā or Brāhmī rasāyana; śirodhārā in chronic."
+    common_formulations: ["Aśvagandhā curṇa", "Sarpagandhā ghana vatī (chronic only)", "Jaṭāmāṃsī curṇa"]
+    common_dravyas: ["Aśvagandhā", "Jaṭāmāṃsī", "Brāhmī", "Tagara"]
+
+  - nama_sanskrit: "Cintā / Manodaurbalya"
+    english: "Cintā (Anxiety) / Manodaurbalya (mental fatigue)"
+    hindi: "चिंता / मानसिक दुर्बलता"
+    chapter: "Manas-roga"
+    icd11_main_code: "6B00"
+    primary_dosha: "vāta + sattva-rajas imbalance"
+    chikitsa_summary: "Aśvagandhā (premier adaptogen); Brāhmī medhya rasāyana; daily abhyaṅga; pātha-abhyāsa (study/spiritual practice)."
+    common_formulations: ["Aśvagandhāriṣṭa", "Sarasvata curṇa", "Brahma rasāyana"]
+
+  # ─── Reproductive / women ───────────────────────────────────────
+
+  - nama_sanskrit: "Yoni-vyāpat (incl. Pradara)"
+    english: "Yoni-vyāpat / Pradara (Menstrual disorders, leucorrhoea, menorrhagia)"
+    hindi: "योनि-व्यापत् / प्रदर"
+    chapter: "Strī-roga"
+    chikitsa_summary: "Aśoka or Lodhra-based formulations; Daśamūlāriṣṭa; type-specific."
+    common_formulations: ["Aśokāriṣṭa", "Pradararāntaka rasa", "Lodhrāsava"]
+    common_dravyas: ["Aśoka", "Lodhra", "Mañjiṣṭhā"]
+
+  - nama_sanskrit: "Vandhyatva"
+    english: "Vandhyatva (Infertility)"
+    hindi: "वन्ध्यत्व"
+    chapter: "Strī-roga"
+    chikitsa_summary: "Śatāvarī kṣīra-pāka; Phala ghṛta; Daśamūlāriṣṭa; uttara-basti; type-specific."
+    common_formulations: ["Phala ghṛta", "Śatāvarī rasāyana", "Aśvagandhā", "Daśamūlāriṣṭa"]
+    modern_diagnostics: ["FSH/LH/AMH/TSH/PRL", "USG TVS", "HSG", "semen analysis (partner)"]
+
+  # ─── Hepato-biliary ─────────────────────────────────────────────
+
+  - nama_sanskrit: "Kāmalā"
+    english: "Kāmalā (Jaundice / hepatic disease)"
+    hindi: "कामला"
+    chapter: "Pāṇḍu-roga"
+    icd11_main_code: "DB99.6"
+    primary_dosha: "pitta"
+    rupa: ["yellowish discolouration of skin/sclera/urine", "loss of appetite", "weakness"]
+    chikitsa_summary: "Kuṭakī-bhūmyāmalakī kvātha; Punarnavāsava for hepatic congestion; Ārogyavardhinī vatī."
+    common_formulations: ["Ārogyavardhinī vatī", "Bhūmyāmalaki + Kuṭakī", "Punarnavāsava"]
+    common_dravyas: ["Kuṭakī", "Bhūmyāmalaki (Phyllanthus niruri)", "Kālamegha"]
+    modern_diagnostics: ["LFT", "viral hepatitis serology", "USG abdomen"]
+    red_flags_for_referral: ["Encephalopathy", "rapid LFT deterioration", "ascites"]
+
+  - nama_sanskrit: "Pāṇḍu"
+    english: "Pāṇḍu (Anaemia)"
+    hindi: "पाण्डु"
+    chapter: "Pāṇḍu-roga"
+    icd11_main_code: "3A00"
+    chikitsa_summary: "Lauhāsava; Daśamūlāriṣṭa; iron-rich āhāra; Triphalā guggulu; Punarnavā."
+    common_formulations: ["Lauhāsava", "Daśamūlāriṣṭa", "Punarnavā maṇḍūra"]
+    modern_diagnostics: ["CBC + indices", "iron studies", "B12 + folate"]
+
+  # ─── Cardio-pulmonary general ───────────────────────────────────
+
+  - nama_sanskrit: "Śotha"
+    english: "Śotha (Oedema)"
+    hindi: "शोथ"
+    chapter: "Śotha"
+    primary_dosha: "varies — assess primary dosha"
+    chikitsa_summary: "Punarnavāsava; rūkṣa-uṣṇa āhāra; mūtra-virecanīya dravyas. Identify cause (cardiac/renal/hepatic) modern-side."
+    common_formulations: ["Punarnavāsava", "Punarnavā maṇḍūra", "Daśamūla kvātha"]
+    common_dravyas: ["Punarnavā", "Gokṣura"]
+    red_flags_for_referral: ["Sudden severe oedema", "anuria", "heart failure signs"]
+
+  # ─── Genito-urinary ─────────────────────────────────────────────
+
+  - nama_sanskrit: "Mūtraghāta / Mūtrakṛcchra"
+    english: "Mūtraghāta / Mūtrakṛcchra (Dysuria / urinary retention)"
+    hindi: "मूत्रकृच्छ्र"
+    chapter: "Mūtraroga"
+    icd11_main_code: "MF50"
+    chikitsa_summary: "Gokṣurādi guggulu; Candana, Uśīra, Yaṣṭimadhu cooling regimen."
+    common_formulations: ["Gokṣurādi guggulu", "Candanāsava", "Punarnavāsava"]
+    common_dravyas: ["Gokṣura", "Yaṣṭimadhu", "Candana"]
+    red_flags_for_referral: ["Acute urinary retention", "haematuria", "fever + flank pain"]
+
+  - nama_sanskrit: "Aśmari"
+    english: "Aśmari (Urinary calculi)"
+    hindi: "अश्मरि"
+    chapter: "Mūtraroga"
+    icd11_main_code: "GB70"
+    chikitsa_summary: "Gokṣurādi guggulu; Varuṇādi kvātha; Pāṣāṇabheda; high water intake."
+    common_formulations: ["Gokṣurādi guggulu", "Cystone-class formulations", "Varuṇādi kvātha"]
+    common_dravyas: ["Gokṣura", "Pāṣāṇabheda", "Varuṇa"]
+
+  # ─── Fever / infectious ─────────────────────────────────────────
+
+  - nama_sanskrit: "Jvara"
+    english: "Jvara (Fever — pyrexia of various origins)"
+    hindi: "ज्वर"
+    chapter: "Jvara"
+    icd11_main_code: "MG26"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "vāta-pittaja", "vāta-kaphaja", "pitta-kaphaja", "sannipātaja", "āgantuja"]
+    chikitsa_summary: "Initial fasting (laṅghana); kvātha specific to type; AYUSH-64 for viral fevers (post-COVID evidence)."
+    common_formulations: ["Sudarśana curṇa", "Sañjīvanī vatī", "AYUSH-64", "Mahā-sudarśana kvātha"]
+    common_dravyas: ["Guḍūcī", "Tulasī", "Saptaparṇa (Alstonia)", "Kālamegha"]
+    red_flags_for_referral: ["High-grade fever >5 days", "altered sensorium", "rash + bleeding"]
+
+  # ─── Sense organs ───────────────────────────────────────────────
+
+  - nama_sanskrit: "Timira (early stage)"
+    english: "Timira (early visual loss / cataract precursor)"
+    hindi: "तिमिर"
+    chapter: "Akṣiroga (Śālākya)"
+    icd11_main_code: "9B71 (cataract main code)"
+    chikitsa_summary: "Triphalā ghṛta internally; Triphalā kvātha eye-wash; Mahā-triphalā ghṛta."
+    common_formulations: ["Triphalā ghṛta", "Mahā-triphalā ghṛta", "Saptāmṛta lauha"]
+    common_dravyas: ["Triphalā", "Yaṣṭimadhu"]
+
+  - nama_sanskrit: "Karṇa-śūla"
+    english: "Karṇa-śūla (Earache / otalgia)"
+    hindi: "कर्ण-शूल"
+    chapter: "Karṇa-roga"
+    icd11_main_code: "AA9Z"
+    chikitsa_summary: "Lavaṅga taila / Bilvādi taila karṇa-pūraṇa; rasona (garlic) oil; cause-specific."
+
+  # ─── Other ─────────────────────────────────────────────────────
+
+  - nama_sanskrit: "Arśas"
+    english: "Arśas (Haemorrhoids)"
+    hindi: "अर्श / बवासीर"
+    chapter: "Arśas"
+    icd11_main_code: "DB60"
+    dosha_typology: ["vātaja (śuṣka — dry)", "pittaja (raktajā)", "kaphaja (sa-srāva)"]
+    chikitsa_summary: "Type-specific: Abhayāriṣṭa, Arśoghnī vatī, Triphalā guggulu; kṣāra-sūtra for grade III/IV."
+    common_formulations: ["Abhayāriṣṭa", "Arśoghnī vatī", "Triphalā guggulu", "Pañcatikta ghṛta"]
+    common_dravyas: ["Harītakī", "Triphalā"]

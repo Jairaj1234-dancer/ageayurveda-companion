@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+env/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data pipeline (large files)
+data-pipeline/downloads/
+data-pipeline/output/
+data-pipeline/embeddings/
+data-pipeline/qdrant_storage/
+
+# Node
+node_modules/
+widget/dist/
+admin/dist/
+admin/build/
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Alembic
+alembic/versions/__pycache__/
+
+# Build artifacts
+backend/app/static/widget/*.js
+backend/app/static/widget/*.css
+backend/app/static/admin/

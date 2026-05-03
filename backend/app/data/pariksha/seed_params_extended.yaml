@@ -1,0 +1,385 @@
+# Extended parīkṣā parameters — batch 2 (params 24-50+).
+# Adds classical specialty diagnostic frameworks beyond aṣṭa/daśa-vidha:
+# vyādhi-mārga, adhiṣṭhāna, kriyā-kāla (sapta-avasthā), roga/rogi-bala,
+# deśa, kāla, manas-prakṛti, srotas-vikṛti, dhātu-vikṛti, mala-vikṛti,
+# indriya-pātava, doṣa-gati, hetu-bheda, garbha/bāla/vṛddha specific.
+#
+# Sources: Caraka Sūtra 8 (Indriyādyadhyāya), Sūtra 17 (Kiyantah-śīrasīya),
+# Vimāna 1-8, Suśruta Sūtra 21 (Vraṇa-praśna), Aṣṭāṅga Hṛdaya Sūtra 1,
+# Mādhava Nidāna Pūrvārdha 1.
+# All marked review_tier=llm-only; Vaidya validation pending.
+
+pariksha_params:
+
+# ─── Vyādhi classification framework (5) ───────────────────────────
+
+  - name_iast: "Vyādhi-mārga"
+    english: "Disease pathway / extent"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Determine whether the disease is confined to extremities/skin (śākhā), the GI tract / koṣṭha, or the vital structures (marma + kostha)."
+    findings:
+      - {value: "śākhā-gata", description: "Limited to skin, blood, muscles, fat — extremities", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "koṣṭha-gata", description: "GI tract — udara, pakvāśaya, āmāśaya, hṛdaya"}
+      - {value: "marma-asthi-sandhi-gata", description: "Vital structures — sandhis, marma, asthi, snāyu — most serious"}
+    classical_source: "Caraka Sūtra 11; Suśruta Sūtra 21"
+    notes: "Marma-gata vyādhi has worst prognosis."
+
+  - name_iast: "Adhiṣṭhāna"
+    english: "Anatomical location"
+    schema_family: "extra"
+    domain: "physical"
+    examination_method: "Localize the disease to head/throat/chest/abdomen/limbs/whole-body."
+    findings:
+      - {value: "śiraḥ-gata", description: "Head"}
+      - {value: "uras-gata", description: "Chest / hṛdaya region"}
+      - {value: "udara-gata", description: "Abdomen"}
+      - {value: "vasti-gata", description: "Pelvic / urogenital"}
+      - {value: "śākhā-gata", description: "Limbs"}
+      - {value: "sarva-gata", description: "Generalized"}
+    classical_source: "Suśruta Sūtra 21"
+
+  - name_iast: "Kriyā-Kāla"
+    english: "Stage of pathogenesis (sapta-avasthā)"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Identify which of the 6 progressive stages of doṣa-prakopa the disease is currently in. Critical for selecting therapeutic intensity."
+    findings:
+      - {value: "saṃcaya", description: "Stage 1 — doṣa accumulating in its native sthāna; mild dosha-specific symptoms", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "prakopa", description: "Stage 2 — doṣa aggravated; clear excess but still in native sthāna"}
+      - {value: "prasara", description: "Stage 3 — doṣa flowing through srotas, leaving native site"}
+      - {value: "sthāna-saṃśraya", description: "Stage 4 — doṣa lodged in vulnerable dhātu/srotas; pūrvarūpa appears"}
+      - {value: "vyakti", description: "Stage 5 — full manifestation of disease (rūpa)"}
+      - {value: "bheda", description: "Stage 6 — chronic / complications / morbid changes"}
+    classical_source: "Suśruta Sūtra 21 (Vraṇa-praśna); Aṣṭāṅga Hṛdaya Sūtra 12"
+    notes: "Therapeutic note: easier to reverse at saṃcaya/prakopa; bheda is often asādhya."
+
+  - name_iast: "Roga-bala"
+    english: "Disease strength"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Assess severity of the disease — intensity, duration, multi-organ involvement."
+    findings:
+      - {value: "alpa-bala", description: "Mild — single doṣa, recent, single tissue"}
+      - {value: "madhyama-bala", description: "Moderate — two doṣas or multi-tissue"}
+      - {value: "mahā-bala", description: "Severe — sannipāta, chronic, multi-system"}
+    classical_source: "Caraka Sūtra 11.42"
+
+  - name_iast: "Rogi-bala"
+    english: "Patient strength / resilience"
+    schema_family: "extra"
+    domain: "constitutional"
+    examination_method: "Combine sāra + saṃhanana + sattva + āhāra-śakti + vyāyāma-śakti to grade overall resilience."
+    findings:
+      - {value: "pravara-rogi-bala", description: "Robust — high sāra/saṃhanana/āhāra/vyāyāma capacity"}
+      - {value: "madhyama-rogi-bala", description: "Moderate"}
+      - {value: "avara-rogi-bala", description: "Frail — multiple low domains; intensify therapies cautiously"}
+    classical_source: "Caraka Vimāna 8; Sūtra 11"
+
+# ─── Context (deśa, kāla) (2) ─────────────────────────────────────
+
+  - name_iast: "Deśa"
+    english: "Region / habitat"
+    schema_family: "extra"
+    domain: "constitutional"
+    examination_method: "Patient's current and historical region of residence — affects doṣa-prakopa tendencies."
+    findings:
+      - {value: "ānūpa-deśa", description: "Marshy/humid region — kapha-pitta tendency"}
+      - {value: "jāṅgala-deśa", description: "Dry/arid region — vāta-pitta tendency"}
+      - {value: "sādhāraṇa-deśa", description: "Temperate region — balanced"}
+    classical_source: "Caraka Sūtra 25; Aṣṭāṅga Hṛdaya Sūtra 1"
+
+  - name_iast: "Kāla"
+    english: "Temporal context"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Current ṛtu (season), part of day, age stage, time relative to last meal."
+    findings:
+      - {value: "ṛtu-vasanta", description: "Spring — kapha season → kapha-prone disorders"}
+      - {value: "ṛtu-grīṣma", description: "Summer — pitta-vāta season"}
+      - {value: "ṛtu-varṣā", description: "Monsoon — vāta-pitta"}
+      - {value: "ṛtu-śarad", description: "Autumn — pitta season"}
+      - {value: "ṛtu-hemanta-śiśira", description: "Winter — vāta but kapha sañcaya"}
+      - {value: "kāla-sāmpratika", description: "Currently relevant to symptom pattern"}
+    classical_source: "Caraka Sūtra 6 (Tasyāśitīya — Ṛtucaryā); Aṣṭāṅga Hṛdaya Sūtra 3"
+
+# ─── Mental / sensory (5) ─────────────────────────────────────────
+
+  - name_iast: "Manas-prakṛti"
+    english: "Mental constitution"
+    schema_family: "extra"
+    domain: "mental"
+    examination_method: "Identify dominant trait among the 16 mental types per Caraka — 7 sāttvika + 6 rājasika + 3 tāmasika."
+    findings:
+      - {value: "sāttvika-pradhāna", description: "Truthful, equanimous, intellectual, kind"}
+      - {value: "rājasika-pradhāna", description: "Active, ambitious, irritable, passionate"}
+      - {value: "tāmasika-pradhāna", description: "Lethargic, dull, fearful, prone to inertia"}
+      - {value: "miśra", description: "Mixed pattern (most common)"}
+    classical_source: "Caraka Śārīra 4 (Garbha-vakrānti); Sūtra 1"
+    notes: "Sub-types within each: sāttvika = brāhma/ārṣa/aindra/yāmya/vāruṇa/kaubera/gāndharva; rājasika = āsura/sarpa/śākuna/raksā/paiśāca/prāṇika; tāmasika = paśva/mātsya/vānaspatya."
+
+  - name_iast: "Indriya-pātava"
+    english: "Sensory acuity"
+    schema_family: "extra"
+    domain: "physical"
+    examination_method: "Test each indriya: dṛk (vision), śravaṇa (hearing), ghrāṇa (smell), rasana (taste), tvak (touch)."
+    findings:
+      - {value: "sarvendriya-paṭu", description: "All 5 senses intact — favorable"}
+      - {value: "ekendriya-hīna", description: "One sense diminished"}
+      - {value: "bahvendriya-hīna", description: "Multiple senses diminished — unfavorable prognosis"}
+      - {value: "nirindriya", description: "Indriya-vyāpāda — most asādhya"}
+    classical_source: "Caraka Indriya-sthāna 1-12 (12 chapters on diagnostic signs of imminent death)"
+
+  - name_iast: "Vāc"
+    english: "Speech assessment"
+    schema_family: "extra"
+    domain: "physical"
+    examination_method: "Distinct from śabda — assess content, fluency, articulation, language use."
+    findings:
+      - {value: "spaṣṭa-vāc", description: "Clear, organized, age-appropriate"}
+      - {value: "skhalita-vāc", description: "Slurred / dysarthric"}
+      - {value: "gada-gada-vāc", description: "Stuttering, broken"}
+      - {value: "mauna", description: "Mute / aphasia"}
+    classical_source: "Caraka Indriya-sthāna; Mādhava Nidāna 1"
+
+  - name_iast: "Smṛti"
+    english: "Memory"
+    schema_family: "daśa-vidha (extension)"
+    domain: "mental"
+    examination_method: "Test recent and remote memory; orientation; recall."
+    findings:
+      - {value: "smṛti-pravara", description: "Sharp memory"}
+      - {value: "smṛti-madhya", description: "Average"}
+      - {value: "smṛti-hīna", description: "Diminished — concerning if rapid decline"}
+    classical_source: "Caraka Sūtra 11 (Tisraiśanīya); Vimāna 8"
+
+  - name_iast: "Buddhi"
+    english: "Intellect / decision-making"
+    schema_family: "daśa-vidha (extension)"
+    domain: "mental"
+    examination_method: "Assess judgment, problem-solving, executive function."
+    findings:
+      - {value: "buddhi-pravara", description: "Sharp, decisive, age-appropriate"}
+      - {value: "buddhi-madhya", description: "Average"}
+      - {value: "buddhi-mandā", description: "Diminished — concerning"}
+    classical_source: "Caraka Sūtra 11"
+
+# ─── Doṣa state details (3) ───────────────────────────────────────
+
+  - name_iast: "Doṣa-gati"
+    english: "Direction of doṣa movement"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Determine the direction of doṣa-prakopa: upward (ūrdhva), downward (adho), or lateral (tiryag)."
+    findings:
+      - {value: "ūrdhva-gati", description: "Upward — eg ūrdhva-ga raktapitta, hikkā, vamana"}
+      - {value: "adho-gati", description: "Downward — eg adho-ga raktapitta, atisāra, mūtra-pravāha"}
+      - {value: "tiryag-gati", description: "Lateral — skin, joints, peripheral"}
+      - {value: "kṣaya-gati", description: "Diminution direction (rare)"}
+    classical_source: "Caraka Sūtra 17"
+
+  - name_iast: "Sthāna-saṃśraya"
+    english: "Site of doṣa lodgement"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Identify the dhātu / srotas where doṣa has lodged after prasara stage."
+    findings:
+      - {value: "rasa-saṃśraya", description: "Lodged in rasa — early/superficial"}
+      - {value: "rakta-saṃśraya", description: "Lodged in rakta — bleeding/inflammatory"}
+      - {value: "māṃsa-saṃśraya", description: "Lodged in māṃsa — muscle/swelling"}
+      - {value: "meda-saṃśraya", description: "Lodged in meda — metabolic"}
+      - {value: "asthi-saṃśraya", description: "Lodged in asthi — joints/bone"}
+      - {value: "majjā-saṃśraya", description: "Lodged in majjā — neurological"}
+      - {value: "śukra-saṃśraya", description: "Lodged in śukra — reproductive"}
+    classical_source: "Caraka Cikitsā 28; Suśruta Sūtra 21"
+
+  - name_iast: "Roga-mārga"
+    english: "Disease pathway (3-mārga model)"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Determine which of the three mārgas is primarily affected."
+    findings:
+      - {value: "ekamārga", description: "Single mārga — best prognosis"}
+      - {value: "dvi-mārga", description: "Two mārgas — moderate"}
+      - {value: "trimārga (sannipāta)", description: "All three mārgas — gravest"}
+    classical_source: "Caraka Sūtra 11"
+
+# ─── Srotas / dhātu / mala vikṛti (3) ─────────────────────────────
+
+  - name_iast: "Srotas-vikṛti"
+    english: "Channel disturbance pattern"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Identify the dominant disturbance type in the affected srotas: ati-pravṛtti (excess), saṅga (obstruction), siraṅgrantha (varicose), vimārga-gamana (deviation)."
+    findings:
+      - {value: "ati-pravṛtti", description: "Excess flow — bleeding, polyuria, diarrhea, hyperhidrosis"}
+      - {value: "saṅga", description: "Obstruction — constipation, anuria, anosmia, edema"}
+      - {value: "siraṅgrantha", description: "Channel-wall disturbance — varicose veins, hemorrhoids"}
+      - {value: "vimārga-gamana", description: "Deviated flow — eg menstrual flow up via lung, hematuria"}
+    classical_source: "Caraka Vimāna 5"
+    notes: "These 4 srotas-vikṛti types are diagnostic for any of the 13 srotas."
+
+  - name_iast: "Dhātu-vikṛti"
+    english: "Tissue disturbance pattern"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Each of 7 dhātus may be in vṛddhi (excess), kṣaya (deficiency), or vikṛti (qualitative change)."
+    findings:
+      - {value: "rasa-vṛddhi", description: "Excess plasma — heaviness, salivation, kapha-features"}
+      - {value: "rasa-kṣaya", description: "Plasma depletion — fatigue, dryness, palpitations"}
+      - {value: "rakta-vṛddhi", description: "Excess blood — plethora, hypertension"}
+      - {value: "rakta-kṣaya", description: "Blood depletion — anemia, pallor"}
+      - {value: "meda-vṛddhi", description: "Adiposity"}
+      - {value: "meda-kṣaya", description: "Cachexia"}
+      - {value: "asthi-vṛddhi", description: "Bone overgrowth"}
+      - {value: "asthi-kṣaya", description: "Osteoporosis pattern"}
+    classical_source: "Suśruta Sūtra 15; Caraka Sūtra 17"
+
+  - name_iast: "Mala-vikṛti"
+    english: "Waste disturbance pattern"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Each mala (purīṣa, mūtra, sveda) assessed for vṛddhi, kṣaya, or qualitative abnormality."
+    findings:
+      - {value: "purīṣa-vṛddhi", description: "Frequent stooling, constipation paradoxically possible"}
+      - {value: "purīṣa-kṣaya", description: "Diminished output, dry hard pellets"}
+      - {value: "mūtra-vṛddhi", description: "Polyuria"}
+      - {value: "mūtra-kṣaya", description: "Oliguria"}
+      - {value: "sveda-vṛddhi", description: "Hyperhidrosis"}
+      - {value: "sveda-kṣaya", description: "Dry skin / anhidrosis"}
+    classical_source: "Caraka Sūtra 17 — Mala-pradhāna lakṣaṇa"
+
+# ─── Hetu / nidāna (2) ─────────────────────────────────────────────
+
+  - name_iast: "Hetu-bheda"
+    english: "Etiological category"
+    schema_family: "extra"
+    domain: "other"
+    examination_method: "Classify the cause of disease — internal/external, near/distant, etc."
+    findings:
+      - {value: "asātmyendriyārtha-saṃyoga", description: "Improper sensory contact — eg cold wind, irritants"}
+      - {value: "prajñāparādha", description: "Wisdom-error — knowingly engaging in harmful behavior"}
+      - {value: "pariṇāma", description: "Time-related (ṛtu, vaya) — natural transformation"}
+      - {value: "āhāra-hetu", description: "Dietary cause"}
+      - {value: "vihāra-hetu", description: "Behavioral / lifestyle cause"}
+      - {value: "āgantuja", description: "Trauma / accident / abhighāta"}
+      - {value: "viṣa-hetu", description: "Toxin / poison"}
+      - {value: "krimi-hetu", description: "Microbe / parasite"}
+    classical_source: "Caraka Sūtra 1; Vimāna 2; Mādhava Nidāna 1"
+
+  - name_iast: "Pratyātma-lakṣaṇa"
+    english: "Pathognomonic / unique sign"
+    schema_family: "extra"
+    domain: "physical"
+    examination_method: "Identify any sign that by itself nearly proves the disease (eg madhura-mūtra → madhumeha; krimi-yukta-mala → krimi-roga; sannipāta-nāḍī → sannipāta)."
+    findings:
+      - {value: "present", description: "Pathognomonic sign present — high specificity"}
+      - {value: "absent", description: "No pathognomonic sign — work up by pattern"}
+    classical_source: "Caraka Sūtra 17"
+
+# ─── Special populations (3) ───────────────────────────────────────
+
+  - name_iast: "Bāla-parīkṣā"
+    english: "Pediatric assessment"
+    schema_family: "extra"
+    domain: "constitutional"
+    examination_method: "Modified parīkṣā for children — milestones, behavior, weight-for-age, immunization status."
+    findings:
+      - {value: "samya-vikāsa", description: "Age-appropriate development"}
+      - {value: "vikāsa-vilamba", description: "Delayed milestones"}
+      - {value: "kṣaya-bhāva", description: "Failure to thrive"}
+      - {value: "active-bāla-graha", description: "Acute pediatric infection / planetary disorder"}
+    classical_source: "Kāśyapa Saṃhitā Bāla-grahanīya; Suśruta Uttara 27-37 (Bāla-tantra)"
+
+  - name_iast: "Vṛddha-parīkṣā"
+    english: "Geriatric assessment"
+    schema_family: "extra"
+    domain: "constitutional"
+    examination_method: "Geriatric-specific assessment — falls, polypharmacy, sensory decline, ADL, frailty."
+    findings:
+      - {value: "robust-vṛddha", description: "Geriatric without frailty"}
+      - {value: "frail-vṛddha", description: "Frailty syndrome — multiple system decline"}
+      - {value: "geriatric-syndromes-positive", description: "Falls, incontinence, delirium — refer geriatrics"}
+    classical_source: "Caraka Cikitsā 1.1 (Rasāyana — vṛddhi-prati-bandhaka)"
+
+  - name_iast: "Garbha-parīkṣā"
+    english: "Obstetric assessment"
+    schema_family: "extra"
+    domain: "constitutional"
+    examination_method: "Pregnancy assessment — gestational age, fetal lakṣaṇa, doṣa-state, doṣa-specific symptoms (vomiting/edema/etc)."
+    findings:
+      - {value: "samya-garbha", description: "Healthy pregnancy with classical lakṣaṇa"}
+      - {value: "vyādhi-yukta-garbha", description: "Pregnancy with concurrent disease"}
+      - {value: "asuyukta-garbha", description: "Concerning features (oligohydramnios, malformation suspect)"}
+    classical_source: "Caraka Śārīra 1-8 (Garbhāvakrānti)"
+
+# ─── Disease morphology (3) ──────────────────────────────────────
+
+  - name_iast: "Avasthā-bheda"
+    english: "Disease stage / chronicity"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Classify by duration: tarūṇa (acute), madhya (subacute), jīrṇa (chronic)."
+    findings:
+      - {value: "tarūṇa", description: "Acute — onset within ~7 days"}
+      - {value: "madhya", description: "Subacute — onset 7-30 days"}
+      - {value: "jīrṇa", description: "Chronic — >30 days, established"}
+    classical_source: "Caraka Sūtra 11"
+
+  - name_iast: "Lakṣaṇa-bheda"
+    english: "Symptom morphology pattern"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Identify the morphological pattern — single/multiple, episodic/continuous, migratory/fixed."
+    findings:
+      - {value: "ekarūpa", description: "Single uniform manifestation"}
+      - {value: "anekarūpa", description: "Multiple disparate manifestations"}
+      - {value: "vyāvartanīya", description: "Episodic with intervals"}
+      - {value: "satata", description: "Continuous"}
+    classical_source: "Mādhava Nidāna 1"
+
+  - name_iast: "Sthiti-bheda"
+    english: "Disease state — improving/static/worsening"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Trajectory assessment — is the disease improving (śānti), holding (sthiti), or worsening (vṛddhi)?"
+    findings:
+      - {value: "śānti", description: "Improving with current therapy"}
+      - {value: "sthiti", description: "Static — re-evaluate therapeutic plan"}
+      - {value: "vṛddhi", description: "Worsening — change therapy or refer"}
+    classical_source: "Caraka Sūtra 9"
+
+# ─── Modern integration (3) ────────────────────────────────────────
+
+  - name_iast: "Lab-parīkṣā (modern)"
+    english: "Modern laboratory tests"
+    schema_family: "extra"
+    domain: "physical"
+    examination_method: "Order appropriate modern lab tests as adjunct to classical parīkṣā when warranted."
+    findings:
+      - {value: "lab-pending", description: "Lab tests ordered, results awaited"}
+      - {value: "lab-confirms-classical", description: "Lab confirms classical diagnosis"}
+      - {value: "lab-suggests-alternate", description: "Lab points to a different etiology — re-evaluate"}
+    classical_source: "Modern integrative practice"
+
+  - name_iast: "Imaging-parīkṣā (modern)"
+    english: "Modern imaging"
+    schema_family: "extra"
+    domain: "physical"
+    examination_method: "USG / X-ray / CT / MRI as adjunct when classical exam is ambiguous."
+    findings:
+      - {value: "imaging-confirms-classical", description: "Imaging confirms classical diagnosis"}
+      - {value: "imaging-suggests-alternate", description: "Imaging points elsewhere"}
+      - {value: "imaging-incidental-finding", description: "Imaging found something unrelated requiring follow-up"}
+    classical_source: "Modern integrative practice"
+
+  - name_iast: "Red-flag-parīkṣā"
+    english: "Emergency / referral red flags"
+    schema_family: "extra"
+    domain: "other"
+    examination_method: "Screen for any of the universal red flags requiring immediate allopathic referral."
+    findings:
+      - {value: "red-flag-positive", description: "Any red flag present — refer immediately"}
+      - {value: "red-flag-negative", description: "No red flags — proceed with parīkṣā"}
+    classical_source: "Modern AYUSH Standard Treatment Guidelines"
+    notes: "Examples of red flags: hemodynamic instability, altered consciousness, chest pain w/ risk factors, severe dehydration, sudden vision loss, status epilepticus, sannipāta-jvara, post-partum fever, suspected stroke, suspected MI, suspected sepsis, suspected pulmonary embolism, signs of bowel obstruction or perforation."

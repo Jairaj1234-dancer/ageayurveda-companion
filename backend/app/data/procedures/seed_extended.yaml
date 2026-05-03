@@ -1,0 +1,465 @@
+# Extended procedures — batch 2 (procedures 26-50+).
+# Adds: more snehana variants, agnikarma, kṣārakarma, jalaukāvacaraṇa,
+# more Kerala kriyā-bāhya, viśeṣa-vamana/virecana variants, kapha-vāta-pitta
+# specific basti varieties.
+#
+# Sources: Suśruta Sūtra 11-13 (Kṣāra-agnikarma), Sūtra 13 (Jalaukā),
+# Caraka Siddhi 1-12, Aṣṭāṅga Hṛdaya Sūtra 19-20, Sahasrayogam.
+# All marked review_tier=llm-only; Vaidya validation pending.
+
+procedures:
+
+# ─── Surgical / kṣāra-agnikarma (3) ────────────────────────────────
+
+  - name_iast: "Agnikarma"
+    english: "Therapeutic cautery"
+    hindi: "अग्निकर्म"
+    category: "kriyā-bāhya"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Chronic vāta-pradhāna pain (kaṭi-śūla, gṛdhrasī, sandhi-vāta), keloid management, plantar fasciitis"
+    indications:
+      - "kaṭi-śūla (chronic)"
+      - "gṛdhrasī"
+      - "kadara (corn / callus)"
+      - "ārśas (hemorrhoid cautery)"
+      - "plantar fasciitis"
+    dosha_action: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    contraindications:
+      - "raktapitta"
+      - "pitta-prakṛti"
+      - "summer (relative)"
+      - "diabetic neuropathy"
+      - "any bleeding diathesis"
+    pradhana_karma:
+      - {step: "Patient sat in safe asana"}
+      - {step: "Pañcadhātu śalākā heated to dahanam-yogya tāpa"}
+      - {step: "Brief precise application — bindu / lekhā / pratisaraṇa pattern"}
+      - {step: "Total contact <2 sec per point"}
+    paschat_karma:
+      - {step: "Apply ghṛta + madhu mixture immediately to relieve dāha"}
+      - {step: "Avoid water 24 hr"}
+      - {step: "Daily wound dressing till healing"}
+    common_oils: ["Ghṛta + madhu"]
+    duration_notes: "Single session; may repeat after 7-10 day gap"
+    adverse_events:
+      - "Excessive burn (atiyoga)"
+      - "Inadequate effect (ayoga)"
+      - "Secondary infection"
+    red_flags:
+      - "Severe pain or signs of deeper tissue burn"
+    classical_source: "Suśruta Sūtra 12 (Agnikarma-vidhi)"
+    description: "Suśruta classifies agnikarma as superior to kṣārakarma; specific dahana-pakas defined for skin / muscle / vessel / bone."
+
+  - name_iast: "Kṣārakarma"
+    english: "Therapeutic alkali application"
+    hindi: "क्षारकर्म"
+    category: "kriyā-bāhya"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Bhagandara (kṣāra-sūtra), kīlaka (corns), vraṇa, ārśas"
+    indications: ["bhagandara", "ārśas", "kadara", "vraṇa (chronic)", "kīlaka"]
+    dosha_action: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    contraindications:
+      - "raktapitta"
+      - "pregnancy"
+      - "ulcerative skin lesions adjacent"
+    pradhana_karma:
+      - {step: "Apāmārga or Snuhī kṣāra prepared per Suśruta sūtra"}
+      - {step: "For bhagandara: kṣāra-sūtra threaded through fistula tract"}
+      - {step: "Replaced weekly until tract closes"}
+    paschat_karma:
+      - {step: "Local Triphalā-water dressing"}
+      - {step: "Antibacterial coverage as needed"}
+    common_dravyas: ["Apāmārga", "Snuhī (kṣāra)", "Yavakṣāra"]
+    duration_notes: "Bhagandara: 6-12 weeks of weekly thread changes (modern evidence-based)"
+    classical_source: "Suśruta Sūtra 11 (Kṣāra-vidhi); WHO traditional medicine module on kṣāra-sūtra"
+
+  - name_iast: "Jalaukāvacaraṇa"
+    english: "Leech therapy"
+    hindi: "जलौकावचरण"
+    category: "panchakarma"
+    subcategory: "rakta-mokṣaṇa"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Localized rakta-pitta-pradhāna disorders (vāta-rakta, sthāyī kuṣṭha, varicose ulcers)"
+    indications: ["vāta-rakta", "varicose ulcers", "psoriatic plaques (specific)", "thrombophlebitis", "diabetic foot ulcer"]
+    dosha_action: {vata: "sama", pitta: "śāmaka", kapha: "sama"}
+    contraindications:
+      - "Bleeding diatheses"
+      - "Anticoagulant therapy"
+      - "Pregnancy"
+      - "Severe anemia"
+      - "Sepsis"
+    purva_karma:
+      - {step: "Local snehana"}
+      - {step: "Sterile leech (Hirudo medicinalis equivalent) prepared"}
+    pradhana_karma:
+      - {step: "Leech applied to lesion; allowed to attach"}
+      - {step: "Feeds for 30-90 min until satiated"}
+      - {step: "Detached with saindhava-haridrā if won't drop spontaneously"}
+    paschat_karma:
+      - {step: "Local pressure for hemostasis"}
+      - {step: "Leech expressed of contents (for re-use after sterilization)"}
+      - {step: "Patient observed for 30 min"}
+    duration_notes: "Single session; repeat at 5-7 day intervals"
+    adverse_events:
+      - "Bleeding for hours (rare)"
+      - "Aeromonas infection (rare; sterilization critical)"
+    classical_source: "Suśruta Sūtra 13 (Jalaukā-prakṛti)"
+    description: "Modern indication: FDA-approved for venous congestion in plastic surgery."
+
+# ─── Snehana variants (3) ──────────────────────────────────────────
+
+  - name_iast: "Pādābhyaṅga"
+    english: "Foot oil massage"
+    hindi: "पादाभ्यंग"
+    category: "purva-karma"
+    practitioner_level: "self-care"
+    primary_indication: "Daily routine — vāta-śamana, sleep, foot health, anidrā"
+    indications: ["anidrā", "vāta-vyādhi (general)", "foot dryness/cracks", "stress relief"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    pradhana_karma:
+      - {step: "Warm taila (Mahānārāyaṇa or sesame)"}
+      - {step: "10-15 min upward strokes from sole to ankle"}
+      - {step: "Marma points on feet (Tālahṛdaya, Kṣipra) emphasized"}
+    duration_notes: "Daily, 10-15 min"
+    common_oils: ["Tila Taila", "Mahānārāyaṇa Taila", "Bhṛṅgarāja Taila"]
+    frequency: "daily"
+    time_of_day: "before sleep"
+    classical_source: "Caraka Sūtra 5; Aṣṭāṅga Hṛdaya Sūtra 2"
+
+  - name_iast: "Śiroabhyaṅga"
+    english: "Head oil massage"
+    hindi: "शिरोभ्यंग"
+    category: "purva-karma"
+    practitioner_level: "self-care"
+    primary_indication: "Khalitya, pālitya, śiroroga, anidrā, mānasa-cintā"
+    indications: ["khalitya", "pālitya", "śiroroga", "anidrā", "stress"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    pradhana_karma:
+      - {step: "Warm medicated taila (Bhṛṅgarāja, Nīlibhṛṅgādi, Brahmīsidha) applied to scalp"}
+      - {step: "10-20 min circular massage"}
+      - {step: "Marma points on head (Adhipati, Sīmanta) emphasized"}
+    duration_notes: "Daily or 2-3× weekly"
+    common_oils: ["Bhṛṅgarāja Taila", "Brahmī Taila", "Nīlibhṛṅgādi Taila"]
+    classical_source: "Caraka Sūtra 5; Aṣṭāṅga Hṛdaya Sūtra 2"
+
+  - name_iast: "Mukhābhyaṅga"
+    english: "Facial oil massage"
+    hindi: "मुखाभ्यंग"
+    category: "purva-karma"
+    practitioner_level: "self-care"
+    primary_indication: "Skin health, vyaṅga, mukha-dūṣikā prevention, signs of aging"
+    indications: ["vyaṅga (mild)", "mukha-dūṣikā", "skin dryness", "facial aging"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    pradhana_karma:
+      - {step: "Warm Kumkumādi or Candanādi taila"}
+      - {step: "5-10 min upward circular strokes"}
+    common_oils: ["Kumkumādi Taila", "Candanādi Taila"]
+    duration_notes: "Daily; pre-snāna"
+    classical_source: "Sahasrayogam"
+
+# ─── Specialized basti variants (3) ──────────────────────────────
+
+  - name_iast: "Mātrā Basti"
+    english: "Small-dose maintenance enema"
+    hindi: "मात्रा बस्ति"
+    category: "panchakarma"
+    subcategory: "mātrā"
+    practitioner_level: "supervised"
+    primary_indication: "Daily wellness basti for long-term vāta management — gentler than Anuvāsana"
+    indications: ["chronic vāta-vyādhi maintenance", "vyāyāma-recovery", "elderly vāta-prakṛti maintenance"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "sama"}
+    pradhana_karma:
+      - {step: "30-60 ml warm medicated taila"}
+      - {step: "Self-administered or by therapist"}
+    common_oils: ["Sahacarādi Taila", "Mahānārāyaṇa Taila"]
+    duration_notes: "Daily for 7-30 days as prescribed; lifelong intermittent in elderly"
+    classical_source: "Caraka Siddhi 4 (Mātrā Basti-yojana)"
+
+  - name_iast: "Hṛdaya Basti"
+    english: "Cardiac region oil pool"
+    hindi: "हृदय बस्ति"
+    category: "kriyā-bāhya"
+    subcategory: "hṛdaya"
+    practitioner_level: "supervised"
+    primary_indication: "Anxiety, cardiac autonomic stress, cardiac wellness"
+    indications: ["anxiety with palpitations", "cardiac stress", "early hypertension"]
+    pradhana_karma:
+      - {step: "Dough ring on chest over precordial area"}
+      - {step: "Warm Mahānārāyaṇa or Aśvagandhā taila pooled"}
+      - {step: "30-45 min retention"}
+    common_oils: ["Mahānārāyaṇa Taila", "Bala Taila", "Kṣīrabalā Taila"]
+    duration_notes: "7-14 days"
+    classical_source: "Sahasrayogam (regional Kerala)"
+
+  - name_iast: "Grīvā Basti"
+    english: "Cervical oil pool"
+    hindi: "ग्रीवा बस्ति"
+    category: "kriyā-bāhya"
+    subcategory: "grīvā"
+    practitioner_level: "supervised"
+    primary_indication: "Cervical spondylosis, manyā-stambha, cervical disc disease"
+    indications: ["manyā-stambha", "cervical spondylosis", "cervical disc"]
+    pradhana_karma:
+      - {step: "Dough ring on cervical region (patient prone)"}
+      - {step: "Warm taila pooled and retained"}
+      - {step: "30-45 min"}
+    common_oils: ["Sahacarādi Taila", "Mahānārāyaṇa Taila", "Kottamcukkadi Taila"]
+    duration_notes: "7-14 days, daily"
+    classical_source: "Sahasrayogam"
+
+# ─── More Kerala specialty (3) ─────────────────────────────────
+
+  - name_iast: "Karṇa-pūraṇa"
+    english: "Ear oil filling"
+    hindi: "कर्णपूरण"
+    category: "kriyā-bāhya"
+    practitioner_level: "supervised"
+    primary_indication: "Karṇa-roga, tinnitus, hearing loss, vertigo"
+    indications: ["karṇa-roga", "tinnitus", "hearing loss (vāta-pradhāna)", "vertigo"]
+    pradhana_karma:
+      - {step: "Patient lies on side; affected ear up"}
+      - {step: "Warm taila gently filled into external ear canal"}
+      - {step: "Retained 10-20 min"}
+      - {step: "Drained out by lying on opposite side"}
+    common_oils: ["Bilva-mūla Taila", "Sahacarādi Taila", "Apāmārga-kṣāra Taila"]
+    duration_notes: "Daily for 7-14 days"
+    contraindications: ["Active otitis externa with pus", "Tympanic membrane perforation"]
+    classical_source: "Aṣṭāṅga Hṛdaya Uttara 18"
+
+  - name_iast: "Mukha-Lepa"
+    english: "Facial paste application"
+    hindi: "मुखलेप"
+    category: "kriyā-bāhya"
+    practitioner_level: "self-care"
+    primary_indication: "Vyaṅga, mukha-dūṣikā, skin tone, anti-aging"
+    indications: ["vyaṅga", "mukha-dūṣikā", "facial dullness", "yauvana-piḍakā"]
+    pradhana_karma:
+      - {step: "Mañjiṣṭhādi or Triphalā paste applied to face"}
+      - {step: "Retained 20-30 min"}
+      - {step: "Washed off with rose water or warm water"}
+    duration_notes: "2-3× weekly"
+    common_dravyas: ["Mañjiṣṭhā", "Sārivā", "Candana", "Yaṣṭimadhu"]
+    classical_source: "Suśruta Sūtra 34"
+
+  - name_iast: "Dhūmapāna"
+    english: "Medicated smoking"
+    hindi: "धूमपान"
+    category: "kriyā-bāhya"
+    practitioner_level: "supervised"
+    primary_indication: "Pratiśyāya, kāsa, sinusitis, post-nasya cleanup"
+    indications: ["pratiśyāya", "kāsa", "śiroroga", "post-nasya supportive"]
+    pradhana_karma:
+      - {step: "Medicated wick of Vacā / Manaḥśilā / Pippalī"}
+      - {step: "Smoke drawn through nostril, exhaled through mouth"}
+      - {step: "3-4 inhalations per session"}
+    duration_notes: "1-2× daily, 7-14 days"
+    contraindications: ["asthma (acute)", "raktapitta", "pregnancy"]
+    classical_source: "Caraka Sūtra 5; Aṣṭāṅga Hṛdaya Sūtra 21"
+
+# ─── Specialty caryā / regimen (3) ─────────────────────────────
+
+  - name_iast: "Vyāyāma"
+    english: "Therapeutic exercise"
+    hindi: "व्यायाम"
+    category: "caryā"
+    subcategory: "dina"
+    practitioner_level: "self-care"
+    primary_indication: "Daily fitness, kapha-medo prevention, immunity"
+    indications: ["sthaulya prevention", "kapha-medo-rakṣaṇa", "fitness", "diabetes prevention"]
+    dosha_action: {vata: "vardhaka (excess)", pitta: "sama", kapha: "śāmaka"}
+    pradhana_karma:
+      - {step: "Half-strength exertion (ardha-śakti) — sweat appears, breath quickens, but no exhaustion"}
+      - {step: "Breath-calmed cool-down"}
+      - {step: "Followed by abhyaṅga"}
+    contraindications:
+      - "Acute illness"
+      - "Post-meal (within 2 hr)"
+      - "Excess vāta-prakṛti (limit duration)"
+    duration_notes: "Daily 20-45 min at appropriate intensity"
+    classical_source: "Caraka Sūtra 7; Aṣṭāṅga Hṛdaya Sūtra 2"
+
+  - name_iast: "Snāna"
+    english: "Therapeutic bathing"
+    hindi: "स्नान"
+    category: "caryā"
+    subcategory: "dina"
+    practitioner_level: "self-care"
+    primary_indication: "Daily hygiene, kapha-balance, fatigue removal"
+    indications: ["fatigue", "post-vyāyāma", "skin care"]
+    pradhana_karma:
+      - {step: "Warm water for body, lukewarm for head (śīrṣa-jaiḥ snānam vāta-rogāya)"}
+      - {step: "Optional: medicated decoction (Triphalā / Daśamūla / Nimba)"}
+    duration_notes: "Daily"
+    classical_source: "Caraka Sūtra 5"
+
+  - name_iast: "Suvarṇa-Prāśana protocol"
+    english: "Pediatric immunization protocol (puṣya-nakṣatra)"
+    hindi: "स्वर्ण प्राशन"
+    category: "rasāyana"
+    subcategory: "kuṭīpraveśika"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Pediatric immunity-building from birth to ~16 years"
+    indications: ["bāla-rasāyana", "pediatric immunity", "speech development", "buddhi-vardhana"]
+    pradhana_karma:
+      - {step: "Suvarṇa-prāśana drops administered (1-2 drops on tongue)"}
+      - {step: "Best on Puṣya-nakṣatra (every 27-28 days) per classical"}
+      - {step: "Modern: monthly is acceptable"}
+    duration_notes: "Monthly from 6 weeks to 16 years; one full Puṣya-cycle = 12 doses minimum"
+    common_dravyas: ["Svarṇa-bhasma", "Brāhmī", "Vacā", "Śaṅkhapuṣpī"]
+    contraindications: ["acute febrile illness"]
+    classical_source: "Kāśyapa Saṃhitā Sūtra 18 (Lehādhyāya)"
+    description: "PRMM (Puṣya-related monthly micro-dose) protocol with growing modern evidence base."
+
+# ─── More rasāyana (3) ────────────────────────────────────────
+
+  - name_iast: "Vājīkaraṇa-tantra"
+    english: "Reproductive tonification protocol"
+    hindi: "वाजीकरण तंत्र"
+    category: "vājīkaraṇa"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Comprehensive male/female reproductive health protocol"
+    indications: ["kṣīṇa-śukra", "vandhyatva", "premature ejaculation", "post-illness vājīkaraṇa"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (if excess)"}
+    purva_karma:
+      - {step: "Snehapāna 7-14 days"}
+      - {step: "Pañcakarma if indicated"}
+    pradhana_karma:
+      - {step: "Daily Aśvagandhā Pāka or Mūsalī Pāka or Vṛhad Vāji-Vaha Pāka"}
+      - {step: "Local snehana with vājīkaraṇa taila"}
+      - {step: "Specific yoga + dietary regimen"}
+    duration_notes: "1-3 months"
+    common_formulations: ["Aśvagandhā Pāka", "Mūsalī Pāka", "Vṛhad Vāji-Vaha Pāka", "Madana-Modaka"]
+    classical_source: "Caraka Cikitsā 2 (Vājīkaraṇa-pāda)"
+
+  - name_iast: "Medhya-Rasāyana"
+    english: "Cognitive-enhancing rasayana protocol"
+    hindi: "मेध्य रसायन"
+    category: "rasāyana"
+    subcategory: "dravya"
+    practitioner_level: "self-care"
+    primary_indication: "Smṛti-vardhana, anti-aging brain protocol, age-related cognitive decline"
+    indications: ["smṛti-kṣaya prevention", "stress-related cognitive decline", "elderly memory care"]
+    pradhana_karma:
+      - {step: "Caraka's 4 medhya: Maṇḍūkaparṇī (Brāhmī Mānaduka), Yaṣṭimadhu, Guḍūcī, Śaṅkhapuṣpī (3 g each daily)"}
+      - {step: "Or Brahma-rasāyana 5-10 g morning empty stomach"}
+    duration_notes: "1-3 months minimum; can be lifelong"
+    common_formulations: ["Brahma-rasāyana", "Saraswatariṣṭa", "Brāhmī Ghṛta", "Smṛti-Sāgara Rasa"]
+    common_dravyas: ["Brāhmī", "Yaṣṭimadhu", "Śaṅkhapuṣpī", "Guḍūcī"]
+    classical_source: "Caraka Cikitsā 1.3 (Medhya-rasāyana)"
+
+  - name_iast: "Pippalī Vardhamāna Kalpa"
+    english: "Graduated pippali rasayana protocol"
+    hindi: "पिप्पली वर्धमान कल्प"
+    category: "rasāyana"
+    subcategory: "dravya"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Pulmonary rasāyana — chronic kāsa, śvāsa, kṣaya"
+    indications: ["chronic kāsa", "śvāsa", "kṣaya", "post-TB rehab"]
+    purva_karma:
+      - {step: "Snehapāna 5-7 days"}
+    pradhana_karma:
+      - {step: "Day 1: 1 fresh pippalī fruit"}
+      - {step: "Increase by 1 daily until day 10 (10 pippalī)"}
+      - {step: "Decrease by 1 daily back to 1"}
+      - {step: "Total 19-day course"}
+      - {step: "Vehicle: warm cow milk"}
+    duration_notes: "19 days vardhamāna kalpa; repeat after 3-month gap if indicated"
+    contraindications: ["amlapitta", "raktapitta", "pregnancy"]
+    common_dravyas: ["Pippalī", "Go-kṣīra"]
+    classical_source: "Caraka Cikitsā 1.3"
+    description: "Vaidya supervision essential — stops at first lakṣaṇa of dose-tolerance failure."
+
+# ─── More svedana variants (3) ─────────────────────────────────
+
+  - name_iast: "Avagāha Sveda"
+    english: "Tub-immersion sudation"
+    hindi: "अवगाह स्वेद"
+    category: "purva-karma"
+    subcategory: "avagāha"
+    practitioner_level: "supervised"
+    primary_indication: "Generalized vāta-vyādhi, post-natal recovery, severe lower-body vāta"
+    indications: ["sūtikā-paricaryā", "kaṭi-śūla", "sandhi-stambha (lower body)"]
+    pradhana_karma:
+      - {step: "Patient sits in tub of warm decoction (Daśamūla / Eraṇḍa-mūla)"}
+      - {step: "Water level chest-deep"}
+      - {step: "Duration 20-30 min"}
+    common_dravyas: ["Daśamūla", "Eraṇḍa-mūla", "Nirguṇḍī"]
+    duration_notes: "Daily for 7-14 days"
+    classical_source: "Aṣṭāṅga Hṛdaya Sūtra 17"
+
+  - name_iast: "Bāṣpa Sveda"
+    english: "Steam-box sudation"
+    hindi: "बाष्प स्वेद"
+    category: "purva-karma"
+    subcategory: "bāṣpa"
+    practitioner_level: "supervised"
+    primary_indication: "Pre-pañcakarma; āmavāta, sandhivāta"
+    indications: ["pre-vamana", "pre-virecana", "āmavāta", "sandhivāta"]
+    pradhana_karma:
+      - {step: "Patient seated in steam chamber (head outside)"}
+      - {step: "Steam infused with vāta-hara dravyas"}
+      - {step: "20-30 min until samyak-yoga signs"}
+    common_dravyas: ["Daśamūla", "Eraṇḍa", "Sahacara"]
+    duration_notes: "20-30 min per session; 3-7 days as adjunct"
+    classical_source: "Caraka Sūtra 14"
+
+  - name_iast: "Nāḍī Sveda"
+    english: "Tube-directed steam therapy"
+    hindi: "नाडी स्वेद"
+    category: "purva-karma"
+    subcategory: "nāḍī"
+    practitioner_level: "supervised"
+    primary_indication: "Localized vāta-vyādhi (joints, lower back, neck)"
+    indications: ["sandhi-vāta (localized)", "kaṭi-śūla", "manyā-stambha", "pakṣaghāta rehab"]
+    pradhana_karma:
+      - {step: "Steam directed via insulated tube to specific area"}
+      - {step: "Decoction of Daśamūla or Sahacara"}
+      - {step: "15-25 min"}
+    duration_notes: "Daily 7-14 days"
+    common_dravyas: ["Daśamūla", "Sahacara", "Nirguṇḍī"]
+    classical_source: "Caraka Sūtra 14"
+
+# ─── More external (3) ────────────────────────────────────────
+
+  - name_iast: "Karṇa-bali"
+    english: "Ear tip / pre-auricular cautery"
+    hindi: "कर्ण-बाली"
+    category: "kriyā-bāhya"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Migraine (chronic), gṛdhrasī (specific)"
+    indications: ["chronic migraine", "intractable gṛdhrasī"]
+    pradhana_karma:
+      - {step: "Specific marma points on ear cauterized briefly"}
+    duration_notes: "Single session; repeat at 6-week interval"
+    classical_source: "Suśruta Sūtra 12"
+
+  - name_iast: "Akṣitarpaṇa"
+    english: "Eye oleation pool"
+    hindi: "अक्षितर्पण"
+    category: "kriyā-bāhya"
+    practitioner_level: "vaidya-only"
+    primary_indication: "Eye fatigue, mild refractive errors, dry eye, computer eye-strain"
+    indications: ["asthenopia", "dry eye", "early presbyopia", "kṛcchra-darśana"]
+    pradhana_karma:
+      - {step: "Dough ring around closed eye"}
+      - {step: "Warm Triphalā ghṛta pooled in"}
+      - {step: "Patient blinks intermittently 15-20 min"}
+    common_oils: ["Triphalā Ghṛta", "Mahā-Triphalā Ghṛta", "Drākṣādi Tarpaṇa-Ghṛta"]
+    duration_notes: "Daily for 5-7 days"
+    classical_source: "Aṣṭāṅga Hṛdaya Uttara 24"
+
+  - name_iast: "Kavala-Gaṇḍūṣa"
+    english: "Oil pulling / mouth-rinse"
+    hindi: "कवल / गण्डूष"
+    category: "caryā"
+    subcategory: "dina"
+    practitioner_level: "self-care"
+    primary_indication: "Oral hygiene, mukha-pāka prevention, voice care"
+    indications: ["danta-roga prevention", "mukha-pāka", "halitosis", "voice care"]
+    pradhana_karma:
+      - {step: "10-15 ml warm taila (Tila or medicated)"}
+      - {step: "Swished 5-15 min (kavala) or held still (gaṇḍūṣa)"}
+      - {step: "Spat out (not swallowed)"}
+    common_oils: ["Tila Taila", "Irimedādi Taila", "Coconut oil"]
+    duration_notes: "Daily morning"
+    classical_source: "Caraka Sūtra 5; Aṣṭāṅga Hṛdaya Sūtra 22"

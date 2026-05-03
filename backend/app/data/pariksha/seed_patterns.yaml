@@ -1,0 +1,174 @@
+# Diagnostic decision patterns — weighted rules linking finding-sets
+# to candidate vyādhi or doṣa-state targets.
+#
+# A pattern fires when ALL conditions with required: true are present
+# in the user's reported findings. Score added to each target =
+# pattern.weight × target.weight.
+#
+# Scope: starter rule set, paired with the 30 seeded vyādhi.
+# All marked review_tier: llm-only — pending Vaidya validation.
+#
+# Sources: pañca-nidāna chapters of Mādhava Nidāna, Caraka Cikitsā,
+# Suśruta Cikitsā, Aṣṭāṅga Hṛdaya Cikitsā/Nidāna.
+
+diagnostic_patterns:
+
+# ─── Doṣa-state patterns (3) ────────────────────────────────────────
+
+  - name: "Vāta-prakopa core pattern"
+    description: "Classical signs of aggravated vāta — combination of nāḍī, jihvā, sparśa, mala that consistently flag vāta-vṛddhi."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Jihvā", finding: "rūkṣa-sphuṭita", required: false}
+      - {param: "Sparśa", finding: "śīta-rūkṣa-khara", required: false}
+      - {param: "Mala", finding: "vibandha-rūkṣa", required: false}
+    targets:
+      - {target_kind: "dosha-state", name: "vāta-vṛddhi", weight: 1.0, rationale: "Nāḍī alone is decisive when at least one supporting finding aligns."}
+    suggested_chikitsa: ["Anuvāsana Basti", "Sarvāṅga Abhyaṅga", "Mahānārāyaṇa Taila"]
+    classical_source: "Caraka Sūtra 20; Aṣṭāṅga Hṛdaya Sūtra 11"
+
+  - name: "Pitta-prakopa core pattern"
+    description: "Classical signs of aggravated pitta."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Nāḍī", finding: "pitta-nāḍī", required: true}
+      - {param: "Jihvā", finding: "rakta-pīta-uṣṇa", required: false}
+      - {param: "Mūtra", finding: "ati-pīta-uṣṇa", required: false}
+      - {param: "Sparśa", finding: "uṣṇa-snigdha-mṛdu", required: false}
+      - {param: "Dṛk", finding: "rakta-pīta", required: false}
+    targets:
+      - {target_kind: "dosha-state", name: "pitta-vṛddhi", weight: 1.0}
+    suggested_chikitsa: ["Virecana", "Cyavanaprāśa-rasāyana"]
+    classical_source: "Caraka Sūtra 20"
+
+  - name: "Kapha-prakopa core pattern"
+    description: "Classical signs of aggravated kapha."
+    pattern_type: "dosha-state"
+    conditions:
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: true}
+      - {param: "Jihvā", finding: "śveta-sthūla-snigdha", required: false}
+      - {param: "Mala", finding: "snigdha-picchila", required: false}
+      - {param: "Sparśa", finding: "śīta-snigdha-sthira", required: false}
+      - {param: "Dṛk", finding: "snigdha-śveta-bhāra", required: false}
+    targets:
+      - {target_kind: "dosha-state", name: "kapha-vṛddhi", weight: 1.0}
+    suggested_chikitsa: ["Vamana", "Udvartana"]
+    classical_source: "Caraka Sūtra 20"
+
+# ─── Agni-state patterns (1) ────────────────────────────────────────
+
+  - name: "Manda-agni core pattern"
+    description: "Slow digestion with āma — kapha and undigested-food markers."
+    pattern_type: "agni-state"
+    conditions:
+      - {param: "Agni", finding: "manda-agni", required: true}
+      - {param: "Jihvā", finding: "sāma-jihvā", required: false}
+      - {param: "Mala", finding: "āma-yukta", required: false}
+    targets:
+      - {target_kind: "agni-state", name: "manda-agni", weight: 1.0}
+      - {target_kind: "agni-state", name: "āma", weight: 0.5}
+    suggested_chikitsa: ["Trikaṭu Curṇa", "Hiṅgvāṣṭaka Curṇa", "Lavaṇa-bhāskara Curṇa"]
+
+# ─── Vyādhi patterns ────────────────────────────────────────────────
+
+  - name: "Madhumeha — kapha-pradhāna form"
+    description: "Sweet urine + kapha-prakopa background ⇒ Madhumeha."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Mūtra", finding: "madhura-mūtra", required: true}
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: false}
+      - {param: "Jihvā", finding: "śveta-sthūla-snigdha", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Madhumeha", weight: 1.0,
+         rationale: "Madhura-mūtra is the cardinal sign of madhumeha (Caraka Cikitsā 6)."}
+    red_flags:
+      - "Acute polyuria + polydipsia + altered mental status — refer for DKA workup"
+    suggested_chikitsa: ["Niruha Basti", "Triphalā Curṇa", "Haridrā"]
+    classical_source: "Caraka Cikitsā 6 (Prameha-cikitsita); Mādhava Nidāna 33"
+
+  - name: "Āmavāta active flare"
+    description: "Joint pain + āma markers + manda-agni ⇒ active āmavāta."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Agni", finding: "manda-agni", required: true}
+      - {param: "Jihvā", finding: "sāma-jihvā", required: false}
+      - {param: "Mala", finding: "āma-yukta", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Āmavāta", weight: 0.8}
+    suggested_chikitsa: ["Yogarāja Guggulu", "Daśamūla Kvātha", "Kaṭi Basti"]
+    classical_source: "Mādhava Nidāna 25 (Āmavāta-nidāna)"
+
+  - name: "Sthaulya — obesity / kaphaja medo-vṛddhi"
+    description: "Heavy build + manda-agni + kapha-prakopa ⇒ sthaulya."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Ākṛti", finding: "sthūla-snigdha-aṅga", required: true}
+      - {param: "Agni", finding: "manda-agni", required: false}
+      - {param: "Nāḍī", finding: "kapha-nāḍī", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Sthaulya", weight: 0.9}
+    suggested_chikitsa: ["Udvartana", "Triphalā Guggulu", "Kāñcanāra Guggulu"]
+    classical_source: "Caraka Sūtra 21 (Aṣṭauṇinditīya); Aṣṭāṅga Hṛdaya Sūtra 14"
+
+  - name: "Sandhivāta — joint vāta"
+    description: "Vāta-vṛddhi + krūra-koṣṭha + advanced age ⇒ degenerative joint disease."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Vaya", finding: "vṛddha", required: false}
+      - {param: "Koṣṭha", finding: "krūra-koṣṭha", required: false}
+      - {param: "Sparśa", finding: "śīta-rūkṣa-khara", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Sandhivāta", weight: 0.7}
+    suggested_chikitsa: ["Jānu Basti", "Mahānārāyaṇa Taila", "Yogarāja Guggulu"]
+    classical_source: "Caraka Cikitsā 28; Mādhava Nidāna 22"
+
+  - name: "Amlapitta — pitta-pradhāna gastritis"
+    description: "Pitta-prakopa + tīkṣṇa-agni + sour-eructation history ⇒ amlapitta."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Agni", finding: "tīkṣṇa-agni", required: true}
+      - {param: "Nāḍī", finding: "pitta-nāḍī", required: false}
+      - {param: "Mūtra", finding: "ati-pīta-uṣṇa", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Amlapitta", weight: 0.8}
+    suggested_chikitsa: ["Avipattikara Curṇa", "Sūtaśekhara Rasa", "Yaṣṭimadhu"]
+    classical_source: "Mādhava Nidāna 51"
+
+  - name: "Vibandha — vāta-pradhāna constipation"
+    description: "Krūra-koṣṭha + vāta-mala + vāta-prakopa ⇒ vibandha."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Mala", finding: "vibandha-rūkṣa", required: true}
+      - {param: "Koṣṭha", finding: "krūra-koṣṭha", required: false}
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Vibandha", weight: 0.9}
+    suggested_chikitsa: ["Triphalā Curṇa", "Anuvāsana Basti", "Eraṇḍa-taila"]
+    classical_source: "Caraka Cikitsā 28"
+
+  - name: "Atisāra — pitta-pradhāna diarrhea"
+    description: "Atisāra mala-pattern + pitta-prakopa ⇒ pittaja-atisāra."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Mala", finding: "atisāra-pīta-uṣṇa", required: true}
+      - {param: "Nāḍī", finding: "pitta-nāḍī", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Atisāra", weight: 0.9}
+    red_flags:
+      - "Blood in stool + tachycardia + hypotension — refer immediately"
+      - "Persistent >3 days + signs of dehydration — refer"
+    suggested_chikitsa: ["Kuṭajāriṣṭa", "Bilvādi Curṇa"]
+    classical_source: "Caraka Cikitsā 19"
+
+  - name: "Anidrā — insomnia (vāta + sattva pattern)"
+    description: "Vāta-prakopa + low sattva ⇒ anidrā."
+    pattern_type: "vyadhi"
+    conditions:
+      - {param: "Nāḍī", finding: "vāta-nāḍī", required: true}
+      - {param: "Sattva", finding: "avara-sattva", required: false}
+    targets:
+      - {target_kind: "vyadhi", name: "Anidrā", weight: 0.8}
+    suggested_chikitsa: ["Śirodhārā", "Brāhmī Ghṛta", "Aśvagandhāriṣṭa"]
+    classical_source: "Caraka Sūtra 21; Aṣṭāṅga Hṛdaya Sūtra 7"

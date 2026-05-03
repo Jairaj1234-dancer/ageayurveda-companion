@@ -1,0 +1,394 @@
+# Extended dravya seed — batch 5 (dravyas 153-180+).
+# Cleanup batch:
+#   - Alt-spelling rows for high-frequency unresolved variants (Vāsā,
+#     Patrā, Śarkarā, Maricā, Āragvadha, Tālīsapatra, Nāgara, Viḍa-lavaṇa)
+#   - 6 remaining Aṣṭavarga (Kākoli, Kṣīra-kākoli, Jīvaka, Ṛṣabhaka,
+#     Riddhi, Vṛddhi) — all over-harvested, with pratinidhi-dravya substitutes
+#   - Other classical dravyas: Dantī, Ārvinda, Ikṣu, Karaviraka,
+#     Vatsanābha alt, Tulasī-mañjarī, Kuṭakī additional...
+#
+# Each alt-spelling row uses pratinidhi_dravya to point to its canonical
+# row. All marked review_tier=llm-only.
+
+dravyas:
+
+# ─── Alt-spelling rows for resolution coverage (8) ───────────────
+
+  - nama_sanskrit: "Vāsā"
+    latin_binomial: "Adhatoda vasica / Justicia adhatoda"
+    family: "Acanthaceae"
+    english: "Malabar nut (alt-spell of Vāsaka)"
+    hindi: "वासा / अड़ूसा"
+    varga_bhavaprakasha: "Guḍūcyādi"
+    part_used: ["patrā", "puṣpa", "mūla"]
+    rasa: ["tikta", "kaṣāya"]
+    guna: ["laghu", "rūkṣa"]
+    virya: "śīta"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "vardhaka (mild)", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["kāsa-hara", "raktastambhaka", "śvāsa-hara"]
+    prayoga: ["kāsa", "raktapitta", "śvāsa"]
+    matra_value: "5-15"
+    matra_unit: "ml svarasa"
+    pratinidhi_dravya: ["Vāsaka"]
+    notes: "Alt-spelling of Vāsaka — same plant. Indexed separately for ingredient resolution."
+    nighantu_refs: ["Bhāvaprakāśa Guḍūcyādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Patrā"
+    latin_binomial: "Cinnamomum tamala (leaf)"
+    family: "Lauraceae"
+    english: "Indian bay leaf (alt-spell of Tejapatra)"
+    hindi: "पत्रा"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["patrā"]
+    rasa: ["kaṭu", "tikta", "madhura"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["dīpana", "kāsa-hara"]
+    prayoga: ["agnimāndya", "kāsa"]
+    matra_value: "1-2"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Tejapatra"]
+    notes: "Patrā = Tejapatra; trijātaka constituent."
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Śarkarā"
+    latin_binomial: "Saccharum officinarum (refined sugar)"
+    family: "Poaceae product"
+    english: "Sugar (alt-spell of Sitā)"
+    hindi: "शर्करा"
+    varga_bhavaprakasha: "Ikṣu-varga"
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka"}
+    karma: ["balya", "tṛṣṇā-hara"]
+    prayoga: ["raktapitta", "tṛṣṇā"]
+    matra_value: "as needed (vehicle)"
+    contraindications: ["madhumeha", "sthaulya"]
+    pratinidhi_dravya: ["Sitā"]
+    nighantu_refs: ["Bhāvaprakāśa Ikṣu-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Maricā"
+    latin_binomial: "Piper nigrum"
+    family: "Piperaceae"
+    english: "Black pepper (alt-spell of Marica)"
+    hindi: "मरिचा"
+    varga_bhavaprakasha: "Harītakyādi"
+    part_used: ["phala"]
+    rasa: ["kaṭu"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["dīpana", "yogavāhi"]
+    prayoga: ["agnimāndya", "kāsa"]
+    matra_value: "0.5-1"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Marica"]
+    nighantu_refs: ["Bhāvaprakāśa Harītakyādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Āragvadha"
+    latin_binomial: "Cassia fistula"
+    family: "Fabaceae"
+    english: "Golden shower tree (alt-spell of Aragvadha)"
+    hindi: "आरग्वध"
+    varga_bhavaprakasha: "Harītakyādi"
+    part_used: ["phala-majjā"]
+    rasa: ["madhura"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["mṛdu-anulomana", "kuṣṭha-ghna"]
+    prayoga: ["vibandha", "kuṣṭha"]
+    matra_value: "5-10"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Aragvadha"]
+    nighantu_refs: ["Bhāvaprakāśa Harītakyādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Tālīsapatra"
+    latin_binomial: "Abies webbiana / A. spectabilis"
+    family: "Pinaceae"
+    english: "Indian silver fir leaf"
+    hindi: "तालीसपत्र"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["patrā"]
+    rasa: ["kaṭu", "tikta", "madhura"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["dīpana", "kāsa-hara", "śvāsa-hara"]
+    prayoga: ["kāsa", "śvāsa", "agnimāndya"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    notes: "Tālīsapatra / Tālīsa-patra / Tāḷīsa-patra are spelling variants — same plant."
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Nāgara"
+    latin_binomial: "Zingiber officinale (dried)"
+    family: "Zingiberaceae"
+    english: "Dry ginger (synonym for Śuṇṭhī)"
+    hindi: "नागर"
+    varga_bhavaprakasha: "Harītakyādi"
+    part_used: ["kanda (dried)"]
+    rasa: ["kaṭu"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["dīpana", "vāta-anulomana"]
+    prayoga: ["agnimāndya", "ārucy", "kāsa"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Śuṇṭhī"]
+    nighantu_refs: ["Bhāvaprakāśa Harītakyādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Viḍa-lavaṇa"
+    latin_binomial: "Vid salt"
+    family: "Mineral salt"
+    english: "Vid salt (alt-spell)"
+    hindi: "विड लवण"
+    dravya_type: "pārthiva"
+    varga_bhavaprakasha: "Karpūrādi (lavaṇa)"
+    rasa: ["lavaṇa"]
+    virya: "uṣṇa"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["dīpana", "vāta-anulomana"]
+    prayoga: ["agnimāndya"]
+    matra_value: "0.5-2"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Vid-lavaṇa"]
+    nighantu_refs: ["Bhāvaprakāśa"]
+    review_tier: "llm-only"
+
+# ─── Aṣṭavarga remaining 6 (over-harvested, with pratinidhi) ─────
+
+  - nama_sanskrit: "Kākoli"
+    latin_binomial: "Roscoea purpurea"
+    family: "Zingiberaceae"
+    english: "Kakoli"
+    hindi: "काकोली"
+    varga_bhavaprakasha: "Aṣṭavarga"
+    part_used: ["kanda"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "rasāyana", "śukrala"]
+    prayoga: ["kṣaya", "daurbalya"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Aśvagandhā", "Vidārī"]
+    notes: "One of the 8 Aṣṭavarga; over-harvested. Substitute per Bhāvaprakāśa."
+    nighantu_refs: ["Bhāvaprakāśa Aṣṭavarga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Kṣīra-kākoli"
+    latin_binomial: "Lilium polyphyllum"
+    family: "Liliaceae"
+    english: "Kshira-kakoli"
+    hindi: "क्षीर काकोली"
+    varga_bhavaprakasha: "Aṣṭavarga"
+    part_used: ["kanda"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "rasāyana"]
+    prayoga: ["kṣaya"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Aśvagandhā", "Vidārī"]
+    nighantu_refs: ["Bhāvaprakāśa Aṣṭavarga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Jīvaka"
+    latin_binomial: "Malaxis acuminata"
+    family: "Orchidaceae"
+    english: "Jivaka"
+    hindi: "जीवक"
+    varga_bhavaprakasha: "Aṣṭavarga"
+    part_used: ["kanda"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "rasāyana"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Aśvagandhā", "Vidārī"]
+    nighantu_refs: ["Bhāvaprakāśa Aṣṭavarga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Ṛṣabhaka"
+    latin_binomial: "Malaxis muscifera"
+    family: "Orchidaceae"
+    english: "Rishabhaka"
+    hindi: "ऋषभक"
+    varga_bhavaprakasha: "Aṣṭavarga"
+    part_used: ["kanda"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "rasāyana"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Aśvagandhā", "Vidārī"]
+    nighantu_refs: ["Bhāvaprakāśa Aṣṭavarga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Riddhi"
+    latin_binomial: "Habenaria intermedia"
+    family: "Orchidaceae"
+    english: "Riddhi"
+    hindi: "ऋद्धि"
+    varga_bhavaprakasha: "Aṣṭavarga"
+    part_used: ["kanda"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "rasāyana"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Aśvagandhā", "Vidārī"]
+    nighantu_refs: ["Bhāvaprakāśa Aṣṭavarga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Vṛddhi"
+    latin_binomial: "Habenaria edgeworthii"
+    family: "Orchidaceae"
+    english: "Vriddhi"
+    hindi: "वृद्धि"
+    varga_bhavaprakasha: "Aṣṭavarga"
+    part_used: ["kanda"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (mild)"}
+    karma: ["balya", "rasāyana"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Aśvagandhā", "Vidārī"]
+    nighantu_refs: ["Bhāvaprakāśa Aṣṭavarga"]
+    review_tier: "llm-only"
+
+# ─── Other classical dravyas (5) ────────────────────────────────
+
+  - nama_sanskrit: "Dantī"
+    latin_binomial: "Baliospermum montanum"
+    family: "Euphorbiaceae"
+    english: "Wild castor / red physic nut"
+    hindi: "दन्ती"
+    varga_bhavaprakasha: "Harītakyādi"
+    part_used: ["mūla", "bīja"]
+    rasa: ["kaṭu"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "vardhaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["virecana", "lekhana"]
+    prayoga: ["vibandha", "kuṣṭha — virecana"]
+    matra_value: "1-3"
+    matra_unit: "g (śuddha)"
+    contraindications: ["pregnancy", "atisāra"]
+    notes: "Strong purgative — Vaidya supervision."
+    nighantu_refs: ["Bhāvaprakāśa Harītakyādi"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Ārvinda"
+    latin_binomial: "Nelumbo nucifera"
+    family: "Nelumbonaceae"
+    english: "Sacred lotus"
+    hindi: "अरविन्द / कमल"
+    varga_bhavaprakasha: "Puṣpa"
+    part_used: ["puṣpa", "bīja", "mūla", "patrā"]
+    rasa: ["kaṣāya", "madhura", "tikta"]
+    guna: ["laghu", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["raktastambhaka", "balya", "hṛdya"]
+    prayoga: ["raktapitta", "atisāra", "dāha", "stree-roga"]
+    matra_value: "3-6"
+    matra_unit: "g"
+    nighantu_refs: ["Bhāvaprakāśa Puṣpa-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Ikṣu"
+    latin_binomial: "Saccharum officinarum"
+    family: "Poaceae"
+    english: "Sugarcane"
+    hindi: "ईक्षु / गन्ना"
+    varga_bhavaprakasha: "Ikṣu-varga"
+    part_used: ["kāṇḍa-rasa (juice)"]
+    rasa: ["madhura"]
+    guna: ["guru", "snigdha"]
+    virya: "śīta"
+    vipaka: "madhura"
+    dosha_karma: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka"}
+    karma: ["balya", "raktavardhaka", "tṛṣṇā-hara"]
+    prayoga: ["raktapitta", "tṛṣṇā", "kṣaya"]
+    matra_value: "as juice"
+    contraindications: ["madhumeha"]
+    nighantu_refs: ["Bhāvaprakāśa Ikṣu-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Karaviraka"
+    latin_binomial: "Nerium oleander"
+    family: "Apocynaceae"
+    english: "Oleander (TOXIC — śuddha required, topical only)"
+    hindi: "करवीर / कनेर"
+    varga_bhavaprakasha: "Visha-varga"
+    part_used: ["mūla-tvak (śuddha; external only)"]
+    rasa: ["kaṭu", "tikta"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "sama", pitta: "sama", kapha: "śāmaka"}
+    karma: ["kuṣṭha-ghna (topical)", "kṛmi-ghna (topical)"]
+    prayoga: ["topical for kuṣṭha only"]
+    matra_value: "topical only"
+    contraindications: ["NEVER ingest — cardiotoxic", "pediatric exposure"]
+    notes: "All parts contain cardiac glycosides (oleandrin). Lethal if ingested. Topical use only after sodhana."
+    nighantu_refs: ["Bhāvaprakāśa Visha-varga"]
+    review_tier: "llm-only"
+
+  - nama_sanskrit: "Tulasī-mañjarī"
+    latin_binomial: "Ocimum sanctum (inflorescence)"
+    family: "Lamiaceae"
+    english: "Tulasi inflorescence"
+    hindi: "तुलसी मञ्जरी"
+    varga_bhavaprakasha: "Karpūrādi"
+    part_used: ["puṣpa-mañjarī"]
+    rasa: ["kaṭu", "tikta"]
+    guna: ["laghu", "tīkṣṇa"]
+    virya: "uṣṇa"
+    vipaka: "kaṭu"
+    dosha_karma: {vata: "śāmaka", pitta: "vardhaka (mild)", kapha: "śāmaka"}
+    karma: ["jvara-ghna", "kāsa-hara"]
+    prayoga: ["jvara", "kāsa"]
+    matra_value: "1-3"
+    matra_unit: "g"
+    pratinidhi_dravya: ["Tulasī"]
+    nighantu_refs: ["Bhāvaprakāśa Karpūrādi"]
+    review_tier: "llm-only"

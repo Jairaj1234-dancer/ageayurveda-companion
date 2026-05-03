@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "question_en": "What is your body frame?",
+    "question_hi": "आपका शारीरिक ढांचा कैसा है?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Thin, light, lean frame", "label_hi": "पतला, हल्का, दुबला ढांचा", "dosha": "vata"},
+      {"label_en": "Medium, athletic build", "label_hi": "मध्यम, एथलेटिक शरीर", "dosha": "pitta"},
+      {"label_en": "Large, solid, heavy frame", "label_hi": "बड़ा, मज़बूत, भारी ढांचा", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 2,
+    "question_en": "How is your skin type?",
+    "question_hi": "आपकी त्वचा कैसी है?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Dry, rough, thin", "label_hi": "सूखी, खुरदरी, पतली", "dosha": "vata"},
+      {"label_en": "Warm, oily, sensitive, prone to rashes", "label_hi": "गर्म, तैलीय, संवेदनशील, रैशेज़ वाली", "dosha": "pitta"},
+      {"label_en": "Thick, smooth, moist, cool", "label_hi": "मोटी, चिकनी, नम, ठंडी", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 3,
+    "question_en": "What is your hair type?",
+    "question_hi": "आपके बालों का प्रकार क्या है?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Dry, brittle, frizzy", "label_hi": "सूखे, भंगुर, घुंघराले", "dosha": "vata"},
+      {"label_en": "Fine, thin, early greying", "label_hi": "महीन, पतले, जल्दी सफ़ेद होने वाले", "dosha": "pitta"},
+      {"label_en": "Thick, oily, wavy, lustrous", "label_hi": "घने, तैलीय, लहरदार, चमकदार", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 4,
+    "question_en": "How are your eyes?",
+    "question_hi": "आपकी आंखें कैसी हैं?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Small, dry, darting", "label_hi": "छोटी, सूखी, चंचल", "dosha": "vata"},
+      {"label_en": "Sharp, bright, sensitive to light", "label_hi": "तीखी, चमकदार, रोशनी के प्रति संवेदनशील", "dosha": "pitta"},
+      {"label_en": "Large, calm, beautiful, white sclera", "label_hi": "बड़ी, शांत, सुंदर, सफ़ेद", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 5,
+    "question_en": "How is your body weight?",
+    "question_hi": "आपका शरीर का वज़न कैसा है?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Difficulty gaining weight, underweight", "label_hi": "वज़न बढ़ाने में कठिनाई, कम वज़न", "dosha": "vata"},
+      {"label_en": "Moderate, can gain or lose easily", "label_hi": "मध्यम, आसानी से बढ़ या घट सकता है", "dosha": "pitta"},
+      {"label_en": "Gains weight easily, hard to lose", "label_hi": "आसानी से वज़न बढ़ता है, घटाना मुश्किल", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 6,
+    "question_en": "How is your appetite?",
+    "question_hi": "आपकी भूख कैसी है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Irregular, sometimes forget to eat", "label_hi": "अनियमित, कभी-कभी खाना भूल जाते हैं", "dosha": "vata"},
+      {"label_en": "Strong, get irritable if meal is missed", "label_hi": "तीव्र, खाना छूटे तो चिड़चिड़ापन", "dosha": "pitta"},
+      {"label_en": "Steady but can skip meals easily", "label_hi": "स्थिर लेकिन आसानी से खाना छोड़ सकते हैं", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 7,
+    "question_en": "How is your digestion?",
+    "question_hi": "आपका पाचन कैसा है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Irregular - gas, bloating, constipation", "label_hi": "अनियमित - गैस, पेट फूलना, कब्ज़", "dosha": "vata"},
+      {"label_en": "Strong - acidity, heartburn if meal delayed", "label_hi": "तीव्र - एसिडिटी, खाना देर से खाने पर जलन", "dosha": "pitta"},
+      {"label_en": "Slow - feel heavy after meals", "label_hi": "धीमा - खाने के बाद भारीपन", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 8,
+    "question_en": "How do you handle cold weather?",
+    "question_hi": "आप ठंडे मौसम को कैसे सहन करते हैं?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Dislike cold, hands and feet get cold easily", "label_hi": "ठंड पसंद नहीं, हाथ-पैर जल्दी ठंडे होते हैं", "dosha": "vata"},
+      {"label_en": "Prefer cool weather, tolerate cold well", "label_hi": "ठंडा मौसम पसंद, ठंड अच्छे से सहन करते हैं", "dosha": "pitta"},
+      {"label_en": "Can tolerate cold but dislike damp/humid weather", "label_hi": "ठंड सह सकते हैं पर नमी पसंद नहीं", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 9,
+    "question_en": "How is your sweat?",
+    "question_hi": "आपको पसीना कैसा आता है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Minimal perspiration", "label_hi": "बहुत कम पसीना", "dosha": "vata"},
+      {"label_en": "Profuse, especially when hot or stressed", "label_hi": "बहुत ज़्यादा, खासकर गर्मी या तनाव में", "dosha": "pitta"},
+      {"label_en": "Moderate, steady perspiration", "label_hi": "मध्यम, स्थिर पसीना", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 10,
+    "question_en": "How is your sleep pattern?",
+    "question_hi": "आपकी नींद कैसी है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Light, interrupted, difficulty falling asleep", "label_hi": "हल्की, बीच में टूटती है, सोने में कठिनाई", "dosha": "vata"},
+      {"label_en": "Moderate, sound, 6-7 hours sufficient", "label_hi": "मध्यम, गहरी, 6-7 घंटे काफ़ी", "dosha": "pitta"},
+      {"label_en": "Deep, heavy, love to sleep long", "label_hi": "गहरी, भारी, लंबे समय तक सोना पसंद", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 11,
+    "question_en": "How is your physical endurance?",
+    "question_hi": "आपकी शारीरिक सहनशक्ति कैसी है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Low - tire quickly, quick bursts of energy", "label_hi": "कम - जल्दी थक जाते हैं, तेज़ ऊर्जा की लहरें", "dosha": "vata"},
+      {"label_en": "Moderate - good stamina, can overheat", "label_hi": "मध्यम - अच्छी सहनशक्ति, गर्मी लग सकती है", "dosha": "pitta"},
+      {"label_en": "High - steady energy, slow to start", "label_hi": "अधिक - स्थिर ऊर्जा, शुरू करने में देर", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 12,
+    "question_en": "How is your thirst?",
+    "question_hi": "आपको प्यास कैसी लगती है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Variable, sometimes forget to drink water", "label_hi": "अनियमित, कभी-कभी पानी पीना भूल जाते हैं", "dosha": "vata"},
+      {"label_en": "Strong, need lots of water", "label_hi": "तीव्र, बहुत पानी चाहिए", "dosha": "pitta"},
+      {"label_en": "Low, can go long without water", "label_hi": "कम, बिना पानी के लंबे समय तक रह सकते हैं", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 13,
+    "question_en": "How do you walk?",
+    "question_hi": "आप कैसे चलते हैं?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Quick, light steps", "label_hi": "तेज़, हल्के कदम", "dosha": "vata"},
+      {"label_en": "Moderate, purposeful stride", "label_hi": "मध्यम, उद्देश्यपूर्ण चाल", "dosha": "pitta"},
+      {"label_en": "Slow, steady, graceful", "label_hi": "धीमे, स्थिर, सुंदर", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 14,
+    "question_en": "How is your voice?",
+    "question_hi": "आपकी आवाज़ कैसी है?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Low, hoarse, sometimes cracking", "label_hi": "धीमी, भारी, कभी-कभी टूटती है", "dosha": "vata"},
+      {"label_en": "Sharp, clear, penetrating", "label_hi": "तीखी, स्पष्ट, भेदने वाली", "dosha": "pitta"},
+      {"label_en": "Deep, pleasant, melodious", "label_hi": "गहरी, सुखद, मधुर", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 15,
+    "question_en": "How is your joints' condition?",
+    "question_hi": "आपके जोड़ों की स्थिति कैसी है?",
+    "category": "physical",
+    "options": [
+      {"label_en": "Prominent, cracking joints", "label_hi": "उभरे हुए, चटकने वाले जोड़", "dosha": "vata"},
+      {"label_en": "Flexible, sometimes inflamed", "label_hi": "लचीले, कभी-कभी सूजन", "dosha": "pitta"},
+      {"label_en": "Large, well-lubricated", "label_hi": "बड़े, अच्छी तरह चिकने", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 16,
+    "question_en": "How do you handle stress?",
+    "question_hi": "आप तनाव को कैसे संभालते हैं?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Become anxious, worried, fearful", "label_hi": "चिंतित, परेशान, भयभीत हो जाते हैं", "dosha": "vata"},
+      {"label_en": "Become irritable, angry, critical", "label_hi": "चिड़चिड़े, क्रोधित, आलोचनात्मक हो जाते हैं", "dosha": "pitta"},
+      {"label_en": "Become withdrawn, avoid the situation", "label_hi": "अंतर्मुखी हो जाते हैं, स्थिति से बचते हैं", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 17,
+    "question_en": "How is your learning style?",
+    "question_hi": "आप कैसे सीखते हैं?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Quick to learn, quick to forget", "label_hi": "जल्दी सीखते हैं, जल्दी भूल जाते हैं", "dosha": "vata"},
+      {"label_en": "Sharp, focused, good comprehension", "label_hi": "तीक्ष्ण, केंद्रित, अच्छी समझ", "dosha": "pitta"},
+      {"label_en": "Slow to learn, excellent long-term memory", "label_hi": "धीरे सीखते हैं, उत्कृष्ट दीर्घकालिक स्मृति", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 18,
+    "question_en": "What is your emotional nature?",
+    "question_hi": "आपका भावनात्मक स्वभाव कैसा है?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Enthusiastic, creative, changeable moods", "label_hi": "उत्साही, रचनात्मक, बदलता मूड", "dosha": "vata"},
+      {"label_en": "Passionate, driven, intense", "label_hi": "भावुक, प्रेरित, तीव्र", "dosha": "pitta"},
+      {"label_en": "Calm, loving, content, steady", "label_hi": "शांत, प्रेमपूर्ण, संतुष्ट, स्थिर", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 19,
+    "question_en": "How do you make decisions?",
+    "question_hi": "आप निर्णय कैसे लेते हैं?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Quickly, may change mind later", "label_hi": "जल्दी, बाद में मन बदल सकते हैं", "dosha": "vata"},
+      {"label_en": "Confidently, with analysis", "label_hi": "आत्मविश्वास से, विश्लेषण के साथ", "dosha": "pitta"},
+      {"label_en": "Slowly, carefully, after much thought", "label_hi": "धीरे, सावधानी से, बहुत सोच-विचार के बाद", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 20,
+    "question_en": "How is your speech pattern?",
+    "question_hi": "आपकी बोलने की शैली कैसी है?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Fast, talkative, may go off-topic", "label_hi": "तेज़, बातूनी, विषय से भटक सकते हैं", "dosha": "vata"},
+      {"label_en": "Precise, argumentative, convincing", "label_hi": "सटीक, तर्कपूर्ण, प्रभावशाली", "dosha": "pitta"},
+      {"label_en": "Slow, thoughtful, sweet", "label_hi": "धीमी, विचारपूर्ण, मीठी", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 21,
+    "question_en": "How do you spend money?",
+    "question_hi": "आप पैसे कैसे खर्च करते हैं?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Spend quickly, impulsive buying", "label_hi": "जल्दी खर्च करते हैं, आवेगपूर्ण खरीदारी", "dosha": "vata"},
+      {"label_en": "Spend on quality and luxury items", "label_hi": "गुणवत्ता और लक्ज़री पर खर्च", "dosha": "pitta"},
+      {"label_en": "Save well, spend cautiously", "label_hi": "अच्छे से बचत, सावधानी से खर्च", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 22,
+    "question_en": "What type of dreams do you have?",
+    "question_hi": "आपको कैसे सपने आते हैं?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Flying, running, fearful, active", "label_hi": "उड़ना, दौड़ना, डरावने, सक्रिय", "dosha": "vata"},
+      {"label_en": "Fiery, colorful, conflict, adventurous", "label_hi": "अग्निमय, रंगीन, संघर्ष, साहसिक", "dosha": "pitta"},
+      {"label_en": "Water, calm, romantic, peaceful", "label_hi": "पानी, शांत, रोमांटिक, शांतिपूर्ण", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 23,
+    "question_en": "How is your bowel movement?",
+    "question_hi": "आपका मलत्याग कैसा है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Irregular, tends to constipation, hard stools", "label_hi": "अनियमित, कब्ज़ की प्रवृत्ति, कठोर मल", "dosha": "vata"},
+      {"label_en": "Regular, loose stools, burning sensation", "label_hi": "नियमित, ढीला मल, जलन महसूस", "dosha": "pitta"},
+      {"label_en": "Regular, heavy, well-formed", "label_hi": "नियमित, भारी, अच्छी तरह बना हुआ", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 24,
+    "question_en": "What is your social nature?",
+    "question_hi": "आपका सामाजिक स्वभाव कैसा है?",
+    "category": "psychological",
+    "options": [
+      {"label_en": "Make friends easily, many acquaintances", "label_hi": "आसानी से दोस्त बनाते हैं, बहुत परिचित", "dosha": "vata"},
+      {"label_en": "Selective, natural leader, competitive", "label_hi": "चुनिंदा, स्वाभाविक नेता, प्रतिस्पर्धी", "dosha": "pitta"},
+      {"label_en": "Few close friends, loyal, nurturing", "label_hi": "कम करीबी दोस्त, वफ़ादार, पोषणकारी", "dosha": "kapha"}
+    ]
+  },
+  {
+    "id": 25,
+    "question_en": "What food cravings do you have?",
+    "question_hi": "आपको किस तरह के खाने की लालसा होती है?",
+    "category": "physiological",
+    "options": [
+      {"label_en": "Crunchy, salty snacks, warm foods", "label_hi": "कुरकुरे, नमकीन स्नैक्स, गर्म खाना", "dosha": "vata"},
+      {"label_en": "Cold drinks, spicy food, sweets", "label_hi": "ठंडे पेय, मसालेदार खाना, मिठाई", "dosha": "pitta"},
+      {"label_en": "Sweet, creamy, rich, comfort food", "label_hi": "मीठा, मलाईदार, भरपूर, आरामदायक खाना", "dosha": "kapha"}
+    ]
+  }
+]

@@ -1,0 +1,283 @@
+# Parīkṣā parameters — canonical examination points across the
+# aṣṭa-vidha (8-fold), daśa-vidha (10-fold), and trividha (3-fold)
+# schemas, with selected extras (agni, koṣṭha) carried by Caraka and
+# Suśruta as standalone parameters.
+#
+# Findings per parameter encode the doṣa implication of each value.
+# Code: '+' raised, '-' diminished, '0' normal/sama, '++/--' marked.
+#
+# Sources: Caraka Vimāna 1, 8; Suśruta Sūtra 35; Aṣṭāṅga Hṛdaya
+# Sūtra 1; Yogaratnākara Pūrvārdha (aṣṭa-vidha); Mādhava Nidāna 1
+# (general parīkṣā introduction).
+#
+# review_tier: llm-only — pending Vaidya validation.
+
+pariksha_params:
+
+# ─── Aṣṭa-vidha parīkṣā (Yogaratnākara) ─────────────────────────────
+
+  - name_iast: "Nāḍī"
+    english: "Pulse examination"
+    hindi: "नाड़ी"
+    schema_family: "aṣṭa-vidha"
+    domain: "physical"
+    when_to_examine: "Early morning, empty stomach, patient seated, before bath. Examiner sits facing the patient."
+    examination_method: "Three fingers (index/middle/ring) placed on the radial pulse below the wrist. Index reads vāta-nāḍī, middle reads pitta-nāḍī, ring reads kapha-nāḍī. Quality, rate, and rhythm assessed."
+    findings:
+      - {value: "vāta-nāḍī", description: "Snake-like (sarpa-vat), thin, fast, irregular", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "pitta-nāḍī", description: "Frog-like (maṇḍūka-vat), bounding, hot, regular-fast", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "kapha-nāḍī", description: "Swan-like (haṃsa-gati), slow, deep, full, smooth", implies: {vata: "0", pitta: "0", kapha: "+"}}
+      - {value: "dvandva-vāta-pitta", description: "Mixed snake/frog qualities", implies: {vata: "+", pitta: "+", kapha: "0"}}
+      - {value: "dvandva-pitta-kapha", description: "Mixed frog/swan", implies: {vata: "0", pitta: "+", kapha: "+"}}
+      - {value: "dvandva-vāta-kapha", description: "Mixed snake/swan", implies: {vata: "+", pitta: "0", kapha: "+"}}
+      - {value: "sannipāta-nāḍī", description: "All three pulses irregular and disturbed", implies: {vata: "+", pitta: "+", kapha: "+"}}
+      - {value: "sama-nāḍī", description: "Smooth, ~72/min, regular, balanced", implies: {vata: "0", pitta: "0", kapha: "0"}}
+    normal_finding: "sama-nāḍī"
+    classical_source: "Yogaratnākara Pūrvārdha; Bhāvaprakāśa Pūrva-khaṇḍa"
+
+  - name_iast: "Mūtra"
+    english: "Urine examination"
+    hindi: "मूत्र"
+    schema_family: "aṣṭa-vidha"
+    domain: "physiological"
+    examination_method: "First morning urine collected; observed for color, odor, turbidity, foam, sediment. Classical taila-bindu test: a drop of oil placed on the urine surface — its spread pattern indicates doṣa."
+    findings:
+      - {value: "spaṣṭa-pīta", description: "Clear pale yellow, mild odor", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "ati-pīta-uṣṇa", description: "Deep yellow, hot, burning", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "phena-yukta-rūkṣa", description: "Frothy and dry-looking, scant volume", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "śveta-snigdha-picchila", description: "Whitish, oily, slimy, abundant", implies: {vata: "0", pitta: "0", kapha: "+"}}
+      - {value: "rakta-mūtra", description: "Reddish/blood-stained — refer immediately", implies: {vata: "0", pitta: "++", kapha: "0"}}
+      - {value: "madhura-mūtra", description: "Sweet smell (prameha), ant-attracting", implies: {vata: "0", pitta: "0", kapha: "++"}}
+    classical_source: "Yogaratnākara Mūtra-parīkṣā"
+
+  - name_iast: "Mala"
+    english: "Stool examination"
+    hindi: "मल"
+    schema_family: "aṣṭa-vidha"
+    domain: "physiological"
+    examination_method: "First morning stool — observe color, consistency, odor, frequency, undigested matter (āma)."
+    findings:
+      - {value: "sama-mala", description: "Formed, soft, single, complete evacuation", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "vibandha-rūkṣa", description: "Hard, dry, pellet-like, infrequent", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "atisāra-pīta-uṣṇa", description: "Loose, yellow-green, hot-burning, foul", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "snigdha-picchila", description: "Sticky, oily, kapha-laden, mucus-coated", implies: {vata: "0", pitta: "0", kapha: "+"}}
+      - {value: "āma-yukta", description: "Undigested food visible, foul, sticky", implies: {vata: "0", pitta: "0", kapha: "+"}, agni: "manda"}
+      - {value: "krimi-yukta", description: "Worms / parasites visible", implies: {vata: "0", pitta: "0", kapha: "+"}}
+
+  - name_iast: "Jihvā"
+    english: "Tongue examination"
+    hindi: "जिह्वा"
+    schema_family: "aṣṭa-vidha"
+    domain: "physical"
+    examination_method: "Patient extends tongue in good light; observe color, coating, moisture, fissures, papillae, deviation."
+    findings:
+      - {value: "rakta-snigdha-sama", description: "Red-pink, moist, smooth, no coat", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "rūkṣa-sphuṭita", description: "Dry, fissured, dark/brown, trembling", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "rakta-pīta-uṣṇa", description: "Bright red or yellow, burning sensation, ulcers", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "śveta-sthūla-snigdha", description: "Pale-white thick coating, swollen, sticky", implies: {vata: "0", pitta: "0", kapha: "+"}}
+      - {value: "sāma-jihvā", description: "Thick coating with foul taste — āma marker", implies: {vata: "0", pitta: "0", kapha: "+"}, agni: "manda"}
+
+  - name_iast: "Śabda"
+    english: "Voice / sound examination"
+    hindi: "शब्द"
+    schema_family: "aṣṭa-vidha"
+    domain: "physical"
+    examination_method: "Listen to speech, breath sounds, joint crepitus, bowel sounds."
+    findings:
+      - {value: "spaṣṭa-svara", description: "Clear, even, smooth voice", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "kṣīṇa-bhinna-svara", description: "Hoarse, broken, weak voice", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "tīkṣṇa-uccaiḥ-svara", description: "Sharp, loud, irritable voice", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "gambhīra-snigdha-svara", description: "Deep, oily, slow voice", implies: {vata: "0", pitta: "0", kapha: "+"}}
+
+  - name_iast: "Sparśa"
+    english: "Touch / palpation examination"
+    hindi: "स्पर्श"
+    schema_family: "aṣṭa-vidha"
+    domain: "physical"
+    examination_method: "Skin temperature, dryness/oiliness, smoothness, tenderness — palpate forehead, abdomen, joints."
+    findings:
+      - {value: "samaśīta-snigdha", description: "Warm-balanced, soft, supple skin", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "śīta-rūkṣa-khara", description: "Cold, dry, rough, hard skin", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "uṣṇa-snigdha-mṛdu", description: "Hot, slightly oily, soft, tender", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "śīta-snigdha-sthira", description: "Cool, oily, firm, smooth", implies: {vata: "0", pitta: "0", kapha: "+"}}
+
+  - name_iast: "Dṛk"
+    english: "Eye examination"
+    hindi: "नेत्र"
+    schema_family: "aṣṭa-vidha"
+    domain: "physical"
+    examination_method: "Observe sclera, conjunctiva, pupil, gaze stability, tearing, blink rate."
+    findings:
+      - {value: "spaṣṭa-snigdha-sama", description: "Clear bright moist eyes, steady gaze", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "rūkṣa-praviralā", description: "Dry, dull, sunken, restless gaze", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "rakta-pīta", description: "Red/yellow conjunctiva, burning, photophobia", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "snigdha-śveta-bhāra", description: "Heavy, watery, swollen lids, white sclera tinge", implies: {vata: "0", pitta: "0", kapha: "+"}}
+
+  - name_iast: "Ākṛti"
+    english: "General appearance / build"
+    hindi: "आकृति"
+    schema_family: "aṣṭa-vidha"
+    domain: "constitutional"
+    examination_method: "Observe overall build, posture, skin tone, body proportions, bony vs fleshy frame."
+    findings:
+      - {value: "sama-ākṛti", description: "Proportionate frame, balanced flesh and tone", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "kṛśa-rūkṣa-aṅga", description: "Thin, dry, prominent veins, light frame", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "madhya-uṣṇa-tāmra", description: "Medium build, copper-warm skin, sharp features", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "sthūla-snigdha-aṅga", description: "Heavy, fleshy, smooth, fair, oily skin", implies: {vata: "0", pitta: "0", kapha: "+"}}
+
+# ─── Daśa-vidha parīkṣā (Caraka Vimāna 8.94) ────────────────────────
+
+  - name_iast: "Prakṛti"
+    english: "Constitutional type"
+    schema_family: "daśa-vidha"
+    domain: "constitutional"
+    examination_method: "History plus aṣṭa-vidha pattern from infancy onward — the patient's lifelong baseline doṣa configuration."
+    findings:
+      - {value: "vāta-prakṛti", description: "Light, dry, cold, irregular baseline", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "pitta-prakṛti", description: "Warm, intense, sharp baseline", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "kapha-prakṛti", description: "Heavy, stable, oily, slow baseline", implies: {vata: "0", pitta: "0", kapha: "+"}}
+      - {value: "vāta-pitta-prakṛti", description: "Dual: light + intense", implies: {vata: "+", pitta: "+", kapha: "0"}}
+      - {value: "vāta-kapha-prakṛti", description: "Dual: light + stable", implies: {vata: "+", pitta: "0", kapha: "+"}}
+      - {value: "pitta-kapha-prakṛti", description: "Dual: intense + stable", implies: {vata: "0", pitta: "+", kapha: "+"}}
+      - {value: "sama-prakṛti", description: "Tridoṣa-balanced baseline (rare)", implies: {vata: "0", pitta: "0", kapha: "0"}}
+    classical_source: "Caraka Vimāna 8.94-100; Suśruta Śārīra 4.62-77"
+
+  - name_iast: "Vikṛti"
+    english: "Current pathological state"
+    schema_family: "daśa-vidha"
+    domain: "physiological"
+    examination_method: "Compared to prakṛti, identifies the doṣa(s) currently disturbed (vṛddhi, kṣaya, prakopa)."
+    findings:
+      - {value: "vāta-vṛddhi", description: "Vāta currently aggravated", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "pitta-vṛddhi", description: "Pitta currently aggravated", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "kapha-vṛddhi", description: "Kapha currently aggravated", implies: {vata: "0", pitta: "0", kapha: "+"}}
+      - {value: "vāta-pitta-vṛddhi", implies: {vata: "+", pitta: "+", kapha: "0"}}
+      - {value: "sannipāta-vṛddhi", implies: {vata: "+", pitta: "+", kapha: "+"}}
+      - {value: "sama-vikṛti", description: "Currently balanced", implies: {vata: "0", pitta: "0", kapha: "0"}}
+
+  - name_iast: "Sāra"
+    english: "Tissue essence"
+    schema_family: "daśa-vidha"
+    domain: "constitutional"
+    examination_method: "Quality of each of the seven dhātu-essences (tvak/rakta/māṃsa/meda/asthi/majjā/śukra) — assessed by inspection and questioning."
+    findings:
+      - {value: "pravara-sāra", description: "Excellent across all seven tissues — best prognosis"}
+      - {value: "madhyama-sāra", description: "Moderate"}
+      - {value: "avara-sāra", description: "Poor — fragile patient, kṛcchra-sādhya"}
+
+  - name_iast: "Saṃhanana"
+    english: "Body compactness / build"
+    schema_family: "daśa-vidha"
+    domain: "constitutional"
+    examination_method: "Symmetry, joint firmness, muscle development, bone-thickness ratio."
+    findings:
+      - {value: "su-saṃhata", description: "Compact, symmetric, well-knit"}
+      - {value: "madhyama-saṃhata", description: "Moderate compactness"}
+      - {value: "asaṃhata", description: "Loose, asymmetric, poor muscle tone"}
+
+  - name_iast: "Pramāṇa"
+    english: "Body proportions"
+    schema_family: "daśa-vidha"
+    domain: "constitutional"
+    examination_method: "Compare anthropometric measures (height, span, head, etc.) to classical aṅgula-pramāṇa."
+    findings:
+      - {value: "samya-pramāṇa", description: "Proportionate to classical norms"}
+      - {value: "hīna-pramāṇa", description: "Below normal"}
+      - {value: "adhika-pramāṇa", description: "Above normal"}
+
+  - name_iast: "Sātmya"
+    english: "Homologation / habituation"
+    schema_family: "daśa-vidha"
+    domain: "physiological"
+    examination_method: "What foods, regimens, climates the patient is habituated to and tolerates well."
+    findings:
+      - {value: "sarva-rasa-sātmya", description: "Tolerates all six tastes — strongest"}
+      - {value: "ekarasa-sātmya", description: "Limited, single-taste sātmya — weakest"}
+
+  - name_iast: "Sattva"
+    english: "Mental strength / endurance"
+    schema_family: "daśa-vidha"
+    domain: "mental"
+    examination_method: "Equanimity under stress, decision-making capacity, response to bad news."
+    findings:
+      - {value: "pravara-sattva", description: "High — equanimous under heavy stress"}
+      - {value: "madhyama-sattva", description: "Moderate"}
+      - {value: "avara-sattva", description: "Low — easily distressed"}
+
+  - name_iast: "Āhāra-śakti"
+    english: "Digestive / dietary capacity"
+    schema_family: "daśa-vidha"
+    domain: "physiological"
+    examination_method: "Patient self-report of appetite, food intake, satiety, digestion time."
+    findings:
+      - {value: "pravara-āhāra-śakti", description: "Strong appetite, full meals, easy digestion"}
+      - {value: "madhyama-āhāra-śakti", description: "Average"}
+      - {value: "avara-āhāra-śakti", description: "Poor appetite, small meals, slow digestion"}
+
+  - name_iast: "Vyāyāma-śakti"
+    english: "Exercise tolerance"
+    schema_family: "daśa-vidha"
+    domain: "physiological"
+    examination_method: "Capacity for exertion before fatigue, recovery time."
+    findings:
+      - {value: "pravara-vyāyāma-śakti", description: "High endurance, fast recovery"}
+      - {value: "madhyama-vyāyāma-śakti", description: "Moderate"}
+      - {value: "avara-vyāyāma-śakti", description: "Easily fatigued"}
+
+  - name_iast: "Vaya"
+    english: "Age stage"
+    schema_family: "daśa-vidha"
+    domain: "constitutional"
+    examination_method: "Chronological age, mapped to classical stages: bāla / madhya / vṛddha (or three sub-stages each)."
+    findings:
+      - {value: "bāla", description: "≤16 years — kapha-prakṛti by age"}
+      - {value: "madhya", description: "16-60 years — pitta-prakṛti by age"}
+      - {value: "vṛddha", description: ">60 years — vāta-prakṛti by age", implies: {vata: "+", pitta: "0", kapha: "0"}}
+
+# ─── Trividha pramāṇa (Caraka Sūtra 11) ────────────────────────────
+
+  - name_iast: "Pratyakṣa"
+    english: "Direct perception (objective findings)"
+    schema_family: "trividha"
+    domain: "physical"
+    examination_method: "What the Vaidya directly observes — visible, palpable, audible signs."
+    findings:
+      - {value: "abnormal", description: "One or more pratyakṣa findings outside normal"}
+      - {value: "normal", description: "All pratyakṣa findings within normal limits"}
+
+  - name_iast: "Anumāna"
+    english: "Inference"
+    schema_family: "trividha"
+    domain: "other"
+    examination_method: "What is inferred from indirect evidence — agni from appetite, kapha-prakopa from heaviness."
+
+  - name_iast: "Aupadeśika"
+    english: "Testimony / scripture"
+    schema_family: "trividha"
+    domain: "other"
+    examination_method: "Knowledge derived from authoritative classical texts and patient/family history."
+
+# ─── Extras (Caraka, Suśruta) ──────────────────────────────────────
+
+  - name_iast: "Agni"
+    english: "Digestive fire"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Combine appetite, digestion time, satiety quality, post-meal energy. Four-fold classical typology."
+    findings:
+      - {value: "sama-agni", description: "Balanced — digests proportionate meal in 3-4 hr, no symptoms", implies: {vata: "0", pitta: "0", kapha: "0"}}
+      - {value: "viṣama-agni", description: "Variable — irregular hunger, bloating, gas", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "tīkṣṇa-agni", description: "Sharp — frequent intense hunger, fast digestion, hyperacidity", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "manda-agni", description: "Slow — heaviness after meals, late hunger, sluggishness", implies: {vata: "0", pitta: "0", kapha: "+"}}
+    classical_source: "Caraka Cikitsā 15; Aṣṭāṅga Hṛdaya Nidāna 12"
+
+  - name_iast: "Koṣṭha"
+    english: "Bowel temperament"
+    schema_family: "extra"
+    domain: "physiological"
+    examination_method: "Pattern of stool passage and laxative response."
+    findings:
+      - {value: "mṛdu-koṣṭha", description: "Soft bowels, easy/frequent stools — pitta", implies: {vata: "0", pitta: "+", kapha: "0"}}
+      - {value: "krūra-koṣṭha", description: "Hard bowels, constipation-prone — vāta", implies: {vata: "+", pitta: "0", kapha: "0"}}
+      - {value: "madhya-koṣṭha", description: "Average — kapha-balanced", implies: {vata: "0", pitta: "0", kapha: "0"}}
+    classical_source: "Caraka Vimāna 6; Aṣṭāṅga Hṛdaya Sūtra 1"

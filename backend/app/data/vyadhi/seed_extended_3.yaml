@@ -1,0 +1,523 @@
+# Extended Vyādhi seed — batch 4 (vyādhi 105-155+).
+# Covers classical sub-types not yet seeded:
+#   - 7 dhātu-gata jvaras
+#   - 4 more kāsa sub-types + 3 more śvāsa
+#   - 7 mahā-kuṣṭha
+#   - 7 udara-roga sub-types (vātodara/pittodara/kaphodara/sannipātodara/
+#     plīhodara/baddhodara/chidrodara)
+#   - More vāta-vyādhi (Avabāhuka, Khallī, Vepathu, Khaṇja, Pangu)
+#   - More akṣi/karṇa-roga sub-types
+#
+# Sources: Caraka Cikitsā 3 (Jvara), 18 (Kāsa), 17 (Hikkā-Śvāsa),
+# 7 (Kuṣṭha), 13 (Udara-roga), 28 (Vāta-vyādhi); Suśruta Cikitsā,
+# Mādhava Nidāna 2-69; Aṣṭāṅga Hṛdaya Cikitsā/Nidāna.
+# All marked review_tier=llm-only; Vaidya validation pending.
+
+vyadhi:
+
+# ─── 7 dhātu-gata jvaras (sustained-stage fevers) ─────────────────
+
+  - nama_sanskrit: "Rasa-gata Jvara"
+    english: "Rasa-dhātu fever (early systemic)"
+    chapter: "Jvara"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["rasa"]
+    srotas: ["rasavaha"]
+    rupa: ["lassitude", "fatigue", "anorexia", "low-grade fever"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Light dīpana-pācana (Mustāriṣṭa, Trikaṭu)."
+    common_formulations: ["Mustāriṣṭa", "Sūta-Sundara Vaṭī", "Indukāntam Ghṛta"]
+    classical_source: "Caraka Cikitsā 3"
+
+  - nama_sanskrit: "Rakta-gata Jvara"
+    english: "Rakta-dhātu fever"
+    chapter: "Jvara"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    rupa: ["fever with petechiae", "burning", "dāha", "thirst"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Pitta-rakta-śāmaka, raktastambhaka."
+    common_formulations: ["Sūtaśekhara Rasa", "Mahā-Yaṣṭyādi Ghṛta", "Kūṣmāṇḍāvaleha"]
+    classical_source: "Caraka Cikitsā 3"
+
+  - nama_sanskrit: "Māṃsa-gata Jvara"
+    english: "Mamsa-dhātu fever"
+    chapter: "Jvara"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["māṃsa"]
+    srotas: ["māṃsavaha"]
+    rupa: ["fever with body-ache", "muscle pain (myalgia-pattern)", "swelling"]
+    chikitsa_summary: "Mustāriṣṭa, Daśamūla Kvātha, supportive."
+    common_formulations: ["Daśamūla Kvātha", "Indukāntam Ghṛta", "Mahā-sudarśana Curṇa"]
+    classical_source: "Caraka Cikitsā 3"
+
+  - nama_sanskrit: "Meda-gata Jvara"
+    english: "Meda-dhātu fever"
+    chapter: "Jvara"
+    dosha_typology: ["kaphaja", "sannipātaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["meda"]
+    srotas: ["medovaha"]
+    rupa: ["fever with sweating", "heaviness", "polydipsia"]
+    chikitsa_summary: "Lekhana-pradhāna (kapha-medohara)."
+    common_formulations: ["Triphalā Guggulu", "Mahā-sudarśana Curṇa"]
+    classical_source: "Caraka Cikitsā 3"
+
+  - nama_sanskrit: "Asthi-gata Jvara"
+    english: "Asthi-dhātu fever"
+    chapter: "Jvara"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["asthi"]
+    srotas: ["asthivaha"]
+    rupa: ["fever with bone pain (deep ache)", "rigors"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Refer for septic arthritis / osteomyelitis workup; adjunct: Pañcatikta Ghṛta."
+    common_formulations: ["Pañcatikta Ghṛta", "Mahā-Yaṣṭyādi Ghṛta"]
+    red_flags_for_referral: ["bone pain + fever — rule out osteomyelitis"]
+    classical_source: "Caraka Cikitsā 3"
+
+  - nama_sanskrit: "Majjā-gata Jvara"
+    english: "Majja-dhātu fever (CNS)"
+    chapter: "Jvara"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["majjā"]
+    srotas: ["majjāvaha"]
+    rupa: ["fever with altered consciousness, headache, seizures possible"]
+    sadhya_asadhya: "asādhya without immediate referral"
+    chikitsa_summary: "EMERGENCY referral for meningitis/encephalitis workup."
+    red_flags_for_referral: ["any fever with altered consciousness — emergency"]
+    classical_source: "Caraka Cikitsā 3"
+
+  - nama_sanskrit: "Śukra-gata Jvara"
+    english: "Shukra-dhātu fever (deepest dhātu)"
+    chapter: "Jvara"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["śukra"]
+    rupa: ["fever in advanced systemic disease (rāja-yakṣmā-like, late-stage HIV)"]
+    sadhya_asadhya: "asādhya"
+    chikitsa_summary: "Comprehensive supportive + rasāyana; refer for definitive modern care."
+    common_formulations: ["Cyavanaprāśa", "Vasanta-Tilaka Rasa"]
+    classical_source: "Caraka Cikitsā 3"
+
+# ─── More kāsa sub-types (4) ──────────────────────────────────────
+
+  - nama_sanskrit: "Vātaja-Kāsa"
+    english: "Vata-pradhana cough"
+    chapter: "Kāsa"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["prāṇa"]
+    srotas: ["prāṇavaha"]
+    rupa: ["dry, paroxysmal cough", "no/scant sputum", "chest tightness"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Vāsāvaleha + medicated ghṛta; vāta-anulomana."
+    common_formulations: ["Vāsāvaleha", "Sitopalādi Curṇa", "Eladi Vaṭī"]
+    common_dravyas: ["Yaṣṭimadhu", "Tila Taila"]
+    classical_source: "Caraka Cikitsā 18"
+
+  - nama_sanskrit: "Kaphaja-Kāsa"
+    english: "Kapha-pradhana cough (productive)"
+    chapter: "Kāsa"
+    dosha_typology: ["kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["prāṇa"]
+    srotas: ["prāṇavaha"]
+    rupa: ["productive cough with thick mucus", "chest heaviness"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Kapha-śāmaka — Trikaṭu, Pippalī Khaṇḍa."
+    common_formulations: ["Pippalī Khaṇḍa", "Tāḷīsādi Curṇa", "Vyoṣādi Vaṭī", "Eladi Vaṭī"]
+    classical_source: "Caraka Cikitsā 18"
+
+  - nama_sanskrit: "Kṣataja-Kāsa"
+    english: "Trauma/injury-induced cough"
+    chapter: "Kāsa"
+    dosha_typology: ["dvi-doṣaja"]
+    primary_dosha: "vāta-pitta"
+    primary_dushya: ["prāṇa", "rakta"]
+    srotas: ["prāṇavaha", "raktavaha"]
+    nidana: ["chest trauma", "voice strain", "TB-cavity"]
+    rupa: ["cough with blood-stained sputum", "chest pain"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Refer for TB workup; adjunct Vāsāvaleha."
+    common_formulations: ["Vāsāvaleha", "Mahā-Lakṣmīvilāsa Rasa", "Vāsā-Hareva Kvātha"]
+    red_flags_for_referral: ["Hemoptysis — TB, lung CA, PE workup"]
+    classical_source: "Caraka Cikitsā 18"
+
+  - nama_sanskrit: "Kṣayaja-Kāsa"
+    english: "Wasting / advanced disease cough"
+    chapter: "Kāsa"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["rasa", "prāṇa", "ojas"]
+    srotas: ["rasavaha", "prāṇavaha"]
+    rupa: ["chronic cough with weight loss, evening fever, night sweats"]
+    sadhya_asadhya: "asādhya advanced"
+    chikitsa_summary: "Refer for TB; rasāyana support."
+    common_formulations: ["Cyavanaprāśa", "Mahā-Medā-Yoga", "Vasanta-Tilaka Rasa"]
+    red_flags_for_referral: ["Any kṣayaja kāsa → TB workup, sputum GeneXpert"]
+    classical_source: "Caraka Cikitsā 8 (Yakṣma)"
+
+# ─── More śvāsa (3) ──────────────────────────────────────────────
+
+  - nama_sanskrit: "Ūrdhva-Śvāsa"
+    english: "Upward-difficulty breathing"
+    chapter: "Śvāsa"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "vāta-kapha"
+    primary_dushya: ["prāṇa"]
+    srotas: ["prāṇavaha"]
+    rupa: ["difficulty in expiration with prolonged inspiration", "altered consciousness possible"]
+    sadhya_asadhya: "asādhya — emergency referral"
+    chikitsa_summary: "Emergency referral; Ayurvedic adjunct only."
+    red_flags_for_referral: ["Any ūrdhva-śvāsa = ICU referral (impending respiratory failure)"]
+    classical_source: "Caraka Cikitsā 17"
+
+  - nama_sanskrit: "Chinna-Śvāsa"
+    english: "Broken/intermittent breathing pattern"
+    chapter: "Śvāsa"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["prāṇa"]
+    srotas: ["prāṇavaha"]
+    rupa: ["interrupted breathing with intervening pauses", "Cheyne-Stokes-like pattern"]
+    sadhya_asadhya: "asādhya"
+    chikitsa_summary: "Emergency referral — agonal pattern."
+    red_flags_for_referral: ["Any chinna-śvāsa = end-of-life or critical illness"]
+    classical_source: "Caraka Cikitsā 17"
+
+  - nama_sanskrit: "Kṣudra-Śvāsa"
+    english: "Mild dyspnea"
+    chapter: "Śvāsa"
+    dosha_typology: ["vāta-kaphaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["prāṇa"]
+    srotas: ["prāṇavaha"]
+    rupa: ["mild dyspnea on exertion that resolves at rest"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Lakṣmīvilāsa Rasa, Sitopalādi Curṇa, lifestyle."
+    common_formulations: ["Lakṣmīvilāsa Rasa", "Sitopalādi Curṇa", "Vyoṣādi Vaṭī"]
+    classical_source: "Caraka Cikitsā 17"
+
+# ─── 7 mahā-kuṣṭha (advanced skin disease classification) ──────
+
+  - nama_sanskrit: "Kapāla-Kuṣṭha"
+    english: "Eggshell-pattern leprosy / scalp-leukoderma"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["rakta", "māṃsa", "tvak"]
+    srotas: ["raktavaha"]
+    rupa: ["dry rough skin, scaling like eggshell, hypopigmented"]
+    sadhya_asadhya: "kṛcchra-sādhya — refer to dermatology to rule out leprosy"
+    chikitsa_summary: "Pañcatikta Ghṛta + lepa; refer if signs of leprosy."
+    common_formulations: ["Pañcatikta Ghṛta", "Bākucyādi Kvātha", "Mahā-Mañjiṣṭhādi Ghṛta"]
+    red_flags_for_referral: ["Any leprosy suspicion → DOTS"]
+    classical_source: "Caraka Cikitsā 7"
+
+  - nama_sanskrit: "Audumbara-Kuṣṭha"
+    english: "Fig-tree-fruit pattern dermatosis"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    rupa: ["red oozing patches, fig-fruit color"]
+    chikitsa_summary: "Cooling lepa + raktaśodhaka; refer if extensive."
+    common_formulations: ["Mahā-Mañjiṣṭhādi Kvātha", "Mañjiṣṭhādi Lepa"]
+    classical_source: "Caraka Cikitsā 7"
+
+  - nama_sanskrit: "Maṇḍala-Kuṣṭha"
+    english: "Plaque psoriasis / disc-like pattern"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["meda"]
+    srotas: ["raktavaha"]
+    rupa: ["circular thick plaques, scaling, well-demarcated"]
+    chikitsa_summary: "Bākucyādi + lepa; modern dermatology adjunct."
+    common_formulations: ["Bākucyādi Kvātha", "Khadirāriṣṭa", "Mahā-Mañjiṣṭhādi Kvātha"]
+    classical_source: "Caraka Cikitsā 7"
+
+  - nama_sanskrit: "Ṛṣyajihva-Kuṣṭha"
+    english: "Deer-tongue pattern dermatosis"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    rupa: ["lesions resembling deer-tongue surface — irregular, fissured"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    common_formulations: ["Mahā-Mañjiṣṭhādi Kvātha", "Khadirāriṣṭa", "Bākucyādi Kvātha"]
+    classical_source: "Caraka Cikitsā 7"
+
+  - nama_sanskrit: "Pundarīka-Kuṣṭha"
+    english: "Lotus-petal-like dermatosis"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    rupa: ["white-pink elevated petal-like patches"]
+    chikitsa_summary: "Cooling, raktaśodhaka."
+    common_formulations: ["Mahā-Yaṣṭyādi Ghṛta", "Sārivāriṣṭa"]
+    classical_source: "Caraka Cikitsā 7"
+
+  - nama_sanskrit: "Sidhmā-Kuṣṭha"
+    english: "Pityriasis-versicolor-like pattern"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["kapha-vātaja"]
+    primary_dosha: "kapha"
+    rupa: ["multiple coin-sized pale or brown patches", "minimal itching"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Topical antifungal + Bākucyādi internal."
+    common_formulations: ["Bākucyādi Kvātha", "Khadirāriṣṭa", "Nimba Taila"]
+    classical_source: "Caraka Cikitsā 7"
+
+  - nama_sanskrit: "Kākaṇaka-Kuṣṭha"
+    english: "Severe / lepromatous-like dermatosis"
+    chapter: "Kuṣṭha"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    rupa: ["progressive nodular skin lesions, neuropathy possible — refer for leprosy workup"]
+    sadhya_asadhya: "asādhya in advanced"
+    chikitsa_summary: "Refer for leprosy slit-skin smear — adjunct Ayurveda only."
+    red_flags_for_referral: ["Any nodular kuṣṭha + neuropathy → leprosy DOTS workup"]
+    classical_source: "Caraka Cikitsā 7"
+
+# ─── 7 udara-roga sub-types ────────────────────────────────────
+
+  - nama_sanskrit: "Vātodara"
+    english: "Vata-pradhana abdominal disorder"
+    chapter: "Udara-roga"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["annavaha"]
+    srotas: ["annavaha"]
+    rupa: ["abdominal distension worse evening, gas, audible borborygmi, intermittent constipation"]
+    chikitsa_summary: "Hingu-Triguṇa + anuvāsana basti."
+    common_formulations: ["Hingu-Triguṇa Cūrṇa", "Hiṅgvāṣṭaka Curṇa", "Anuvāsana Basti"]
+    classical_source: "Caraka Cikitsā 13"
+
+  - nama_sanskrit: "Pittodara"
+    english: "Pitta-pradhana abdominal disorder"
+    chapter: "Udara-roga"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["annavaha"]
+    srotas: ["annavaha"]
+    rupa: ["abdominal heat, burning, yellowish urine"]
+    chikitsa_summary: "Pitta-śāmaka, Avipattikara, Sūtaśekhara."
+    common_formulations: ["Avipattikara Curṇa", "Sūtaśekhara Rasa", "Kāmadudhā Rasa"]
+    classical_source: "Caraka Cikitsā 13"
+
+  - nama_sanskrit: "Kaphodara"
+    english: "Kapha-pradhana abdominal disorder"
+    chapter: "Udara-roga"
+    dosha_typology: ["kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["annavaha", "meda"]
+    srotas: ["annavaha"]
+    rupa: ["abdominal heaviness, sluggish digestion, weight gain"]
+    chikitsa_summary: "Kapha-śāmaka, Trikaṭu, Triphalā Guggulu."
+    common_formulations: ["Trikaṭu Curṇa", "Triphalā Guggulu", "Kāñcanāra Guggulu"]
+    classical_source: "Caraka Cikitsā 13"
+
+  - nama_sanskrit: "Sannipātodara"
+    english: "Tridoshic abdominal disorder"
+    chapter: "Udara-roga"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    primary_dushya: ["annavaha", "rasa"]
+    srotas: ["annavaha"]
+    rupa: ["mixed features of all 3 doṣas, severe distension, multi-organ involvement"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Refer for diagnostic workup; supportive Ayurveda."
+    classical_source: "Caraka Cikitsā 13"
+
+  - nama_sanskrit: "Plīhodara"
+    english: "Splenic abdominal disorder (splenomegaly with ascites)"
+    chapter: "Udara-roga"
+    dosha_typology: ["kapha-pittaja"]
+    primary_dosha: "kapha-pitta"
+    primary_dushya: ["rakta", "rasa"]
+    srotas: ["raktavaha"]
+    rupa: ["enlarged spleen, abdominal heaviness, often anemia"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Pippalyāsava + Pippalī Vardhamāna; modern: workup for portal HTN, malaria, lymphoma."
+    common_formulations: ["Pippalyāsava", "Pippalī Vardhamāna Rasāyana", "Lohāsava"]
+    classical_source: "Caraka Cikitsā 13"
+
+  - nama_sanskrit: "Baddhodara"
+    english: "Bowel obstruction / impaction"
+    chapter: "Udara-roga"
+    dosha_typology: ["vāta-kaphaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["annavaha"]
+    srotas: ["annavaha", "purīṣavaha"]
+    rupa: ["complete obstruction, no flatus/stool, vomiting, severe distension"]
+    sadhya_asadhya: "asādhya — surgical emergency"
+    chikitsa_summary: "EMERGENCY referral for surgical evaluation."
+    red_flags_for_referral: ["Any baddhodara = surgical emergency"]
+    classical_source: "Caraka Cikitsā 13"
+
+  - nama_sanskrit: "Chidrodara"
+    english: "GI perforation pattern"
+    chapter: "Udara-roga"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "tridoṣa"
+    rupa: ["acute severe abdominal pain, peritonitis signs, fever"]
+    sadhya_asadhya: "asādhya — emergency surgery"
+    chikitsa_summary: "EMERGENCY referral for surgery."
+    red_flags_for_referral: ["Acute abdomen + peritonitis = ED surgical emergency"]
+    classical_source: "Caraka Cikitsā 13"
+
+# ─── More vāta-vyādhi (5) ──────────────────────────────────────
+
+  - nama_sanskrit: "Avabāhuka"
+    english: "Frozen shoulder / adhesive capsulitis"
+    chapter: "Vāta-vyādhi"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["snāyu", "māṃsa"]
+    srotas: ["asthivaha"]
+    rupa: ["progressive shoulder pain", "limited range of motion (especially abduction/external rotation)", "stiffness worse in cold"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Kottamcukkadi Taila + svedana, Yogarāja Guggulu."
+    common_formulations: ["Kottamcukkadi Taila", "Mahānārāyaṇa Taila", "Yogarāja Guggulu", "Lākṣādi Guggulu"]
+    classical_source: "Caraka Cikitsā 28"
+
+  - nama_sanskrit: "Khallī"
+    english: "Painful muscle cramps / claudication-pattern"
+    chapter: "Vāta-vyādhi"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["snāyu"]
+    srotas: ["asthivaha"]
+    rupa: ["sudden severe pain in calves/feet, often nocturnal"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Mahānārāyaṇa Taila + magnesium-rich diet, calf abhyaṅga."
+    common_formulations: ["Mahānārāyaṇa Taila", "Sahacarādi Taila"]
+    classical_source: "Caraka Cikitsā 28"
+
+  - nama_sanskrit: "Vepathu"
+    english: "Tremor"
+    chapter: "Vāta-vyādhi"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["majjā"]
+    srotas: ["majjāvaha"]
+    rupa: ["involuntary rhythmic shaking — postural/intentional/resting depending on cause"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Refer for differential (essential tremor vs Parkinsonism); Ayurveda — Bṛhat-vāta-cintāmaṇi, Aśvagandhā."
+    common_formulations: ["Bṛhat-vāta-cintāmaṇi Rasa", "Aśvagandhāriṣṭa", "Mahāmāṣa Taila"]
+    classical_source: "Caraka Cikitsā 28; Mādhava Nidāna 22"
+
+  - nama_sanskrit: "Khaṇja"
+    english: "Limp (single-leg deficit)"
+    chapter: "Vāta-vyādhi"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["asthi", "snāyu"]
+    rupa: ["one-sided weakness/deficit causing limp"]
+    sadhya_asadhya: "kṛcchra-sādhya"
+    chikitsa_summary: "Refer for orthopedic/neurology; Ayurveda — abhyaṅga + basti."
+    common_formulations: ["Mahānārāyaṇa Taila", "Yogarāja Guggulu", "Anuvāsana Basti"]
+    classical_source: "Caraka Cikitsā 28"
+
+  - nama_sanskrit: "Pangu"
+    english: "Bilateral lower-limb weakness / paraplegia"
+    chapter: "Vāta-vyādhi"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["majjā"]
+    srotas: ["majjāvaha"]
+    rupa: ["bilateral lower-limb weakness or paralysis"]
+    sadhya_asadhya: "asādhya in spinal etiology"
+    chikitsa_summary: "Refer for spinal cord workup; rehab + abhyaṅga + basti adjunct."
+    red_flags_for_referral: ["Acute paraplegia → MRI spine emergency"]
+    classical_source: "Caraka Cikitsā 28"
+
+# ─── More akṣi-roga + karṇa-roga (3) ───────────────────────────
+
+  - nama_sanskrit: "Karṇa-Nāda"
+    english: "Tinnitus"
+    hindi: "कर्ण नाद"
+    chapter: "Karṇa-roga"
+    dosha_typology: ["vātaja"]
+    primary_dosha: "vāta"
+    primary_dushya: ["śabda-vāhya śrotra"]
+    srotas: ["śabda-vahā"]
+    rupa: ["ringing/buzzing in ears, may be unilateral or bilateral"]
+    sadhya_asadhya: "yāpya"
+    chikitsa_summary: "Karṇa-pūraṇa with Sahacarādi taila, Aśvagandhā."
+    common_formulations: ["Sahacarādi Taila", "Bṛhat-vāta-cintāmaṇi Rasa", "Aśvagandhāriṣṭa"]
+    red_flags_for_referral: ["Pulsatile tinnitus → vascular workup"]
+    classical_source: "Aṣṭāṅga Hṛdaya Uttara 17"
+
+  - nama_sanskrit: "Akṣi-Pāka"
+    english: "Acute infectious conjunctivitis"
+    chapter: "Akṣi-roga"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    rupa: ["red eye with purulent discharge, painful, may have fever"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Local Triphalā kvātha wash; modern: topical antibiotic if bacterial."
+    common_formulations: ["Triphalā Kvātha", "Triphalā Añjana", "Mahā-Triphalā Ghṛta"]
+    red_flags_for_referral: ["Sudden vision loss, severe photophobia, contact lens history"]
+    classical_source: "Sushruta Uttara 9"
+
+  - nama_sanskrit: "Karṇa-Krimi"
+    english: "Otomycosis / fungal ear infection"
+    chapter: "Karṇa-roga"
+    dosha_typology: ["kaphaja"]
+    primary_dosha: "kapha"
+    primary_dushya: ["rakta"]
+    srotas: ["raktavaha"]
+    rupa: ["ear itching, white-yellow debris, mild pain"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Refer to ENT; adjunct Vidaṅga oil drops."
+    common_formulations: ["Vidaṅga Cūrṇa"]
+    classical_source: "Sushruta Uttara 20"
+
+# ─── Misc additional (3) ──────────────────────────────────────────
+
+  - nama_sanskrit: "Gulma"
+    english: "Abdominal mass / palpable lump"
+    chapter: "Gulma"
+    dosha_typology: ["vātaja", "pittaja", "kaphaja", "sannipātaja", "raktaja"]
+    primary_dosha: "vāta (most common)"
+    primary_dushya: ["annavaha"]
+    srotas: ["annavaha"]
+    rupa: ["palpable abdominal mass, intermittent pain, distension"]
+    sadhya_asadhya: "kṛcchra-sādhya — refer for differential"
+    chikitsa_summary: "Refer for imaging (USG/CT); Ayurveda adjunct."
+    common_formulations: ["Yogarāja Guggulu", "Hingu-Triguṇa Cūrṇa", "Eraṇḍa Taila"]
+    red_flags_for_referral: ["Palpable abdominal mass → imaging + biopsy if suspicious"]
+    classical_source: "Caraka Cikitsā 5"
+
+  - nama_sanskrit: "Vidagdhājīrṇa"
+    english: "Pitta-pradhana indigestion (acute)"
+    chapter: "Ajīrṇa"
+    dosha_typology: ["pittaja"]
+    primary_dosha: "pitta"
+    primary_dushya: ["annavaha"]
+    srotas: ["annavaha"]
+    rupa: ["acid reflux, sour belching, post-meal burning"]
+    sadhya_asadhya: "sukha-sādhya"
+    chikitsa_summary: "Avipattikara, Sūtaśekhara, cooling diet."
+    common_formulations: ["Avipattikara Curṇa", "Sūtaśekhara Rasa", "Kāmadudhā Rasa", "Yaṣṭimadhu Cūrṇa"]
+    classical_source: "Caraka Cikitsā 15"
+
+  - nama_sanskrit: "Sthāna-saṃśraya Disorders"
+    english: "Disease at lodgement stage"
+    chapter: "Pathogenesis"
+    dosha_typology: ["sannipātaja"]
+    primary_dosha: "varies"
+    chikitsa_summary: "Direct treatment to dhātu/srotas of lodgement; reverse before vyakti stage."
+    classical_source: "Suśruta Sūtra 21 (Kriyā-kāla); Caraka Sūtra 17"
+    notes: "Composite vyādhi marker for sthāna-saṃśraya stage of pathogenesis."

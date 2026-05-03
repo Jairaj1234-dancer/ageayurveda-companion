@@ -1,0 +1,629 @@
+{
+  "_metadata": {
+    "description": "Verified downloadable URLs for Ayurvedic texts, datasets, and research sources",
+    "compiled_date": "2026-03-16",
+    "notes": "All URLs verified via web search. Archive.org /download/ URLs follow pattern: https://archive.org/download/{identifier}/{filename}"
+  },
+
+  "archive_org_texts": {
+    "charaka_samhita": {
+      "title": "Charaka Samhita - P.V. Sharma English Translation",
+      "identifier": "CharakaSamhitaTextWithEnglishTanslationP.V.Sharma",
+      "details_url": "https://archive.org/details/CharakaSamhitaTextWithEnglishTanslationP.V.Sharma",
+      "download_pdf": "https://archive.org/download/CharakaSamhitaTextWithEnglishTanslationP.V.Sharma/Charaka%20Samhita%20Text%20With%20English%20Tanslation%20-%20P.V.%20Sharma.pdf",
+      "format": "PDF",
+      "freely_downloadable": true,
+      "notes": "Single volume, 165k+ views. Also available: EPUB, DJVU, full text.",
+      "alt_volumes": {
+        "vol1": "https://archive.org/details/charakasamhitapriyavratasharmavol1chowkambha_628_A",
+        "vol2": "https://archive.org/details/charakasamhitapriyavratasharmavol2chowkambha_384_g",
+        "vol3": "https://archive.org/details/charakasamhitapriyavratasharmavol3chowkambha_67_Q",
+        "vol4": "https://archive.org/details/charakasamhitapriyavratasharmavol4chowkambha_196_C"
+      }
+    },
+
+    "sushruta_samhita": {
+      "title": "Sushruta Samhita - Bhishagratna English Translation (3 Volumes)",
+      "volumes": {
+        "vol1": {
+          "identifier": "englishtranslati01susruoft",
+          "details_url": "https://archive.org/details/englishtranslati01susruoft",
+          "download_pdf": "https://archive.org/download/englishtranslati01susruoft/englishtranslati01susruoft.pdf",
+          "year": 1907,
+          "section": "Sutrasthanam"
+        },
+        "vol2": {
+          "identifier": "englishtranslati02susr",
+          "details_url": "https://archive.org/details/englishtranslati02susr",
+          "download_pdf": "https://archive.org/download/englishtranslati02susr/englishtranslati02susr.pdf",
+          "year": 1911,
+          "section": "Nidana-sthana, Sarira-sthana, Chikitsita-sthana"
+        },
+        "vol3": {
+          "identifier": "englishtranslati03susr",
+          "details_url": "https://archive.org/details/englishtranslati03susr",
+          "download_pdf": "https://archive.org/download/englishtranslati03susr/englishtranslati03susr.pdf",
+          "year": 1916,
+          "section": "Kalpa-sthana, Uttara-tantra"
+        }
+      },
+      "format": "PDF",
+      "freely_downloadable": true,
+      "notes": "Public domain (pre-1927). Alternative copies also available on Archive.org.",
+      "alt_copies": {
+        "vol1_alt": "https://archive.org/details/SushrutaSamhitaVolumei",
+        "vol2_alt": "https://archive.org/details/SushrutSamhitaVolumeIi",
+        "vol3_alt": "https://archive.org/details/SushrutaSamhitaVolumeIii"
+      }
+    },
+
+    "ashtanga_hridaya": {
+      "title": "Ashtanga Hridaya (Vagbhata) - English Translation",
+      "primary": {
+        "identifier": "AstangaHrdayam.Eng",
+        "details_url": "https://archive.org/details/AstangaHrdayam.Eng",
+        "download_pdf": "https://archive.org/download/AstangaHrdayam.Eng/Astanga-hrdayam.%20Eng.pdf",
+        "translator": "Dr. R. Vidyanath",
+        "estimated_size_mb": 700,
+        "format": "PDF"
+      },
+      "srikantha_murthy_vol1": {
+        "identifier": "ashtangahridayavagbhattaenglishtranssrikanthamurthyk.r.vol1chowkambha_413_P",
+        "details_url": "https://archive.org/details/ashtangahridayavagbhattaenglishtranssrikanthamurthyk.r.vol1chowkambha_413_P",
+        "translator": "K.R. Srikantha Murthy"
+      },
+      "sanskrit_with_commentaries": {
+        "identifier": "Ashtanga.Hridaya.of.Vagbhata",
+        "details_url": "https://archive.org/details/Ashtanga.Hridaya.of.Vagbhata",
+        "notes": "Sanskrit text with Sarvangasundara and Ayurvedarasayana commentaries"
+      },
+      "freely_downloadable": true
+    },
+
+    "ayurvedic_pharmacopoeia_of_india": {
+      "title": "Ayurvedic Pharmacopoeia of India - All Volumes",
+      "identifier": "AyurvedicPharmacopoeiaOfIndiaAllVolume",
+      "details_url": "https://archive.org/details/AyurvedicPharmacopoeiaOfIndiaAllVolume",
+      "download_pdf": "https://archive.org/download/AyurvedicPharmacopoeiaOfIndiaAllVolume/Ayurvedic%20Pharmacopoeia%20of%20India%20All%20Volume.pdf",
+      "format": "PDF",
+      "estimated_size_mb": 1000,
+      "freely_downloadable": true,
+      "notes": "Combined all-volumes PDF. Government of India publication. Also: https://archive.org/details/b32220522_0003 for individual Vol 3.",
+      "related": {
+        "ayurvedic_formulary_pt1": "https://archive.org/details/b32232184",
+        "ayurvedic_formulary_pt2": "https://archive.org/details/b32232172",
+        "ayurvedic_formulary_vol2_appendices": "https://archive.org/details/4.ayurvedicFormularyOfIndiaVol2PartBAppendices"
+      }
+    },
+
+    "bhavaprakasha": {
+      "title": "Bhavaprakasha (Bhavamishra)",
+      "primary": {
+        "identifier": "in.ernet.dli.2015.406247",
+        "details_url": "https://archive.org/details/in.ernet.dli.2015.406247",
+        "notes": "Vol I - Sanskrit/Hindi, not full English translation"
+      },
+      "nighantu": {
+        "identifier": "bhavaprakash",
+        "details_url": "https://archive.org/details/bhavaprakash",
+        "notes": "Bhavaprakasha Nighantu - Sanskrit with Hindi commentary"
+      },
+      "vidyotini_commentary": {
+        "identifier": "eRXi_bhav-prakash-with-vidyotini-explanation-of-brahmashankar-shastri-by-rupalal-vais",
+        "details_url": "https://archive.org/details/eRXi_bhav-prakash-with-vidyotini-explanation-of-brahmashankar-shastri-by-rupalal-vais"
+      },
+      "format": "PDF",
+      "freely_downloadable": true,
+      "notes": "Full English translation not freely available on Archive.org. Best English version is K.R. Srikantha Murthy (commercial)."
+    },
+
+    "sharangadhara_samhita": {
+      "title": "Sharangadhara Samhita",
+      "primary": {
+        "identifier": "SarngadharaSamhita",
+        "details_url": "https://archive.org/details/SarngadharaSamhita",
+        "notes": "Sarangadhara Misra edition"
+      },
+      "hindi_commentary": {
+        "identifier": "dLhu_sharangadhara-samhita-of-sharangadhara-acharya-containing-anjananidana-of-agnive",
+        "details_url": "https://archive.org/details/dLhu_sharangadhara-samhita-of-sharangadhara-acharya-containing-anjananidana-of-agnive",
+        "notes": "Dipika Hindi Commentary by Dr. Brahmanand Tripathi, Chaukhamba"
+      },
+      "1950_edition": {
+        "identifier": "wg671",
+        "details_url": "https://archive.org/details/wg671"
+      },
+      "nsp_edition": {
+        "identifier": "SarangadharaSamhitaNSPAurveda1",
+        "details_url": "https://archive.org/details/SarangadharaSamhitaNSPAurveda1"
+      },
+      "format": "PDF",
+      "freely_downloadable": true,
+      "notes": "Full English translation by K.R. Srikrishnamurthy available commercially. Archive.org has Sanskrit/Hindi editions."
+    },
+
+    "madhava_nidana": {
+      "title": "Madhava Nidana (Roga Vinischaya)",
+      "primary": {
+        "identifier": "TheMadhavaNidanaOfSriMadhavakara",
+        "details_url": "https://archive.org/details/TheMadhavaNidanaOfSriMadhavakara",
+        "notes": "1943 edition with Sudhalahari commentary by Umeshananda Sharma"
+      },
+      "english_partial": {
+        "identifier": "madhavanidanamadhvakarachapters110meulenbeldg.j.translation_851_T",
+        "details_url": "https://archive.org/details/madhavanidanamadhvakarachapters110meulenbeldg.j.translation_851_T",
+        "notes": "English translation of Chapters 1-10 by G.J. Meulenbeld"
+      },
+      "english_kanjiv_lochan": {
+        "identifier": "wnnp_ayurvedic-diagnostics-madhava-nidana-of-madhavakara-vol-1-ed-with-notes-by-brahm",
+        "details_url": "https://archive.org/details/wnnp_ayurvedic-diagnostics-madhava-nidana-of-madhavakara-vol-1-ed-with-notes-by-brahm",
+        "notes": "English translation by Kanjiv Lochan, ed. Brahmanand Tripathi, Chaukhamba"
+      },
+      "format": "PDF",
+      "freely_downloadable": true
+    },
+
+    "bhaishajya_ratnavali": {
+      "title": "Bhaishajya Ratnavali (Govind Das Sen)",
+      "primary": {
+        "identifier": "bhaishajya-ratnavali-govind-das-sen",
+        "details_url": "https://archive.org/details/bhaishajya-ratnavali-govind-das-sen"
+      },
+      "hindi_translation_1942": {
+        "identifier": "lNLt_bhaishajya-ratnavali-of-govind-das-sen-with-bhasha-tika-and-hindi-trans.-by-vaid",
+        "details_url": "https://archive.org/details/lNLt_bhaishajya-ratnavali-of-govind-das-sen-with-bhasha-tika-and-hindi-trans.-by-vaid",
+        "notes": "1942 Khemraj edition with Hindi translation by Vaidya Shankar Lal"
+      },
+      "bengali_edition": {
+        "identifier": "b21694072",
+        "details_url": "https://archive.org/details/b21694072",
+        "notes": "Bengali materia medica version, Royal College of Physicians of Edinburgh"
+      },
+      "format": "PDF",
+      "freely_downloadable": true,
+      "notes": "Primarily available in Sanskrit/Hindi on Archive.org. English translations are commercial."
+    },
+
+    "yoga_ratnakara": {
+      "title": "Yoga Ratnakara",
+      "primary": {
+        "identifier": "yogaratnakarakrishnasharmanavrenirnayasagarpress_366_b",
+        "details_url": "https://archive.org/details/yogaratnakarakrishnasharmanavrenirnayasagarpress_366_b",
+        "notes": "Krishna Sharma Navre, Nirnaya Sagar Press edition - Sanskrit"
+      },
+      "format": "PDF",
+      "freely_downloadable": true,
+      "notes": "English translation (2 vols by Madham Shetty Suresh Babu, Chaukhamba) is commercial. Archive.org has Sanskrit edition."
+    },
+
+    "hatha_yoga_pradipika": {
+      "title": "Hatha Yoga Pradipika - English Translation",
+      "pancham_singh": {
+        "identifier": "HathaYogaPradipika-SanskritTextWithEnglishTranslatlionAndNotes",
+        "details_url": "https://archive.org/details/HathaYogaPradipika-SanskritTextWithEnglishTranslatlionAndNotes",
+        "download_pdf": "https://archive.org/download/HathaYogaPradipika-SanskritTextWithEnglishTranslatlionAndNotes/HathaYogaPradipika-SanskritTextWithEnglishTranslatlionAndNotes.pdf",
+        "translator": "Pancham Singh",
+        "notes": "Sanskrit text with English translation and notes"
+      },
+      "adyar_library": {
+        "identifier": "hathayogapradipika",
+        "details_url": "https://archive.org/details/hathayogapradipika",
+        "download_pdf": "https://archive.org/download/hathayogapradipika/hatha_yoga_pradipika_text.pdf",
+        "notes": "Commentary and English translation, Adyar Library and Research Centre"
+      },
+      "bihar_yoga": {
+        "download_pdf": "https://archive.org/download/folder-20230407-20/Hatha%20Yoga%20Pradipika.pdf",
+        "notes": "Swami Muktibodhananda, Bihar School of Yoga edition"
+      },
+      "format": "PDF",
+      "freely_downloadable": true
+    },
+
+    "yoga_sutras_patanjali": {
+      "title": "Yoga Sutras of Patanjali - English Translations",
+      "rama_prasad": {
+        "identifier": "PatanjalisYogaSutraswithTheCommentaryOfVyasaAndTheGlossOfVachaspatiMisraRamaPrasadTranslation",
+        "details_url": "https://archive.org/details/PatanjalisYogaSutraswithTheCommentaryOfVyasaAndTheGlossOfVachaspatiMisraRamaPrasadTranslation",
+        "notes": "With Commentary of Vyasa and Gloss of Vachaspati Misra"
+      },
+      "interpretive": {
+        "identifier": "yoga-sutras-of-patanjali-interpretive-translation",
+        "details_url": "https://archive.org/details/yoga-sutras-of-patanjali-interpretive-translation",
+        "download_pdf": "https://archive.org/download/yoga-sutras-of-patanjali-interpretive-translation/Yoga%20Sutras%20of%20Patanjali.pdf"
+      },
+      "venkatesananda": {
+        "identifier": "yoga-sutras-of-patanjali-swami-venkatesananda-divini-life-society",
+        "details_url": "https://archive.org/details/yoga-sutras-of-patanjali-swami-venkatesananda-divini-life-society",
+        "notes": "Swami Venkatesananda, Divine Life Society"
+      },
+      "iyengar_light_on": {
+        "identifier": "light-on-the-yoga-sutras-of-patanjali",
+        "details_url": "https://archive.org/details/light-on-the-yoga-sutras-of-patanjali",
+        "notes": "B.K.S. Iyengar - Light on the Yoga Sutras"
+      },
+      "adgadanand": {
+        "identifier": "yogadarshan-english-swami-adgadanand-ji",
+        "details_url": "https://archive.org/details/yogadarshan-english-swami-adgadanand-ji"
+      },
+      "format": "PDF",
+      "freely_downloadable": true
+    },
+
+    "sankhya_karika": {
+      "title": "Sankhya Karika (Ishvara Krishna)",
+      "ramakrishna_math": {
+        "identifier": "samkhya-karika",
+        "details_url": "https://archive.org/details/samkhya-karika",
+        "download_pdf": "https://archive.org/download/samkhya-karika/Samkhya-Karika_text.pdf",
+        "notes": "With English commentary, Ramakrishna Math publication"
+      },
+      "with_chinese_commentary": {
+        "identifier": "samkhyachinese",
+        "details_url": "https://archive.org/details/samkhyachinese",
+        "notes": "With Paramartha's Chinese commentary, English translation by S. Suryanarayana"
+      },
+      "radhanath_phukan": {
+        "identifier": "TheSamkhyaKarikaOfIshvaraKrishnaRadhanathPhukan",
+        "details_url": "https://archive.org/details/TheSamkhyaKarikaOfIshvaraKrishnaRadhanathPhukan"
+      },
+      "colebrooke_wilson_1887": {
+        "identifier": "in.ernet.dli.2015.42652",
+        "details_url": "https://archive.org/details/in.ernet.dli.2015.42652",
+        "notes": "Colebrooke & Wilson, 1887 edition"
+      },
+      "format": "PDF",
+      "freely_downloadable": true
+    }
+  },
+
+  "wisdomlib_sections": {
+    "charaka_samhita_english": {
+      "base_url": "https://www.wisdomlib.org/hinduism/book/charaka-samhita-english",
+      "sections": {
+        "sutra_sthana": "https://www.wisdomlib.org/hinduism/book/charaka-samhita-english/d/doc627510.html",
+        "nidana_sthana": "https://www.wisdomlib.org/hinduism/book/charaka-samhita-english/d/doc627510.html"
+      },
+      "format": "HTML",
+      "total_chapters": 120,
+      "total_sections": 8,
+      "freely_accessible": true,
+      "scraping_notes": "MediaWiki-style pages. Each chapter is a separate page. Paginate via table of contents on base_url."
+    },
+
+    "sushruta_samhita_english": {
+      "volumes": {
+        "vol1_sutrasthana": "https://www.wisdomlib.org/hinduism/book/sushruta-samhita-volume-1-sutrasthana",
+        "vol2_nidanasthana": "https://www.wisdomlib.org/hinduism/book/sushruta-samhita-volume-2-nidanasthana",
+        "vol3_sharirasthana": "https://www.wisdomlib.org/hinduism/book/sushruta-samhita-volume-3-sharirasthana",
+        "vol4_cikitsasthana": "https://www.wisdomlib.org/hinduism/book/sushruta-samhita-volume-4-cikitsasthana",
+        "vol5_kalpasthana": "https://www.wisdomlib.org/hinduism/book/sushruta-samhita-volume-5-kalpasthana",
+        "vol6_uttara_tantra": "https://www.wisdomlib.org/hinduism/book/sushruta-samhita-volume-6-uttara-tantra"
+      },
+      "format": "HTML",
+      "freely_accessible": true,
+      "scraping_notes": "6 separate volume pages, each with chapter links. Bhishagratna translation."
+    },
+
+    "ashtanga_hridaya_sanskrit": {
+      "base_url": "https://www.wisdomlib.org/hinduism/book/ashtanga-hridaya-samhita-sanskrit",
+      "format": "HTML (Sanskrit transliteration)",
+      "freely_accessible": true,
+      "notes": "Sanskrit text only - no English translation available on WisdomLib for Ashtanga Hridaya."
+    },
+
+    "bhavaprakasha": {
+      "definition_page": "https://www.wisdomlib.org/definition/bhavaprakasha",
+      "concept_page": "https://www.wisdomlib.org/concept/bhavaprakasha",
+      "samhita_concept": "https://www.wisdomlib.org/concept/bhavaprakasha-samhita",
+      "nighantu_definition": "https://www.wisdomlib.org/definition/bhavaprakashanighantu",
+      "format": "HTML",
+      "freely_accessible": true,
+      "notes": "Definition/concept pages only - no full text translation on WisdomLib."
+    }
+  },
+
+  "niimh_e_samhita": {
+    "e_charaka": {
+      "url": "https://niimh.nic.in/ebooks/ecaraka/",
+      "format": "Web portal (interactive)",
+      "freely_accessible": true,
+      "notes": "Sanskrit text with multiple script options. Read-only, no bulk download."
+    },
+    "e_sushruta": {
+      "url": "https://niimh.nic.in/ebooks/esushruta/",
+      "user_manual": "https://niimh.nic.in/ebooks/esushruta/um/usermanual.pdf",
+      "format": "Web portal (interactive)",
+      "freely_accessible": true
+    },
+    "e_vagbhata": {
+      "niimh_url": "https://niimh.nic.in/ebooks/evagbhata/",
+      "vedotpatti_mirror": "https://vedotpatti.in/samhita/Vag/ehrudayam/?mod=read",
+      "alternate_url": "https://vedotpatti.in/samhita/Vag/vagbhata/?mod=home",
+      "format": "Web portal (interactive)",
+      "freely_accessible": true,
+      "notes": "NIIMH URL may redirect to vedotpatti.in (I-AIM hosted)"
+    },
+    "e_nighantu": {
+      "portal_url": "https://niimh.nic.in/ebooks/e-Nighantu/",
+      "user_manual": "https://niimh.nic.in/ebooks/e-Nighantu/um/usermanual.pdf",
+      "available_nighantus": {
+        "abhidana_manjari": "https://niimh.nic.in/ebooks/e-Nighantu/abhidanamanjari/",
+        "abhidana_rathnamala": "https://niimh.nic.in/ebooks/e-Nighantu/abhidanarathnamala/",
+        "amarakosha": "https://niimh.nic.in/ebooks/e-Nighantu/amarakosha/",
+        "asthanga_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/asthanganganighantu/",
+        "bhavaprakasha_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/bhavaprakashanighantu/",
+        "chamatkara_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/chamatkaranighantu/",
+        "dhanvantari_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/dhanvantarinighantu/",
+        "dravyaguna_samgraha": "https://niimh.nic.in/ebooks/e-Nighantu/dravyagunasamgraha/",
+        "hrudaya_deepika_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/hrudayadeeipikanighantu/",
+        "kaiyadeya_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/kaiyadevanighantu/",
+        "laghu_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/laghunighantu/",
+        "madanapala_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/madanapalanighantu/",
+        "madanadi_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/madanadinighantu/",
+        "madhava_dravyaguna": "https://niimh.nic.in/ebooks/e-Nighantu/madhavadravyaguna/",
+        "nighantu_shesha": "https://niimh.nic.in/ebooks/e-Nighantu/nighantushesha/",
+        "paryaya_rathnamala": "https://niimh.nic.in/ebooks/e-Nighantu/paryayarathnamala/",
+        "raja_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/rajanighantu/",
+        "raja_vallabha_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/rajavallabhanighantu/",
+        "saraswati_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/saraswatinighantu/",
+        "shabda_chandrika": "https://niimh.nic.in/ebooks/e-Nighantu/shabdachandrika/",
+        "shiva_kosha": "https://niimh.nic.in/ebooks/e-Nighantu/shivakosha/",
+        "siddha_mantra": "https://niimh.nic.in/ebooks/e-Nighantu/siddhamantra/",
+        "siddha_sara_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/siddhasaranighantu/",
+        "sodala_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/sodalanighantu/",
+        "soushruti_nighantu": "https://niimh.nic.in/ebooks/e-Nighantu/soushrutanighatu/"
+      },
+      "total_nighantus": 25,
+      "available_scripts": ["Devanagari", "Telugu", "Gujarati", "Kannada", "Malayalam", "Tamil", "Bengali"],
+      "format": "Web portal (interactive, searchable)",
+      "freely_accessible": true,
+      "notes": "Each nighantu has ?mod=read for reading and ?mod=search for searching."
+    },
+    "ayurveda_handbook": {
+      "url": "https://niimh.nic.in/ebooks/ayuhandbook/ap1.php",
+      "notes": "Additional NIIMH Ayurveda handbook resource"
+    }
+  },
+
+  "huggingface_datasets": {
+    "bhashbench_ayur": {
+      "dataset_id": "bharatgenai/BhashaBench-Ayur",
+      "url": "https://huggingface.co/datasets/bharatgenai/BhashaBench-Ayur",
+      "description": "India's first comprehensive benchmark for AI models on Ayurvedic knowledge",
+      "size": "14,963 questions across English and Hindi",
+      "covers": "15+ specialized Ayurvedic disciplines",
+      "format": "HuggingFace dataset (parquet/csv)",
+      "freely_downloadable": true,
+      "notes": "Based on government examinations and standardized Ayurvedic education curricula"
+    },
+    "ayurveda_collection": {
+      "collection_id": "banashish5/ayurveda-datasets",
+      "url": "https://huggingface.co/collections/banashish5/ayurveda-datasets",
+      "description": "Curated collection of Ayurveda datasets",
+      "items": 8,
+      "freely_downloadable": true,
+      "notes": "Collection page - contains links to individual datasets"
+    },
+    "indian_medicinal_plants_images": {
+      "dataset_id": "PROFESSOR-DJ/Indian_Medicinal_Plants_and_Leaf_Dataset_Large",
+      "url": "https://huggingface.co/datasets/PROFESSOR-DJ/Indian_Medicinal_Plants_and_Leaf_Dataset_Large",
+      "description": "Medicinal plant species identification through image processing",
+      "format": "Image dataset",
+      "freely_downloadable": true
+    },
+    "ayur_param_model": {
+      "model_id": "bharatgenai/AyurParam",
+      "url": "https://huggingface.co/bharatgenai/AyurParam",
+      "description": "Domain-specialized LLM fine-tuned on 1000 Ayurvedic books",
+      "type": "model (not dataset)",
+      "notes": "Handles Ayurvedic queries, classical text interpretation, clinical guidance"
+    }
+  },
+
+  "github_repos": {
+    "herb_database": {
+      "repo_url": "https://github.com/sciencewithsaucee-sudo/herb-database",
+      "raw_json_url": "https://raw.githubusercontent.com/sciencewithsaucee-sudo/herb-database/main/herb.json",
+      "figshare_doi": "https://figshare.com/articles/dataset/Amidha_Ayurveda_Herb_Database_A_Curated_JSON_Dataset_of_700_Ayurvedic_Herbs/30491042",
+      "description": "Amidha Ayurveda Herb Database: 700+ Ayurvedic herbs",
+      "format": "JSON",
+      "fields": ["botanical_name", "ayurvedic_name", "rasa", "guna", "virya", "vipaka", "prabhava", "dosha_effects", "therapeutic_properties"],
+      "freely_downloadable": true,
+      "website": "https://www.amidhaayurveda.com/p/herb-database.html"
+    },
+    "ayurveda_books_pdfs": {
+      "repo_url": "https://github.com/manjunath5496/Ayurveda-Books",
+      "description": "Collection of Ayurveda PDF books",
+      "format": "PDF files (ved(1).pdf through ved(57+).pdf)",
+      "freely_downloadable": true,
+      "notes": "Repository of curated Ayurveda PDFs. Check README for book listing."
+    },
+    "imppat2_data": {
+      "repo_url": "https://github.com/asamallab/IMPPAT2",
+      "description": "Data associated with IMPPAT 2.0 database of Indian Medicinal Plants",
+      "format": "Various data files",
+      "freely_downloadable": true,
+      "related_database": "https://cb.imsc.res.in/imppat/"
+    },
+    "topics_pages": {
+      "ayurveda": "https://github.com/topics/ayurveda",
+      "ayurvedic": "https://github.com/topics/ayurvedic",
+      "medicinal_plants": "https://github.com/topics/medicinal-plants",
+      "herbs": "https://github.com/topics/herbs"
+    }
+  },
+
+  "kaggle_datasets": {
+    "ayurgenixai": {
+      "url": "https://www.kaggle.com/datasets/kagglekirti123/ayurgenixai-ayurvedic-dataset",
+      "description": "AyurGenixAI Ayurvedic Dataset",
+      "format": "CSV",
+      "freely_downloadable": true
+    },
+    "indian_medicinal_leaves": {
+      "url": "https://www.kaggle.com/datasets/aryashah2k/indian-medicinal-leaves-dataset",
+      "description": "Indian Medicinal Leaves image dataset",
+      "format": "Images",
+      "freely_downloadable": true
+    },
+    "ayurvedic_medicinal_plants": {
+      "url": "https://www.kaggle.com/datasets/khushibansal1706/ayurvedic-medicinal-plant-dataset",
+      "description": "Ayurvedic Medicinal Plant Dataset",
+      "format": "Images",
+      "freely_downloadable": true
+    },
+    "indian_medicinal_plant_images": {
+      "url": "https://www.kaggle.com/datasets/warcoder/indian-medicinal-plant-image-dataset",
+      "description": "Indian Medicinal Plant Image Dataset",
+      "format": "Images",
+      "freely_downloadable": true
+    }
+  },
+
+  "pubmed_api": {
+    "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+    "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25500/",
+    "api_key_info": "https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/",
+    "rate_limits": {
+      "without_api_key": "3 requests/second",
+      "with_api_key": "10 requests/second"
+    },
+    "search_queries": {
+      "ayurveda_general": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ayurveda&rettype=count",
+        "estimated_results": "8000-12000",
+        "notes": "Broad search for 'ayurveda' in all fields"
+      },
+      "ayurvedic_herbs": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ayurvedic+herbs&rettype=count",
+        "estimated_results": "2000-4000"
+      },
+      "ayurveda_clinical_trials": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ayurveda+clinical+trial&rettype=count",
+        "estimated_results": "500-1500"
+      },
+      "rasayana": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=rasayana+ayurveda&rettype=count",
+        "estimated_results": "200-500"
+      },
+      "panchakarma": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=panchakarma&rettype=count",
+        "estimated_results": "300-700"
+      },
+      "prakriti_dosha": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=prakriti+dosha+ayurveda&rettype=count",
+        "estimated_results": "200-400"
+      },
+      "ashwagandha": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ashwagandha+OR+withania+somnifera&rettype=count",
+        "estimated_results": "2000-3000"
+      },
+      "turmeric_curcumin": {
+        "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=curcumin+OR+turmeric+OR+curcuma+longa&rettype=count",
+        "estimated_results": "15000-20000"
+      }
+    },
+    "fetch_abstracts_pattern": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id={PMID_LIST}&rettype=abstract&retmode=text",
+    "fetch_xml_pattern": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id={PMID_LIST}&rettype=xml",
+    "notes": "Add &api_key=YOUR_KEY to all requests. Use esearch to get PMIDs, then efetch to get full records."
+  },
+
+  "caraka_samhita_online": {
+    "base_url": "https://www.carakasamhitaonline.com/",
+    "main_page": "https://www.carakasamhitaonline.com/index.php/New_Main_Page",
+    "website_guide": "https://www.carakasamhitaonline.com/index.php/Website_guide",
+    "platform": "MediaWiki (mediawiki-1.32.1)",
+    "total_articles": 802,
+    "sections": {
+      "sutra_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Sutra_Sthana",
+        "chapters": 30,
+        "description": "General Principles"
+      },
+      "nidana_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Nidana_Sthana",
+        "chapters": 8,
+        "description": "Diagnostic Principles"
+      },
+      "vimana_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Vimana_Sthana",
+        "chapters": 8,
+        "description": "Specific Medical Principles"
+      },
+      "sharira_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Sharira_Sthana",
+        "chapters": 8,
+        "description": "Human Being and Genesis"
+      },
+      "indriya_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Indriya_Sthana",
+        "chapters": 12,
+        "description": "Sensorial Prognosis"
+      },
+      "chikitsa_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Chikitsa_Sthana",
+        "chapters": 30,
+        "description": "Therapeutic Principles"
+      },
+      "kalpa_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Kalpa_Sthana",
+        "chapters": 12,
+        "description": "Pharmaceutical Preparations"
+      },
+      "siddhi_sthana": {
+        "url": "https://www.carakasamhitaonline.com/index.php/Siddhi_Sthana",
+        "chapters": 12,
+        "description": "Therapeutic Procedures"
+      }
+    },
+    "url_pattern": "https://www.carakasamhitaonline.com/index.php/{Chapter_Name}",
+    "alt_url_pattern": "https://www.carakasamhitaonline.com/mediawiki-1.32.1/index.php/{Chapter_Name}",
+    "example_chapters": [
+      "https://www.carakasamhitaonline.com/index.php/Arthedashmahamooliya_Adhyaya",
+      "https://www.carakasamhitaonline.com/index.php/Jwara_Nidana",
+      "https://www.carakasamhitaonline.com/index.php/Kushtha_Nidana"
+    ],
+    "format": "HTML (MediaWiki)",
+    "freely_accessible": true,
+    "scraping_notes": "MediaWiki site. Each chapter is a wiki article with standard MW structure. Articles include: abstract, keywords, introduction, original Sanskrit text with English translation, Tattva Vimarsha, Vidhi Vimarsha, and references."
+  },
+
+  "additional_databases": {
+    "imppat": {
+      "url": "https://cb.imsc.res.in/imppat/",
+      "mirrors": ["https://www.imppat.com/", "https://www.imppat.in/"],
+      "description": "Indian Medicinal Plants, Phytochemistry And Therapeutics",
+      "version": "2.0 (June 2022)",
+      "coverage": {
+        "plants": 4010,
+        "phytochemicals": 17967,
+        "therapeutic_uses": 1095
+      },
+      "freely_accessible": true,
+      "github": "https://github.com/asamallab/IMPPAT2",
+      "notes": "No login required. Web interface with search. Individual phytochemical downloads (SDF/MOL/PDB)."
+    },
+    "osadhi": {
+      "url": "https://neist.res.in/osadhi/index.html",
+      "description": "Online Structural and Analytics based Database for Herbs of India",
+      "notes": "One of the largest manually curated databases for Indian herbs"
+    },
+    "bsi_medicinal_plants": {
+      "url": "https://bsi.gov.in/page/en/medicinal-plant-database",
+      "description": "Botanical Survey of India Medicinal Plant Database",
+      "coverage": "1,915 species in first phase",
+      "fields": ["scientific_name", "family", "vernacular_name", "medicinal_uses", "location", "herbarium_images"]
+    },
+    "prakriti200_dataset": {
+      "paper": "https://arxiv.org/abs/2510.06262",
+      "description": "Questionnaire-based dataset of 200 Ayurvedic Prakriti assessments",
+      "format": "Bilingual (English-Hindi)",
+      "notes": "Academic dataset - check paper for access details"
+    },
+    "ayurveda_bharati_esamhita": {
+      "url": "https://samhita.ayurvedbharati.org/",
+      "library": "https://ayurvedbharati.org/lp-courses/free-digital-library/lessons/e-charak-samhita",
+      "description": "Alternative e-Samhita platform by Ayurved Bharati"
+    }
+  }
+}

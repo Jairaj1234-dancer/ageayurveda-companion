@@ -1,0 +1,698 @@
+# Extended classical formulations — batch 5 (yogas 138-180+).
+# Specialty focus:
+#   - rasāyana (anti-aging) — Caraka Rasāyana-pāda variants
+#   - mānasa-roga (mental health)
+#   - hṛd-roga (cardiac)
+#   - yakṛd-roga (hepatic)
+#   - mūtra-roga (urinary)
+#   - vājīkaraṇa (reproductive)
+#
+# Sources: Caraka Cikitsā 1.1-4 (Rasāyana + Vājīkaraṇa pāda),
+# Mādhava Nidāna, Bhaiṣajya Ratnāvali, Sahasrayogam, Yogaratnākara,
+# Rasa-yoga-sāgara, AFI Vol I-III.
+
+name: classical_extended_40_batch4
+formulations:
+
+# ─── Classical rasāyana (8) ────────────────────────────────────────
+
+  - name_iast: "Āmalakī Rasāyana"
+    english: "Amalaki rasayana protocol"
+    kalpana_type: "curṇa"
+    primary_indication: "Universal rasāyana — pitta-dominant constitutions, jara-prati-bandhaka"
+    indications: ["jarā", "kṣaya", "pitta-prakṛti rasāyana", "amlapitta", "rasāyana for elderly"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["rasāyana", "cakṣuṣya", "raktavardhaka"]
+    dose_value: "3-6"
+    dose_unit: "g"
+    anupana: ["go-kṣīra (warm)", "ghṛta + madhu"]
+    classical_source: "Caraka Cikitsā 1.1.41-57"
+    ingredients:
+      - { ingredient_name: "Āmalakī (svarasa or fresh)", proportion: "principal" }
+      - { ingredient_name: "Madhu", proportion: "vehicle" }
+      - { ingredient_name: "Ghṛta", proportion: "vehicle" }
+
+  - name_iast: "Triphalā Rasāyana"
+    english: "Triphala rasayana protocol"
+    kalpana_type: "curṇa"
+    primary_indication: "Caraka's premier rasāyana — universal, mild, daily-use"
+    indications: ["rasāyana (universal)", "jarā", "akṣiroga", "kuṣṭha (mild)", "agnimāndya"]
+    dosha_action: {vata: "śāmaka (mild)", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["rasāyana", "cakṣuṣya", "anulomana", "tridoṣa-śāmaka"]
+    dose_value: "3-6"
+    dose_unit: "g"
+    anupana: ["madhu + ghṛta (different ratios per ṛtu — Caraka)"]
+    duration: "Year-round; ratios change by season per Caraka"
+    classical_source: "Caraka Cikitsā 1.3 (Triphalā Rasāyana, Āyurveda-samutthānīya)"
+    ingredients:
+      - { ingredient_name: "Harītakī", proportion: "1 part" }
+      - { ingredient_name: "Vibhītakī", proportion: "2 parts" }
+      - { ingredient_name: "Āmalakī", proportion: "4 parts" }
+      - { ingredient_name: "Madhu", proportion: "vehicle" }
+      - { ingredient_name: "Ghṛta", proportion: "vehicle" }
+
+  - name_iast: "Drākṣā Rasāyana"
+    english: "Draksha rasayana"
+    kalpana_type: "curṇa"
+    primary_indication: "Pitta-pradhāna rasāyana, hṛdaya-rasāyana, mild post-illness recovery"
+    indications: ["pitta-prakṛti rasāyana", "hṛd-daurbalya", "kṣaya", "amlapitta-prone"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["balya", "rasāyana", "hṛdaya-balya"]
+    dose_value: "5-10"
+    dose_unit: "g (raisins)"
+    anupana: ["go-kṣīra"]
+    classical_source: "Caraka Cikitsā 1.4"
+    ingredients:
+      - { ingredient_name: "Drākṣā (raisins)", proportion: "principal" }
+      - { ingredient_name: "Madhu", proportion: "supportive" }
+
+  - name_iast: "Nāgabalādi Cūrṇa"
+    english: "Nagabala-led rasayana powder"
+    kalpana_type: "curṇa"
+    primary_indication: "Asthi-kṣaya, post-fracture rehab, geriatric rasāyana"
+    indications: ["asthi-kṣaya", "post-fracture rehab", "elderly debility"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (mild)"}
+    karma: ["balya", "asthi-poṣaka", "rasāyana"]
+    dose_value: "3-6"
+    dose_unit: "g"
+    anupana: ["go-kṣīra"]
+    classical_source: "Caraka Cikitsā 1.4"
+    ingredients:
+      - { ingredient_name: "Nāgabalā", proportion: "principal" }
+      - { ingredient_name: "Aśvagandhā", proportion: "supportive" }
+      - { ingredient_name: "Bala", proportion: "supportive" }
+      - { ingredient_name: "Yaṣṭimadhu", proportion: "supportive" }
+
+  - name_iast: "Indra Rasāyana"
+    english: "Indra rasayana"
+    kalpana_type: "avaleha"
+    primary_indication: "Comprehensive rasāyana — geriatric debility, mental fatigue, sexual debility"
+    indications: ["jarā", "rasāyana for geriatrics", "smṛti-kṣaya", "kṣīṇa-śukra"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (if excess)"}
+    karma: ["rasāyana", "vājīkaraṇa", "medhya"]
+    dose_value: "10-20"
+    dose_unit: "g"
+    anupana: ["go-kṣīra"]
+    classical_source: "Caraka Cikitsā 1.1.62-74"
+    ingredients:
+      - { ingredient_name: "Triphalā", proportion: "principal" }
+      - { ingredient_name: "Pippalī", proportion: "principal" }
+      - { ingredient_name: "Yaṣṭimadhu", proportion: "supportive" }
+      - { ingredient_name: "Vidārī", proportion: "supportive" }
+      - { ingredient_name: "Aśvagandhā", proportion: "supportive" }
+      - { ingredient_name: "Sitā", proportion: "vehicle" }
+      - { ingredient_name: "Madhu", proportion: "vehicle" }
+      - { ingredient_name: "Ghṛta", proportion: "vehicle" }
+
+  - name_iast: "Sukumāra Ghṛta"
+    english: "Sukumara medicated ghee"
+    kalpana_type: "ghṛta"
+    primary_indication: "Vāta-pradhāna constipation, gentle sneha for delicate constitutions, stree-roga"
+    indications: ["vibandha (chronic)", "ārśas", "gulma", "amenorrhea", "snehapāna for delicate patients"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["snehana", "anulomana", "balya"]
+    dose_value: "10-20"
+    dose_unit: "g"
+    anupana: ["uṣṇa-jala"]
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Eraṇḍa-mūla", proportion: "decoction" }
+      - { ingredient_name: "Punarnavā", proportion: "decoction" }
+      - { ingredient_name: "Daśamūla", proportion: "decoction" }
+      - { ingredient_name: "Yaṣṭimadhu", proportion: "kalka" }
+      - { ingredient_name: "Pippalī", proportion: "kalka" }
+      - { ingredient_name: "Ghṛta", proportion: "1 part", role: "sneha" }
+
+  - name_iast: "Pippalī Vardhamāna Rasāyana (single)"
+    english: "Pippali single-graduated rasayana"
+    kalpana_type: "curṇa"
+    primary_indication: "Pulmonary rasāyana protocol — kāsa, śvāsa, kṣaya"
+    indications: ["kāsa", "śvāsa", "kṣaya", "rasāyana"]
+    dosha_action: {vata: "śāmaka", pitta: "vardhaka", kapha: "śāmaka"}
+    karma: ["yogavāhi", "rasāyana"]
+    dose_value: "1 piece day-1, increase 1 daily for 10 days, then decrease"
+    dose_unit: "fresh pippalī fruits"
+    duration: "20-day vardhamāna kalpa"
+    contraindications: ["amlapitta", "raktapitta", "pregnancy"]
+    classical_source: "Caraka Cikitsā 1.3"
+    notes: "Distinct from compound Pippalī-vardhamāna — uses fresh pippalī alone."
+    ingredients:
+      - { ingredient_name: "Pippalī (fresh)", proportion: "principal" }
+      - { ingredient_name: "Go-kṣīra", proportion: "vehicle" }
+
+  - name_iast: "Mahā-Medā-Yoga"
+    english: "Maha-meda compound"
+    kalpana_type: "curṇa"
+    primary_indication: "Kṣaya-jvara, rāja-yakṣmā, debility — rasāyana for advanced disease"
+    indications: ["rāja-yakṣmā", "kṣaya", "jvara-jīrṇa", "post-illness rasāyana"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (if excess)"}
+    karma: ["balya", "rasāyana"]
+    dose_value: "5-10"
+    dose_unit: "g"
+    anupana: ["go-kṣīra"]
+    classical_source: "Caraka Cikitsā 8 (Yakṣma)"
+    ingredients:
+      - { ingredient_name: "Medā", proportion: "principal (aṣṭavarga)" }
+      - { ingredient_name: "Mahā-medā", proportion: "principal" }
+      - { ingredient_name: "Kākoli", proportion: "supportive" }
+      - { ingredient_name: "Kṣīra-kākoli", proportion: "supportive" }
+      - { ingredient_name: "Jīvaka", proportion: "supportive" }
+      - { ingredient_name: "Ṛṣabhaka", proportion: "supportive" }
+      - { ingredient_name: "Riddhi", proportion: "supportive" }
+      - { ingredient_name: "Vṛddhi", proportion: "supportive" }
+
+# ─── Mānasa-roga (mental health) (4) ──────────────────────────────
+
+  - name_iast: "Sarasvatī Cūrṇa"
+    english: "Saraswati powder"
+    kalpana_type: "curṇa"
+    primary_indication: "Smṛti-kṣaya, mānasa-vyādhi, anidrā, speech impediments"
+    indications: ["smṛti-kṣaya", "anidrā", "ardita-uttarakāla", "speech delay (pediatric)", "stress"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "sama"}
+    karma: ["medhya", "vāca-balya", "rasāyana"]
+    dose_value: "1-3"
+    dose_unit: "g"
+    anupana: ["madhu", "go-kṣīra"]
+    classical_source: "Bhaiṣajya Ratnāvali Mānasa-roga"
+    ingredients:
+      - { ingredient_name: "Vacā", proportion: "1 part" }
+      - { ingredient_name: "Brāhmī", proportion: "1 part" }
+      - { ingredient_name: "Śaṅkhapuṣpī", proportion: "1 part" }
+      - { ingredient_name: "Saindhava-lavaṇa", proportion: "1/4 part" }
+      - { ingredient_name: "Pippalī", proportion: "1/4 part" }
+
+  - name_iast: "Manasamitra Vaṭakam"
+    english: "Manasamitra Vatakam (Kerala)"
+    kalpana_type: "vaṭī"
+    primary_indication: "Cintā, anxiety, OCD-like presentations, anidrā, manas-roga (Kerala)"
+    indications: ["cintā", "anxiety disorders", "anidrā", "unmāda (mild)", "smṛti-kṣaya"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["medhya", "manas-prasādana"]
+    dose_value: "1-2 vaṭī"
+    dose_unit: "vaṭī"
+    anupana: ["go-kṣīra (warm)", "honey"]
+    classical_source: "Sahasrayogam"
+    notes: "Multi-ingredient — 70+ herbs in original Kerala formula."
+    ingredients:
+      - { ingredient_name: "Brāhmī", proportion: "principal" }
+      - { ingredient_name: "Vacā", proportion: "principal" }
+      - { ingredient_name: "Aśvagandhā", proportion: "principal" }
+      - { ingredient_name: "Śaṅkhapuṣpī", proportion: "principal" }
+      - { ingredient_name: "Jaṭāmāṃsī", proportion: "principal" }
+      - { ingredient_name: "Mauktika-bhasma", proportion: "supportive" }
+      - { ingredient_name: "Svarṇa-bhasma", proportion: "supportive (in some recipes)" }
+
+  - name_iast: "Smṛti-Sāgara Rasa"
+    english: "Smriti-sagara Rasa"
+    kalpana_type: "rasa"
+    primary_indication: "Severe smṛti-kṣaya, post-stroke cognitive impairment, advanced age memory issues"
+    indications: ["dementia-like presentations", "post-stroke aphasia", "smṛti-kṣaya", "buddhi-mandya"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["medhya", "nāḍī-balya", "rasāyana"]
+    dose_value: "60-125"
+    dose_unit: "mg"
+    anupana: ["madhu", "Brāhmī ghṛta"]
+    contraindications: ["pregnancy"]
+    classical_source: "Bhaiṣajya Ratnāvali"
+    ingredients:
+      - { ingredient_name: "Pārada (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Gandhaka (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Brāhmī", proportion: "1 part" }
+      - { ingredient_name: "Vacā", proportion: "1 part" }
+      - { ingredient_name: "Śaṅkhapuṣpī", proportion: "1 part" }
+      - { ingredient_name: "Jaṭāmāṃsī", proportion: "1 part" }
+
+  - name_iast: "Unmāda-gajakeśarī Rasa"
+    english: "Unmada-gajakeshari Rasa"
+    kalpana_type: "rasa"
+    primary_indication: "Acute psychosis, severe unmāda, manic episodes, schizophrenia (classical analogue)"
+    indications: ["unmāda", "manic episodes", "post-traumatic agitation", "severe insomnia with restlessness"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["unmāda-hara", "manas-prasādana"]
+    dose_value: "60-125"
+    dose_unit: "mg"
+    anupana: ["Brāhmī kvātha", "go-kṣīra"]
+    contraindications: ["pregnancy", "patient must be supervised"]
+    classical_source: "Bhaiṣajya Ratnāvali Unmāda-roga"
+    ingredients:
+      - { ingredient_name: "Pārada (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Gandhaka (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Vatsanābha (śuddha)", proportion: "trace" }
+      - { ingredient_name: "Mauktika-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Jaṭāmāṃsī", proportion: "supportive" }
+
+# ─── Hṛd-roga (cardiac) (4) ────────────────────────────────────────
+
+  - name_iast: "Arjunāriṣṭa"
+    english: "Arjuna fermented decoction"
+    kalpana_type: "ariṣṭa"
+    primary_indication: "Hṛd-roga, hṛdaya-daurbalya, hypertension support, cardiomyopathy"
+    indications: ["hṛd-daurbalya", "hypertensive cardiomyopathy support", "post-MI rehab adjunct", "palpitations"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["hṛdya", "balya", "raktastambhaka"]
+    dose_value: "15-30"
+    dose_unit: "ml"
+    anupana: ["equal water; post-meals"]
+    classical_source: "Bhaiṣajya Ratnāvali Hṛd-roga"
+    ingredients:
+      - { ingredient_name: "Arjuna-tvak", proportion: "principal" }
+      - { ingredient_name: "Drākṣā", proportion: "supportive" }
+      - { ingredient_name: "Madhuka", proportion: "supportive" }
+      - { ingredient_name: "Dhātakī", proportion: "fermenter" }
+      - { ingredient_name: "Madhu", proportion: "fermenter" }
+
+  - name_iast: "Pārthadyādi Kvātha"
+    english: "Partha-led cardiac decoction"
+    kalpana_type: "kvātha"
+    primary_indication: "Hṛd-daurbalya, hypertension adjunct, angina-like chest discomfort"
+    indications: ["hṛd-daurbalya", "hypertension support", "angina pattern", "post-MI rehab"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["hṛdya", "raktastambhaka"]
+    dose_value: "30-50"
+    dose_unit: "ml"
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Arjuna (Pārtha)", proportion: "principal" }
+      - { ingredient_name: "Drākṣā", proportion: "supportive" }
+      - { ingredient_name: "Pippalī", proportion: "supportive" }
+      - { ingredient_name: "Yaṣṭimadhu", proportion: "supportive" }
+
+  - name_iast: "Prabhākara Vaṭī"
+    english: "Prabhakara cardiac tablet"
+    kalpana_type: "vaṭī"
+    primary_indication: "Hṛd-roga (post-illness), hṛdaya-daurbalya, ojas-kṣaya"
+    indications: ["hṛd-daurbalya", "post-rheumatic fever cardiac care", "post-illness cardiac rehab"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["hṛdya", "balya", "rasāyana"]
+    dose_value: "1-2 vaṭī"
+    dose_unit: "vaṭī"
+    anupana: ["go-kṣīra", "honey"]
+    classical_source: "Bhaiṣajya Ratnāvali Hṛd-roga"
+    ingredients:
+      - { ingredient_name: "Lauha-bhasma", proportion: "principal" }
+      - { ingredient_name: "Pippalī", proportion: "supportive" }
+      - { ingredient_name: "Triphalā", proportion: "supportive" }
+      - { ingredient_name: "Marica", proportion: "supportive" }
+      - { ingredient_name: "Mākṣika-dhātu", proportion: "supportive" }
+      - { ingredient_name: "Sitā", proportion: "vehicle" }
+      - { ingredient_name: "Madhu", proportion: "vehicle" }
+      - { ingredient_name: "Ghṛta", proportion: "vehicle" }
+
+  - name_iast: "Hṛdayārṇava Rasa"
+    english: "Hridayarnava Rasa"
+    kalpana_type: "rasa"
+    primary_indication: "Severe hṛd-roga, congestive heart failure (modern analogue), hṛdaya-roga with edema"
+    indications: ["congestive heart failure", "hṛd-daurbalya advanced", "edema with cardiac etiology"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["hṛdya", "śopha-hara", "balya"]
+    dose_value: "60-125"
+    dose_unit: "mg"
+    anupana: ["Arjuna kvātha", "honey"]
+    contraindications: ["pregnancy", "renal impairment"]
+    classical_source: "Bhaiṣajya Ratnāvali Hṛd-roga"
+    ingredients:
+      - { ingredient_name: "Pārada (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Gandhaka (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Tāmra-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Lauha-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Mauktika-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Pravāla-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Arjuna", proportion: "supportive" }
+
+# ─── Yakṛd-roga (hepatic) (3) ──────────────────────────────────────
+
+  - name_iast: "Ārogyavardhinī Vaṭī"
+    english: "Arogyavardhini Vati"
+    kalpana_type: "vaṭī"
+    primary_indication: "Kāmalā (jaundice), liver disorders, agnimāndya, kuṣṭha"
+    indications: ["kāmalā", "yakṛd-vikāra", "fatty liver support", "kuṣṭha", "amlapitta-prone"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["yakṛd-uttejaka", "dīpana", "kuṣṭha-ghna"]
+    dose_value: "1-2 vaṭī (250-500 mg)"
+    dose_unit: "vaṭī"
+    anupana: ["uṣṇa-jala"]
+    contraindications: ["pregnancy", "renal impairment"]
+    classical_source: "Rasa-ratna-samuccaya 20.87-90"
+    ingredients:
+      - { ingredient_name: "Pārada (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Gandhaka (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Lauha-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Abhraka-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Tāmra-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Triphalā", proportion: "3 parts" }
+      - { ingredient_name: "Citraka", proportion: "supportive" }
+      - { ingredient_name: "Kaṭukī", proportion: "supportive" }
+      - { ingredient_name: "Guggulu", proportion: "supportive" }
+
+  - name_iast: "Pippalyādi Lauha"
+    english: "Pippali-iron compound"
+    kalpana_type: "rasa"
+    primary_indication: "Pāṇḍu-kāmalā, hepatic anemia, post-jaundice debility"
+    indications: ["pāṇḍu", "kāmalā", "post-hepatitis recovery", "iron-deficiency anemia"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["raktavardhaka", "yakṛd-uttejaka", "dīpana"]
+    dose_value: "125-250"
+    dose_unit: "mg"
+    anupana: ["madhu", "ghṛta"]
+    classical_source: "Bhaiṣajya Ratnāvali Pāṇḍu-roga"
+    ingredients:
+      - { ingredient_name: "Lauha-bhasma", proportion: "principal" }
+      - { ingredient_name: "Pippalī", proportion: "supportive" }
+      - { ingredient_name: "Triphalā", proportion: "supportive" }
+      - { ingredient_name: "Trikaṭu", proportion: "supportive" }
+
+  - name_iast: "Phaltrikādi Kvātha"
+    english: "Triphala-led liver decoction"
+    kalpana_type: "kvātha"
+    primary_indication: "Kāmalā, mild jaundice, hepatic detox"
+    indications: ["kāmalā", "amlapitta with hepatic involvement", "mild fatty liver", "post-jaundice rehab"]
+    dosha_action: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["yakṛd-uttejaka", "anulomana"]
+    dose_value: "30-50"
+    dose_unit: "ml"
+    classical_source: "Bhaiṣajya Ratnāvali Kāmalā-roga"
+    ingredients:
+      - { ingredient_name: "Triphalā (phaltrika)", proportion: "principal" }
+      - { ingredient_name: "Trāyamāṇā", proportion: "supportive" }
+      - { ingredient_name: "Drākṣā", proportion: "supportive" }
+      - { ingredient_name: "Madhuka", proportion: "supportive" }
+      - { ingredient_name: "Kaṭukī", proportion: "supportive" }
+      - { ingredient_name: "Guḍūcī", proportion: "supportive" }
+
+# ─── Mūtra-roga (urinary) (3) ──────────────────────────────────────
+
+  - name_iast: "Pāṣāṇa-Bheda Cūrṇa"
+    english: "Stone-breaker powder"
+    kalpana_type: "curṇa"
+    primary_indication: "Aśmari (urolithiasis), mūtra-kṛcchra, mūtraghāta"
+    indications: ["aśmari", "mūtra-kṛcchra", "renal calculi support", "mūtraghāta"]
+    dosha_action: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["aśmari-bhedana", "mūtrala"]
+    dose_value: "3-6"
+    dose_unit: "g"
+    anupana: ["uṣṇa-jala (ample)", "Gokṣura kvātha"]
+    classical_source: "Bhaiṣajya Ratnāvali Aśmari"
+    ingredients:
+      - { ingredient_name: "Pāṣāṇa-bheda (Bergenia ligulata)", proportion: "principal" }
+      - { ingredient_name: "Gokṣura", proportion: "supportive" }
+      - { ingredient_name: "Varuṇa", proportion: "supportive" }
+      - { ingredient_name: "Mustā", proportion: "supportive" }
+
+  - name_iast: "Cinchaḍi Cūrṇa"
+    english: "Cinchadi urinary powder"
+    kalpana_type: "curṇa"
+    primary_indication: "Mūtra-kṛcchra, urinary infections (modern UTI analogue), prostatitis"
+    indications: ["mūtra-kṛcchra", "UTI-like presentations", "prostatitis", "burning micturition"]
+    dosha_action: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["mūtrala", "vasti-śodhana"]
+    dose_value: "3-6"
+    dose_unit: "g"
+    anupana: ["go-kṣīra", "uṣṇa-jala"]
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Tṛṇa-pañcamūla (5 grasses)", proportion: "principal" }
+      - { ingredient_name: "Gokṣura", proportion: "supportive" }
+      - { ingredient_name: "Varuṇa", proportion: "supportive" }
+      - { ingredient_name: "Punarnavā", proportion: "supportive" }
+      - { ingredient_name: "Pāṣāṇa-bheda", proportion: "supportive" }
+
+  - name_iast: "Vāstak Cūrṇa"
+    english: "Vasthak kidney-support powder"
+    kalpana_type: "curṇa"
+    primary_indication: "Renal support, mild renal impairment, mūtraghāta"
+    indications: ["mild renal impairment support", "śopha (renal)", "mūtraghāta"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["mūtrala", "yakṛd-uttejaka"]
+    dose_value: "3-6"
+    dose_unit: "g"
+    anupana: ["uṣṇa-jala", "Punarnavā kvātha"]
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Punarnavā", proportion: "principal" }
+      - { ingredient_name: "Gokṣura", proportion: "supportive" }
+      - { ingredient_name: "Pāṣāṇa-bheda", proportion: "supportive" }
+      - { ingredient_name: "Varuṇa", proportion: "supportive" }
+      - { ingredient_name: "Pippalī", proportion: "supportive" }
+
+# ─── Vājīkaraṇa (3) ───────────────────────────────────────────────
+
+  - name_iast: "Mūsalī Pāka"
+    english: "Musali confection (vajikarana)"
+    kalpana_type: "avaleha"
+    primary_indication: "Kṣīṇa-śukra, male reproductive debility, vājīkaraṇa, post-illness recovery"
+    indications: ["kṣīṇa-śukra", "vandhyatva (male)", "daurbalya", "premature aging"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (if excess)"}
+    karma: ["vājīkaraṇa", "balya", "rasāyana"]
+    dose_value: "10-20"
+    dose_unit: "g"
+    anupana: ["go-kṣīra (warm)"]
+    contraindications: ["sthaulya (relative)", "ati-kapha"]
+    classical_source: "Bhaiṣajya Ratnāvali Vājīkaraṇa"
+    ingredients:
+      - { ingredient_name: "Mūsalī (Śveta-mūsalī)", proportion: "principal" }
+      - { ingredient_name: "Sitā", proportion: "principal" }
+      - { ingredient_name: "Vidārī", proportion: "supportive" }
+      - { ingredient_name: "Aśvagandhā", proportion: "supportive" }
+      - { ingredient_name: "Yaṣṭimadhu", proportion: "supportive" }
+      - { ingredient_name: "Kapikacchu", proportion: "supportive" }
+      - { ingredient_name: "Trijātaka", proportion: "supportive" }
+      - { ingredient_name: "Ghṛta", proportion: "vehicle" }
+      - { ingredient_name: "Madhu", proportion: "vehicle" }
+
+  - name_iast: "Vṛhad Vāji-Vaha Pāka"
+    english: "Brihat-vaji confection"
+    kalpana_type: "avaleha"
+    primary_indication: "Major vājīkaraṇa formula — comprehensive male reproductive tonification"
+    indications: ["kṣīṇa-śukra advanced", "azoospermia support", "post-illness vājīkaraṇa", "geriatric vājīkaraṇa"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (if excess)"}
+    karma: ["vājīkaraṇa", "balya", "rasāyana"]
+    dose_value: "10-20"
+    dose_unit: "g"
+    anupana: ["go-kṣīra"]
+    classical_source: "Caraka Cikitsā 2.1-4 (Vājīkaraṇa-pāda)"
+    ingredients:
+      - { ingredient_name: "Aśvagandhā", proportion: "principal" }
+      - { ingredient_name: "Kapikacchu", proportion: "principal" }
+      - { ingredient_name: "Mūsalī", proportion: "principal" }
+      - { ingredient_name: "Vidārī", proportion: "supportive" }
+      - { ingredient_name: "Śatāvarī", proportion: "supportive" }
+      - { ingredient_name: "Trijātaka", proportion: "supportive" }
+      - { ingredient_name: "Bala", proportion: "supportive" }
+      - { ingredient_name: "Sitā", proportion: "vehicle" }
+      - { ingredient_name: "Ghṛta", proportion: "vehicle" }
+
+  - name_iast: "Madana-Modaka"
+    english: "Madana modaka (vajikarana sweet)"
+    kalpana_type: "avaleha"
+    primary_indication: "Vājīkaraṇa, anaphrodisia support, premature ejaculation"
+    indications: ["kṣīṇa-śukra", "premature ejaculation", "erectile concerns"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (mild)"}
+    karma: ["vājīkaraṇa", "balya"]
+    dose_value: "10-15"
+    dose_unit: "g"
+    anupana: ["go-kṣīra"]
+    classical_source: "Bhaiṣajya Ratnāvali Vājīkaraṇa"
+    ingredients:
+      - { ingredient_name: "Aśvagandhā", proportion: "principal" }
+      - { ingredient_name: "Kapikacchu", proportion: "principal" }
+      - { ingredient_name: "Triphalā", proportion: "supportive" }
+      - { ingredient_name: "Trikaṭu", proportion: "supportive" }
+      - { ingredient_name: "Trijātaka", proportion: "supportive" }
+      - { ingredient_name: "Sitā", proportion: "vehicle" }
+      - { ingredient_name: "Ghṛta", proportion: "vehicle" }
+      - { ingredient_name: "Madhu", proportion: "vehicle" }
+
+# ─── Kuṣṭha (skin) specialty (3) ─────────────────────────────────
+
+  - name_iast: "Bākucyādi Kvātha"
+    english: "Bakuchi-led skin decoction"
+    kalpana_type: "kvātha"
+    primary_indication: "Śvitra (vitiligo), kuṣṭha-sukha-sādhya, leucoderma support"
+    indications: ["śvitra (vitiligo)", "kuṣṭha (sādhya)", "kaṇḍū", "psoriasis-like presentations"]
+    dosha_action: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["raktaśodhaka", "tvac-cāyya"]
+    dose_value: "30-50"
+    dose_unit: "ml"
+    classical_source: "Bhaiṣajya Ratnāvali Śvitra"
+    ingredients:
+      - { ingredient_name: "Bākucī", proportion: "principal" }
+      - { ingredient_name: "Khadira", proportion: "supportive" }
+      - { ingredient_name: "Triphalā", proportion: "supportive" }
+      - { ingredient_name: "Mañjiṣṭhā", proportion: "supportive" }
+
+  - name_iast: "Mahā-Mañjiṣṭhādi Ghṛta"
+    english: "Maha-Manjishtha medicated ghee"
+    kalpana_type: "ghṛta"
+    primary_indication: "Severe kuṣṭha, vāta-rakta, raktadoṣa with sneha-needs"
+    indications: ["kuṣṭha", "vāta-rakta", "raktadoṣa", "vipāḍikā"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["raktaśodhaka", "snehana"]
+    dose_value: "10-20"
+    dose_unit: "g"
+    anupana: ["uṣṇa-jala"]
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Mañjiṣṭhā", proportion: "decoction (large)" }
+      - { ingredient_name: "Triphalā", proportion: "decoction" }
+      - { ingredient_name: "Khadira-sāra", proportion: "kalka" }
+      - { ingredient_name: "Yaṣṭimadhu", proportion: "kalka" }
+      - { ingredient_name: "Ghṛta", proportion: "1 part", role: "sneha" }
+
+  - name_iast: "Lākṣādi Lepa"
+    english: "Lakshadi hair-care paste"
+    kalpana_type: "lepa"
+    primary_indication: "Khalitya, pālitya, scalp dryness"
+    indications: ["khalitya", "pālitya", "alopecia areata support", "scalp inflammation"]
+    dosha_action: {vata: "sama", pitta: "śāmaka", kapha: "sama"}
+    karma: ["keśya", "pitta-śāmaka"]
+    dose_value: "applied to scalp"
+    dose_unit: "as paste"
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Lākṣā", proportion: "principal" }
+      - { ingredient_name: "Madhuka", proportion: "supportive" }
+      - { ingredient_name: "Bhṛṅgarāja", proportion: "supportive" }
+      - { ingredient_name: "Coconut oil or sesame oil", proportion: "vehicle" }
+
+# ─── Specialty rasa / vaṭī (4) ─────────────────────────────────────
+
+  - name_iast: "Sūta-Sundara Vaṭī"
+    english: "Suta-sundara Vati"
+    kalpana_type: "vaṭī"
+    primary_indication: "Acute jvara, viṣama-jvara, sannipāta-jvara"
+    indications: ["acute jvara", "viṣama-jvara", "sannipāta-jvara", "respiratory tract infections"]
+    dosha_action: {vata: "sama", pitta: "sama", kapha: "śāmaka"}
+    karma: ["jvara-ghna", "kapha-śāmaka"]
+    dose_value: "1-2 vaṭī"
+    dose_unit: "vaṭī"
+    anupana: ["madhu", "ginger juice"]
+    contraindications: ["pregnancy"]
+    classical_source: "Bhaiṣajya Ratnāvali Jvara"
+    ingredients:
+      - { ingredient_name: "Pārada (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Gandhaka (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Marica", proportion: "1 part" }
+      - { ingredient_name: "Pippalī", proportion: "1 part" }
+      - { ingredient_name: "Vatsanābha (śuddha)", proportion: "trace" }
+
+  - name_iast: "Yogarāja Lauha"
+    english: "Yogaraja-iron compound"
+    kalpana_type: "rasa"
+    primary_indication: "Pāṇḍu with vāta-pradhāna features, anemia with weakness"
+    indications: ["pāṇḍu", "kāmalā", "post-illness anemia", "iron-deficiency"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["raktavardhaka", "balya", "rasāyana"]
+    dose_value: "125-250"
+    dose_unit: "mg"
+    anupana: ["madhu", "ghṛta"]
+    classical_source: "Bhaiṣajya Ratnāvali Pāṇḍu"
+    ingredients:
+      - { ingredient_name: "Lauha-bhasma", proportion: "principal" }
+      - { ingredient_name: "Yogarāja Guggulu base", proportion: "principal" }
+
+  - name_iast: "Āmavāta-Vidhvaṃsa Rasa"
+    english: "Amavata-vidhvamsa Rasa"
+    kalpana_type: "rasa"
+    primary_indication: "Severe āmavāta, intractable rheumatic pain"
+    indications: ["severe āmavāta", "rheumatoid-pattern joint pain", "intractable sandhi-vāta"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "śāmaka"}
+    karma: ["āma-pācana", "vāta-hara", "śūla-praśamana"]
+    dose_value: "125-250"
+    dose_unit: "mg"
+    anupana: ["uṣṇa-jala", "Daśamūla kvātha"]
+    contraindications: ["pregnancy"]
+    classical_source: "Bhaiṣajya Ratnāvali Āmavāta"
+    ingredients:
+      - { ingredient_name: "Pārada (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Gandhaka (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Vatsanābha (śuddha)", proportion: "trace" }
+      - { ingredient_name: "Tankaṇa-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Marica", proportion: "1 part" }
+      - { ingredient_name: "Pippalī", proportion: "1 part" }
+      - { ingredient_name: "Śuṇṭhī", proportion: "1 part" }
+
+  - name_iast: "Mahābala Taila"
+    english: "Mahabala oil"
+    kalpana_type: "taila"
+    primary_indication: "Vāta-vyādhi rehab, post-paralysis abhyaṅga, pediatric muscle development"
+    indications: ["pakṣaghāta rehab", "muscular wasting", "pediatric massage", "athletic recovery"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "vardhaka (if excess)"}
+    karma: ["balya", "vāta-hara", "muscle-building"]
+    dose_value: "applied externally"
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Mahā-bala-mūla", proportion: "principal" }
+      - { ingredient_name: "Daśamūla", proportion: "supportive" }
+      - { ingredient_name: "Aśvagandhā", proportion: "supportive" }
+      - { ingredient_name: "Tila Taila", proportion: "vehicle" }
+
+# ─── Misc / other (4) ─────────────────────────────────────────────
+
+  - name_iast: "Brahmī Sidha Taila"
+    english: "Brahmi-medicated sesame oil (head)"
+    kalpana_type: "taila"
+    primary_indication: "Anidrā, mānasa-cintā, śiroroga, daily head abhyaṅga"
+    indications: ["anidrā", "śiroroga", "mānasa-cintā", "khalitya"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "sama"}
+    karma: ["medhya", "śirorogahara", "keśya"]
+    dose_value: "applied to scalp"
+    classical_source: "Sahasrayogam"
+    ingredients:
+      - { ingredient_name: "Brāhmī (kalka + svarasa)", proportion: "principal" }
+      - { ingredient_name: "Tila Taila", proportion: "vehicle" }
+
+  - name_iast: "Vasanta-Tilaka Rasa"
+    english: "Vasanta-tilaka Rasa"
+    kalpana_type: "rasa"
+    primary_indication: "Rāja-yakṣmā, kṣaya, cardiovascular rasāyana"
+    indications: ["rāja-yakṣmā", "advanced kṣaya", "cardiovascular rasāyana"]
+    dosha_action: {vata: "śāmaka", pitta: "sama", kapha: "sama"}
+    karma: ["rasāyana", "balya", "kāsa-hara"]
+    dose_value: "125-250"
+    dose_unit: "mg"
+    anupana: ["madhu", "ghṛta", "go-kṣīra"]
+    contraindications: ["pregnancy"]
+    classical_source: "Bhaiṣajya Ratnāvali Yakṣma"
+    ingredients:
+      - { ingredient_name: "Svarṇa-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Mauktika-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Pravāla-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Lauha-bhasma", proportion: "1 part" }
+      - { ingredient_name: "Pārada (śuddha)", proportion: "1 part" }
+      - { ingredient_name: "Gandhaka (śuddha)", proportion: "1 part" }
+
+  - name_iast: "Yaṣṭimadhu Ghṛta"
+    english: "Licorice medicated ghee"
+    kalpana_type: "ghṛta"
+    primary_indication: "Pittaja kāsa, vraṇa, ūrdhva-ga raktapitta, voice care"
+    indications: ["raktapitta", "pittaja kāsa", "vraṇa", "voice care", "amlapitta"]
+    dosha_action: {vata: "śāmaka", pitta: "śāmaka", kapha: "vardhaka (if excess)"}
+    karma: ["pitta-śāmaka", "vraṇa-ropaṇa"]
+    dose_value: "10-20"
+    dose_unit: "g"
+    anupana: ["go-kṣīra"]
+    classical_source: "Bhaiṣajya Ratnāvali Raktapitta"
+    ingredients:
+      - { ingredient_name: "Yaṣṭimadhu", proportion: "principal (kalka + decoction)" }
+      - { ingredient_name: "Ghṛta", proportion: "1 part", role: "sneha" }
+
+  - name_iast: "Kuṭajaṣṭaka Cūrṇa"
+    english: "Kutaja-eight powder"
+    kalpana_type: "curṇa"
+    primary_indication: "Atisāra (chronic), grahaṇī, IBS-D — Kuṭaja-led 8-herb formula"
+    indications: ["chronic atisāra", "grahaṇī", "IBS-D", "raktātisāra"]
+    dosha_action: {vata: "sama", pitta: "śāmaka", kapha: "śāmaka"}
+    karma: ["grāhī", "stambhana", "raktastambhaka"]
+    dose_value: "3-6"
+    dose_unit: "g"
+    anupana: ["takra", "tandulodaka"]
+    classical_source: "Bhaiṣajya Ratnāvali Atisāra"
+    ingredients:
+      - { ingredient_name: "Kuṭaja", proportion: "principal" }
+      - { ingredient_name: "Bilva-majjā", proportion: "supportive" }
+      - { ingredient_name: "Mustā", proportion: "supportive" }
+      - { ingredient_name: "Lodhra", proportion: "supportive" }
+      - { ingredient_name: "Ativiṣā", proportion: "supportive" }
+      - { ingredient_name: "Dhātakī", proportion: "supportive" }
+      - { ingredient_name: "Pāṭhā", proportion: "supportive" }
+      - { ingredient_name: "Nāgara (Śuṇṭhī)", proportion: "supportive" }
