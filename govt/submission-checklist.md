@@ -47,7 +47,7 @@ A single-page actionable list of every form, certificate, and document the India
 | B7 | Eval-comparison script | `[x]` | `backend/scripts/compare_eval.py` |
 | B8 | Source corpus + KG (in-repo) | `[x]` | `backend/app/data/` (committed) |
 | B9 | Existing project URL (production widget on ageayurveda.com) | `[ ]` confirm | https://ageayurveda.com |
-| B10 | Github URL (public source repo) | **`[ ]` not pushed** | needs `git remote add origin` + `gh repo create --public --push`; cited URL is `https://github.com/Jairaj1234-dancer/ageayurveda-companion` |
+| B10 | Github URL (public source repo) | **`[x]` LIVE** | https://github.com/Jairaj1234-dancer/ageayurveda-companion (public, 204 files, initial commit 2026-05-03) |
 | B11 | Reproducibility README | `[ ]` add | one-page README at `/README.md` pointing to all the above |
 
 ---
@@ -188,11 +188,25 @@ If approved, the IndiaAI Mission compute subsidy covers ~₹35,000-47,000 of GPU
 
 **Two near-term action items independent of the critical path:**
 
-1. **Push the source repo to GitHub** (currently no remote set). The proposal/cards cite `github.com/Jairaj1234-dancer/ageayurveda-companion` which is aspirational. Run:
-   ```
-   cd ~/Projects/ageayurveda-companion
-   git add . && git commit -m "Initial commit: AgeAyurveda Companion + AyurBGE proposal"
-   gh repo create Jairaj1234-dancer/ageayurveda-companion --public --source=. --push
-   ```
+1. ~~Push the source repo to GitHub~~ ✅ **DONE 2026-05-03** — live at https://github.com/Jairaj1234-dancer/ageayurveda-companion
 
-2. **Create the HuggingFace org `AgeAyurveda`** at https://huggingface.co/organizations/new (free, no review needed). The model and dataset cards point to this org's namespace.
+2. **Create the HuggingFace org `AgeAyurveda`** (free, no review needed). Manual step — cannot be done from CLI without an HF auth token. Steps:
+   - Go to https://huggingface.co/organizations/new while logged into your HF account
+   - Set "Organization name" = `AgeAyurveda` (this name is referenced by the model card and dataset card)
+   - Select organization type (e.g. "Company" or "Non-profit")
+   - The model card's `model-index.results[0].dataset.type` and `Citation` URLs already point to `AgeAyurveda/ayurbge-base-v1` and `AgeAyurveda/ayurbge-training-pairs-v1` — these become valid the moment the org exists, even before any model is uploaded.
+   - Once the org is created, you can upload the pairs JSONL as a dataset:
+     ```
+     pip install huggingface_hub
+     huggingface-cli login   # paste HF token from https://huggingface.co/settings/tokens
+     huggingface-cli upload AgeAyurveda/ayurbge-training-pairs-v1 \
+         backend/app/data/finetune/pairs_v1.jsonl pairs_v1.jsonl --repo-type dataset
+     huggingface-cli upload AgeAyurveda/ayurbge-training-pairs-v1 \
+         govt/ayurbge-dataset-card.md README.md --repo-type dataset
+     ```
+   - Once the IndiaAI Mission grants compute and AyurBGE-base-v1 is trained, similarly:
+     ```
+     huggingface-cli upload AgeAyurveda/ayurbge-base-v1 checkpoints/ayurbge-base-v1 . --repo-type model
+     huggingface-cli upload AgeAyurveda/ayurbge-base-v1 \
+         govt/ayurbge-model-card.md README.md --repo-type model
+     ```
